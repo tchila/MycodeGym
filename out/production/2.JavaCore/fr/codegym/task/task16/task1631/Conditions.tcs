@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task16.task1631"\n\nModèle de méthode d'usine
+
+1. Observe attentivement les classes que tu as.
+2. Dans des fichiers séparés dans le package commun, crée des classes JpgReader, PngReader et BmpReader qui implémentent l'interface ImageReader.
+3. Dans un fichier séparé dans le package principal, crée la classe ImageReaderFactory avec une méthode.
+3.1. Demande-toi comment elle doit être appelée.
+3.2. Demande-toi quels modificateurs cette méthode doit avoir.
+4. Cette méthode doit :
+4.1. Pour chaque valeur dans ImageTypes, renvoyer le Reader approprié. Par exemple, pour ImageTypes.JPG, renvoie un JpgReader ;
+4.2. Si un argument non valide est passé, lève une exception :
+IllegalArgumentException("Type d'image inconnu").
+
+
+Requirements:
+1.	Cr&eacute;e une classe JpgReader dans le package commun. Elle doit impl&eacute;menter l&#39;interface ImageReader.
+2.	Cr&eacute;e une classe PngReader dans le package commun. Elle doit impl&eacute;menter l&#39;interface ImageReader.
+3.	Cr&eacute;e une classe BmpReader dans le package commun. Elle doit impl&eacute;menter l&#39;interface ImageReader.
+4.	Cr&eacute;e une classe publique nomm&eacute;e ImageReaderFactory.
+5.	Ajoute une m&eacute;thode public static getImageReader avec un param&egrave;tre ImageTypes &agrave; la classe ImageReaderFactory.
+6.	La m&eacute;thode getImageReader doit cr&eacute;er et renvoyer un Reader appropri&eacute;.
+7.	La m&eacute;thode getImageReader doit lever une IllegalArgumentException si un argument non valide est pass&eacute;.
+
+

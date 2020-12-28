@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task17.task1703"\n\nNotes synchronisées
+
+1. La classe Note sera utilisée par des threads. Vérifie que les tentatives d'accéder à la liste notes verrouillent notes, et non this
+2. Les appels à System.out.println ne doivent pas être synchronisés, c'est-à-dire ne pas être exécutés dans le bloc synchronized
+
+
+Requirements:
+1.	La m&eacute;thode addNote() doit ajouter des notes &agrave; la liste notes.
+2.	La m&eacute;thode removeNote() doit supprimer une note de la liste notes.
+3.	La m&eacute;thode addNote() doit avoir un bloc synchronis&eacute;.
+4.	La m&eacute;thode removeNote() doit avoir un bloc synchronis&eacute;.
+5.	Le bloc synchronis&eacute; dans la m&eacute;thode addNote() doit verrouiller notes.
+6.	Le bloc synchronis&eacute; dans la m&eacute;thode removeNote() doit verrouiller notes.
+7.	Le bloc synchronis&eacute; de la m&eacute;thode addNote() doit appeler la m&eacute;thode add sur notes.
+8.	Le bloc synchronis&eacute; de la m&eacute;thode removeNote() doit appeler la m&eacute;thode remove sur notes.
+9.	Aucune commande de sortie &eacute;cran ne doit se trouver dans le bloc synchronis&eacute;.
+
+

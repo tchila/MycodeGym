@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task15.task1525"\n\nFichier dans un bloc statique
+
+1. Initialise la variable Statics.FILE_NAME sur le chemin d'accès complet vers un fichier de données qui contient plusieurs lignes.
+2. Ensuite, dans le bloc statique, lis toutes les lignes du fichier nommé Statics.FILE_NAME, puis ajoute-les séparément à la variable List lines.
+
+
+Requirements:
+1.	La constante FILE_NAME ne doit pas &ecirc;tre vide.
+2.	Dans le bloc statique, toutes les lignes du fichier nomm&eacute; FILE_NAME doivent &ecirc;tre ajout&eacute;es s&eacute;par&eacute;ment &agrave; la variable List lines.
+3.	Le champ FILE_NAME ne doit PAS &ecirc;tre final.
+4.	La classe Solution doit contenir une liste de lignes.
+
+

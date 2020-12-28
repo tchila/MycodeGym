@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task07.task0721"\n\nMinimum et maximum dans les tableaux
+
+Crée un tableau de 20 nombres. Remplis-le avec des nombres saisis au clavier. Trouve les nombres maximum et minimum dans le tableau.
+Affiche les nombres minimum et maximum, séparés par un espace.
+
+
+Requirements:
+1.	Cr&eacute;e un tableau d&#39;entiers (int[]) avec 20 &eacute;l&eacute;ments.
+2.	Lis 20 entiers au clavier et ajoute-les au tableau.
+3.	Trouve les entiers maximum et minimum, puis affiche-les s&eacute;par&eacute;s par un espace.
+4.	Utilise une boucle for.
+
+

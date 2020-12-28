@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task15.task1520"\n\nEntraînement cérébral
+
+Trouve l'erreur dans la logique : Duck doit correctement implémenter l'interface CanMove.
+Corrige l'erreur.
+La sortie doit être :
+Flying
+Moving
+
+
+Requirements:
+1.	La sortie &eacute;cran doit correspondre aux conditions de la mission.
+2.	La classe Duck doit impl&eacute;menter la m&eacute;thode doAnotherAction.
+3.	La m&eacute;thode doAnotherAction() de la classe Duck doit afficher &laquo;&nbsp;Moving&nbsp;&raquo;.
+4.	La m&eacute;thode move de la classe Util doit appeler la m&eacute;thode doAnotherAction sur l&#39;objet qui lui est pass&eacute;.
+5.	La classe Duck doit impl&eacute;menter l&#39;interface CanMove.
+6.	La classe Duck doit impl&eacute;menter l&#39;interface CanFly.
+
+

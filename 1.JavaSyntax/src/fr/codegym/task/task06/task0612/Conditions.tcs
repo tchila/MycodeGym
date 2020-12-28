@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task06.task0612"\n\nCalculatrice
+
+Crée une classe Calculatrice, qui aura 5 méthodes static :
+int plus(int a, int b) renvoie la somme de a et b
+int moins(int a, int b) renvoie la différence entre a et b
+int multiplier(int a, int b) renvoie le produit de a et b
+double diviser(int a, int b) renvoie le résultat de la division de a par b
+double pourcentage(int a, int b) renvoie le pourcentage que b représente par rapport à a
+
+
+Requirements:
+1.	La m&eacute;thode plus doit renvoyer la somme de a et b.
+2.	La m&eacute;thode moins doit renvoyer la diff&eacute;rence entre a et b.
+3.	La m&eacute;thode multiplier doit renvoyer le produit de a et b.
+4.	La m&eacute;thode diviser doit renvoyer le r&eacute;sultat de la division de a par b.
+5.	La m&eacute;thode pourcentage doit renvoyer le pourcentage que b repr&eacute;sente par rapport &agrave; a.
+
+

@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task06.task0606"\n\nChiffres pairs et impairs
+
+Utilise le clavier pour saisir un nombre positif. Détermine le nombre de chiffres pairs et de chiffres impairs dans le nombre saisi.
+Si un nombre est divisible par 2 sans reste (c'est-à-dire que le reste est de zéro), alors il est pair.
+Et nous augmentons alors le compteur de chiffres pairs (variable static pair) de 1.
+Sinon, le nombre est impair, et nous augmentons le compteur de chiffres impairs (variable static impair).
+Affiche le message suivant : « Pair : a Impair : b », où a est le nombre de chiffres pairs et b le nombre de chiffres impairs.
+Exemple pour 4445 :
+Pair : 3 Impair : 1
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	La m&eacute;thode main doit calculer combien de chiffres pairs se trouvent dans le nombre saisi, puis &eacute;crire ce nombre dans la variable pair.
+3.	La m&eacute;thode main doit calculer combien de chiffres impairs se trouvent dans le nombre saisi, puis &eacute;crire ce nombre dans la variable impair.
+4.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+5.	Le texte affich&eacute; doit correspondre aux conditions de la mission.
+
+

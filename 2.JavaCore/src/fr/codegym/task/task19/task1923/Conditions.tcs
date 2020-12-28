@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task19.task1923"\n\nDes mots avec des chiffres
+
+Le premier paramètre de la méthode main est file1 et le second est file2.
+file1 contient des lignes avec des mots séparés par des espaces.
+Écris dans file2 tous les mots qui contiennent des chiffres, comme a1 ou abc3d. Sépare les mots par des espaces.
+Ferme les flux.
+
+
+Requirements:
+1.	Le programme ne doit PAS lire de donn&eacute;es depuis la console.
+2.	Le programme doit lire le contenu du premier fichier (utilise le constructeur FileReader avec un param&egrave;tre String).
+3.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+4.	Le programme doit &eacute;crire tous les mots contenant des nombres du premier fichier dans le second (utilise FileWriter).
+5.	Le flux de sortie de fichier (FileWriter) doit &ecirc;tre ferm&eacute;.
+
+

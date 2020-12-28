@@ -1,0 +1,26 @@
+taskKey="fr.codegym.task.task07.task0716"\n\nR ou L
+
+1. Crée une liste de mots et remplis-la par toi-même.
+2. La méthode corriger doit :
+2.1. supprimer tous les mots contenant la lettre « r » de la liste
+2.2. dupliquer tous les mots contenant la lettre « l ».
+2.3. si un mot contient à la fois « r » et « l », laisse-les inchangés.
+2.4. ne fais rien aux autres mots.
+Par exemple :
+rose
+lyre
+love
+Sortie :
+lyre
+love
+love
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La m&eacute;thode corriger doit supprimer tous les mots contenant la lettre &laquo; r &raquo; de la liste. Il y a une exception : les mots contenant &agrave; la fois &laquo; r &raquo; et &laquo; l &raquo; doivent rester inchang&eacute;s.
+3.	La m&eacute;thode corriger doit dupliquer les mots contenant la lettre &laquo; l &raquo; (ajouter une autre instance de ce mot &agrave; la liste). Il y a une exception : les mots contenant &agrave; la fois &laquo; l &raquo; et &laquo; r &raquo; ne doivent pas &ecirc;tre dupliqu&eacute;s.
+4.	La m&eacute;thode corriger ne doit rien faire avec les mots qui contiennent &agrave; la fois &laquo; l &raquo; et &laquo; r &raquo;.
+5.	La m&eacute;thode corriger ne doit rien faire avec les mots qui ne contiennent ni &laquo; l &raquo; ni &laquo; r &raquo;.
+
+

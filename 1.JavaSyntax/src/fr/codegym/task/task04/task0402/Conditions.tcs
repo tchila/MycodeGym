@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task04.task0402"\n\nPrix des pommes
+
+Calcule le coût total des pommes.
+Le coût total des pommes correspond à celui de public static int prixPomme.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La m&eacute;thode ajouterPrix de la classe Pomme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+3.	La variable prixPomme de la classe Pomme doit &ecirc;tre un static int initialis&eacute; &agrave; z&eacute;ro.
+4.	La m&eacute;thode main doit appeler la m&eacute;thode ajouterPrix seulement deux fois.
+5.	La m&eacute;thode ajouterPrix de la classe Pomme doit augmenter le prix des pommes de la valeur pass&eacute;e.
+
+

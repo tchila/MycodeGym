@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task16.task1614"\n\nCompte à rebours
+
+1. Détermine ce que fait le programme.
+2. Implémente la logique de la méthode printCountdown de sorte que, chaque demi-seconde, le programme affiche un objet à partir de la variable list. La sortie doit être en ordre inverse : de l'indice passé à Countdown à zéro.
+Exemple :
+L'indice 3 est passé
+Exemple de sortie de la console :
+Ligne 2
+Ligne 1
+Ligne 0
+
+
+Requirements:
+1.	La m&eacute;thode printCountdown doit s&#39;ex&eacute;cuter pendant environ une demi-seconde.
+2.	La m&eacute;thode printCountdown doit r&eacute;duire (d&eacute;cr&eacute;menter) la valeur de la variable countFrom.
+3.	La m&eacute;thode printCountdown doit afficher l&#39;&eacute;l&eacute;ment de liste avec un indice &eacute;gal &agrave; la nouvelle valeur de countFrom.
+4.	La m&eacute;thode main doit cr&eacute;er un objet Countdown.
+5.	La sortie du programme sortie doit correspondre &agrave; l&#39;exemple dans les conditions de la mission.
+
+

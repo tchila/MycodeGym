@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task09.task0926"\n\nListe de tableaux de nombres
+
+Crée une liste dont les éléments sont des tableaux de nombres.
+Ajoute à la liste cinq objets de tableau avec des longueurs de 5, 2, 4, 7 et 0, respectivement.
+Remplis les tableaux avec des données quelconques et affiche-les à l'écran.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La m&eacute;thode creerListe doit d&eacute;clarer et initialiser une variable ArrayList&lt;int[]&gt;.
+3.	La m&eacute;thode creerListe doit renvoyer la liste cr&eacute;&eacute;e.
+4.	La m&eacute;thode creerListe doit ajouter 5 &eacute;l&eacute;ments &agrave; la liste.
+5.	Chaque &eacute;l&eacute;ment de la liste doit &ecirc;tre un tableau de nombres. La longueur doit &ecirc;tre de 5 pour le premier tableau, de 2 pour le deuxi&egrave;me, et de 4, 7 et 0 respectivement pour les autres.
+6.	Le programme doit afficher les &eacute;l&eacute;ments de tous les tableaux &agrave; l&#39;&eacute;cran. Utilise une nouvelle ligne pour chaque &eacute;l&eacute;ment.
+
+

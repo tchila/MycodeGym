@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task09.task0920"\n\nCompte à rebours
+
+Utilise une boucle pour écrire un compte à rebours de 10 à 0. Pour créer un temps d'attente, utilise Thread.sleep(100);
+Place l'appel à sleep dans un bloc try-catch.
+
+
+Requirements:
+1.	Le programme doit afficher un compte &agrave; rebours de 10 &agrave; 0.
+2.	Le programme doit afficher un nouveau nombre toutes les 100 millisecondes.
+3.	Le programme doit utiliser &laquo; Thread.sleep(100); &raquo;.
+4.	La m&eacute;thode main doit avoir un bloc try-catch.
+5.	La m&eacute;thode main ne doit pas lever d&#39;exceptions.
+
+

@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task11.task1105"\n\nSociété informatique
+
+Écris les neuf classes suivantes : Employee, Clerk, ITSpecialist, Programmer, ProjectManager, CTO, Recruiter, OfficeManager et Custodian.
+Les classes Programmer, ProjectManager et CTO doivent hériter de la classe ITSpecialist.
+Les classes Recruiter, Custodian et OfficeManager doivent hériter de la classe Clerk.
+Les classes Clerk et ITSpecialist doivent hériter de la classe Employee.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Employee.
+2.	La classe Solution doit contenir une classe public Clerk.
+3.	La classe Solution doit contenir une classe public ITSpecialist.
+4.	La classe Solution doit contenir une classe public Programmer.
+5.	La classe Solution doit contenir une classe public ProjectManager.
+6.	La classe Solution doit contenir une classe public CTO.
+7.	La classe Solution doit contenir une classe public Recruiter.
+8.	La classe Solution doit contenir une classe public OfficeManager.
+9.	La classe Solution doit contenir une classe public Custodian.
+10.	Les classes Programmer, ProjectManager et CTO doivent h&eacute;riter de la classe ITSpecialist.
+11.	Les classes Recruiter, Custodian et OfficeManager doivent h&eacute;riter de la classe Clerk.
+12.	Les classes Clerk et ITSpecialist doivent h&eacute;riter de la classe Employee.
+
+

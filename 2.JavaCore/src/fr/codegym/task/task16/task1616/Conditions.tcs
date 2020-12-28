@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task16.task1616"\n\nComptage de secondes
+
+1. Écris une implémentation pour la méthode run dans le thread Stopwatch.
+2. La classe Stopwatch doit compter le nombre de secondes qui se sont écoulées de la création au moment où une chaîne est saisie.
+3. Affiche le nombre de secondes.
+
+
+Requirements:
+1.	La m&eacute;thode run de la classe Stopwatch doit avoir une boucle.
+2.	La m&eacute;thode run doit appeler Thread.sleep(1000).
+3.	La m&eacute;thode run doit augmenter le champ seconds 1&nbsp;fois par seconde.
+4.	Une fois le thread Stopwatch interrompu, la m&eacute;thode run doit afficher le nombre de secondes.
+5.	Il ne doit y avoir qu&#39;une seule m&eacute;thode run dans la classe Stopwatch.
+
+

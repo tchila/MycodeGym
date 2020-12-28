@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task09.task0916"\n\nCapture d'exceptions vérifiées
+
+Dans la méthode gererExceptions, gère toutes les exceptions vérifiées.
+Tu dois afficher l'exception vérifiée qui se produit.
+Tu ne peux utiliser qu'un seul bloc try-catch.
+
+
+Requirements:
+1.	La m&eacute;thode gererExceptions doit appeler methode1.
+2.	La m&eacute;thode gererExceptions doit appeler methode2.
+3.	La m&eacute;thode gererExceptions doit appeler methode3.
+4.	La m&eacute;thode gererExceptions doit utiliser un seul bloc try-catch.
+5.	La m&eacute;thode gererExceptions doit capturer et afficher toutes les exceptions qui se produisent.
+6.	Le programme doit afficher du texte.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task12.task1227"\n\nCanFly, CanRun et CanSwim pour les classes Duck, Penguin et Toad
+
+Les interfaces CanFly, CanSwim et CanRun ont déjà été écrites pour toi.
+Ajoute ces interfaces aux classes Duck, Penguin et Toad.
+
+
+Requirements:
+1.	La classe Solution doit avoir une interface CanFly avec une m&eacute;thode void fly().
+2.	La classe Solution doit avoir une interface CanSwim avec une m&eacute;thode void swim().
+3.	La classe Solution doit avoir une interface CanRun avec une m&eacute;thode run().
+4.	La classe Solution doit avoir les classes Duck, Penguin et Toad.
+5.	Un objet Duck doit &ecirc;tre en mesure de voler (prendre en charge l&#39;interface CanFly), de courir (prendre en charge l&#39;interface CanRun) et de nager (prendre en charge l&#39;interface CanSwim).
+6.	Un objet Penguin doit &ecirc;tre en mesure de courir (prendre en charge l&#39;interface CanRun) et de nager (prendre en charge l&#39;interface CanSwim).
+7.	Un objet Toad doit uniquement &ecirc;tre en mesure de nager (prendre en charge l&#39;interface CanSwim).
+
+

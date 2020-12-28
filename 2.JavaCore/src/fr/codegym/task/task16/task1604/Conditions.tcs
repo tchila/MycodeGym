@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task16.task1604"\n\nAffichage d'une trace de pile
+
+1. Crée une « tâche » (une classe public static appelée SpecialThread qui implémente l'interface Runnable).
+2. SpecialThread doit afficher sa propre trace de pile.
+Indice : Le thread principal affiche déjà sa trace de pile.
+
+
+Requirements:
+1.	Ajoute une classe public static SpecialThread &agrave; la classe Solution.
+2.	La classe SpecialThread ne doit pas h&eacute;riter de classes suppl&eacute;mentaires.
+3.	La classe SpecialThread doit impl&eacute;menter l&#39;interface Runnable.
+4.	La m&eacute;thode run de la classe SpecialThread doit afficher sa propre trace de pile.
+
+

@@ -1,0 +1,38 @@
+taskKey="fr.codegym.task.task17.task1711"\n\nCRUD 2
+
+Lot CrUD : créations, mises à jour et suppressions multiples.
+Le programme fonctionne avec un des ensembles d'arguments suivants :
+-c name1 sex1 bd1 name2 sex2 bd2...
+-u id1 name1 sex1 bd1 id2 name2 sex2 bd2...
+-d id1 id2 id3 id4...
+-i id1 id2 id3 id4...
+Valeurs des arguments :
+name (String)
+sex (« m » ou « f »)
+bd (date de naissance au format suivant : 04 15 1990)
+-c (ajoute toutes les personnes avec les arguments spécifiés à la fin d'allPeople, affiche leurs id dans l'ordre approprié)
+-u (met à jour les données correspondantes des personnes avec les id spécifiés)
+-d (effectue la suppression logique de la personne avec l'id spécifié ; remplace toutes ses données par null)
+-i (affiche des informations sur toutes les personnes avec les ids spécifiés : name sex bd)
+L'id correspond à l'indice dans la liste.
+Le format de date de naissance est Apr 15 1990.
+Toutes les personnes doivent être stockées dans allPeople.
+L'ordre dans lequel les données sont affichées correspond à l'ordre dans lequel elles sont saisies.
+Vérifie que le programme fonctionne de façon sûre au niveau des threads (fonctionne correctement avec plusieurs threads sans altérer les données).
+Utilise Locale.ENGLISH comme second argument pour SimpleDateFormat.
+Exemple de sortie pour l'argument -i avec deux id :
+Washington m Apr 15 1990
+Ross f Apr 25 1997
+
+
+Requirements:
+1.	La classe Solution doit contenir un champ public volatile List&lt;Person&gt; allPeople.
+2.	La classe Solution doit avoir un bloc statique o&ugrave; deux personnes sont ajout&eacute;es &agrave; la liste allPeople.
+3.	Avec l&#39;argument -c, le programme doit ajouter toutes les personnes avec les arguments sp&eacute;cifi&eacute;s &agrave; la fin de la liste allPeople, et afficher l&#39;id de chacune.
+4.	Avec l&#39;argument -u, le programme doit mettre &agrave; jour les donn&eacute;es des personnes avec les id sp&eacute;cifi&eacute;s dans la liste allPeople.
+5.	Avec l&#39;argument -d, le programme doit effectuer la suppression logique des personnes avec les id sp&eacute;cifi&eacute;s dans la liste allPeople.
+6.	Avec l&#39;argument -i, le programme doit afficher les donn&eacute;es sur toutes les personnes avec les id sp&eacute;cifi&eacute;s conform&eacute;ment au format sp&eacute;cifi&eacute; dans la mission.
+7.	La m&eacute;thode main de la classe Solution doit contenir une instruction switch bas&eacute;e sur args[0].
+8.	Chaque libell&eacute; case dans l&#39;instruction switch doit avoir un bloc synchronis&eacute; pour allPeople.
+
+

@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task14.task1406"\n\nPas d'erreurs
+
+Rends obj égal à un objet qui permet à la méthode main de s'exécuter sans erreur.
+
+
+Requirements:
+1.	La classe GrayMouse doit h&eacute;riter de la classe Mouse.
+2.	La classe Jerry doit h&eacute;riter de la classe GrayMouse.
+3.	La variable obj doit faire r&eacute;f&eacute;rence &agrave; un objet qui est &agrave; la fois une Mouse, une GrayMouse et un Jerry.
+4.	La m&eacute;thode main doit appeler la m&eacute;thode printClasses.
+
+

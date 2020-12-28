@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task14.task1412"\n\nImplémente la méthode printMainInfo
+
+1. Écris une implémentation de la méthode printMainInfo :
+1.1. Si un objet Drawable est passé à la méthode, appelle la méthode draw sur l'objet.
+1.2. Si un objet Movable est passé à la méthode, appelle la méthode move sur l'objet.
+
+
+Requirements:
+1.	La classe Solution doit impl&eacute;menter une m&eacute;thode printMainInfo avec un param&egrave;tre Object.
+2.	La m&eacute;thode printMainInfo doit &ecirc;tre static.
+3.	La m&eacute;thode printMainInfo doit avoir le plus haut niveau d&#39;acc&egrave;s (public).
+4.	La m&eacute;thode printMainInfo doit appeler la m&eacute;thode draw sur l&#39;objet pass&eacute; si l&#39;objet impl&eacute;mente l&#39;interface Drawable.
+5.	La m&eacute;thode printMainInfo doit appeler la m&eacute;thode move sur l&#39;objet pass&eacute; si l&#39;objet impl&eacute;mente l&#39;interface Movable.
+
+

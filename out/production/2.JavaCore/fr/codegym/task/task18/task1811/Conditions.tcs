@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task18.task1811"\n\nWrapper (décorateur)
+
+Détermine ce que fait le programme.
+Par analogie avec la classe DecoratorRunnableImpl, crée une classe DecoratorMyRunnableImpl.
+
+
+Requirements:
+1.	Cr&eacute;e une classe appel&eacute;e DecoratorMyRunnableImpl, semblable &agrave; DecoratorRunnableImpl.
+2.	Une fois le programme d&eacute;marr&eacute;, chaque classe doit afficher &laquo;&nbsp;Corps de &lt;nom de la classe&gt;&nbsp;&raquo;.
+3.	Ne change pas les classes RunnableImpl et DecoratorRunnableImpl.
+4.	Ne change pas la m&eacute;thode main.
+
+

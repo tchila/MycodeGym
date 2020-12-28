@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task14.task1410"\n\nDégustation de vin
+
+1. Crée une classe abstraite Drink avec une méthode public void taste() implémentée qui affiche « Délicieux ».
+2. Crée une classe Wine qui hérite de Drink et implémente une méthode public String getCelebrationName() qui renvoie « Anniversaire ».
+3. Crée une classe BubblyWine qui hérite de Drink et implémente une méthode public String getCelebrationName() qui renvoie « Nouvel An ».
+4. Écris les implémentations des méthodes getDeliciousDrink, getWine et getBubblyWine.
+5. Toutes les classes doivent se trouver dans des fichiers séparés.
+
+
+Requirements:
+1.	La classe abstraite Drink doit se trouver dans un fichier s&eacute;par&eacute;.
+2.	La classe Drink doit impl&eacute;menter une m&eacute;thode void taste() qui affiche &laquo;&nbsp;D&eacute;licieux&nbsp;&raquo;.
+3.	La classe Wine doit se trouver dans un fichier s&eacute;par&eacute; et descendre de la classe Drink.
+4.	La classe Wine doit impl&eacute;menter une m&eacute;thode public String getCelebrationName() qui renvoie &laquo;&nbsp;Anniversaire&nbsp;&raquo;.
+5.	La classe BubblyWine doit se trouver dans un fichier s&eacute;par&eacute; et descendre de la classe Wine.
+6.	La classe BubblyWine doit impl&eacute;menter une m&eacute;thode public String getCelebrationName() qui renvoie &laquo;&nbsp;Nouvel An&nbsp;&raquo;.
+7.	La classe Solution doit impl&eacute;menter la m&eacute;thode getDeliciousDrink(), qui renvoie un objet Wine.
+8.	La classe Solution doit impl&eacute;menter la m&eacute;thode getWine(), qui renvoie un objet Wine.
+9.	La classe Solution doit impl&eacute;menter la m&eacute;thode getBubblyWine(), qui renvoie un objet BubblyWine.
+
+

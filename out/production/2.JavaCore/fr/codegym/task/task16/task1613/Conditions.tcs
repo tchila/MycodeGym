@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task16.task1613"\n\nBig Ben
+
+1. Détermine ce que fait le programme.
+2. Implémente la méthode PrintTime de sorte que l'heure est donnée chaque seconde, en commençant par l'heure spécifiée dans le constructeur.
+Exemple :
+À Londres, l'heure est actuellement 23:59:58 !
+À Londres, l'heure est actuellement 23:59:59 !
+Il est actuellement minuit à Londres !
+À Londres, l'heure est actuellement 00:00:01 !
+
+
+Requirements:
+1.	La m&eacute;thode printTime doit s&#39;ex&eacute;cuter pendant environ une seconde.
+2.	La m&eacute;thode printTime doit augmenter (incr&eacute;menter) le nombre de secondes stock&eacute; dans la variable seconds.
+3.	Apr&egrave;s avoir incr&eacute;ment&eacute; le temps, le nombre de secondes ne peut pas &ecirc;tre sup&eacute;rieur &agrave; 59. Le nombre de minutes doit augmenter.
+4.	Apr&egrave;s avoir incr&eacute;ment&eacute; le temps, le nombre de minutes ne peut pas &ecirc;tre sup&eacute;rieur &agrave; 59. Le nombre d&#39;heures doit augmenter.
+5.	Apr&egrave;s avoir incr&eacute;ment&eacute; le temps, le nombre d&#39;heures ne peut pas &ecirc;tre sup&eacute;rieur &agrave; 23.
+
+

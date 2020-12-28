@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task08.task0826"\n\nCinq gagnants
+
+Crée un tableau de 20 nombres. Remplis-le avec des nombres saisis au clavier. Affiche les cinq plus grands nombres. Chaque valeur doit être affichée sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit afficher des nombres &agrave; l&#39;&eacute;cran.
+2.	Le programme doit lire des valeurs au clavier.
+3.	La classe Solution doit contenir deux m&eacute;thodes.
+4.	La m&eacute;thode tri() doit trier le tableau de nombres du plus &eacute;lev&eacute; au plus bas.
+5.	La m&eacute;thode main() doit appeler la m&eacute;thode tri().
+6.	Le programme doit afficher les cinq plus grands nombres dans le tableau. Chaque valeur doit &ecirc;tre affich&eacute;e sur une nouvelle ligne.
+
+

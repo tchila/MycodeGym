@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task06.task0613"\n\nChat et static
+
+Dans la classe Chat, crée une variable public static int appelée nombreChats.
+Déclare un constructeur, public Chat(). Chaque fois qu'un chat (nouvel objet Chat) est créé, augmente la variable static
+nombreChats de 1. Crée 10 objets Chat et affiche la valeur de la variable totalChat à l'écran.
+
+
+Requirements:
+1.	Dans la classe Chat, cr&eacute;e une variable public static int appel&eacute;e nombreChats.
+2.	Dans la classe Chat, d&eacute;clare le constructeur public Chat() sans param&egrave;tres.
+3.	Le constructeur doit incr&eacute;menter la valeur de la variable static nombreChats de 1.
+4.	Dans la m&eacute;thode main, cr&eacute;e 10 objets Chat.
+5.	Dans la m&eacute;thode main, apr&egrave;s avoir cr&eacute;&eacute; tous les chats, affiche la valeur de la variable nombreChats.
+
+

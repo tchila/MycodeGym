@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task09.task0923"\n\nVoyelles et consonnes
+
+Écris un programme qui lit une chaîne au clavier.
+Le programme doit afficher deux lignes :
+1. La première ligne contient seulement les voyelles de la chaîne saisie.
+2. La seconde contient seulement les consonnes et les signes de ponctuation de la chaîne saisie.
+Les lettres doivent être séparées par des espaces, et chaque ligne doit se terminer par un espace.
+
+Exemple d'entrée :
+Sam I Am.
+Exemple de sortie :
+a I A
+S m m .
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit afficher deux lignes.
+3.	La premi&egrave;re ligne contient seulement les voyelles de la cha&icirc;ne d&#39;entr&eacute;e, s&eacute;par&eacute;es par des espaces.
+4.	La seconde ligne contient seulement les consonnes et les signes de ponctuation de la cha&icirc;ne saisie, s&eacute;par&eacute;s par des espaces.
+5.	Chaque ligne doit se terminer par un espace.
+
+

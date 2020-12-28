@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task14.task1404"\n\nChats
+
+1. Lis des chaînes (paramètres) depuis la console jusqu'à ce que l'utilisateur saisisse une chaîne vide (Entrée).
+2. Chaque paramètre correspond au nom d'un chat.
+Pour chaque paramètre :
+3. Crée un objet Cat égal au chat de getCatByKey(String parameter).
+4. Affiche le résultat de cat.toString().
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit arr&ecirc;ter de lire les donn&eacute;es apr&egrave;s la saisie d&#39;une cha&icirc;ne vide.
+3.	Le programme doit afficher une description de chaque objet cat (cat.toString).
+4.	Le programme doit utiliser la m&eacute;thode getCatByKey pour cr&eacute;er un objet de chat pour chaque nom de chat entr&eacute; (chaque cha&icirc;ne lue &agrave; partir du clavier).
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task11.task1120"\n\nChaîne d'héritage correcte : partie 5
+
+Crée une « chaîne d'héritage » appropriée pour les classes suivantes : House, Cat, Dog, Car, Animal et Asset.
+
+
+Requirements:
+1.	Fais h&eacute;riter correctement la classe House.
+2.	Fais h&eacute;riter correctement la classe Cat.
+3.	Fais h&eacute;riter correctement la classe Dog.
+4.	Fais h&eacute;riter correctement la classe Car.
+5.	Fais h&eacute;riter correctement la classe Animal.
+6.	Fais h&eacute;riter correctement la classe Asset.
+
+

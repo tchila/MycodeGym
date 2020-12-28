@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task10.task1005"\n\nMission n°5 sur les conversions des types d'entiers
+
+Organise les opérateurs de conversion correctement pour obtenir la réponse : c = 256
+int a = (byte)44;
+int b = (byte)300;
+short c = (byte)(b - a);
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Ne modifie pas la commande de sortie &eacute;cran.
+3.	La m&eacute;thode main() doit contenir une variable int appel&eacute;e &laquo; a &raquo;.
+4.	La m&eacute;thode main() doit contenir une variable int appel&eacute;e &laquo; b &raquo;.
+5.	La m&eacute;thode main() doit contenir une variable short appel&eacute;e &laquo; c &raquo;.
+6.	Ne change pas la valeur initiale des variables lors de l&#39;initialisation. Tu peux seulement modifier les op&eacute;rateurs de conversion.
+7.	Le programme doit afficher le nombre 256.
+
+

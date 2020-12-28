@@ -1,0 +1,27 @@
+taskKey="fr.codegym.task.task05.task0517"\n\nCréation de chats
+
+Crée la classe Chat avec cinq constructeurs :
+- Nom
+- Nom, poids, âge
+- Nom, âge (poids standard)
+- Poids, couleur (le nom, l'adresse et l'âge sont inconnus ; le chat est sans-abri)
+- Poids, couleur, adresse (l'animal de compagnie de quelqu'un d'autre)
+Le rôle du constructeur consiste à rendre l'objet valide.
+Par exemple, si le poids est inconnu, tu dois spécifier un certain poids standard. Un chat ne peut pas ne rien peser.
+Il en va de même pour l'âge. Mais il peut avoir ou ne pas avoir un nom (c'est-à-dire que le nom peut être null).
+Il en va de même pour l'adresse (elle peut être null).
+
+
+Requirements:
+1.	La classe Chat doit avoir une variable String appel&eacute;e nom.
+2.	La classe Chat doit avoir une variable int appel&eacute;e age.
+3.	La classe Chat doit avoir une variable int appel&eacute;e poids.
+4.	La classe Chat doit avoir une variable String appel&eacute;e adresse.
+5.	La classe Chat doit avoir une variable String appel&eacute;e couleur.
+6.	La classe doit avoir un constructeur qui prend un nom comme argument, mais qui initialise toutes les variables &agrave; l&#39;exception de l&#39;adresse.
+7.	La classe doit avoir un constructeur qui prend un nom, un poids et un &acirc;ge comme arguments, et qui initialise toutes les variables &agrave; l&#39;exception de l&#39;adresse.
+8.	La classe doit avoir un constructeur qui prend un nom et un &acirc;ge comme arguments, et qui initialise toutes les variables &agrave; l&#39;exception de l&#39;adresse.
+9.	La classe doit avoir un constructeur qui prend un poids et une couleur comme arguments, et qui initialise toutes les variables &agrave; l&#39;exception du nom et de l&#39;adresse.
+10.	La classe doit avoir un constructeur qui prend un poids, une couleur et une adresse comme arguments, et qui initialise toutes les variables &agrave; l&#39;exception du nom.
+
+

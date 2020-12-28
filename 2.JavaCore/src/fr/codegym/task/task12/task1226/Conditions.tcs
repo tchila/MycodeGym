@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task12.task1226"\n\nGrimpe, vole et cours
+
+1. Dans la classe Solution, crée une interface publique CanFly avec une méthode void fly().
+2. Dans la classe Solution, crée une interface publique CanClimb avec une méthode void climb().
+3. Dans la classe Solution, crée une interface publique CanRun avec une méthode void run().
+4. Fais preuve de bon sens pour décider des interfaces que tu dois ajouter à chaque classe.
+5. Ajoute des interfaces aux classes Cat, Dog, Tiger et Duck.
+
+
+Requirements:
+1.	La classe Solution doit avoir une interface CanFly avec une m&eacute;thode void fly().
+2.	La classe Solution doit avoir une interface CanClimb avec une m&eacute;thode void climb().
+3.	La classe Solution doit avoir une interface CanRun avec une m&eacute;thode run().
+4.	Un objet Cat doit &ecirc;tre en mesure de courir (prendre en charge l&#39;interface CanRun) et de grimper aux arbres (prendre en charge l&#39;interface CanClimb).
+5.	Un objet Dog doit &ecirc;tre en mesure de courir (prendre en charge l&#39;interface CanRun).
+6.	La classe Tiger doit &ecirc;tre un Cat.
+7.	Un objet Duck doit &ecirc;tre en mesure de courir (prendre en charge l&#39;interface CanRun) et de voler (prendre en charge l&#39;interface CanFly).
+
+

@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task06.task0603"\n\nObjets Chat et Chien : 50 000 de chaque
+
+Crée 50 000 objets Chat et Chien dans une boucle. (La machine Java devrait commencer à détruire les objets inutilisés, et la méthode finalize sera appelée au moins une fois).
+
+
+Requirements:
+1.	La classe Chat doit avoir une m&eacute;thode void finalize.
+2.	La classe Chien doit avoir une m&eacute;thode void finalize.
+3.	La m&eacute;thode finalize de la classe Chat doit afficher &laquo; Un Chat a &eacute;t&eacute; d&eacute;truit &raquo;.
+4.	La m&eacute;thode finalize de la classe Chien doit afficher &laquo; Un Chien a &eacute;t&eacute; d&eacute;truit &raquo;.
+5.	La m&eacute;thode main doit cr&eacute;er 50 000 objets Chat et 50 000 objets Chien.
+
+

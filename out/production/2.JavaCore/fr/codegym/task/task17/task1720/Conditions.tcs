@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task17.task1720"\n\nDistributeur automatique de billets
+
+Détermine comment le programme fonctionne.
+Lors des tests, le journal contenait ce qui suit :
+.....
+Dépôt de 100, solde du compte 1100
+Dépôt de 100, solde du compte 1200
+Retrait de 1000, solde du compte 100
+Pas assez d'argent
+.....
+Il y a un bogue :
+De l'argent est perdu lorsqu'on effectue un retrait.
+Trouve et corrige l'erreur.
+
+
+Requirements:
+1.	La classe BankAccount doit contenir un champ private BigDecimal balance.
+2.	La m&eacute;thode deposit(String money) de la classe BankAccount doit d&eacute;l&eacute;guer le comportement &agrave; la m&eacute;thode deposit(BigDecimal money).
+3.	La m&eacute;thode withdraw(String money) de la classe BankAccount doit d&eacute;l&eacute;guer le comportement &agrave; la m&eacute;thode withdraw(BigDecimal money).
+4.	Utilise synchronized dans la m&eacute;thode withdraw(BigDecimal money) si n&eacute;cessaire.
+5.	Utilise synchronized dans la m&eacute;thode deposit(BigDecimal money) si n&eacute;cessaire.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task15.task1505"\n\nPOO : Corriger les problèmes d'héritage
+
+Corrige la méthode containsBones et toute la logique associée de sorte que :
+1. Le comportement du programme reste le même.
+2. La méthode containsBones renvoie un Object et la valeur « Yes » au lieu de true, et « No » au lieu de false
+
+
+Requirements:
+1.	La m&eacute;thode containBones de la classe BodyPart doit renvoyer un Object.
+2.	La classe Finger doit descendre de la classe BodyPart.
+3.	La m&eacute;thode containBones de la classe Finger doit renvoyer un Object.
+4.	La m&eacute;thode containBones de la classe BodyPart doit renvoyer &laquo;&nbsp;Yes&nbsp;&raquo;.
+5.	La m&eacute;thode containsBones de la classe Finger doit renvoyer &laquo;&nbsp;Yes&nbsp;&raquo; si la m&eacute;thode containsBones de la classe BodyPart renvoie &laquo;&nbsp;Yes&nbsp;&raquo; et que l&#39;indicateur isArtificial est false. Si cette condition n&#39;est pas remplie, alors renvoie &laquo;&nbsp;No&nbsp;&raquo;.
+6.	La m&eacute;thode toString de la classe BodyPart doit renvoyer une cha&icirc;ne format&eacute;e comme suit&nbsp;: &laquo;&nbsp;&lt;nom&gt; (nom de la partie du corps) contient des os&nbsp;&raquo; si la m&eacute;thode containsBones renvoie &laquo;&nbsp;Yes&nbsp;&raquo; pour la partie du corps. Si elle renvoie &laquo;&nbsp;No&nbsp;&raquo;, alors la cha&icirc;ne doit &ecirc;tre format&eacute;e comme &laquo;&nbsp;&lt;nom&gt; (nom de la partie du corps) ne contient pas d&#39;os&nbsp;&raquo;
+
+

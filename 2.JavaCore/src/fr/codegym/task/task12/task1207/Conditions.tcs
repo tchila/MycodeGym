@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1207"\n\nint et Integer
+
+Écris les deux méthodes suivantes : print(int) et print(Integer).
+Dans la méthode main, écris du code qui appelle les deux méthodes.
+
+
+Requirements:
+1.	La classe Solution doit contenir une m&eacute;thode static main().
+2.	La classe Solution doit contenir une m&eacute;thode static void print() avec un param&egrave;tre int.
+3.	La classe Solution doit contenir une m&eacute;thode static void print() avec un param&egrave;tre Integer.
+4.	La m&eacute;thode main() doit appeler la m&eacute;thode print() qui a un param&egrave;tre int.
+5.	La m&eacute;thode main() doit appeler la m&eacute;thode print() qui a un param&egrave;tre Integer.
+
+

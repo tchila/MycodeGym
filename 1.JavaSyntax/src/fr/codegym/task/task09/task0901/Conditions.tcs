@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task09.task0901"\n\nRenvoyer la trace d'une pile
+
+Écris cinq méthodes qui font appel l'une à l'autre. Chaque méthode doit renvoyer sa trace de pile.
+
+
+Requirements:
+1.	Il doit y avoir 5 m&eacute;thodes dans la classe (en plus de la m&eacute;thode main).
+2.	Chaque m&eacute;thode doit appeler la suivante : main appelle methode1, methode1 appelle methode2, etc.
+3.	Chaque m&eacute;thode doit renvoyer sa trace de pile.
+4.	Pour obtenir une trace de pile, utilise Thread.currentThread().getStackTrace().
+
+

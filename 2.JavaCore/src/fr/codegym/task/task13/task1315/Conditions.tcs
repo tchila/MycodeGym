@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task13.task1315"\n\nTom, Jerry et Spike
+
+1. Crée les classes Chien, Chat et Souris.
+2. Implémente des interfaces pour les classes ajoutées, considérant ce qui suit :
+- Un cat peut se déplacer, manger quelqu'un et se faire manger.
+- Une mouse peut se déplacer et se faire manger.
+- Un dog peut se déplacer et manger quelqu'un.
+
+
+Requirements:
+1.	La classe Cat doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	La classe Dog doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+3.	La classe Mouse doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+4.	Un chat peut se d&eacute;placer, manger quelqu&#39;un et se faire manger.
+5.	Une souris peut se d&eacute;placer et se faire manger.
+6.	Un chien peut se d&eacute;placer et manger quelqu&#39;un.
+
+

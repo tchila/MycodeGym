@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task19.task1921"\n\nJohn Johnson
+
+Le premier paramètre de la méthode main est un nom de fichier.
+Chaque ligne du fichier spécifié a le format suivant :
+nom mois jour année
+où [nom] est un String qui peut contenir plusieurs mots séparés par des espaces.
+[mois] est un int, [jour] un int et [année] un int.
+Les données sont séparées par des espaces.
+Remplis la liste PEOPLE avec les données du fichier.
+Ferme les flux.
+Exemple de fichier d'entrée :
+John Jack Johnson 12 31 1987
+Vincent 5 15 2013
+
+
+Requirements:
+1.	La classe Solution doit contenir une constante public List&lt;Person&gt; PEOPLE qui doit &ecirc;tre initialis&eacute;e imm&eacute;diatement.
+2.	Le programme ne doit PAS lire de donn&eacute;es depuis la console.
+3.	Le programme doit lire le contenu du fichier (utilise FileReader).
+4.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+5.	Le programme doit remplir la liste PEOPLE avec les donn&eacute;es du fichier.
+6.	Le programme doit g&eacute;rer correctement les noms avec trait d&#39;union, comme Mary-Jo.
+
+

@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task07.task0711"\n\nSuppression et insertion
+
+1. Crée une liste de chaînes.
+2. Ajoute 5 chaînes saisies au clavier.
+3. Fais ce qui suit 13 fois : supprime la dernière chaîne et insère-la au début.
+4. Utilise une boucle pour afficher la liste résultante, avec chaque valeur sur une nouvelle ligne.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Le programme doit lire 5 cha&icirc;nes au clavier.
+3.	Supprime la derni&egrave;re cha&icirc;ne et ins&egrave;re-la au d&eacute;but. Fais-le 13 fois.
+4.	Le programme doit afficher la liste, chaque valeur sur une nouvelle ligne.
+
+

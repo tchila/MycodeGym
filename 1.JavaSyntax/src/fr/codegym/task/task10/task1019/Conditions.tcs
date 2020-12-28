@@ -1,0 +1,29 @@
+taskKey="fr.codegym.task.task10.task1019"\n\nLa fonctionnalité ne suffit pas !
+
+Mission : Le programme lit une paire (un nombre et une chaîne) au clavier et l'affiche à l'écran.
+Nouvelle mission : Le programme lit des paires (un nombre et une chaîne) au clavier et les stocke dans une HashMap.
+Toute entrée vide signifie la fin de la saisie des données. Les nombres peuvent être répétés. Les chaînes sont toujours uniques. Les données saisies ne doivent pas être perdues !
+Le programme affiche ensuite le contenu de la HashMap à l'écran. Chaque paire sur une nouvelle ligne.
+
+Exemple d'entrée :
+1
+Sam
+2
+I
+1
+Am
+
+Exemple de sortie :
+1 Sam
+2 I
+1 Am
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+3.	Dans la m&eacute;thode main, d&eacute;clare une variable HashMap et initialise-la imm&eacute;diatement.
+4.	Le programme doit mettre les paires lues au clavier dans la HashMap.
+5.	Le programme doit afficher le contenu de la HashMap conform&eacute;ment aux conditions. La cl&eacute; et la valeur sont s&eacute;par&eacute;es par un espace. Chaque valeur doit &ecirc;tre affich&eacute;e sur une nouvelle ligne.
+
+

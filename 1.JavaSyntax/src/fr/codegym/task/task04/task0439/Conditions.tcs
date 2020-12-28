@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task04.task0439"\n\nChaîne de lettres
+
+Saisis un nom au clavier et utilise une boucle for pour afficher ce qui suit 10 fois : <nom> m'aime.
+
+Supposons que nous saisissons le nom « Scarlett » :
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+Scarlett m'aime.
+
+
+Requirements:
+1.	Le programme doit lire le nom au clavier.
+2.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher le texte sp&eacute;cifi&eacute; dans la mission 10 fois.
+4.	Le programme doit utiliser une boucle for.
+
+

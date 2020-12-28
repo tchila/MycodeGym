@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task04.task0423"\n\nPolitique du videur
+
+Utilise le clavier pour saisir le nom et l'âge. Si l'âge est supérieur à 20, affiche « 18 ans, c'est déjà assez vieux ».
+
+
+Requirements:
+1.	Le programme doit lire les lignes au clavier.
+2.	Le programme doit utiliser System.out.println() ou System.out.print().
+3.	Si l&#39;&acirc;ge est sup&eacute;rieur &agrave; 20, affiche &laquo; 18 ans, c&#39;est d&eacute;j&agrave; assez vieux &raquo;, et rien d&#39;autre.
+4.	Si l&#39;&acirc;ge est inf&eacute;rieur ou &eacute;gal &agrave; 20, n&#39;affiche rien.
+
+

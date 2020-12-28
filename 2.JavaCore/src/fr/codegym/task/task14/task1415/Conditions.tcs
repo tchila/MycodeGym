@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task14.task1415"\n\nServices d'entretien
+
+1. Implémente la méthode cleanAllApartments.
+Pour chaque objet dans apartments :
+2. Pour les appartements à une chambre (OneRoomApt), appelle la méthode clean1Room.
+C'est-à-dire que si un objet OneRoomApt est passé, tu dois appeler sa méthode clean1Room.
+3. Pour les appartements à deux chambres (TwoRoomApt), appelle la méthode clean2Rooms
+C'est-à-dire que si un objet TwoRoomApt est passé, tu dois appeler sa méthode clean2Rooms.
+4. Pour les appartements à trois chambres (ThreeRoomApt), appelle la méthode clean3Rooms
+C'est-à-dire que si un objet ThreeRoomApt est passé, tu dois appeler sa méthode clean3Rooms.
+
+
+Requirements:
+1.	La m&eacute;thode cleanAllApartments doit prendre une liste d&#39;appartements comme argument.
+2.	Pour tous les appartements &agrave; une chambre (OneRoomApt) dans la liste, la m&eacute;thode cleanAllApartments doit appeler la m&eacute;thode clean1Room.
+3.	Pour tous les appartements &agrave; deux chambres (TwoRoomApt) dans la liste, la m&eacute;thode cleanAllApartments doit appeler la m&eacute;thode clean2Rooms.
+4.	Pour tous les appartements &agrave; trois chambres (ThreeRoomApt) dans la liste, la m&eacute;thode cleanAllApartments doit appeler la m&eacute;thode clean3Rooms.
+5.	Les classes OneRoomApt, TwoRoomApt et ThreeRoomApt doivent prendre en charge (impl&eacute;menter) l&#39;interface Apartment.
+
+

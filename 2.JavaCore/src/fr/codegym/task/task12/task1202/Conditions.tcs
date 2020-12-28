@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1202"\n\nLes baleines, descendantes des vaches
+
+Remplace la méthode getName dans la classe Whale afin que le programme n'affiche rien à l'écran.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	La classe Whale doit h&eacute;riter de la classe Cow.
+3.	La classe Whale doit remplacer la m&eacute;thode getName().
+4.	La m&eacute;thode main() doit appeler la m&eacute;thode getName() de l&#39;objet Cow.
+5.	Impl&eacute;mente la m&eacute;thode getName() de la classe Whale pour que le programme n&#39;affiche rien &agrave; l&#39;&eacute;cran.
+6.	La m&eacute;thode main() doit afficher le r&eacute;sultat de l&#39;appel &agrave; la m&eacute;thode getName().
+
+

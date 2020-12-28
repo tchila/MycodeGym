@@ -1,0 +1,26 @@
+taskKey="fr.codegym.task.task09.task0915"\n\nCapture d'exceptions personnalisées
+
+1. Analyse les exceptions lancées par la méthode BEAN.leverExceptions.
+2. La méthode gererExceptions doit appeler la méthode BEAN.leverExceptions et gérer les exceptions :
+2.1. en cas de FileSystemException, enregistre-la (appelle la méthode BEAN.journaliser) et propage-la
+2.2. en cas de CharConversionException ou autre IOException, enregistre-la simplement (appelle la méthode BEAN.journaliser)
+3. Ajoute la signature de la méthode gererExceptions à la classe d'exception que tu lèves à la partie 2.1.
+4. Dans la méthode main, gère l'exception restante en l'enregistrant. Utilise un bloc try-catch
+
+Indice :
+Si tu captures une MonException et que tu ne voulais pas le faire, tu peux la propager avec du code comme :
+catch (MonException e) {
+throw e;
+}
+
+
+Requirements:
+1.	La m&eacute;thode gererExceptions doit appeler la m&eacute;thode BEAN.leverExceptions.
+2.	La m&eacute;thode gererExceptions doit enregistrer la FileSystemException (appeler la m&eacute;thode BEAN.journaliser), puis la repropager.
+3.	La m&eacute;thode gererExceptions doit simplement enregistrer (en appelant la m&eacute;thode BEAN.journaliser) CharConversionException.
+4.	La m&eacute;thode gererExceptions ne doit pas enregistrer d&#39;IOException.
+5.	Ajoute la classe FileSystemException &agrave; la signature de la m&eacute;thode gererExceptions.
+6.	La m&eacute;thode main doit utiliser un bloc try-catch.
+7.	La m&eacute;thode main doit enregistrer les exceptions propag&eacute;es par la m&eacute;thode gererExceptions.
+
+

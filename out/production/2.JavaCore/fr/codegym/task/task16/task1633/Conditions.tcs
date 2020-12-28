@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task16.task1633"\n\nDébogue tout ce qui se prélasse au soleil
+
+Détermine ce que fait le programme.
+Apprends-en davantage sur UncaughtExceptionHandler : c'est très important.
+Regarde à nouveau attentivement le programme.
+Détermine pourquoi OurUncaughtExceptionHandler ne fonctionne pas (utilise le débogueur).
+Corrige le bogue pour que tout fonctionne. :)
+Résultat attendu, sans ordre particulier :
+Thread 1 : Mon message d'exception
+Thread 2 : Mon message d'exception
+
+
+Requirements:
+1.	La m&eacute;thode main doit cr&eacute;er un thread avec les arguments suivants&nbsp;: commonThread et &quot;Thread 1&quot;.
+2.	La m&eacute;thode main doit cr&eacute;er un thread avec les arguments suivants&nbsp;: commonThread et &quot;Thread 2&quot;.
+3.	La m&eacute;thode main doit d&eacute;marrer deux threads (objets Thread).
+4.	La m&eacute;thode main doit interrompre deux threads (objets Thread).
+5.	Le programme doit utiliser la m&eacute;thode uncaughtException de OurUncaughtExceptionHandler pour afficher 2 messages.
+6.	N&#39;appelle pas explicitement la m&eacute;thode uncaughtException d&#39;OurUncaughtExceptionHandler.
+7.	Le sortie du programme doit contenir les lignes suivantes&nbsp;: &laquo;&nbsp;Thread 1&nbsp;: Mon message d&#39;exception&nbsp;&raquo; et &laquo;&nbsp;Thread&nbsp;2&nbsp;: Mon message d&#39;exception&nbsp;&raquo;.
+
+

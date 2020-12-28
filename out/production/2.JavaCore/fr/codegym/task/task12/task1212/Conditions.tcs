@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1212"\n\n« Corrige le code », partie 1
+
+Corrige le code pour que le programme compile.
+Indice :
+La méthode getChild doit rester abstraite.
+
+
+Requirements:
+1.	La classe Pet doit &ecirc;tre static.
+2.	La classe Pet doit contenir deux&nbsp;m&eacute;thodes.
+3.	La m&eacute;thode getChild() doit &ecirc;tre abstraite.
+4.	La classe Pet doit &ecirc;tre d&eacute;clar&eacute;e avec un modificateur qui emp&ecirc;che la cr&eacute;ation d&#39;objets de cette classe.
+
+

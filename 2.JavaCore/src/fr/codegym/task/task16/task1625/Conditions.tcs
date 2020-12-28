@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task16.task1625"\n\nInterblocage
+
+1. Détermine comment le programme fonctionne.
+2. Sans changer les classes T1 et T2, fais en sorte que leurs threads se terminent (pas nécessairement avec succès).
+3. N'utilise pas la méthode sleep.
+
+
+Requirements:
+1.	La m&eacute;thode main doit d&eacute;marrer le thread t1.
+2.	La m&eacute;thode main doit d&eacute;marrer le thread t2.
+3.	Ne change pas la classe T1.
+4.	Ne change pas la classe T2.
+5.	N&#39;utilise pas la m&eacute;thode sleep.
+6.	La sortie du programme doit &ecirc;tre compos&eacute;e de 2 lignes indiquant que les threads sont termin&eacute;s. Par exemple&nbsp;: &laquo;&nbsp;T1 a &eacute;t&eacute; interrompu&nbsp;&raquo; et &laquo;&nbsp;T2 s&#39;est termin&eacute;&nbsp;&raquo;.
+7.	Les threads t1 et t2 doivent se terminer (pas n&eacute;cessairement avec succ&egrave;s).
+
+

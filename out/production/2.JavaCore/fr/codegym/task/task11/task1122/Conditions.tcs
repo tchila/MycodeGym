@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task11.task1122"\n\nSauve le club d'échecs
+
+Ajoute la classe de base commune ChessPiece à la classe pour chaque type de pièce d'échecs.
+
+
+Requirements:
+1.	Ajoute &agrave; la classe Solution une classe public ChessPiece.
+2.	La classe King doit h&eacute;riter de la classe ChessPiece.
+3.	La classe Queen doit h&eacute;riter de la classe ChessPiece.
+4.	La classe Rook doit h&eacute;riter de la classe ChessPiece.
+5.	La classe Knight doit h&eacute;riter de la classe ChessPiece.
+6.	La classe Bishop doit h&eacute;riter de la classe ChessPiece.
+7.	La classe Pawn doit h&eacute;riter de la classe ChessPiece.
+
+

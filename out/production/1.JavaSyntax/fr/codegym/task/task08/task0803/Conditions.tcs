@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task08.task0803"\n\nHashMap de chats
+
+Il y a une classe Chat avec un String nom.
+Crée une HashMap<String, Chat>.
+Ajoute 10 chats à la collection. Le nom du chat doit être utilisé comme clé.
+Affiche les résultats à l'écran, chaque élément sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de valeurs au clavier.
+2.	Dans la m&eacute;thode ajouterChatsAMap, d&eacute;clare une variable HashMap avec des paires (String, Chat) et initialise-la imm&eacute;diatement.
+3.	La m&eacute;thode ajouterChatsAMap() doit ajouter tous les chats dans le tableau String[] chats &agrave; la collection conform&eacute;ment aux conditions de la mission.
+4.	Le programme doit afficher le contenu de la collection &agrave; l&#39;&eacute;cran, chaque paire sur une nouvelle ligne, en s&eacute;parant la cl&eacute; de la valeur par un trait d&#39;union.
+
+

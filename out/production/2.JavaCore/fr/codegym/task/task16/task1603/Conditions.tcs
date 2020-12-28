@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task16.task1603"\n\nUne liste et des threads
+
+Dans la méthode main, ajoute 5 threads à static list. Chaque thread doit être un nouvel objet Thread avec son propre objet SpecialThread.
+
+
+Requirements:
+1.	Dans la m&eacute;thode main, cr&eacute;e 5 objets SpecialThread.
+2.	Dans la m&eacute;thode main, cr&eacute;e 5 objets Thread.
+3.	Ajoute 5 diff&eacute;rents threads &agrave; la liste.
+4.	Chaque thread dans la liste doit fonctionner avec son propre objet SpecialThread.
+5.	La m&eacute;thode run de la classe SpecialThread doit afficher &laquo;&nbsp;Ceci est la m&eacute;thode run&nbsp;&agrave; l&#39;int&eacute;rieur de SpecialThread&nbsp;&raquo;.
+
+

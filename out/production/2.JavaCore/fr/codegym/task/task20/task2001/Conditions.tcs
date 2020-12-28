@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task20.task2001"\n\nLecture et écriture dans un fichier : Human
+
+Implémente la logique pour les E/S de fichier dans la classe Human.
+Le champ name de la classe Human ne peut pas être vide.
+La méthode main existe juste pour toi et n'est pas impliquée dans le test de la solution.
+
+
+Requirements:
+1.	La logique de lecture/&eacute;criture dans les m&eacute;thodes save/load doit fonctionner correctement lorsque la liste assets est vide.
+2.	La logique de lecture/&eacute;criture dans les m&eacute;thodes save/load doit fonctionner correctement lorsque le champ name et la liste assets ne sont pas vides.
+3.	La classe Solution.Human ne doit pas prendre en charge l&#39;interface Serializable.
+4.	La classe Solution.Human doit &ecirc;tre public.
+5.	La classe Solution.Human ne doit pas prendre en charge l&#39;interface Externalizable.
+
+

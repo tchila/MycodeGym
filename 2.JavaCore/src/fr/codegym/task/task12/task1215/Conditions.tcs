@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task12.task1215"\n\nLes chats ne doivent pas être abstraits !
+
+Fais en sorte que les classes Cat et Dog héritent de Pet.
+Implémente les méthodes manquantes.
+Les classes Cat et Dog ne doivent pas être abstraites.
+
+
+Requirements:
+1.	La classe Pet doit &ecirc;tre abstraite.
+2.	La classe Dog ne doit pas &ecirc;tre abstraite.
+3.	La classe Cat ne doit pas &ecirc;tre abstraite.
+4.	La classe Dog doit impl&eacute;menter les m&eacute;thodes abstraites de la classe Pet.
+5.	La classe Cat doit impl&eacute;menter les m&eacute;thodes abstraites de la classe Pet.
+
+

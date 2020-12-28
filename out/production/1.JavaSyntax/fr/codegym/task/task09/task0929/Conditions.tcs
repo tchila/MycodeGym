@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task09.task0929"\n\nModifions le code pour qu'il fasse quelque chose d'utile !
+
+Mission : Le programme lit deux noms de fichier. Il copie le premier fichier à l'emplacement spécifié par le second nom.
+Nouvelle mission : Le programme lit deux noms de fichier. Il copie le premier fichier à l'emplacement spécifié par le second nom.
+Si le fichier spécifié (à copier) n'existe pas, le programme doit afficher « Le fichier n'existe pas. » et lire
+un nom de fichier une nouvelle fois, puis seulement alors lire le nom du fichier de destination.
+
+
+Requirements:
+1.	Le programme doit lire des noms de fichier.
+2.	La m&eacute;thode main doit g&eacute;rer les exceptions lev&eacute;es par la m&eacute;thode obtenirInputStream. Si une exception se produit, tu dois afficher &laquo; Le fichier n&#39;existe pas. &raquo;.
+3.	Le programme doit copier le contenu du premier fichier dans le second.
+4.	La m&eacute;thode main doit appeler la m&eacute;thode obtenirInputStream.
+5.	Ne change pas la m&eacute;thode obtenirInputStream.
+6.	La m&eacute;thode main doit appeler la m&eacute;thode obtenirOutputStream.
+7.	Ne change pas la m&eacute;thode obtenirOutputStream.
+
+

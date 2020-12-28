@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task18.task1812"\n\nExtension d'AmigoOutputStream
+
+En utilisant le modèle de conception wrapper (décorateur), étends la fonctionnalité d'AmigoOutputStream.
+Dans la classe QuestionFileOutputStream, le fonctionnement suivant doit être implémentée pour la méthode close() :
+1. Affiche « Voulez-vous vraiment fermer le flux ? Y/N ».
+2. Lis une ligne.
+3. Si la ligne lue est « Y », ferme le flux.
+4. Si la ligne lue n'est pas « Y », ne ferme pas le flux.
+
+
+Requirements:
+1.	Ne change pas AmigoOutputStream.
+2.	La classe QuestionFileOutputStream doit impl&eacute;menter l&#39;interface AmigoOutputStream.
+3.	La classe QuestionFileOutputStream doit initialiser le champ AmigoOutputStream dans le constructeur.
+4.	Toutes les m&eacute;thodes de QuestionFileOutputStream doivent &ecirc;tre d&eacute;l&eacute;gu&eacute;es &agrave; l&#39;objet AmigoOutputStream.
+5.	La m&eacute;thode close() doit demander &agrave; l&#39;utilisateur &laquo;&nbsp;Voulez-vous vraiment fermer le flux&nbsp;? Y/N&nbsp;&raquo;.
+6.	La m&eacute;thode close() ne doit fermer le flux que si elle lit la r&eacute;ponse &laquo;&nbsp;Y&nbsp;&raquo; depuis la console.
+
+

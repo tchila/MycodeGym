@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task15.task1511"\n\nLe code le plus simple : partie 1
+
+Simplifie le code : supprime les implémentations et héritages qui seront ajoutés automatiquement par le compilateur
+PS : Les objets me et zapp ont une relation possède-un : https://en.wikipedia.org/wiki/Has-a
+
+
+Requirements:
+1.	L&#39;interface SpecificSerializable doit &eacute;tendre l&#39;interface Serializable.
+2.	La classe JavaDev doit impl&eacute;menter l&#39;interface SpecificSerializable.
+3.	Le code ne doit pas avoir d&#39;h&eacute;ritage explicite impliquant la classe Object (extends Object).
+4.	La classe JuniorJavaDev ne doit pas h&eacute;riter explicitement de l&#39;interface SpecificSerializable.
+
+

@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task09.task0921"\n\nMéthode dans un try-catch
+
+Écris un programme qui lit des nombres au clavier.
+Le code pour la lecture de nombres au clavier doit se trouver dans la méthode lireDonnees.
+Place le code de la méthode lireDonnees dans un bloc try-catch.
+Si l'utilisateur saisit du texte au lieu d'un nombre, la méthode doit capturer une exception,
+puis afficher tous les nombres saisis précédemment.
+Affiche chaque nombre sur une nouvelle ligne dans le même ordre que la saisie.
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Ne change pas la m&eacute;thode main.
+3.	La m&eacute;thode main ne doit pas lever d&#39;exceptions.
+4.	La m&eacute;thode lireDonnees doit contenir un bloc try-catch.
+5.	Si l&#39;utilisateur saisit du texte plut&ocirc;t qu&#39;un nombre, le programme doit afficher tous les nombres pr&eacute;c&eacute;demment saisis.
+
+

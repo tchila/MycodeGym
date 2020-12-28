@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task05.task0522"\n\nLe maximum de constructeurs
+
+Étudie la classe Cercle. Écris le maximum possible de constructeurs avec des arguments différents.
+Indice : N'oublie pas le constructeur par défaut.
+
+
+Requirements:
+1.	La classe doit avoir au moins trois variables.
+2.	La classe doit avoir un constructeur par d&eacute;faut.
+3.	La classe doit avoir au moins un constructeur.
+4.	La classe doit avoir au moins deux constructeurs.
+5.	La classe doit avoir au moins trois constructeurs.
+6.	La classe doit avoir au moins quatre constructeurs.
+
+

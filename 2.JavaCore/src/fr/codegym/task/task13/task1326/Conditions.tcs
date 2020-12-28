@@ -1,0 +1,29 @@
+taskKey="fr.codegym.task.task13.task1326"\n\nTri de nombres pairs à partir d'un fichier
+
+1. Lis un nom de fichier depuis la console.
+2. Lis un ensemble de nombres depuis le fichier.
+3. Affiche uniquement les nombres pairs, classés par ordre croissant.
+Exemple d'entrée :
+5
+8
+-2
+11.
+3
+-5
+2
+10
+Exemple de sortie :
+-2
+2
+8
+10
+
+
+Requirements:
+1.	Le programme doit lire des donn&eacute;es depuis la console.
+2.	Le programme doit cr&eacute;er un FileInputStream en utilisant la ligne lue &agrave; partir de la console.
+3.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+4.	Le programme doit afficher tous les nombres pairs lus dans le fichier, tri&eacute;s par ordre croissant.
+5.	Le programme doit fermer le flux d&#39;entr&eacute;e utilis&eacute; pour lire le fichier (FileInputStream).
+
+

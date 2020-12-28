@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task20.task2006"\n\nComment sérialiser ?
+
+Fais en sorte que la classe Human puisse être sérialisée.
+
+
+Requirements:
+1.	La classe Human doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	La classe Human doit &ecirc;tre static.
+3.	La classe Human doit &ecirc;tre public.
+4.	La classe Human doit prendre en charge l&#39;interface Serializable.
+
+

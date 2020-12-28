@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task11.task1111"\n\n« Il prit une de ses côtes »
+
+Modifie les deux classes, Adam et Eve.
+Eve doit hériter d'Adam.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe Adam.
+2.	La classe Adam doit &ecirc;tre public.
+3.	La classe Solution doit contenir une classe Eve.
+4.	La classe Eve doit &ecirc;tre public.
+5.	La classe Eve doit h&eacute;riter de la classe Adam.
+
+

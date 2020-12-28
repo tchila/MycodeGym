@@ -1,0 +1,31 @@
+taskKey="fr.codegym.task.task16.task1629"\n\nÀ toi de jouer !
+
+1. Dans la classe Solution, crée une classe public static Read3Strings qui hérite de Thread.
+2. Dans la méthode run, lis trois lignes depuis la console.
+3. Trois lignes doivent être lues successivement sur un thread et combinées en une seule chaîne délimitée par des espaces.
+4. Dans la méthode main, affiche le résultat de chaque thread.
+5. Utilise join.
+Exemple :
+Entrée :
+a
+b
+c
+d
+e
+f
+Sortie :
+a b c
+d e f
+
+
+Requirements:
+1.	Dans la classe Solution, d&eacute;clare la classe public static Read3Strings.
+2.	La classe Read3Strings doit h&eacute;riter de la classe Thread.
+3.	La m&eacute;thode run de la classe Read3Strings doit lire trois lignes.
+4.	La classe Read3Strings doit avoir une m&eacute;thode public printResult.
+5.	La m&eacute;thode printResult doit afficher les 3 lignes lues, en les s&eacute;parant par des espaces.
+6.	La m&eacute;thode main doit appeler les m&eacute;thodes start des threads cr&eacute;&eacute;s.
+7.	La m&eacute;thode main doit appeler les m&eacute;thodes join des threads cr&eacute;&eacute;s.
+8.	La sortie du programme doit indiquer que les threads lisent les lignes s&eacute;quentiellement, et non en parall&egrave;le.
+
+

@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task06.task0608"\n\nMéthodes static pour les chats
+
+Ajoute deux méthodes static à la classe Chat : int getNombreChats() et setNombreChats(int),
+que tu peux utiliser pour obtenir/modifier le nombre de chats (variable nombreChats).
+
+
+Requirements:
+1.	Ajoute la m&eacute;thode getNombreChats &agrave; la classe.
+2.	La m&eacute;thode getNombreChats doit renvoyer un int.
+3.	La m&eacute;thode getNombreChats doit renvoyer la valeur de la variable nombreChats.
+4.	Ajoute une m&eacute;thode setNombreChats qui prend un int.
+5.	La m&eacute;thode setNombreChats ne doit rien renvoyer.
+6.	La m&eacute;thode setNombreChats doit d&eacute;finir la variable nombreChats sur la valeur pass&eacute;e.
+
+

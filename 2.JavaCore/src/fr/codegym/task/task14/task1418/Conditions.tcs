@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task14.task1418"\n\nCorrige quatre erreurs
+
+1. Pense à ce que la méthode main fait.
+2. Crée les méthodes statiques initList(List<Number&gt list), printListValues (List<Number> list) et processCastObjects(List<Number> list) dans la classe Solution.
+3. Trouve le bloc de code qui remplit la liste avec des valeurs, et déplace-le vers la méthode initList.
+4. Trouve le bloc de code qui utilise une boucle pour afficher le contenu de la liste, et déplace-le vers la méthode printListValues.
+5. Trouve le bloc de code qui vérifie le type de chaque objet de la liste et affiche des messages sur l'écran, et déplace-le vers la méthode processCastObjects.
+6. Corrige les 2 bogues dans la méthode printListValues de telle sorte que la méthode affiche correctement le contenu de la liste passée en argument.
+7. Corrige les 2 bogues liés à la conversion de type dans la méthode processCastObjects
+- Pour un objet Float, tu dois afficher "Le float est-il défini ? " + !(.isNaN()).
+- pour un objet Double, tu dois imprimer "Le double est-il infini ? " + <Double object>.isInfinite().
+
+
+Requirements:
+1.	La classe Solution doit impl&eacute;menter les m&eacute;thodes statiques initList(List&lt;Number&gt; list), printListValues​​(List&lt;Number&gt; list) et processCastObjects(List&lt;Number&gt; list).
+2.	La m&eacute;thode initList doit remplir la liste r&eacute;sultante avec des valeurs al&eacute;atoires.
+3.	La m&eacute;thode printListValues doit afficher le contenu de la liste r&eacute;sultante.
+4.	La m&eacute;thode processCastObjects doit analyser les &eacute;l&eacute;ments de liste et afficher le texte pour les objets Float et Double conform&eacute;ment aux conditions de la mission.
+
+

@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task15.task1509"\n\nHomme ou femme ?
+
+1. Modifie la méthode printName de sorte qu'elle fonctionne à la fois pour les hommes et les femmes.
+2. La méthode printName doit avoir une seule implémentation.
+
+
+Requirements:
+1.	La classe Solution doit impl&eacute;menter une seule m&eacute;thode printName.
+2.	La m&eacute;thode printName doit avoir un param&egrave;tre Human.
+3.	La classe Man doit descendre de la classe Human.
+4.	La classe Woman doit descendre de la classe Human.
+
+

@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task15.task1517"\n\nModificateurs statiques et exceptions
+
+Dans un bloc statique, lève une exception
+Cela empêchera la classe de se charger, et tu verras le message d'erreur suivant au lieu de la valeur de la variable B
+Exception in thread "main" java.lang.ExceptionInInitializerError
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:186)
+at com.intellij.rt.execution.application.AppMain.main(AppMain.java:113)
+Caused by: java.lang.RuntimeException:
+at com.codegym.task.task15.task1517.Solution.(Solution.java:22)
+Indice : Utilise Google pour trouver la cause si tu vois ce qui suit :
+java: initializer must be able to complete normally
+java: unreachable statement
+
+
+Requirements:
+1.	Une exception (Exception) doit &ecirc;tre lev&eacute;e dans un bloc statique dans la classe Solution.
+2.	Le programme ne doit pas afficher quoi que ce soit (sauf un message automatique sur l&#39;exception qui se produit).
+3.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+4.	La classe Solution doit &ecirc;tre public.
+
+

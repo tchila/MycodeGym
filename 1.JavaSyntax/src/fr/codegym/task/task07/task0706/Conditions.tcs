@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task07.task0706"\n\nDes rues et des maisons
+
+1. Crée un tableau de 15 entiers.
+2. Remplis-le avec des valeurs saisies au clavier.
+3. L'indice du tableau représente le numéro de la maison. La valeur du tableau à un indice particulier représente le nombre de personnes  vivant dans la maison correspondante.
+Les maisons avec des numéros impairs sont situées d'un côté de la rue. Celles avec des numéros pairs se trouvent de l'autre côté. Découvre quel côté de la rue compte le plus de résidents.
+4. Affiche le message suivant : « Les maisons à numéro impair ont plus de résidents. » ou « Les maisons à numéro pair ont plus de résidents. »
+Remarque : la maison à l'indice 0 est considérée comme étant du côté pair.
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er un tableau de 15 entiers.
+2.	Le programme doit lire des nombres pour le tableau au clavier.
+3.	Le programme doit afficher &laquo; Les maisons &agrave; num&eacute;ro impair ont plus de r&eacute;sidents. &raquo; si la somme des &eacute;l&eacute;ments de tableau impairs est sup&eacute;rieure &agrave; la somme de ceux du c&ocirc;t&eacute; pair.
+4.	Le programme doit afficher &laquo; Les maisons &agrave; num&eacute;ro pair ont plus de r&eacute;sidents. &raquo; si la somme des &eacute;l&eacute;ments de tableau pairs est sup&eacute;rieure &agrave; la somme de ceux du c&ocirc;t&eacute; impair.
+
+

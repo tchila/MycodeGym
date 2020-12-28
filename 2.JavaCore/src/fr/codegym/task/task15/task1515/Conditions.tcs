@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task15.task1515"\n\nModificateurs static : partie 2
+
+1. Dans un bloc statique, lis deux variables int, A et B depuis la console.
+2. N'oublie pas l'IOException qui doit être gérée dans le bloc catch.
+3. Ferme le flux d'entrée avec la méthode close().
+
+
+Requirements:
+1.	Le champ A doit &ecirc;tre public et static.
+2.	Le champ B doit &ecirc;tre public et static.
+3.	Le programme doit lire des donn&eacute;es depuis le clavier dans un bloc statique.
+4.	Le programme doit initialiser les champs A et B dans un bloc statique &agrave; l&#39;aide des valeurs saisies au clavier.
+5.	Le programme doit afficher la plus petite des valeurs saisies au clavier.
+
+

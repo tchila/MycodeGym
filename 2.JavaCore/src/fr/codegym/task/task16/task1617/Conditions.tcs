@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task16.task1617"\n\nCompte à rebours pour une course
+
+1. Détermine ce que fait le programme.
+2. Implémente la méthode run pour que chaque seconde
+le compte à rebours s'affiche, séparé par des espaces et commençant à numSeconds pour se terminer à 1, puis « Partez ! » (consulte les exemples).
+3. Si le thread s'exécute pendant 3,5 secondes ou plus, interromps-le avec la méthode interrupt, et affiche « Interrompu ! » dans le thread
+Exemple pour numSeconds = 4 :
+« 4 3 2 1 Interrompu ! »
+4. Si le thread s'exécute pendant moins de 3,5 secondes, il doit se terminer de lui-même.
+Exemple pour numSeconds = 3 :
+« 3 2 1 Partez ! »
+PS : La méthode sleep lève une InterruptedException.
+
+
+Requirements:
+1.	La m&eacute;thode run de la classe RaceClock doit avoir une boucle.
+2.	L&#39;objet RaceClock doit diminuer la valeur de numSeconds de 1 chaque seconde.
+3.	La m&eacute;thode main doit appeler Thread.sleep(3500).
+4.	La m&eacute;thode main doit appeler la m&eacute;thode interrupt sur l&#39;objet Clock.
+5.	Si numSeconds vaut 3, le programme doit afficher &laquo;&nbsp;3 2 1 Partez&nbsp;!&nbsp;&raquo;.
+6.	Si numSeconds vaut 4, le programme doit afficher &laquo;&nbsp;4 3 2 1 Interrompu&nbsp;!&nbsp;&raquo;.
+
+

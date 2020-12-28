@@ -1,0 +1,42 @@
+taskKey="fr.codegym.task.task19.task1916"\n\nSuivi des modifications
+
+Lis 2 noms de fichier depuis la console : file1 et file2.
+Les deux fichiers contiennent du texte, mais file2 est une version mise à jour de file1. Certaines des lignes sont toujours les mêmes.
+Tu dois créer une version fusionnée des lignes en les écrivant dans la liste lines.
+Les libellés ADDED et REMOVED ne peuvent pas être utilisés de façon consécutive. Ils doivent toujours être séparés par le libellé SAME.
+L'exemple contient des lignes vides pour plus de clarté.
+Ni le fichier d'origine ni le fichier mis à jour ne doivent contenir de lignes vides !
+Exemple 1 :
+original   mis à jour    fusionné
+file1 :     file2 :     Résultat : (lines)
+line1      line1      SAME line1
+line2                 REMOVED line2
+line3      line3      SAME line3
+line4                 REMOVED line4
+line5      line5      SAME line5
+           line0      ADDED line0
+line1      line1      SAME line1
+line2                 REMOVED line2
+line3      line3      SAME line3
+           line4      ADDED line4
+line5      line5      SAME line5
+line0                 REMOVED line0
+Exemple 2 :
+original   mis à jour    fusionné
+file1 :     file2 :     Résultat : (lines)
+line1      line1      SAME line1
+           line0      ADDED line0
+Dans l'exemple, les lignes vides signifient que la ligne n'est pas dans le fichier spécifié.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe LineItem.
+2.	La classe Solution doit avoir un enum appel&eacute; &laquo;&nbsp;Type&nbsp;&raquo;.
+3.	La classe Solution doit avoir un champ public static List&lt;LineItem&gt; lines qui est initialis&eacute; imm&eacute;diatement.
+4.	Dans la m&eacute;thode main(String[] args), le programme doit lire des noms de fichier depuis la console (utilise BufferedReader).
+5.	Dans la m&eacute;thode main(String[] args), le BufferedReader utilis&eacute; pour la lecture de l&#39;entr&eacute;e depuis la console doit &ecirc;tre ferm&eacute; apr&egrave;s utilisation.
+6.	Le programme doit lire le contenu des premier et deuxi&egrave;me fichiers (utilise FileReader).
+7.	Les flux d&#39;entr&eacute;e de fichier (FileReader) doivent &ecirc;tre ferm&eacute;s.
+8.	La liste lines doit contenir la version fusionn&eacute;e des lignes des fichiers. Chaque ligne doit commencer par le libell&eacute; ADDED, REMOVED ou SAME selon ce qui a &eacute;t&eacute; effectu&eacute;.
+
+

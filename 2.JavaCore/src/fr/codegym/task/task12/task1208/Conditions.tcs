@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task12.task1208"\n\nLiberté de la presse
+
+Écris cinq méthodes print en utilisant différents paramètres.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	La classe Solution doit contenir six m&eacute;thodes.
+3.	La classe Solution doit contenir une m&eacute;thode static main().
+4.	La classe Solution doit avoir cinq m&eacute;thodes static print() avec des param&egrave;tres diff&eacute;rents.
+
+

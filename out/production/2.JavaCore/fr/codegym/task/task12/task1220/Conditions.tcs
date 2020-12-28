@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task12.task1220"\n\nClasse Human et interfaces CanRun et CanSwim
+
+Écris une classe public Human, et des interfaces public CanRun et CanSwim.
+Ajoute une méthode à chaque interface.
+Ajoute ces interfaces à la classe Human, mais n'implémente pas les méthodes.
+Déclare la classe Human comme abstraite.
+
+
+Requirements:
+1.	La classe Solution doit avoir une interface CanRun avec une seule m&eacute;thode.
+2.	La classe Solution doit avoir une interface CanSwim avec une seule m&eacute;thode.
+3.	La classe Solution doit contenir une classe Human.
+4.	La classe Human doit impl&eacute;menter les interfaces CanRun et CanSwim.
+5.	La classe Human doit &ecirc;tre abstraite.
+6.	La classe Human ne doit pas avoir de m&eacute;thodes.
+
+

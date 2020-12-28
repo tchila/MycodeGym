@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task13.task1302"\n\nBière. Partie 2. Le jour d'après.
+
+Ajoute l'interface Drink à la classe AlcoholicBeer et implémente toutes ses méthodes.
+
+
+Requirements:
+1.	- La classe AlcoholicBeer doit impl&eacute;menter l&#39;interface Drink.
+2.	La classe AlcoholicBeer doit impl&eacute;menter toutes les m&eacute;thodes de l&#39;interface Drink.
+3.	Il ne doit y avoir que deux m&eacute;thodes dans la classe AlcoholicBeer.
+4.	La m&eacute;thode isAlcoholic doit renvoyer true, car la bi&egrave;re contient de l&#39;alcool.
+5.	En fonction de ce que renvoie la m&eacute;thode isAlcoholic, le programme doit afficher le type de boisson correspondant &agrave; l&#39;&eacute;cran.
+
+

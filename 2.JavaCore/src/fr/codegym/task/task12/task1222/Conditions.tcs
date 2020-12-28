@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task12.task1222"\n\nJe ne suis plus Fluffy
+
+Remplace la méthode setName de la classe Cat pour que le message suivant s'affiche :
+« e suis un cha ».
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe Pet.
+2.	La classe Solution doit contenir une classe Cat.
+3.	La classe Cat doit h&eacute;riter de la classe Pet.
+4.	La classe Pet doit n&#39;avoir que deux m&eacute;thodes&nbsp;appel&eacute;es getName() et setName().
+5.	La classe Cat doit remplacer la m&eacute;thode setName().
+6.	Le programme doit afficher le r&eacute;sultat de l&#39;appel &agrave; la m&eacute;thode getName() sur pet.
+
+

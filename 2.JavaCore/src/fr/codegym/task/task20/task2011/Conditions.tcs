@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task20.task2011"\n\nExternalizable pour des appartements
+
+Implémente l'interface Externalizable dans la classe Apartment.
+
+
+Requirements:
+1.	La classe Solution.Apartment doit prendre en charge l&#39;interface Externalizable.
+2.	La classe Solution.Apartment doit impl&eacute;menter une m&eacute;thode writeExternal avec un param&egrave;tre ObjectOutput.
+3.	La classe Solution.Apartment doit impl&eacute;menter une m&eacute;thode readExternal avec un param&egrave;tre ObjectInput.
+4.	La m&eacute;thode writeExternal doit appeler la m&eacute;thode writeObject avec le param&egrave;tre address sur l&#39;objet ObjectOutput pass&eacute; comme argument.
+5.	La m&eacute;thode writeExternal doit appeler la m&eacute;thode writeInt avec le param&egrave;tre year sur l&#39;objet ObjectOutput pass&eacute; comme argument.
+6.	La m&eacute;thode readExternal doit restaurer correctement la valeur du champ address de l&#39;objet ObjectInput.
+7.	La m&eacute;thode readExternal doit restaurer correctement la valeur du champ year de l&#39;objet ObjectInput.
+
+

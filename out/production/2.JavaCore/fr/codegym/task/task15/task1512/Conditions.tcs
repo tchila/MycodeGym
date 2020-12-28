@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task15.task1512"\n\nLe code le plus simple : partie 2
+
+Détermine quelles choses liées aux constructeurs peuvent être ajoutées lors de la compilation, mais sont déjà présentes dans ce programme.
+Simplifie le code. Supprime tous les constructeurs et appels de constructeurs de superclasses qui sont créés et ajoutés automatiquement.
+PS : Les classes NakedCat, NormalCat et SiamCat ont une relation de type possède-un (héritage) : http://en.wikipedia.org/wiki/Is-a
+
+
+Requirements:
+1.	La classe NormalCat doit descendre de la classe NakedCat.
+2.	La classe SiamCat doit descendre de la classe NormalCat.
+3.	Simplifie le code de la classe NakedCat.
+4.	Simplifie le code de la classe NormalCat.
+
+

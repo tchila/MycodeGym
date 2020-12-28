@@ -1,0 +1,28 @@
+taskKey="fr.codegym.task.task19.task1924"\n\nRemplacement de nombres
+
+1. Dans un bloc statique, initialise une map avec des paires (nombre, mot) de 0 à 12 inclus.
+Par exemple, (0, "zéro"), (1, "un"), (2, "deux")
+2. Lis le nom du fichier depuis la console, puis lis le contenu du fichier.
+3. Utilise la map afin de remplacer tous les nombres par des mots.
+4. Affiche le résultat.
+5. Ferme les flux.
+Exemple de données de fichier :
+Ceci coûte 1 dollar, mais cela 12.
+La variable s'appelle file1.
+110 est un nombre.
+Exemple de sortie de la console :
+Ceci coûte un dollar, mais cela douze.
+La variable s'appelle file1.
+110 est un nombre.
+
+
+Requirements:
+1.	La classe Solution doit avoir un champ public static Map&lt; Integer, String&gt; words qui est initialis&eacute; imm&eacute;diatement.
+2.	Le programme doit lire le nom du fichier &agrave; partir de la console (utilise BufferedReader).
+3.	Le BufferedReader utilis&eacute; pour la lecture de l&#39;entr&eacute;e depuis la console doit &ecirc;tre ferm&eacute; apr&egrave;s utilisation.
+4.	Le programme doit lire le contenu du fichier (utilise FileReader).
+5.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+6.	Le programme doit &eacute;crire toutes les lignes du fichier dans la console, en rempla&ccedil;ant les nombres par les mots correspondants dans la map.
+7.	La classe Solution doit avoir un bloc statique qui ajoute treize paires &agrave; la carte.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1205"\n\nIdentification des animaux
+
+Écris une méthode qui déterminera la classe d'un objet qui lui a été passé et renverra une des valeurs suivantes : « Vache », « Baleine », « Chien » ou « Animal inconnu ».
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Ne change pas la classe Cow.
+3.	Ne change pas la classe Dog.
+4.	Ne change pas la classe Whale.
+5.	Ne change pas la classe Pig.
+6.	La m&eacute;thode getObjectType() doit renvoyer une des valeurs suivantes&nbsp;: &laquo; ach &raquo;, &laquo; alein &raquo;, &laquo; hie &raquo; ou &laquo; nimal inconn &raquo; selon l&#39;objet qui lui est pass&eacute;. Par exemple, elle doit renvoyer &laquo; Vache &raquo; pour les objets Solution.Cow.
+
+

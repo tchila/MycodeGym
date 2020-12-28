@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task04.task0418"\n\nLe plus petit de deux nombres
+
+Utilise le clavier pour saisir deux entiers et affiche le plus petit des deux. Si les deux nombres sont égaux, affiche un des deux.
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	Le programme doit afficher un nombre &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher le plus petit de deux entiers.
+4.	Si les deux nombres sont &eacute;gaux, affiche un des deux.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task11.task1110"\n\nN'oublie pas d'encapsuler
+
+Observe attentivement les méthodes et ajoute les champs manquants.
+
+
+Requirements:
+1.	La classe Cat doit avoir un champ String appel&eacute; name.
+2.	La classe Cat doit avoir un champ int appel&eacute; age.
+3.	La classe Cat doit avoir un champ int appel&eacute; weight.
+4.	La classe Cat doit avoir un champ int appel&eacute; speed.
+5.	La classe Cat doit avoir 4 champs.
+6.	Tous les champs de la classe Cat doivent &ecirc;tre private.
+
+

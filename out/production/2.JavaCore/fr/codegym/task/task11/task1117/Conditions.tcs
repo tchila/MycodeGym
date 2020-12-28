@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task11.task1117"\n\nChaîne d'héritage alternative
+
+Crée une « chaîne d'héritage » appropriée pour les classes suivantes : Carnivore, Cow, Dog, Pig et Animal.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Carnivore.
+2.	La classe Solution doit contenir une classe public Cow.
+3.	La classe Solution doit contenir une classe public Dog.
+4.	La classe Solution doit contenir une classe public Pig.
+5.	La classe Solution doit contenir une classe public Animal.
+6.	La classe Carnivore doit h&eacute;riter de la classe Animal.
+7.	La classe Cow doit h&eacute;riter de la classe Animal.
+8.	La classe Dog doit h&eacute;riter de la classe Carnivore.
+9.	La classe Pig doit h&eacute;riter de la classe Animal.
+
+

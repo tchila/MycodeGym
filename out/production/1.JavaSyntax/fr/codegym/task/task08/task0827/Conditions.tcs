@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task08.task0827"\n\nTravail avec les dates
+
+1. Implémente la méthode dateImpaire(String date) pour qu'elle renvoie true si le nombre de jours depuis le début de l'année est impair, et false sinon
+2. La valeur String date est passée sous la forme : FEBRUARY 1 2013
+N'oublie pas de prendre en compte le premier jour de l'année.
+Exemple :
+JANUARY 1 2000 = true
+JANUARY 2 2020 = false
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La classe Solution doit contenir deux m&eacute;thodes.
+3.	La m&eacute;thode dateImpaire() doit renvoyer true si le nombre de jours depuis le d&eacute;but de l&#39;ann&eacute;e est impair, et false sinon.
+4.	La m&eacute;thode main() doit appeler la m&eacute;thode dateImpaire().
+
+

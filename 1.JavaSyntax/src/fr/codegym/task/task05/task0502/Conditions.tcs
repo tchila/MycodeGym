@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task05.task0502"\n\nImplémenter la méthode combattre
+
+Implémente la méthode boolean combattre(Chat autreChat) :
+implémente un mécanisme pour que les chats combattent en fonction de leur poids, leur âge et leur force.
+À toi de décider dans quelle mesure chacun de ces facteurs influencera l'issue des combats.
+La méthode doit déterminer si notre chat (this) a gagné le combat, c'est-à-dire que tu dois renvoyer true s'il a gagné et false dans le cas contraire.
+La condition suivante doit être remplie :
+si chat1.combattre(chat2) renvoie true, alors chat2.combattre(chat1) doit renvoyer false
+
+
+Requirements:
+1.	La classe Chat doit avoir un constructeur sans param&egrave;tres.
+2.	La classe Chat doit contenir les champs public age, poids et force.
+3.	La classe Chat doit avoir une m&eacute;thode appel&eacute;e combattre.
+4.	Dans la m&eacute;thode combattre, impl&eacute;mente un m&eacute;canisme pour que les chats combattent en fonction de leur poids, leur &acirc;ge et leur force.
+5.	La m&eacute;thode doit renvoyer la m&ecirc;me valeur chaque fois que nous combattons le m&ecirc;me chat.
+6.	Si chat1 bat chat2, alors chat2 doit perdre contre chat1.
+
+

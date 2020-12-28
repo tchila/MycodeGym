@@ -1,0 +1,31 @@
+taskKey="fr.codegym.task.task15.task1527"\n\nAnalyseur de requêtes
+
+Lit une URL depuis la console.
+Affiche une liste séparée par espaces de tous les paramètres (Les paramètres suivent le '?' et sont séparés par des '&', par ex. « lvl=15 »).
+L'URL contient au moins 1 paramètre.
+Les paramètres doivent être affichés dans le même ordre que dans lequel ils sont présents dans l'URL.
+Si le paramètre obj est présent, passe sa valeur à la méthode alert pertinente.
+alert(double value) pour les nombres (les nombres fractionnaires ont un point décimal)
+alert(String value) pour les chaînes
+Note que la méthode d'alerte doit être appelée APRÈS affichage de la liste de tous les paramètres.
+Exemple 1
+Entrée :
+http://codegym.cc/alpha/index.html?lvl=15&view&name=Amigo
+Sortie :
+lvl view name
+Exemple 2
+Entrée :
+http://codegym.cc/alpha/index.html?obj=3.14&name=Amigo
+Sortie :
+obj name
+double: 3.14
+
+
+Requirements:
+1.	Le programme doit lire une seule ligne au clavier.
+2.	La classe Solution ne doit pas avoir de champs static.
+3.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran conform&eacute;ment aux conditions de la mission.
+4.	Le programme doit appeler la m&eacute;thode alert avec le param&egrave;tre double si le param&egrave;tre obj peut &ecirc;tre correctement converti en double.
+5.	Le programme doit appeler la m&eacute;thode alert avec le param&egrave;tre String si le param&egrave;tre obj ne peut PAS &ecirc;tre correctement converti en double.
+
+

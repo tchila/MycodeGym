@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task13.task1325"\n\nCompilation du programme
+
+1. Corrige les classes Fox et BigFox afin que le programme compile.
+Cette mission n'implique pas la création d'instances de la classe de base.
+2. Ne change pas la méthode main.
+
+
+Requirements:
+1.	La classe Fox doit impl&eacute;menter l&#39;interface Animal.
+2.	La classe Fox doit impl&eacute;menter une seule m&eacute;thode (getName).
+3.	L&#39;interface Animal doit d&eacute;clarer une m&eacute;thode getColor.
+4.	La classe BigFox doit h&eacute;riter de la classe Fox.
+5.	La classe Fox doit &ecirc;tre abstraite.
+
+

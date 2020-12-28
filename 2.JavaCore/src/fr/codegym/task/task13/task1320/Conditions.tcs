@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task13.task1320"\n\nNeo
+
+1. Implémente l'interface DBObject dans la classe User.
+2. Implémente la méthode initializeIdAndName pour que le programme s'exécute et affiche « Le nom de l'utilisateur est Neo, id = 1 ».
+3. Ne change pas les méthodes toString et main.
+4. Pense à ce que la méthode initializeIdAndName de la classe User doit renvoyer.
+
+
+Requirements:
+1.	La classe User doit impl&eacute;menter l&#39;interface DBObject.
+2.	La m&eacute;thode initializeIdAndName doit renvoyer un objet User valide, plus pr&eacute;cis&eacute;ment l&#39;objet sur lequel la m&eacute;thode a &eacute;t&eacute; appel&eacute;e (this).
+3.	La m&eacute;thode initializeIdAndName doit d&eacute;finir les champs id et name en utilisant les arguments qui lui sont pass&eacute;s.
+4.	Le programme doit afficher ce qui suit&nbsp;: &laquo; Le nom de l&#39;utilisateur est Neo, id = 1 &raquo;.
+5.	Ne change pas la m&eacute;thode toString.
+6.	Ne change pas la m&eacute;thode main.
+
+

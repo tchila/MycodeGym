@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task05.task0509"\n\nCréer une classe Ami
+
+Crée la classe Ami avec trois méthodes initialiser :
+- Nom
+- Nom, âge
+- Nom, âge, sexe
+Remarque :
+nom est de type String, age de type int et sexe de type char.
+
+
+Requirements:
+1.	La classe Ami doit avoir une variable String appel&eacute;e nom.
+2.	La classe Ami doit avoir une variable int appel&eacute;e age.
+3.	La classe Ami doit avoir une variable char appel&eacute;e sexe.
+4.	La classe doit avoir une m&eacute;thode initialiser qui prend un nom comme argument et initialise la variable d&#39;instance correspondante.
+5.	La classe doit avoir une m&eacute;thode initialiser qui prend un nom et un &acirc;ge comme arguments et initialise la variable d&#39;instance correspondante.
+6.	La classe doit avoir une m&eacute;thode initialiser qui prend un nom, un &acirc;ge et un sexe comme arguments et initialise la variable d&#39;instance correspondante.
+
+

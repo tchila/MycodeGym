@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task09.task0913"\n\nDes exceptions. Rien que des exceptions.
+
+La méthode lève deux exceptions qui héritent d'Exception, et deux qui héritent de RuntimeException:
+NullPointerException, ArithmeticException, FileNotFoundException, URISyntaxException.
+
+Tu dois capturer NullPointerException et FileNotFoundException, mais pas
+ArithmeticException ou URISyntaxException. Comment tu vas t'y prendre ?
+
+
+Requirements:
+1.	La m&eacute;thode main doit appeler methode1.
+2.	La m&eacute;thode main doit capturer l&#39;exception NullPointerException.
+3.	La m&eacute;thode main doit capturer l&#39;exception FileNotFoundException.
+4.	La m&eacute;thode main ne doit pas capturer l&#39;exception ArithmeticException.
+5.	La m&eacute;thode main ne doit pas capturer l&#39;exception URISyntaxException.
+6.	Ne change pas la m&eacute;thode methode1.
+
+

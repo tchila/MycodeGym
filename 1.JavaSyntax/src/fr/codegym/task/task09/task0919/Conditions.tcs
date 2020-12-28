@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task09.task0919"\n\nDivision par zéro
+
+Crée une méthode public static void diviserParZero qui divise un nombre quelconque par zéro, et affiche le résultat de la division.
+Place l'appel à la méthode diviserParZero dans un bloc try-catch. Affiche la trace de pile de l'exception à l'aide de la méthode exception.printStackTrace().
+
+
+Requirements:
+1.	La classe doit avoir une m&eacute;thode public static void diviserParZero.
+2.	La m&eacute;thode diviserParZero doit contenir une op&eacute;ration de division par z&eacute;ro.
+3.	La m&eacute;thode diviserParZero doit appeler System.out.println ou System.out.print.
+4.	La m&eacute;thode main doit avoir un bloc try-catch.
+5.	La m&eacute;thode main doit capturer toutes les exceptions propag&eacute;es par la m&eacute;thode diviserParZero.
+6.	Le programme doit afficher la trace de pile de l&#39;exception captur&eacute;e.
+
+

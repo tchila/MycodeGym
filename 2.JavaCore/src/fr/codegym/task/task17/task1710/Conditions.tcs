@@ -1,0 +1,34 @@
+taskKey="fr.codegym.task.task17.task1710"\n\nCRUD
+
+CrUD : Create, Update, Delete (création, mise à jour, suppression).
+Le programme fonctionne avec un des ensembles d'arguments suivants :
+-c name sex bd
+-u id name sex bd
+-d id
+-i id
+Valeurs des arguments :
+name (String)
+sex (« m » ou « f »)
+bd (date de naissance au format suivant : « 04 15 1990 »)
+-c (ajoute une personne avec les arguments spécifiés à la fin d'allPeople, affiche l'id à l'écran)
+-u (met à jour les données de la personne avec l'id spécifié)
+-d (effectue la suppression logique de la personne avec l'id spécifié ; remplace toutes ses données par null)
+-i (affiche les informations sur la personne avec l'id spécifié : name sex (m/f) bd (au format Apr 15 1990))
+L'id correspond à l'indice dans la liste.
+Toutes les personnes doivent être stockées dans allPeople.
+Utilise Locale.ENGLISH comme second argument pour SimpleDateFormat.
+Exemple d'arguments :
+-c Washington m "04 15 1990"
+Exemple de sortie pour l'argument -i :
+Washington m Apr 15 1990
+
+
+Requirements:
+1.	La classe Solution doit contenir un champ public static List&lt;Person&gt; allPeople.
+2.	La classe Solution doit avoir un bloc statique o&ugrave; deux personnes sont ajout&eacute;es &agrave; la liste allPeople.
+3.	Quand tu d&eacute;marres le programme avec l&#39;argument -c, le programme doit ajouter la personne avec les arguments sp&eacute;cifi&eacute;s &agrave; la fin de la liste allPeople et afficher l&#39;id (indice).
+4.	Lorsque tu ex&eacute;cutes le programme avec l&#39;argument -u, le programme doit mettre &agrave; jour les donn&eacute;es de la personne avec l&#39;id sp&eacute;cifi&eacute; dans la liste allPeople.
+5.	Lorsque tu ex&eacute;cutes le programme avec l&#39;argument -d, le programme doit effectuer la suppression logique de la personne avec l&#39;id sp&eacute;cifi&eacute; dans la liste allPeople.
+6.	Lorsque tu ex&eacute;cutes le programme avec l&#39;argument -i, le programme doit afficher les donn&eacute;es sur la personne avec l&#39;id sp&eacute;cifi&eacute; conform&eacute;ment au format donn&eacute; dans la mission.
+
+

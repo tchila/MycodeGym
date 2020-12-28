@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task20.task2009"\n\nComment sérialiser des champs statiques ?
+
+Fais en sorte que la classe ClassWithStatic puisse être sérialisée.
+
+
+Requirements:
+1.	La classe ClassWithStatic doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	La classe ClassWithStatic doit &ecirc;tre static.
+3.	La classe ClassWithStatic doit &ecirc;tre public.
+4.	La classe ClassWithStatic doit prendre en charge l&#39;interface Serializable.
+
+

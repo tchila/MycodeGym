@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task13.task1324"\n\nUne méthode dans une classe
+
+1. Fais en sorte que Fox hérite de l'interface Animal.
+2. Modifie le code pour que la méthode getName soit la seule méthode dans la classe Fox.
+3. Ne supprime aucune méthode !
+
+
+Requirements:
+1.	La classe Fox doit impl&eacute;menter l&#39;interface Animal.
+2.	La classe Fox doit impl&eacute;menter une seule m&eacute;thode (getName).
+3.	L&#39;interface Animal doit d&eacute;clarer une m&eacute;thode getColor.
+4.	Ne cr&eacute;e pas de classes ou d&#39;interfaces suppl&eacute;mentaires.
+
+

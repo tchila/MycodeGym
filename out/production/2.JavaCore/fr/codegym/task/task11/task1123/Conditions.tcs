@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task11.task1123"\n\nMinimum et maximum
+
+Écris une méthode qui renvoie les nombres minimum et maximum d'un tableau.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	Ne change pas la classe Pair.
+3.	Ne change pas la m&eacute;thode main.
+4.	Finis d&#39;&eacute;crire la m&eacute;thode getMinimumAndMaximum. Elle doit renvoyer une paire contenant le minimum et le maximum.
+5.	Le programme doit renvoyer le bon r&eacute;sultat.
+6.	La m&eacute;thode getMinimumAndMaximum() ne doit pas modifier le tableau inputArray.
+
+

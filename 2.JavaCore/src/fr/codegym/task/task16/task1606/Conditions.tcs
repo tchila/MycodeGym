@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task16.task1606"\n\njoin : au bon endroit au bon moment
+
+Demande-toi où et sur quel objet tu dois appeler la méthode join pour que le résultat s'affiche
+d'abord pour firstThread, puis pour secondThread.
+Appelle la méthode join au bon endroit.
+Exemple de sortie :
+firstThread : String 1
+firstThread : String 2
+...
+firstThread : String 19
+firstThread : String 20
+secondThread : String 1
+...
+secondThread : String 20
+
+
+Requirements:
+1.	La m&eacute;thode main doit appeler la m&eacute;thode join sur firstThread.
+2.	La m&eacute;thode ne doit pas appeler la m&eacute;thode join sur secondThread.
+3.	La m&eacute;thode main ne doit pas appeler System.out.println ou System.out.print().
+4.	La sortie du programme sortie doit correspondre &agrave; l&#39;exemple de la mission.
+
+

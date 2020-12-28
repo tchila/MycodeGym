@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task16.task1619"\n\nPas d'interruption, pas de dés ?
+
+Détermine comment le programme fonctionne.
+Fais en sorte que la méthode ourInterrupt permette à TestThread de se terminer lui-même.
+N'utilise pas la méthode interrupt.
+
+
+Requirements:
+1.	La classe Solution doit avoir une m&eacute;thode public static ourInterrupt sans param&egrave;tres.
+2.	La m&eacute;thode run doit afficher &laquo;&nbsp;h&eacute;-h&eacute;&nbsp;&raquo; toutes les demi-secondes jusqu&#39;&agrave; ce que la m&eacute;thode ourInterrupt soit appel&eacute;e.
+3.	Tu dois changer la condition de la boucle while dans la m&eacute;thode run.
+4.	La m&eacute;thode main doit cr&eacute;er un objet Thread en passant un objet TestThread au constructeur.
+5.	La m&eacute;thode main doit appeler la m&eacute;thode start sur l&#39;objet Thread.
+6.	La m&eacute;thode main doit appeler la m&eacute;thode ourInterrupt.
+
+

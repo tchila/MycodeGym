@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task09.task0928"\n\nLe code refuse de compiler...
+
+Mission : Le programme lit deux noms de fichier. Il copie le premier fichier à l'emplacement spécifié par le second nom.
+
+
+Requirements:
+1.	Le programme doit lire des noms de fichier.
+2.	Ne change pas la m&eacute;thode obtenirInputStream.
+3.	Ne change pas la m&eacute;thode obtenirOutputStream.
+4.	Le programme doit copier le contenu du premier fichier dans le second.
+5.	Le programme doit afficher le nombre d&#39;octets copi&eacute;s.
+6.	La m&eacute;thode main doit appeler la m&eacute;thode obtenirInputStream.
+7.	La m&eacute;thode main doit appeler la m&eacute;thode obtenirOutputStream.
+
+

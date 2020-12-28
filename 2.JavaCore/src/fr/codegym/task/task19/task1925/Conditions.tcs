@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task19.task1925"\n\nLong words
+
+Le premier paramètre de la méthode main est file1 et le second est file2.
+file1 contient des mots séparés par des espaces.
+Écris dans file2 une liste séparée par des virgules avec les mots de plus de 6 caractères.
+file2 ne doit pas se terminer par une virgule.
+Ferme les flux.
+Exemple de sortie pour file2 :
+longuet,raccourci,abréviation
+
+
+Requirements:
+1.	Le programme ne doit PAS lire de donn&eacute;es depuis la console.
+2.	Le programme doit lire le contenu du premier fichier (utilise le constructeur FileReader avec un param&egrave;tre String).
+3.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+4.	Le programme doit &eacute;crire dans le second fichier tous les mots du premier contenant plus de 6 caract&egrave;res, s&eacute;par&eacute;s par des virgules (utilise FileWriter).
+5.	Le flux de sortie de fichier (FileWriter) doit &ecirc;tre ferm&eacute;.
+
+

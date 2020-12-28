@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task16.task1608"\n\nPromotion lors des débats politiques
+
+1. Détermine ce que fait le programme.
+2. Nous devons nous assurer que Chump parle le plus au cours du débat politique.
+3. Demande-toi quelle méthode tu peux appeler sur l'objet chump pour que Chump parle jusqu'à ce que tout le temps disponible ait été pris.
+
+
+Requirements:
+1.	Appelle la m&eacute;thode join sur l&#39;objet n&eacute;cessaire.
+2.	La m&eacute;thode toString de la classe Politician doit afficher combien de fois l&#39;homme politique a parl&eacute;, par exemple&nbsp;: &laquo;&nbsp;Chump a parl&eacute; 35 fois&nbsp;&raquo;.
+3.	Le programme doit cr&eacute;er 3 objets Policitian.
+4.	Ne modifie pas les m&eacute;thodes qui sont responsables de la sortie &eacute;cran.
+5.	La sortie du programme doit indiquer que Chump a parl&eacute; le plus au cours du d&eacute;bat politique.
+
+

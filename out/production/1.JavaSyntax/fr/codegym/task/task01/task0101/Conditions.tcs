@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task01.task0101"\n\nJe trouve qu'être programmeur, c'est cool
+
+Écris un programme qui affiche : « Je trouve qu'être programmeur, c'est cool. »
+Exemple de sortie :
+Je trouve qu'être programmeur, c'est cool.
+
+
+Requirements:
+1.	Le programme doit afficher du texte.
+2.	Le texte doit commencer par &laquo; Je trouve &raquo;.
+3.	Le texte doit se terminer par &laquo; c&#39;est cool. &raquo;.
+4.	Le texte doit &ecirc;tre compos&eacute; de 42 caract&egrave;res, espaces et signes de
+5.	Le texte doit &ecirc;tre compos&eacute; d&#39;une ligne.
+6.	Le texte affich&eacute; doit correspondre aux conditions de la mission.
+
+

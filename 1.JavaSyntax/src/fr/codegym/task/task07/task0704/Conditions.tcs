@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task07.task0704"\n\nTournez tableau
+
+1. Crée un tableau de 10 nombres.
+2. Lis 10 nombres dans la console et écris-les dans le tableau.
+3. Affiche les éléments du tableau dans l'ordre inverse. Affiche chaque valeur sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er un tableau de 10 entiers.
+2.	Le programme doit lire des nombres pour le tableau au clavier.
+3.	Le programme doit afficher 10 valeurs, chacune sur une nouvelle ligne.
+4.	Le tableau doit &ecirc;tre affich&eacute; dans l&#39;ordre inverse.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task15.task1518"\n\nModificateurs statiques et chatons
+
+1. Dans la classe Solution, crée une classe Cat avec un champ public String name.
+2. Dans le bloc statique, crée un objet Cat et affecte-le à la variable cat (n'oublie pas d'initialiser le champ name).
+3. Dans la classe Cat, ne crée pas de constructeurs avec des paramètres.
+4. Dans le bloc statique, affiche le nom du chat créé à l'écran.
+
+
+Requirements:
+1.	La classe Cat doit &ecirc;tre &agrave; l&#39;int&eacute;rieur de la classe Solution et &ecirc;tre public et static.
+2.	La classe Cat doit avoir un champ public String appel&eacute; name.
+3.	La variable cat doit &ecirc;tre initialis&eacute;e dans le bloc statique de la classe Solution.
+4.	Dans le bloc statique, le nom du chat cr&eacute;&eacute; doit &ecirc;tre affich&eacute; &agrave; l&#39;&eacute;cran.
+5.	La classe Cat ne doit pas avoir de constructeurs avec des param&egrave;tres.
+
+

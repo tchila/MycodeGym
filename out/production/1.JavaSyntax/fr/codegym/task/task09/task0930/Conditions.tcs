@@ -1,0 +1,35 @@
+taskKey="fr.codegym.task.task09.task0930"\n\nMission sur les algorithmes
+
+Mission : L'utilisateur saisit une liste de mots (et de nombres) au clavier. Les mots sont affichés dans l'ordre croissant, et les nombres  dans l'ordre décroissant.
+
+Exemple d'entrée :
+Cerise
+1
+Bob
+3
+Pomme
+22
+0
+Pastèque
+
+Exemple de sortie :
+Pomme
+22
+Bob
+3
+Cerise
+1
+0
+Pastèque
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+3.	Les mots affich&eacute;s doivent &ecirc;tre class&eacute;s dans l&#39;ordre croissant (&agrave; l&#39;aide de la m&eacute;thode estSuperieurA fournie).
+4.	Les nombres affich&eacute;s doivent &ecirc;tre class&eacute;s dans l&#39;ordre d&eacute;croissant.
+5.	La m&eacute;thode main doit utiliser la m&eacute;thode tri.
+6.	La m&eacute;thode tri() doit appeler la m&eacute;thode estSuperieurA().
+7.	La m&eacute;thode tri() doit appeler la m&eacute;thode estUnNombre().
+
+

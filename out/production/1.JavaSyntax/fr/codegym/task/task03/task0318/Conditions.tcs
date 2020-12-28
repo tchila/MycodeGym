@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task03.task0318"\n\nPlan de conquête du monde
+
+Enter the number and name from the keyboard. Display the following string:
+<name> will take over the world in <number> years. Mwa-ha-ha!
+Here's an example: Kevin will take over the world in 8 years. Mwa-ha-ha!
+
+The order in which the data is input matters a lot.
+
+Saisis le nombre et le nom au clavier. Affiche la chaîne suivante :
+<nom> conquerra le monde dans <nombre> ans. Moua-ha-ha !
+Voici un exemple : Kevin conquerra le monde dans 8 ans. Moua-ha-ha !>
+L'ordre de saisie des données est très important.
+
+
+Requirements:
+1.	Le programme doit afficher du texte.
+2.	Le programme doit lire les donn&eacute;es depuis le clavier.
+3.	Le texte affich&eacute; doit contenir le nom saisi.
+4.	Le texte affich&eacute; doit contenir le nombre saisi.
+5.	Le texte affich&eacute; doit pleinement r&eacute;pondre aux conditions de la mission.
+
+

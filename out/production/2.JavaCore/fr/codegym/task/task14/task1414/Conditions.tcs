@@ -1,0 +1,27 @@
+taskKey="fr.codegym.task.task14.task1414"\n\nMovieFactory
+
+Lis depuis la console pour étendre la fonctionnalité par analogie :
+1. Détermine ce que fait le programme.
+2. Toutes les classes doivent se trouver à l'intérieur de la classe Solution.
+3. Ajoute les classes Cartoon et Thriller.
+4. Comprends comment nous obtenons un objet SoapOpera en utilisant la clé « soapOpera ».
+En suivant le modèle utilisé pour obtenir un objet SoapOpera :
+5. Ajoute à MovieFactory.getMovie la possibilité d'obtenir un objet Cartoon en utilisant la clé « cartoon ».
+6. Ajoute à MovieFactory.getMovie la possibilité d'obtenir un objet Thriller en utilisant la clé « thriller ».
+7. Lis plusieurs touches (chaînes) depuis la console.
+7.1. Cesse de lire les chaînes dès qu'une chaîne ne correspondant pas à l'une des suivantes est saisie : « cartoon », « thriller », « soapOpera ».
+8. Crée une variable Movie movie, et pour chaque chaîne (clé) saisie :
+8.1. Obtient un objet en utilisant MovieFactory.getMovie et l'affecte à la variable movie.
+8.2. Affiche le résultat de l'appel à movie.getClass().getSimpleName().
+
+
+Requirements:
+1.	Les classes Cartoon et Thriller doivent &ecirc;tre static et se trouver dans la classe Solution.
+2.	La m&eacute;thode MovieFactory.getMovie doit renvoyer un objet Cartoon si &laquo;&nbsp;cartoon&nbsp;&raquo; est pass&eacute; comme argument.
+3.	La m&eacute;thode MovieFactory.getMovie doit renvoyer un objet Thriller si &laquo;&nbsp;thriller&nbsp;&raquo; est pass&eacute; comme argument.
+4.	La m&eacute;thode main doit lire des cha&icirc;nes au clavier.
+5.	La m&eacute;thode main doit cesser de lire des cha&icirc;nes au clavier si une cha&icirc;ne non valide est saisie (c&#39;est-&agrave;-dire autre chose que &laquo;&nbsp;cartoon&nbsp;&raquo;, &laquo;&nbsp;thriller&nbsp;&raquo; ou &laquo;&nbsp;soapOpera&nbsp;&raquo;).
+6.	Pour chaque cha&icirc;ne saisie (y compris les cha&icirc;nes non valides), tu dois appeler la m&eacute;thode MovieFactory.getMovie.
+7.	Pour chaque cha&icirc;ne valide saisie, tu dois afficher le nom simple (movie.getClass().getSimpleName()) des types d&#39;objets renvoy&eacute;s par la m&eacute;thode MovieFactory.getMovie.
+
+

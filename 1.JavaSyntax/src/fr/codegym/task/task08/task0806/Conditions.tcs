@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task08.task0806"\n\nHashMap d'objets
+
+Il y a une HashMap<String, Object>. 10 paires d'objets différentes lui ont été ajoutées.
+Affiche le contenu de la collection en utilisant une nouvelle ligne pour chaque élément.
+Exemple de sortie : (nous montrons une seule ligne ici) :
+Sim - 5
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er une variable HashMap avec des &eacute;l&eacute;ments (String, Object). La variable doit &ecirc;tre initialis&eacute;e imm&eacute;diatement.
+2.	Le programme ne doit pas lire de valeurs au clavier.
+3.	Le programme doit ajouter 10 objets diff&eacute;rents &agrave; la collection conform&eacute;ment aux conditions.
+4.	Le programme doit afficher le contenu de la collection &agrave; l&#39;&eacute;cran, chaque paire sur une nouvelle ligne.
+
+

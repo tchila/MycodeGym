@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task13.task1310"\n\nResponsable du futur
+
+1. Ajoute les interfaces Secretary et Boss aux classes Manager et Subordinate. Une interface pour chaque classe. Pense à l'interface qui doit être associée à chaque classe.
+2. Fais en sorte que les interfaces Secretary et Boss héritent des interfaces Person et HasManagementPotential pour que
+toutes les méthodes des classes Manager et Subordinate soient déclarées dans une des interfaces.
+
+
+Requirements:
+1.	La classe Manager doit impl&eacute;menter l&#39;interface appropri&eacute;e (Secretary ou Boss).
+2.	La classe Subordinate doit impl&eacute;menter l&#39;interface appropri&eacute;e (Secretary ou Boss).
+3.	Un Secretary est une Person.
+4.	Un Boss est une Person qui aime travailler dur (HasManagementPotential).
+
+

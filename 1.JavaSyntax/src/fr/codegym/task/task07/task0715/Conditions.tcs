@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task07.task0715"\n\nSam-I-Am, le retour
+
+1. Crée une liste de mots : « Sam », « I », « Am ».
+2. Après chaque mot, insère le mot « Ham » dans la liste.
+3. Affiche les résultats à l'écran, chaque élément de la liste sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+3.	Ajoute les mots suivants &agrave; la liste : &laquo; Sam &raquo;, &laquo; I &raquo;, &laquo; Am &raquo;.
+4.	Apr&egrave;s chaque mot, ajoute la cha&icirc;ne &laquo; Ham &raquo; &agrave; la liste.
+5.	Affiche les &eacute;l&eacute;ments de la liste &agrave; l&#39;&eacute;cran, chacun sur une nouvelle ligne.
+
+

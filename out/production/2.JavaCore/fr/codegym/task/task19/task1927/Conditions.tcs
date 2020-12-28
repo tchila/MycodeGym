@@ -1,0 +1,28 @@
+taskKey="fr.codegym.task.task19.task1927"\n\nPublicité contextuelle
+
+Remplace l'objet System.out dans la méthode main par ton propre wrapper lecteur.
+Ton wrapper lecteur doit afficher une publicité contextuelle tous les deux appels à println.
+Appelle la méthode printSomething() existante de testString.
+Restaure la variable System.out au flux d'origine.
+Texte de la publicité : « CodeGym - Cours de Java en ligne »
+Exemple de sortie :
+première
+deuxième
+CodeGym - Cours de Java en ligne
+troisième
+quatrième
+CodeGym - Cours de Java en ligne
+cinquième
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe TestString.
+2.	La classe Solution doit avoir un champ public static TestString testString qui est initialis&eacute; imm&eacute;diatement.
+3.	La classe TestString doit avoir une m&eacute;thode public void printSomething().
+4.	La m&eacute;thode printSomething() de la classe TestString doit afficher les lignes suivantes&nbsp;: &quot;premi&egrave;re&quot;,&quot;deuxi&egrave;me&quot;,&quot;troisi&egrave;me&quot;,&quot;quatri&egrave;me&quot;,&quot;cinqui&egrave;me&quot;.
+5.	La m&eacute;thode main(String[] args) de la classe Solution doit cr&eacute;er un objet PrintStream (utilise le constructeur PrintStream avec un param&egrave;tre ByteArrayOutputStream).
+6.	La m&eacute;thode main(String[] args) de la classe Solution doit remplacer puis restaurer le flux de sortie de la console (System.out).
+7.	La m&eacute;thode main(String[] args) de la classe Solution doit appeler la m&eacute;thode printSomething() de testString.
+8.	La m&eacute;thode main(String[] args) de la classe Solution doit modifier et afficher les lignes envoy&eacute;es par la m&eacute;thode printSomething() (en ajoutant des publicit&eacute;s contextuelles), conform&eacute;ment aux conditions de la mission.
+
+

@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task16.task1621"\n\nThread.currentThread renvoie toujours le thread actuel
+
+1. Dans la méthode printMsg, affecte le thread en cours à la variable t.
+2. Dans la méthode printMsg, ajoute un retard de 1 milliseconde après toutes les actions.
+
+
+Requirements:
+1.	La m&eacute;thode printMsg doit obtenir le thread en cours en utilisant Thread.currentThread.
+2.	La m&eacute;thode printMsg doit faire attendre le thread pendant 1 milliseconde.
+3.	La m&eacute;thode printMsg doit appeler la m&eacute;thode getName sur le thread actuel.
+4.	La m&eacute;thode main doit appeler la m&eacute;thode printMsg sur l&#39;objet ThreadNamePrinter 5 fois.
+5.	La m&eacute;thode run doit appeler la m&eacute;thode printMsg 5 fois.
+6.	La m&eacute;thode printMsg de la classe ThreadNamePrinter doit &ecirc;tre appel&eacute;e un total de 10 fois.
+
+

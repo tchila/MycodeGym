@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task09.task0925"\n\nModificateurs static en désordre
+
+Réorganise les modificateurs static pour que l'exemple compile.
+
+
+Requirements:
+1.	La classe doit avoir une variable A.
+2.	La classe doit avoir une variable B.
+3.	La classe doit avoir une variable C.
+4.	Ne change pas la m&eacute;thode main.
+5.	Ne change pas la m&eacute;thode getA.
+6.	Il doit y avoir 3 champs static dans la classe.
+
+

@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task05.task0514"\n\nUn programmeur crée une personne
+
+Crée la classe Personne. Une personne doit avoir un String nom et un int age.
+Ajoute la méthode initialiser(String nom, int age) où tu initialises les variables nom et age.
+Dans la méthode main, crée un objet Personne et stocke une référence qui le désigne dans la variable personne.
+Appelle la méthode initialiser avec des valeurs quelconques.
+
+
+Requirements:
+1.	La classe Solution doit contenir la classe Personne.
+2.	La classe Personne doit avoir une variable String appel&eacute;e nom.
+3.	La classe Personne doit avoir une variable int appel&eacute;e age.
+4.	La classe Personne doit avoir une m&eacute;thode d&#39;initialisation qui prend un nom et un &acirc;ge comme arguments et initialise la variable d&#39;instance correspondante.
+5.	Tu dois cr&eacute;er un objet Personne et stocker une r&eacute;f&eacute;rence qui le d&eacute;signe dans la variable personne.
+6.	Tu dois appeler la m&eacute;thode initialiser sur l&#39;objet cr&eacute;&eacute; et lui passer des arguments.
+
+

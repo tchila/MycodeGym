@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task15.task1502"\n\nPOO : Héritage des animaux
+
+1. Crée une classe public static Goose.
+2. Crée une classe public static Dragon.
+3. Fais en sorte que la classe Goose hérite de BigAnimal ou de SmallAnimal. Demande-toi ce qui serait le plus logique.
+4. Fais en sorte que la classe Dragon hérite de BigAnimal ou de SmallAnimal. Demande-toi ce qui serait le plus logique.
+5. Fais en sorte que les classes Goose et Dragon remplacent la méthode String getSize() et rendent sa visibilité aussi large que possible.
+6. Dans la classe Goose, la méthode getSize doit renvoyer "Une oie est petite, " + <classe parente>.getSize().
+7. Dans la classe Dragon, la méthode getSize doit renvoyer "Un dragon est grand" + <classe parente>.getSize().
+
+
+Requirements:
+1.	La classe Goose doit &ecirc;tre &agrave; l&#39;int&eacute;rieur de la classe Solution et &ecirc;tre static.
+2.	La classe Dragon doit &ecirc;tre &agrave; l&#39;int&eacute;rieur de la classe Solution et &ecirc;tre static.
+3.	La classe Goose doit descendre de la classe SmallAnimal.
+4.	La classe Dragon doit descendre de la classe BigAnimal.
+5.	Dans la classe Goose, la m&eacute;thode getSize doit &ecirc;tre remplac&eacute;e. Elle doit contenir une cha&icirc;ne format&eacute;e comme suit&nbsp;: &quot;Une oie est petite, &quot; + &lt;classe parente&gt;.getSize().
+6.	Dans la classe Dragon, la m&eacute;thode getSize doit &ecirc;tre remplac&eacute;e. Elle doit contenir une cha&icirc;ne format&eacute;e comme suit&nbsp;: &quot;Un dragon est grand, &quot; + &lt;classe parente&gt;.getSize().
+7.	La visibilit&eacute; des m&eacute;thodes getSize remplac&eacute;es dans les classes Goose et Dragon doit &ecirc;tre aussi large que possible.
+
+

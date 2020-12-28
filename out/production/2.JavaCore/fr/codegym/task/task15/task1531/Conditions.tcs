@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task15.task1531"\n\nFactorielle
+
+Écris une méthode qui calcule la factorielle, à savoir le produit de tous les nombres de 1 au nombre saisi (y compris ce dernier).
+Exemples de calculs : 4! = factorial(4) = 1*2*3*4
+Exemple de sortie : 24
+1. Saisis un nombre inférieur ou égal à 150 à partir de la console.
+2. Implémente la méthode factorial.
+3. Si le nombre saisi est inférieur à 0, affiche 0.
+0! = 1
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit afficher la factorielle du nombre saisi.
+3.	La m&eacute;thode factorial doit renvoyer une repr&eacute;sentation sous forme de cha&icirc;ne de la factorielle du nombre pass&eacute; en argument.
+4.	La m&eacute;thode factorial doit avoir un param&egrave;tre int.
+
+

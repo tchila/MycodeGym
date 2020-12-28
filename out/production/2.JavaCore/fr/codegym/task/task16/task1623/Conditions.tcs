@@ -1,0 +1,28 @@
+taskKey="fr.codegym.task.task16.task1623"\n\nCréation récursive de threads
+
+1. Modifie la classe GenerateThread pour en faire un thread.
+2. Crée un constructeur GenerateThread, qui doit :
+2.1. Appelle le constructeur de la classe parente, en passant le numéro du thread créé sous forme de String. Utilise createdThreadCount.
+2.2. Démarre le thread actuel.
+2.3. Les numéros de thread sont comptés à partir du numéro 1.
+3. Remplace la méthode toString : dans GenerateThread, utilise Alt+Inser -> Override Methods. Commence à écrire « toString ».
+3.1. La méthode toString doit renvoyer le numéro du thread en cours et le mot « créé ». Utilise getName().
+Exemple :
+8 créé
+4. Si le nombre de threads créés est inférieur à Solution.count, la méthode run doit :
+4.1. Créer un nouveau GenerateThread.
+4.2. Afficher le thread créé à l'étape 4.1.
+5. Au final, 15 lignes doivent être affichées dans la console.
+
+
+Requirements:
+1.	La classe GenerateThread doit h&eacute;riter de la classe Thread.
+2.	La classe GenerateThread doit avoir un constructeur public sans argument.
+3.	Le constructeur de la classe GenerateThread doit incr&eacute;menter createdThreadCount et passer la variable sous forme de cha&icirc;ne au constructeur de la classe parente.
+4.	Le constructeur de la classe GenerateThread doit d&eacute;marrer le thread.
+5.	La m&eacute;thode toString de la classe GenerateThread doit renvoyer le nom du thread et le mot &laquo;&nbsp;cr&eacute;&eacute;&nbsp;&raquo;. Exemple&nbsp;: &laquo;&nbsp;8 cr&eacute;&eacute;&nbsp;&raquo;.
+6.	Si le nombre de threads cr&eacute;&eacute;s est inf&eacute;rieur &agrave; Solution.count, la m&eacute;thode run doit&nbsp;cr&eacute;er un nouveau GenerateThread.
+7.	Si le nombre de threads cr&eacute;&eacute;s est inf&eacute;rieur &agrave; Solution.count, la m&eacute;thode run doit&nbsp;afficher le thread cr&eacute;&eacute;.
+8.	La sortie du programme doit correspondre aux conditions de la mission et indiquer que les 15 threads ont tous &eacute;t&eacute; cr&eacute;&eacute;s.
+
+

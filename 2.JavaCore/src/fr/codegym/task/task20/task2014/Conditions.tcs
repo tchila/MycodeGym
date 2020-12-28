@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task20.task2014"\n\nSolution sérialisable
+
+Sérialise la classe Solution.
+Réfléchis aux champs que tu ne dois pas sérialiser. Marque les champs inutiles avec le marqueur transient.
+L'objet doit toujours contenir des données de résumé à jour.
+La méthode main n'est pas testée.
+Écris le code de vérification toi-même dans la méthode main :
+1) crée un fichier, ouvre un flux d'entrée et un flux de sortie ;
+2) crée une instance de la classe Solution (savedObject) ;
+3) écris savedObject dans le flux de sortie (vérifie qu'il est vraiment là) ;
+4) crée une autre instance de la classe Solution avec un argument différent ;
+5) charge un objet à partir du flux d'entrée (loadedObject) ;
+6) vérifie que savedObject.string est égal à loadedObject.string ;
+7) gère les exceptions.
+
+
+Requirements:
+1.	Le champ pattern doit &ecirc;tre marqu&eacute; avec le modificateur transient.
+2.	Le champ currentDate doit &ecirc;tre marqu&eacute; avec le modificateur transient.
+3.	Le champ temperature doit &ecirc;tre marqu&eacute; avec le modificateur transient.
+4.	Le champ string ne doit PAS &ecirc;tre marqu&eacute; avec le modificateur transient.
+
+

@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task17.task1716"\n\nMéthodes synchronisées
+
+Place le modificateur synchronized uniquement sur les méthodes qui en ont besoin.
+L'objet Solution sera utilisé par des threads.
+
+
+Requirements:
+1.	Utilise la synchronisation dans method0, si n&eacute;cessaire.
+2.	Utilise la synchronisation dans method1, si n&eacute;cessaire.
+3.	Utilise la synchronisation dans method2, si n&eacute;cessaire.
+4.	Utilise la synchronisation dans method3, si n&eacute;cessaire.
+5.	Utilise la synchronisation dans method4, si n&eacute;cessaire.
+6.	Utilise la synchronisation dans method5, si n&eacute;cessaire.
+7.	Utilise la synchronisation dans method6, si n&eacute;cessaire.
+8.	Utilise la synchronisation dans method7, si n&eacute;cessaire.
+
+

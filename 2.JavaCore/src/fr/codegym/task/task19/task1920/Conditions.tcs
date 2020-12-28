@@ -1,0 +1,25 @@
+taskKey="fr.codegym.task.task19.task1920"\n\nLe plus riche
+
+Le premier paramètre de la méthode main est un nom de fichier.
+Chaque ligne du fichier spécifié a le format suivant :
+nom valeur
+où [nom] est un String et [valeur] un double. [nom] et [valeur] sont séparés par un espace.
+Trouve la somme de toutes les valeurs pour chaque nom.
+Affiche par ordre alphabétique les noms avec la somme la plus élevée.
+Sépare les noms avec un espace ou une nouvelle ligne.
+Ferme les flux.
+Exemple de fichier d'entrée :
+Peterson 0.501
+Smith 1.35
+Peterson 0.85
+Exemple de sortie :
+Peterson
+
+
+Requirements:
+1.	Le programme ne doit PAS lire de donn&eacute;es depuis la console.
+2.	Le programme doit lire le contenu du fichier (utilise FileReader).
+3.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+4.	Le programme doit afficher les noms avec la somme la plus &eacute;lev&eacute;e dans la console.
+
+

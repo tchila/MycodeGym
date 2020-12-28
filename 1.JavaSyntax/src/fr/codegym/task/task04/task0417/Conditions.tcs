@@ -1,0 +1,29 @@
+taskKey="fr.codegym.task.task04.task0417"\n\nAvons-nous une paire ?
+
+Utilise le clavier pour saisir trois entiers. Détermine s'il existe au moins une paire de nombres égaux parmi eux.
+Si une telle paire existe, affiche ces nombres séparés par un espace.
+Si les trois nombres sont égaux, affiche-les tous les trois.
+Voici quelques exemples :
+a) Si tu saisis les nombres
+1
+2
+2
+nous affichons
+2 2
+
+b) Si tu saisis les nombres
+2
+2
+2
+nous affichons
+2 2 2
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	Le programme doit contenir System.out.println() ou System.out.print().
+3.	Si deux nombres sont &eacute;gaux entre eux, tu dois les afficher &agrave; l&#39;&eacute;cran.
+4.	Si les trois nombres sont &eacute;gaux, affiche-les tous les trois.
+5.	S&#39;il n&#39;y a pas de nombres &eacute;gaux, n&#39;affiche rien.
+
+

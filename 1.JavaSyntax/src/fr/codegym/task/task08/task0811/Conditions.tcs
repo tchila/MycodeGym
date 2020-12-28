@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task08.task0811"\n\nQuatuor de méthodes
+
+Implémente les 4 méthodes. Chacune d'entre elles doit renvoyer la liste qui est la mieux adaptée pour effectuer ces opérations (c'est-à-dire la liste qui peut plus effectuer le plus rapidement un grand nombre d'opérations).
+Tu n'as pas besoin de mesurer quoi que ce soit.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	La classe Solution ne doit contenir que 5 m&eacute;thodes.
+3.	La m&eacute;thode obtenirListePourObtention doit renvoyer la liste qui est la mieux adapt&eacute;e pour les op&eacute;rations get.
+4.	La m&eacute;thode obtenirListePourDefinition doit renvoyer la liste qui est la mieux adapt&eacute;e pour les op&eacute;rations set.
+5.	La m&eacute;thode obtenirListePourAjoutOuInsertion doit renvoyer la liste qui convient le mieux pour ajouter ou ins&eacute;rer des &eacute;l&eacute;ments.
+6.	La m&eacute;thode obtenirListePourSuppression doit renvoyer la liste qui est la mieux adapt&eacute;e pour la suppression d&#39;&eacute;l&eacute;ments.
+
+

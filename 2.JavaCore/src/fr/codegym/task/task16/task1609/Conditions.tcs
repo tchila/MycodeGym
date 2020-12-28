@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task16.task1609"\n\nJustice
+
+1. Détermine ce que fait le programme.
+2. Vérifie que toutes les souris mangent en même temps.
+3. Demande-toi quelle méthode permet à la souris mâle alpha de manger d'abord, pendant que l'autre attend.
+4. Supprime l'appel à cette méthode.
+
+
+Requirements:
+1.	La sortie du programme doit d&#39;abord indiquer que toutes les souris ont commenc&eacute; &agrave; manger, puis qu&#39;elles ont toutes fini.
+2.	La m&eacute;thode join ne doit pas &ecirc;tre appel&eacute;e sur les objets Mouse.
+3.	Le programme doit cr&eacute;er 3 objets Mouse.
+4.	Ne modifie pas les m&eacute;thodes qui sont responsables de la sortie &eacute;cran.
+
+

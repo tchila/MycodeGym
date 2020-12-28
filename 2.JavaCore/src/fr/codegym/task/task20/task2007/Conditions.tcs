@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task20.task2007"\n\nComment sérialiser CodeGym ?
+
+Fais en sorte que la classe CodeGym puisse être sérialisée.
+
+
+Requirements:
+1.	La classe CodeGym doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	La classe CodeGym doit &ecirc;tre static.
+3.	La classe CodeGym doit &ecirc;tre public.
+4.	Il doit &ecirc;tre possible de s&eacute;rialiser la classe CodeGym.
+
+

@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task16.task1632"\n\nPelote
+
+1. Crée 5 threads distincts et différents de Thread :
+1.1. Le thread 1 doit être exécuté indéfiniment ;
+1.2. Le thread 2 doit afficher « InterruptedException » quand une InterruptedException se produit ;
+1.3. Le thread 3 doit afficher « Hourra » chaque demi-seconde ;
+1.4. Le thread 4 doit implémenter l'interface Message. Quand la méthode showWarning est appelée, le thread doit s'arrêter ;
+1.5. Le thread 5 doit lire des nombres depuis la console jusqu'à ce que « N » soit saisi. Il doit ensuite afficher la somme des nombres saisis.
+2. Dans un bloc statique, ajoute tes threads à List<Thread> threads dans l'ordre spécifié.
+3. Les threads ne doivent pas démarrer automatiquement.
+Indice : Tu peux vérifier le thread 4 avec isAlive()
+
+
+Requirements:
+1.	Le bloc statique de la classe Solution doit cr&eacute;er 5 threads et les ajouter &agrave; la liste threads.
+2.	Les threads dans la liste threads ne doivent pas d&eacute;marrer automatiquement.
+3.	Le thread&nbsp;1 dans la liste threads doit s&#39;ex&eacute;cuter ind&eacute;finiment.
+4.	Le thread 2 dans la liste threads doit afficher &laquo;&nbsp;InterruptedException&nbsp;&raquo; quand une InterruptedException se produit.
+5.	Le thread 3 dans la liste threads doit afficher &laquo;&nbsp;Hourra&nbsp;&raquo; chaque demi-seconde.
+6.	Le thread&nbsp;4 dans la liste threads doit impl&eacute;menter l&#39;interface Message. Quand la m&eacute;thode showWarning est appel&eacute;e, le thread doit s&#39;arr&ecirc;ter.
+7.	Le thread 5 dans la liste threads doit lire des nombres depuis la console jusqu&#39;&agrave; ce que &laquo;&nbsp;N&nbsp;&raquo; soit saisi. Il doit ensuite afficher la somme des nombres saisis.
+
+

@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task17.task1715"\n\nPharmacie
+
+Implémente l'interface Runnable dans les classes Pharmacy et Person.
+Tous les threads doivent s'exécuter jusqu'à ce que isStopped prenne la valeur true.
+Voici la logique de la classe Pharmacy : drugController doit effectuer l'achat (appelle la méthode void buy(Drug drug, int count)) d'un médicament aléatoire (getRandomDrug) dans une quantité aléatoire (getRandomCount) et attendre 300 ms.
+Voici la logique de la classe Person : drugController doit effectuer la vente (appelle la méthode void sell(Drug drug, int count)) d'un médicament aléatoire (getRandomDrug) dans une quantité aléatoire (getRandomCount) et attendre 100 ms.
+Place le mot-clé synchronized si nécessaire.
+
+
+Requirements:
+1.	La classe Solution doit contenir un champ public static DrugController drugController.
+2.	La classe Solution doit contenir un champ public static boolean isStopped.
+3.	La classe Solution doit avoir une m&eacute;thode private static waitAMoment qui attend 100 ms.
+4.	La classe Pharmacy doit impl&eacute;menter l&#39;interface Runnable.
+5.	Le thread Pharmacy doit s&#39;ex&eacute;cuter aussi longtemps que isStopped a la valeur false.
+6.	Le thread Pharmacy doit utiliser drugController pour acheter un m&eacute;dicament au hasard (getRandomDrug) dans une quantit&eacute; al&eacute;atoire (getRandomCount).
+7.	Le thread Pharmacy doit utiliser la m&eacute;thode waitAMoment() pour attendre 300 ms entre les achats.
+8.	La classe Person doit impl&eacute;menter l&#39;interface Runnable.
+9.	Le thread Person doit s&#39;ex&eacute;cuter aussi longtemps que isStopped a la valeur false.
+10.	Le thread Person doit utiliser drugController pour vendre un m&eacute;dicament au hasard (getRandomDrug) dans une quantit&eacute; al&eacute;atoire (getRandomCount).
+11.	Le thread Person doit utiliser la m&eacute;thode waitAMoment() pour attendre 100 ms entre les achats.
+12.	Les m&eacute;thodes de la classe DrugController doivent &ecirc;tre synchronis&eacute;es.
+
+

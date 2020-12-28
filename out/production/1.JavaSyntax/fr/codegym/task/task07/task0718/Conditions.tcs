@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task07.task0718"\n\nVérification d'ordre
+
+1. Lis 10 mots au clavier et ajoute-les à une liste de chaînes.
+2. Détermine si la liste est ordonnée par longueur de chaîne croissante.
+3. Dans le cas contraire, affiche l'indice du premier élément qui enfreint cet ordre.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Lis 10 lignes au clavier et ajoute-les &agrave; la liste.
+3.	Si la liste est ordonn&eacute;e par longueur de cha&icirc;ne croissante, tu n&#39;as rien besoin d&#39;afficher.
+4.	Si la liste n&#39;est pas ordonn&eacute;e par longueur de cha&icirc;ne croissante, affiche l&#39;indice du premier &eacute;l&eacute;ment qui enfreint cet ordre.
+
+

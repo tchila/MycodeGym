@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task17.task1704"\n\nNotes synchronisées : partie 2
+
+La classe Note sera utilisée par des threads. Veille à synchroniser toutes les méthodes.
+
+
+Requirements:
+1.	La m&eacute;thode addNote() doit ajouter des notes &agrave; la liste notes.
+2.	La m&eacute;thode removeNote() doit supprimer une note de la liste notes.
+3.	La m&eacute;thode addNote() doit &ecirc;tre synchronis&eacute;e.
+4.	La m&eacute;thode removeNote() doit &ecirc;tre synchronis&eacute;e.
+
+

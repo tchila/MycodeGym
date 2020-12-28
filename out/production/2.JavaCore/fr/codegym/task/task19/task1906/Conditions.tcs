@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task19.task1906"\n\nCaractères pairs
+
+Lis 2 noms de fichier depuis la console.
+Écris dans le second fichier tous les caractères du premier fichier avec un nombre ordinal pair (les nombres ordinaux commencent à 1).
+Exemple de premier fichier :
+texte fichier
+Sortie dans le second fichier :
+et fcir
+Fermer les flux d'E/S.
+
+
+Requirements:
+1.	Le programme doit lire les noms de fichier &agrave; partir de la console (utilise BufferedReader).
+2.	Le BufferedReader utilis&eacute; pour la lecture de l&#39;entr&eacute;e depuis la console doit &ecirc;tre ferm&eacute; apr&egrave;s utilisation.
+3.	Le programme doit lire le contenu du premier fichier (utilise le constructeur FileReader avec un param&egrave;tre String).
+4.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+5.	Le programme doit &eacute;crire dans le second fichier tous les octets du premier fichier avec un nombre ordinal pair (utilise FileWriter).
+6.	Le flux de sortie de fichier (FileWriter) doit &ecirc;tre ferm&eacute;.
+
+

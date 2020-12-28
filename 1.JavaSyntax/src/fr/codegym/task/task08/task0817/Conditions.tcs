@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task08.task0817"\n\nNous n'avons pas besoin de répétitions
+
+Crée une Map<String, String> et ajoute-lui dix entrées qui représentent des paires (nom, prénom).
+Supprime les personnes ayant le même prénom.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	Le programme ne doit pas lire de valeurs au clavier.
+3.	La m&eacute;thode creerMap() doit cr&eacute;er et renvoyer une HashMap qui contient des &eacute;l&eacute;ments (String, String) et 10 entr&eacute;es.
+4.	La m&eacute;thode supprimerPrenomsIdentiques() doit supprimer de la Map toutes les personnes qui ont le m&ecirc;me pr&eacute;nom.
+5.	La m&eacute;thode supprimerPrenomsIdentiques() doit appeler la m&eacute;thode supprimerElementMapParValeur().
+
+

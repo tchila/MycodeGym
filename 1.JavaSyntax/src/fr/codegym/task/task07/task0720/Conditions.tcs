@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task07.task0720"\n\nMélange en temps opportun
+
+Utilise le clavier pour saisir 2 nombres, n et m.
+Saisis n chaînes et mets-les dans une liste.
+Déplace les m premières chaînes à la fin de la liste.
+Affiche la liste, chaque valeur sur une nouvelle ligne.
+
+Remarque : tu ne dois pas créer plus d'une liste.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Lis les nombres n et m au clavier. Lis n cha&icirc;nes et ajoute-les &agrave; la liste.
+3.	D&eacute;place les m premi&egrave;res cha&icirc;nes &agrave; la fin de la liste.
+4.	Affiche la liste, chaque valeur sur une nouvelle ligne.
+
+

@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task16.task1610"\n\nOrganiser les appels à join()
+
+1. Détermine ce que fait le programme.
+2. Organise les appels à join() pour que chaque chat fasse ce qui suit :
+2.1. D'abord, le chat donne naissance à des chatons.
+2.2. Ensuite, tous les chatons sortent du panier dans un ordre aléatoire.
+2.3. Enfin, le chat les ramène dans le panier.
+2.4. Ces événements pour un chat peuvent être entrecoupés par des événements pour un autre chat.
+2.5. Ajoute un temps de sieste aux chatons (sleep 200 ms) à investigateWorld.
+
+
+Requirements:
+1.	La m&eacute;thode join doit &ecirc;tre appel&eacute;e sur chaque chaton (objet Kitten).
+2.	La m&eacute;thode investigateWorld doit faire attendre le chaton pendant 200 ms. Utilise Thread.sleep(200).
+3.	Le programme doit cr&eacute;er deux chats et quatre chatons.
+4.	Ne modifie pas les m&eacute;thodes qui sont responsables de la sortie &eacute;cran.
+5.	La sortie du programme doit indiquer que les conditions de la mission ont &eacute;t&eacute; satisfaites.
+
+

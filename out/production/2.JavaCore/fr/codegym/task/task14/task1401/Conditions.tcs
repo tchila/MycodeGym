@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task14.task1401"\n\nBingo !
+
+Corrige la ligne 'Object animal = new Pet();' dans la méthode main pour que le programme affiche « Bingo ! »
+
+
+Requirements:
+1.	La classe Cat doit h&eacute;riter de la classe Pet.
+2.	La classe Tiger doit h&eacute;riter de la classe Cat.
+3.	La variable Object animal doit faire r&eacute;f&eacute;rence &agrave; un objet qui est &agrave; la fois un Pet, un Cat et un Tiger.
+4.	Le programme doit afficher ce qui suit&nbsp;: &laquo;&nbsp;Bingo&nbsp;!&nbsp;&raquo;
+
+

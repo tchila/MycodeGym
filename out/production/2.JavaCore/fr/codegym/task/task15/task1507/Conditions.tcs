@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task15.task1507"\n\nPOO : Surcharge de méthodes
+
+Surcharge la méthode printMatrix de 8 façons différentes. Tu devrais te retrouver avec 10 méthodes printMatrix différentes.
+
+
+Requirements:
+1.	La classe solution doit impl&eacute;menter 10 m&eacute;thodes printMatrix avec des param&egrave;tres diff&eacute;rents.
+2.	La classe Solution doit &ecirc;tre public.
+3.	Toutes les m&eacute;thodes de la classe Solution doivent &ecirc;tre static.
+4.	Toutes les m&eacute;thodes de la classe Solution doivent &ecirc;tre public.
+
+

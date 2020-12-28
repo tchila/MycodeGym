@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task07.task0724"\n\nArbre généalogique
+
+Crée la classe Humain avec les champs String nom, boolean sexe, int age, Humain pere et Humain mere. Crée et remplis des objets pour que nous nous retrouvions avec : Deux grands-pères, deux grands-mères, un père, une mère et trois enfants. Affiche les objets à l'écran.
+Remarque :
+Si tu écris ta propre méthode String toString() dans la classe Humain , elle sera utilisée pour afficher l'objet à l'écran.
+Exemple de sortie :
+Nom : Anna, sexe : féminin, âge : 21, père : Paul, mère : Kate
+Nom : Kate, sexe : féminin, âge : 55
+Nom : Ben, sexe : masculin, âge : 2, père : Michael, mère : Anna
+…
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	Ajoute les champs suivants &agrave; la classe Humain : String nom, boolean sexe, int age, Humain pere, et Humain mere.
+3.	Ajoute un constructeur : public Humain(String nom, boolean sexe, int age).
+4.	Ajoute un constructeur : public Humain(String nom, boolean sexe, int age, Humain pere, Humain mere).
+5.	Cr&eacute;e 9 objets humains diff&eacute;rents (4 objets sans p&egrave;re et m&egrave;re, et 5 objets avec).
+6.	Affiche tous les objets cr&eacute;&eacute;s &agrave; l&#39;&eacute;cran.
+
+

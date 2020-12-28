@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task12.task1233"\n\nLes isomorphes arrivent
+
+Écris une méthode qui renvoie le minimum dans un tableau et sa position (indice).
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe Pair.
+2.	La classe Solution doit contenir deux&nbsp;m&eacute;thodes.
+3.	La classe Solution doit contenir une m&eacute;thode getMinimumAndIndex().
+4.	La m&eacute;thode getMinimumAndIndex() doit renvoyer la plus petite valeur de la matrice et sa position (indice).
+
+

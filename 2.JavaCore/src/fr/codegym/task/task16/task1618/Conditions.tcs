@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task16.task1618"\n\nUne autre interruption
+
+Crée un TestThread.
+Dans la méthode main, crée un thread, exécute-le, puis interromps-le avec la méthode interrupt().
+
+
+Requirements:
+1.	La classe TestThread doit h&eacute;riter de la classe Thread.
+2.	La classe TestThread doit avoir une m&eacute;thode public void run.
+3.	La m&eacute;thode main doit cr&eacute;er un objet TestThread.
+4.	La m&eacute;thode main doit appeler la m&eacute;thode start sur l&#39;objet TestThread.
+5.	La m&eacute;thode main doit appeler la m&eacute;thode interrupt sur l&#39;objet TestThread.
+
+

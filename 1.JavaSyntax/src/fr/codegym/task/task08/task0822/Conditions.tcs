@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task08.task0822"\n\nLe plus petit de N nombres
+
+1. Utilise le clavier pour saisir le nombre N.
+2. Lis N entiers et mets-les dans une liste : la méthode obtenirListeEntiers.
+3. Trouve le minimum parmi les éléments de la liste : la méthode obtenirMinimum.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Le programme doit lire des valeurs au clavier.
+3.	La classe Solution ne doit contenir que trois m&eacute;thodes.
+4.	La m&eacute;thode obtenirListeEntiers() doit lire un nombre N au clavier, puis renvoyer une liste de N &eacute;l&eacute;ments, remplis avec des nombres lus au clavier.
+5.	La m&eacute;thode obtenirMinimum() doit renvoyer le plus petit des &eacute;l&eacute;ments de la liste.
+6.	La m&eacute;thode main doit appeler la m&eacute;thode obtenirListeEntiers().
+7.	La m&eacute;thode main doit appeler la m&eacute;thode obtenirMinimum().
+
+

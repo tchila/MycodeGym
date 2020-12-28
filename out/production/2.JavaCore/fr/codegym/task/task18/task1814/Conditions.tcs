@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task18.task1814"\n\nUnsupportedFileName
+
+Modifie la classe TxtInputStream pour qu'elle fonctionne uniquement avec des fichiers txt (*.txt).
+Par exemple premier.txt ou nom.1.part3.txt.
+Si un fichier non txt est passé (par ex. fichier.txt.exe), le constructeur doit lever
+une UnsupportedFileNameException.
+Pense à ce que tu dois faire d'autre si une exception est levée.
+
+
+Requirements:
+1.	La classe TxtInputStream doit h&eacute;riter de la classe FileInputStream.
+2.	Si un fichier txt est pass&eacute; au constructeur, TxtInputStream doit se comporter comme un FileInputStream ordinaire.
+3.	Si un fichier non txt est pass&eacute; au constructeur, une UnsupportedFileNameException doit &ecirc;tre lev&eacute;e.
+4.	Si une exception est lev&eacute;e, tu dois &eacute;galement appeler super.close().
+
+

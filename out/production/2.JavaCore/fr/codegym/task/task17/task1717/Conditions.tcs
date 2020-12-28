@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task17.task1717"\n\nSynchronisation superflue
+
+Le mot-clé synchronized ralentit considérablement un programme, alors enlève les instructions synchronized inutiles dans les méthodes.
+
+
+Requirements:
+1.	La m&eacute;thode append(CharSequence s) de la classe Solution ne doit pas &ecirc;tre synchronis&eacute;e.
+2.	La m&eacute;thode appendThis(Solution s) de la classe Solution doit &ecirc;tre synchronis&eacute;e.
+3.	La m&eacute;thode writeObject(java.io.ObjectOutputStream s) de la classe Solution doit &ecirc;tre synchronis&eacute;e.
+4.	La m&eacute;thode readObject(java.io.ObjectInputStream s) de la classe Solution ne doit pas &ecirc;tre synchronis&eacute;e.
+5.	La m&eacute;thode main(String[] args) de la classe Solution ne doit pas &ecirc;tre synchronis&eacute;e.
+6.	Il ne doit pas y avoir de blocs synchronis&eacute;s dans la classe Solution.
+
+

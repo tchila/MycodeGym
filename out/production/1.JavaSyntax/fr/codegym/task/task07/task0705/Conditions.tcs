@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task07.task0705"\n\nUn grand tableau et deux petits
+
+1. Crée un tableau de 20 nombres.
+2. Remplis-le avec des valeurs saisies au clavier.
+3. Crée deux tableaux de 10 nombres chacun.
+4. Copie le grand tableau dans les deux petits : la moitié des nombres dans le premier petit tableau, et la seconde moitié dans le second petit tableau.
+5. Affiche le contenu du second petit tableau, chaque valeur sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er un tableau de 20 entiers.
+2.	Le programme doit lire 20 nombres au clavier pour le grand tableau.
+3.	Le programme doit cr&eacute;er deux petits tableaux de 10 nombres chacun.
+4.	Le programme doit copier une moiti&eacute; du grand tableau dans le premier petit tableau, et l&#39;autre dans le second tableau, puis afficher ce dernier &agrave; l&#39;&eacute;cran.
+
+

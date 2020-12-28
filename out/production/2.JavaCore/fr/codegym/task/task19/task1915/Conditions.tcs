@@ -1,0 +1,28 @@
+taskKey="fr.codegym.task.task19.task1915"\n\nTexte dupliqué
+
+Lis un nom de fichier depuis la console.
+Remplace l'objet System.out de la méthode main avec ton propre wrapper lecteur similaire à celui présenté dans la leçon.
+Ton wrapper lecteur doit écrire tout le texte à la fois dans la console et dans un fichier portant le nom que tu as lu.
+Appelle la méthode printSomething() existante de testString.
+Restaure la variable System.out au flux d'origine.
+Ferme le flux du fichier.
+Exemple de sortie écran :
+Ce texte est à des fins de test
+Exemple de contenu de fichier :
+Ce texte est à des fins de test
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe TestString.
+2.	La classe Solution doit avoir un champ public static TestString testString qui est initialis&eacute; imm&eacute;diatement.
+3.	La classe TestString doit avoir une m&eacute;thode public void printSomething().
+4.	La m&eacute;thode printSomething() de la classe TestString doit afficher &laquo;&nbsp;Ce texte est &agrave; des fins de test&nbsp;&raquo;.
+5.	Dans la m&eacute;thode main(String[] args), le programme doit lire des noms de fichier depuis la console (utilise BufferedReader).
+6.	Dans la m&eacute;thode main(String[] args), le BufferedReader utilis&eacute; pour la lecture de l&#39;entr&eacute;e depuis la console doit &ecirc;tre ferm&eacute; apr&egrave;s utilisation.
+7.	La m&eacute;thode main(String[] args) de la classe Solution doit cr&eacute;er un objet PrintStream (utilise le constructeur PrintStream avec un param&egrave;tre ByteArrayOutputStream).
+8.	La m&eacute;thode main(String[] args) de la classe Solution doit remplacer puis restaurer le flux de sortie de la console (System.out).
+9.	La m&eacute;thode main(String[] args) de la classe Solution doit appeler la m&eacute;thode printSomething() de testString une fois.
+10.	La m&eacute;thode main(String[] args) de la classe Solution doit &eacute;crire la sortie de la m&eacute;thode printSomething() &agrave; la fois dans la console et dans le fichier (utilise FileOutputStream).
+11.	Le flux de sortie de fichier (FileOutputStream) doit &ecirc;tre ferm&eacute;.
+
+

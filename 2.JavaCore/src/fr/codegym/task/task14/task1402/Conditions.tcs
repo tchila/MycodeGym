@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task14.task1402"\n\nBingo !
+
+Corrige la ligne 'Cat cat = new Cat();' pour que le programme affiche « Bingo ! »
+
+
+Requirements:
+1.	La classe Cat doit impl&eacute;menter l&#39;interface CanMove.
+2.	La classe Cat doit &ecirc;tre un parent (une classe parente)&nbsp;de la classe Tomcat.
+3.	La variable cat doit faire r&eacute;f&eacute;rence &agrave; un objet qui impl&eacute;mente CanMove et est &eacute;galement un Cat et un Tomcat.
+4.	Le programme doit afficher ce qui suit&nbsp;: &laquo;&nbsp;Bingo&nbsp;!&nbsp;&raquo;
+
+

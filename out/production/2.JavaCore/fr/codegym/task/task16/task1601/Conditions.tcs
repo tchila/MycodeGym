@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task16.task1601"\n\nMon premier thread
+
+Crée une classe public static TestThread, un thread avec l'interface Runnable.
+TestThread doit afficher « Mon premier thread ».
+
+
+Requirements:
+1.	Ajoute une classe public static TestThread &agrave; la classe Solution.
+2.	La classe TestThread doit impl&eacute;menter l&#39;interface Runnable.
+3.	La m&eacute;thode run de la classe TestThread doit afficher &laquo;&nbsp;Mon premier thread&nbsp;&raquo;.
+4.	Le programme doit afficher &laquo;&nbsp;Mon premier thread&nbsp;&raquo;.
+5.	Ne change pas la m&eacute;thode main.
+
+

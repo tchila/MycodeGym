@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task07.task0725"\n\nDéplacer un modificateur static
+
+Déplace un modificateur static pour que l'exemple compile.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La classe doit avoir une variable A.
+3.	La classe doit avoir une variable B.
+4.	La classe doit avoir une variable C.
+5.	Il doit y avoir une m&eacute;thode main dans la classe.
+6.	Il doit y avoir une m&eacute;thode getValeur dans la classe.
+7.	La classe doit avoir 4 modificateurs static (variables et m&eacute;thodes).
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task12.task1229"\n\nParent de la classe CTO
+
+Ajoute une classe parente à la classe CTO pour que cette classe ne soit pas abstraite.
+Tu ne peux pas ajouter ou implémenter de méthodes dans la classe CTO.
+
+
+Requirements:
+1.	La classe Solution doit avoir une interface Businessman avec une m&eacute;thode workHard().
+2.	La classe Solution doit contenir une classe non abstraite CTO.
+3.	La classe CTO doit impl&eacute;menter l&#39;interface Businessman.
+4.	La classe CTO ne doit pas avoir de m&eacute;thodes.
+5.	La classe Solution doit contenir une classe suppl&eacute;mentaire.
+6.	La classe CTO doit h&eacute;riter de la classe suppl&eacute;mentaire.
+7.	- La classe suppl&eacute;mentaire doit contenir une m&eacute;thode.
+
+

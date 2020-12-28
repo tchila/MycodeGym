@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task04.task0408"\n\nBonne ou mauvaise note ?
+
+Écris la fonction comparer(int a) pour qu'elle :
+- affiche " Le nombre est inférieur à 5 " si l'argument de la méthode est inférieur à 5,
+- affiche " Le nombre est supérieur à 5 " si l'argument de la méthode est supérieur à 5,
+- affiche " Le nombre est égal à 5 " si l'argument de la méthode est égal à 5.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La m&eacute;thode main ne doit pas appeler System.out.println ou System.out.print.
+3.	La m&eacute;thode main doit appeler la m&eacute;thode comparer.
+4.	La m&eacute;thode comparer doit &ecirc;tre void.
+5.	La m&eacute;thode comparer doit afficher du texte &agrave; l&#39;&eacute;cran en respectant les conditions de la mission.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1203"\n\nRendons à César ce qui appartient à César.
+
+Remplace la méthode getChild dans les classes Cat et Dog pour que les chats donnent naissance à des chats et les chiens à des chiens.
+
+
+Requirements:
+1.	La classe Cat doit h&eacute;riter de la classe Pet.
+2.	La classe Dog doit h&eacute;riter de la classe Pet.
+3.	La classe Cat doit remplacer la m&eacute;thode getChild() de sorte que les chats donnent naissance &agrave; des chats.
+4.	La classe Dog doit remplacer la m&eacute;thode getChild() de sorte que les chiens donnent naissance &agrave; des chiens.
+5.	La m&eacute;thode main() doit appeler la m&eacute;thode getChild() sur un objet Cat.
+6.	La m&eacute;thode main() doit appeler la m&eacute;thode getChild() sur un objet Dog.
+
+

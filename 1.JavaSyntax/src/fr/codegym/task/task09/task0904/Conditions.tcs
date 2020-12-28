@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task09.task0904"\n\nTrace de pile avec 10 appels
+
+Écris le code pour obtenir une pile de 10 appels de profondeur. Ne change pas la méthode main.
+
+
+Requirements:
+1.	Il doit y avoir 10 m&eacute;thodes dans la classe (en plus de la m&eacute;thode main).
+2.	La variable longueurTracePile doit finir par &ecirc;tre &eacute;gale &agrave; 10.
+3.	Chaque m&eacute;thode doit appeler une autre m&eacute;thode.
+4.	Utilise la m&eacute;thode Thread.currentThread().getStackTrace().
+
+

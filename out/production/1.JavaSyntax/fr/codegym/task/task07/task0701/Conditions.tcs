@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task07.task0701"\n\nMaximum dans un tableau
+
+1. Dans la méthode initialiserTableau() :
+1.1. Crée un tableau de 20 nombres
+1.2. Lis 20 nombres dans la console et mets-les dans le tableau
+2. La méthode max(int[] tableau) doit trouver le plus grand des éléments du tableau
+
+
+Requirements:
+1.	La m&eacute;thode initialiserTableau doit cr&eacute;er un tableau de 20 entiers.
+2.	La m&eacute;thode initialiserTableau doit lire 20 nombres et les renvoyer dans un tableau.
+3.	La m&eacute;thode max doit renvoyer l&#39;&eacute;l&eacute;ment le plus grand dans le tableau pass&eacute;.
+4.	Ne change pas la m&eacute;thode main.
+
+

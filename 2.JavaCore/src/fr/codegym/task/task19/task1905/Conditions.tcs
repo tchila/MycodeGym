@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task19.task1905"\n\nRenforcement de l'adaptateur
+
+Adapte Customer et Contact en RowItem.
+La classe d'adaptateur est DataAdapter.
+Initialise countries avant d'exécuter le programme. Mappage entre les codes de pays et les noms de pays :
+UA Ukraine
+US Etats-Unis
+FR France
+
+
+Requirements:
+1.	La classe Solution doit contenir un champ public static Map&lt;String, String&gt; countries.
+2.	Initialise le champ countries dans un bloc statique dans la classe Solution en utilisant les donn&eacute;es de test fournies dans la mission.
+3.	La classe Solution doit contenir une interface RowItem.
+4.	La classe Solution doit contenir une interface Contact.
+5.	La classe Solution doit contenir une interface Customer.
+6.	- La classe DataAdapter doit impl&eacute;menter l&#39;interface RowItem.
+7.	La classe DataAdapter doit contenir deux champs private&nbsp;: Customer customer et Contact contact.
+8.	La classe DataAdapter doit avoir un constructeur avec les param&egrave;tres (Customer customer, Contact contact). Elle doit initialiser les champs contact et customer.
+9.	Impl&eacute;mente les m&eacute;thodes de l&#39;interface RowItem dans la classe DataAdapter en utilisant les indices des commentaires dans les interfaces.
+
+

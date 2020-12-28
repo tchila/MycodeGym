@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task11.task1109"\n\nComme chat et chien
+
+Rends toutes les variables internes des classes Cat et Dog private.
+Rends aussi toutes les méthodes private, sauf celles qui permettent à ces deux classes d'interagir entre elles.
+
+
+Requirements:
+1.	Les variables de la classe Cat doivent &ecirc;tre private.
+2.	Les variables de la classe Dog doivent &ecirc;tre private.
+3.	Les m&eacute;thodes de la classe Cat doivent &ecirc;tre private.
+4.	Les m&eacute;thodes de la classe Dog doivent &ecirc;tre private.
+5.	Les m&eacute;thodes qui permettent aux classes Cat et Dog d&#39;interagir entre elles doivent &ecirc;tre public.
+
+

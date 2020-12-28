@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task04.task0410"\n\nC'est mon jour de chance !
+
+Écris la méthode verifierIntervalle. La méthode doit vérifier si un entier se trouve dans la plage de 50 à 100
+et afficher le résultat à l'écran comme ceci : " Le nombre a n'est pas dans l'intervalle. " ou " Le nombre a est dans l'intervalle. ",
+où a est l'argument de la méthode.
+Exemple pour 112 :
+Le nombre 112 n'est pas dans l'intervalle.
+Exemple pour 60 :
+Le nombre 60 est dans l'intervalle.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La m&eacute;thode main ne doit pas appeler System.out.println ou System.out.print().
+3.	La m&eacute;thode main doit appeler la m&eacute;thode verifierIntervalle.
+4.	La m&eacute;thode verifierIntervalle doit &ecirc;tre static void.
+5.	La m&eacute;thode verifierIntervalle doit afficher du texte &agrave; l&#39;&eacute;cran en respectant les conditions de la mission.
+
+

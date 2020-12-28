@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task15.task1521"\n\nPOO : Surcharge de méthodes
+
+1. Dans la classe Tree, surcharge la méthode info(Object s) deux fois pour obtenir trois méthodes : info(Object s), info(Number s) et info(String s).
+1.1. Étudie la méthode info(Object s). Crée des fonctionnalités similaires dans les nouvelles méthodes.
+1.2. Par exemple, le résultat de la méthode info(Number s) pourrait être « Arbre no. 123, méthode Number, paramètre Short ».
+
+
+Requirements:
+1.	La classe Tree doit impl&eacute;menter la m&eacute;thode info(Object s).
+2.	La classe Tree doit impl&eacute;menter la m&eacute;thode info(Number s).
+3.	La classe Tree doit impl&eacute;menter la m&eacute;thode info(String s).
+4.	La m&eacute;thode info(Number s) doit afficher une ligne similaire &agrave; la ligne pour la m&eacute;thode info(Object s), en rempla&ccedil;ant uniquement la &laquo;&nbsp;m&eacute;thode Object&nbsp;&raquo; par &laquo;&nbsp;m&eacute;thode Number&nbsp;&raquo;.
+5.	La m&eacute;thode info(String s) doit afficher une ligne similaire &agrave; la ligne pour la m&eacute;thode info(Object s), en rempla&ccedil;ant uniquement la &laquo;&nbsp;m&eacute;thode Object&nbsp;&raquo; par &laquo;&nbsp;m&eacute;thode String&nbsp;&raquo;.
+
+

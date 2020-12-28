@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task18.task1815"\n\nTableau
+
+Modifie la classe TableInterfaceWrapper pour qu'elle emballe TableInterface.
+La méthode setModel doit afficher le nombre d'éléments dans la nouvelle liste avant de mettre à jour le modèle.
+La méthode getHeaderText doit renvoyer le texte en majuscules. Utilise la méthode toUpperCase().
+
+
+Requirements:
+1.	- La classe TableInterfaceWrapper doit impl&eacute;menter l&#39;interface TableInterface.
+2.	La classe TableInterfaceWrapper doit initialiser un champ TableInterface dans le constructeur.
+3.	La m&eacute;thode setModel() doit afficher le nombre d&#39;&eacute;l&eacute;ments dans la nouvelle liste avant de mettre &agrave; jour le mod&egrave;le.
+4.	La m&eacute;thode getHeaderText() doit renvoyer le texte en majuscules.
+5.	La m&eacute;thode setHeaderText() doit d&eacute;finir le texte d&#39;en-t&ecirc;te sans apporter de modifications.
+
+

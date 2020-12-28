@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task14.task1405"\n\nNourriture
+
+1. Implémente l'interface Selectable dans la classe Food.
+2. La méthode onSelect() doit afficher « La nourriture a été sélectionnée ».
+3. Pense à quelles méthodes peuvent être appelées avec la variable food et lesquelles peuvent l'être avec la variable selectable.
+4. Dans la méthode foodMethods, appelle les méthodes onSelect et onEat, si possible.
+5. Dans la méthode selectableMethods, appelle les méthodes onSelect et onEat, si possible.
+6. N'utilise pas de conversion de type explicite.
+
+
+Requirements:
+1.	- L&#39;interface Selectable doit &ecirc;tre impl&eacute;ment&eacute;e dans la classe Food.
+2.	La m&eacute;thode onSelect() dans la classe Food doit afficher &laquo;&nbsp;La nourriture a &eacute;t&eacute; s&eacute;lectionn&eacute;e&nbsp;&raquo;.
+3.	Dans la m&eacute;thode foodMethods, tu dois appeler des m&eacute;thodes sur un objet Food.
+4.	Dans la m&eacute;thode selectableMethods, tu dois appeler des m&eacute;thodes accessibles &agrave; partir de tout objet qui impl&eacute;mente l&#39;interface Selectable.
+
+

@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task08.task0807"\n\nLinkedList et ArrayList
+
+Tu vas créer deux listes : une LinkedList et une ArrayList.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	Le programme ne doit pas lire de valeurs au clavier.
+3.	Le programme ne doit avoir que trois m&eacute;thodes.
+4.	La m&eacute;thode creerArrayList() doit cr&eacute;er et renvoyer une ArrayList.
+5.	La m&eacute;thode creerLinkedList() doit cr&eacute;er et renvoyer une LinkedList.
+
+

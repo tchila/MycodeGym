@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task13.task1304"\n\nSelectable et Updatable
+
+Crée une classe Screen qui implémente les interfaces Selectable et Updatable.
+N'oublie pas d'implémenter les méthodes !
+
+
+Requirements:
+1.	La classe Screen doit impl&eacute;menter l&#39;interface Selectable.
+2.	La classe Screen doit impl&eacute;menter l&#39;interface Updatable.
+3.	La classe Screen doit impl&eacute;menter toutes les m&eacute;thodes de l&#39;interface Selectable.
+4.	La classe Screen doit impl&eacute;menter toutes les m&eacute;thodes de l&#39;interface Updatable.
+
+

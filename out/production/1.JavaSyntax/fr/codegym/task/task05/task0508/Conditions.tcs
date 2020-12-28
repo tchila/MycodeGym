@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task05.task0508"\n\nAccesseurs get et set pour la classe Personne
+
+Crée la classe Personne. Une personne doit avoir un String nom, un int age et un char sexe.
+Crée les getters et setters pour toutes les variables de la classe Personne.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La classe Personne doit avoir une m&eacute;thode public static void main.
+3.	La classe Personne doit avoir 3 variables.
+4.	La classe Personne doit avoir une variable String appel&eacute;e nom.
+5.	La classe Personne doit avoir une variable int appel&eacute;e age.
+6.	La classe Personne doit avoir une variable char appel&eacute;e sexe.
+7.	La classe doit avoir un setter pour la variable nom.
+8.	La classe doit avoir un getter pour la variable nom.
+9.	La classe doit avoir un setter pour la variable age.
+10.	La classe doit avoir un getter pour la variable age.
+11.	La classe doit avoir un setter pour la variable sexe.
+12.	La classe doit avoir un getter pour la variable sexe.
+
+

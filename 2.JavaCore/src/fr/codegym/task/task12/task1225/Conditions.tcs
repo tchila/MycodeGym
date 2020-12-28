@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task12.task1225"\n\nVisiteurs
+
+Écris une méthode qui déterminera le type de l'objet qui lui est passé.
+Le programme doit afficher une des choses suivantes :
+« Chat », « Tigre », « Lion », « Taureau », « Vache » ou « Animal ».
+Remarque :
+essaie de déterminer le type d'animal aussi précisément que possible.
+
+
+Requirements:
+1.	La classe Solution doit avoir les classes Cat, Tiger, Lion, Bull, Cow et Animal.
+2.	La classe Solution doit contenir une m&eacute;thode String getObjectType(Object o).
+3.	La m&eacute;thode getObjectType() doit renvoyer &laquo; Chat &raquo; si un objet Cat est pass&eacute;.
+4.	La m&eacute;thode getObjectType() doit renvoyer &laquo; Tigre &raquo; si un objet Tiger est pass&eacute;.
+5.	La m&eacute;thode getObjectType() doit renvoyer &laquo; Lion &raquo; si un objet Lion est pass&eacute;.
+6.	La m&eacute;thode getObjectType() doit renvoyer &laquo; Taureau &raquo; si un objet Bull est pass&eacute;.
+7.	La m&eacute;thode getObjectType() doit renvoyer &laquo; Vache &raquo; si un objet Cow est pass&eacute;.
+8.	La m&eacute;thode getObjectType() doit renvoyer &laquo; Animal &raquo; si un objet Animal est pass&eacute;.
+9.	Le programme doit afficher le r&eacute;sultat de l&#39;appel &agrave; la m&eacute;thode getObjectType().
+
+

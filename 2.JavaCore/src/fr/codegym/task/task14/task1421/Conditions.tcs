@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task14.task1421"\n\nSingleton
+
+Une classe est un singleton si elle te permet de créer un seul objet de son type.
+Implémente le modèle de singleton :
+1. Crée une classe Singleton dans un fichier séparé.
+2. Ajoute-lui une méthode statique getInstance().
+3. La méthode getInstance doit renvoyer le même objet Singleton chaque fois que la méthode getInstance est appelée.
+4. Réfléchis à la façon dont tu peux empêcher la création d'instances supplémentaires de cette classe.
+5. Rends tous les constructeurs de la classe Singleton private.
+6. Ainsi, il ne devrait être possible de créer qu'UN SEUL objet (une seule instance de cette classe) en utilisant la méthode getInstance.
+
+
+Requirements:
+1.	La classe Singleton doit se trouver dans un fichier s&eacute;par&eacute;.
+2.	La classe Singleton doit emp&ecirc;cher la cr&eacute;ation d&#39;objets Singleton en dehors de la classe.
+3.	La classe Singleton doit avoir un champ private static Singleton instance.
+4.	La classe Singleton doit impl&eacute;menter la m&eacute;thode public static getInstance, qui renvoie la valeur du champ instance.
+5.	La m&eacute;thode getInstance doit TOUJOURS renvoyer le m&ecirc;me objet.
+
+

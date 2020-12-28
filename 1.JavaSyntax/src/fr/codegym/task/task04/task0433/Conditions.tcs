@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task04.task0433"\n\nJe vois des dollars dans ton avenir
+
+Utilise une boucle while pour afficher un carré 10x10 de symboles Dollar.
+Ne sépare pas les symboles sur chaque ligne.
+Exemple de sortie :
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+$$$$$$$$$$
+
+
+Requirements:
+1.	Le programme ne doit pas lire de texte &agrave; partir du clavier.
+2.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher un carr&eacute; 10x10 de symboles Dollar.
+4.	Le programme doit utiliser une boucle while.
+
+

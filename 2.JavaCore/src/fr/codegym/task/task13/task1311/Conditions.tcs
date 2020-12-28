@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task13.task1311"\n\nEmbauchons un traducteur
+
+1. Crée une classe RussianTranslator qui hérite de la classe Translator.
+2. Implémente toutes les méthodes abstraites.
+3. Pense à ce que la méthode getLanguage doit renvoyer.
+4. Le programme doit afficher « Je traduis depuis la langue : russe » lorsque tu appelles la méthode translate sur un objet RussianTranslator.
+
+
+Requirements:
+1.	La classe RussianTranslator doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	La classe RussianTranslator doit h&eacute;riter de la classe Translator.
+3.	Toutes les m&eacute;thodes abstraites h&eacute;rit&eacute;es de la classe Translator doivent &ecirc;tre impl&eacute;ment&eacute;es.
+4.	La m&eacute;thode getLanguage doit renvoyer une cha&icirc;ne qui r&eacute;pond aux conditions de la mission.
+5.	La m&eacute;thode main doit afficher &laquo; Je traduis depuis la langue : russe &raquo; lorsque tu appelles la m&eacute;thode translate sur un objet RussianTranslator.
+
+

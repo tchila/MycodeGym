@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task06.task0605"\n\nContrôle du poids corporel
+
+Le programme doit lire un poids saisi par l'utilisateur en kilogrammes et une taille en mètres. Ensuite, il doit afficher un message sur l'indice de masse corporelle de l'utilisateur.
+Implémente une méthode static dans la classe Corps. La méthode doit calculer l'indice de masse corporelle (IMC) et afficher le message suivant :
+« Insuffisance pondérale : IMC < 18,5 » si l'IMC est inférieur à 18,5,
+« Poids normal : 18,5 <= IMC < 25 » si l'IMC est compris entre 18,5 et 25 (non inclus),
+« Surpoids : 25 <= IMC < 30 » si l'IMC est compris entre 25 et 30 (non inclus),
+« Obésité : IMC >= 30 » si l'IMC est supérieur ou égal à 30.
+
+Indice :
+Indice de masse corporelle (IMC) = poids en kg / (taille en mètres * taille en mètres)
+
+Exemple de sortie pour 68.4 et 1.77 :
+Poids normal : 18,5 <= IMC < 25
+
+
+Requirements:
+1.	La m&eacute;thode calculerIMC doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La m&eacute;thode calculerIMC doit afficher &laquo; Insuffisance pond&eacute;rale : IMC &lt; 18,5 &raquo; si l&#39;IMC est inf&eacute;rieur &agrave; 18,5 (non inclus).
+3.	La m&eacute;thode calculerIMC doit afficher &laquo; Poids normal : 18,5 &lt;= IMC &lt; 25 &raquo; si l&#39;IMC est compris entre 18,5 et 25 (non inclus).
+4.	La m&eacute;thode calculerIMC doit afficher &laquo; Surpoids : 25 &lt;= IMC &lt; 30 &raquo; si l&#39;IMC est compris entre 25 et 30 (non inclus).
+5.	La m&eacute;thode calculerIMC doit afficher &laquo; Ob&eacute;sit&eacute; : IMC &gt;= 30 &raquo; si l&#39;IMC est sup&eacute;rieur ou &eacute;gal &agrave; 30.
+
+

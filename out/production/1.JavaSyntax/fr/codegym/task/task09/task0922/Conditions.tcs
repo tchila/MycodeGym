@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task09.task0922"\n\nQuelle est la date d'aujourd'hui ?
+
+Saisis une date au format « 2013-08-18 »
+Affiche cette date au format « AUG 18, 2013 ».
+Utilise un objet Date et SimpleDateFormat.
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Une variable SimpleDateFormat doit &ecirc;tre d&eacute;clar&eacute;e dans le programme.
+3.	Une variable Date doit &ecirc;tre d&eacute;clar&eacute;e dans le programme.
+4.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+5.	La sortie doit correspondre aux conditions de la mission.
+
+

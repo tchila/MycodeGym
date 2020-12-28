@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task13.task1327"\n\nNavet
+
+L'Énorme navet :
+1. Fais en sorte que la classe Person implémente l'interface TurnipItem.
+2. Implémente la méthode pull(Person person) dans la classe Person pour qu'elle affiche une phrase du type '<nom> derrière <personne>'.
+Exemple :
+Grand-mère derrière Grand-père
+Grand-père derrière Navet
+3. Corrige l'erreur dans la logique de la boucle dans la méthode tell de la classe TurnipStory.
+4. Exécute la méthode main et profite de l'histoire !
+
+
+Requirements:
+1.	La classe Person doit impl&eacute;menter l&#39;interface TurnipItem.
+2.	La classe Person doit avoir une m&eacute;thode pull avec un param&egrave;tre Person.
+3.	La m&eacute;thode pull de la classe Person doit afficher une phrase comme &#39;&lt;nom&gt; derri&egrave;re &lt;personne&gt;&#39;. Par exemple&nbsp;: Grand-m&egrave;re derri&egrave;re Grand-p&egrave;re.
+4.	La m&eacute;thode main doit afficher une version condens&eacute;e de l&#39;&Eacute;norme navet sur l&#39;&eacute;cran.
+
+

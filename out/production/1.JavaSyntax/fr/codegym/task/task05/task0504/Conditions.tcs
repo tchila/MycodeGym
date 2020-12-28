@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task05.task0504"\n\nLes trois « Miaousquetaires »
+
+Dans la méthode main, crée trois objets Chat et remplis-les avec des données.
+Utilise la classe Chat de la première mission. Tu n'as pas besoin de créer la classe Chat.
+
+
+Requirements:
+1.	com.codegym.task.task05.task0504_fr-FR.txt
+2.	Tu dois cr&eacute;er trois objets Chat.
+3.	Ne change pas la classe Chat.
+4.	Le programme ne doit pas afficher de donn&eacute;es &agrave; l&#39;&eacute;cran.
+
+

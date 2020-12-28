@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task04.task0440"\n\nBonne paie
+
+Utilise une boucle pour afficher la phrase suivante cent fois :
+« Je ne travaillerai jamais pour des prunes. Amigo »
+Affiche chaque valeur sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de texte &agrave; partir du clavier.
+2.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher le texte sp&eacute;cifi&eacute; dans la mission 100 fois.
+4.	Le programme doit utiliser une boucle for ou while.
+
+

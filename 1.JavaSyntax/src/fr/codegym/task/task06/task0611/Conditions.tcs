@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task06.task0611"\n\nClasse AssistantChaine
+
+Crée la classe AssistantChaine, qui aura 2 méthodes static :
+String multiplier(String s, int nombre), qui renvoie une chaîne qui a été répétée nombre fois.
+String multiplier(String s), qui renvoie une chaîne qui a été répétée 5 fois.
+Par exemple :
+Amigo -> AmigoAmigoAmigoAmigoAmigo
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	Les m&eacute;thodes de la classe AssistantChaine doivent renvoyer une cha&icirc;ne.
+3.	Les m&eacute;thodes de la classe AssistantChaine doivent &ecirc;tre static.
+4.	Les m&eacute;thodes de la classe AssistantChaine doivent &ecirc;tre public.
+5.	La m&eacute;thode multiplier(String s, int nombre) doit renvoyer une cha&icirc;ne qui a &eacute;t&eacute; r&eacute;p&eacute;t&eacute;e &laquo; nombre &raquo; fois.
+6.	La m&eacute;thode multiplier(String s) doit renvoyer une cha&icirc;ne qui a &eacute;t&eacute; r&eacute;p&eacute;t&eacute;e 5 fois.
+
+

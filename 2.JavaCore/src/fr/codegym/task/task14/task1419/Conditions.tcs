@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task14.task1419"\n\nInvasion d'exceptions
+
+Remplis la liste exceptions avec dix (10) exceptions différentes.
+La première exception est déjà implémentée dans la méthode initExceptions.
+
+
+Requirements:
+1.	La liste exceptions doit contenir 10 &eacute;l&eacute;ments.
+2.	Tous les &eacute;l&eacute;ments de la liste exceptions doivent &ecirc;tre des exceptions (des descendants de la classe Throwable).
+3.	Tous les &eacute;l&eacute;ments de la liste exceptions doivent &ecirc;tre uniques.
+4.	La m&eacute;thode initExceptions doit &ecirc;tre static.
+
+

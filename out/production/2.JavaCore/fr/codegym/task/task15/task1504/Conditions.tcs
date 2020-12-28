@@ -1,0 +1,29 @@
+taskKey="fr.codegym.task.task15.task1504"\n\nPOO : Livres
+
+1. Crée une classe public static MarkTwainBook qui hérite de Book. Le nom de l'auteur est [Mark Twain]. Le paramètre du constructeur est le titre du livre.
+2. Implémente toutes les méthodes abstraites dans la classe MarkTwainBook.
+3. Modifie le type de retour de la méthode getBook pour le rendre plus approprié.
+4. De la même façon, crée la classe AgathaChristieBook. Le nom de l'auteur est [Agatha Christie].
+5. Dans la classe Book, implémente la méthode getOutputByBookType afin qu'elle renvoie :
+5.1. agathaChristieOutput pour les livres écrits par Agatha Christie ;
+5.2. markTwainOutput pour les livres écrits par Mark Twain.
+
+
+Requirements:
+1.	La classe Solution doit contenir la classe public static MarkTwainBook.
+2.	La classe MarkTwainBook doit descendre de la classe Book.
+3.	La classe MarkTwainBook doit correctement impl&eacute;menter un constructeur avec un param&egrave;tre String (titre du livre).
+4.	Le constructeur de la classe MarkTwainBook doit appeler le constructeur de la classe parente (Book) avec l&#39;argument &laquo;&nbsp;Mark Twain&nbsp;&raquo;.
+5.	La m&eacute;thode getBook de la classe MarkTwainBook doit avoir le type de retour MarkTwainBook et renvoyer l&#39;objet actuel.
+6.	La classe Solution doit contenir la classe public static AgathaChristieBook.
+7.	La classe AgathaChristieBook doit descendre de la classe Book.
+8.	La classe AgathaChristieBook doit correctement impl&eacute;menter un constructeur avec un param&egrave;tre String (titre du livre).
+9.	Le constructeur de la classe AgathaChristieBook doit appeler le constructeur de la classe parente (Book) avec l&#39;argument &laquo;&nbsp;Agatha Christie&nbsp;&raquo;.
+10.	La m&eacute;thode getBook de la classe AgathaChristieBook doit avoir le type de retour AgathaChristieBook et renvoyer l&#39;objet actuel.
+11.	La m&eacute;thode getTitle dans les classes AgathaChristieBook et MarkTwainBook doit renvoyer le titre d&#39;un livre sp&eacute;cifique.
+12.	La m&eacute;thode getOutputByBookType doit renvoyer la cha&icirc;ne correcte pour les objets AgathaChristieBook.
+13.	La m&eacute;thode getOutputByBookType doit renvoyer la cha&icirc;ne correcte pour les objets MarkTwainBook.
+14.	La classe MarkTwainBook doit avoir un champ String title (titre du livre).
+15.	La classe AgathaChristieBook doit avoir un champ String title (titre du livre).
+
+

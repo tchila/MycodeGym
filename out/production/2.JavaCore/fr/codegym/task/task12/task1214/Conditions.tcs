@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1214"\n\nLes vaches sont des animaux aussi
+
+Fais en sorte que la classe Cow hérite d'Animal.
+Implémente les méthodes manquantes de la classe Cow.
+
+
+Requirements:
+1.	La classe Animal doit &ecirc;tre abstraite.
+2.	La classe Cow ne doit pas &ecirc;tre abstraite.
+3.	La classe Cow doit h&eacute;riter de la classe Animal.
+4.	La classe Cow doit impl&eacute;menter les m&eacute;thodes abstraites de la classe Animal.
+5.	La m&eacute;thode getName() de la classe Cow doit renvoyer un nom valide pour une vache.
+
+

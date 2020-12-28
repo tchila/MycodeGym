@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task16.task1612"\n\nChronomètre
+
+1. Détermine ce que fait le programme.
+2. Implémente la logique de la méthode doStep pour que la vitesse du coureur soit prise en compte.
+2.1. La méthode getSpeed() de la classe Runner affiche le nombre de pas effectués par un coureur chaque seconde.
+Le coureur doit effectivement faire un certain nombre de pas par seconde.
+Si Usain fait 4 pas par seconde, alors il doit faire 8 pas en 2 secondes.
+Si Carl fait 2 pas par seconde, alors il doit faire 4 pas en 2 secondes.
+2.2. La méthode sleep de la classe Thread a un paramètre long.
+IMPORTANT ! Utilise la méthode Thread.sleep(), et non Stopwatch.sleep().
+
+
+Requirements:
+1.	La m&eacute;thode getSpeed doit renvoyer un int.
+2.	Le champ speed de la classe Runner doit &ecirc;tre un int.
+3.	Le constructeur de la classe Runner doit accepter un String et un int.
+4.	La m&eacute;thode doStep doit tenir compte de la vitesse du coureur. Si la vitesse du coureur est de 2 pas par seconde, la m&eacute;thode doit s&#39;ex&eacute;cuter pendant une demi-seconde&nbsp;; si la vitesse du coureur est de 4 pas par seconde, la m&eacute;thode doit s&#39;ex&eacute;cuter pendant un quart de seconde.
+5.	La sortie du programme doit indiquer le nombre de pas faits par Usain et Carl en 2 secondes.
+
+

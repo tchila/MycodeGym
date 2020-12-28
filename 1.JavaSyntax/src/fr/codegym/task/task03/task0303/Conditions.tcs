@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task03.task0303"\n\nChange de devises
+
+Écris le code pour la méthode conversionEurEnUsd, qui convertit des euros en dollars au taux de change donné.
+Utilise une instruction return pour renvoyer le résultat de la méthode conversionEurEnUsd. Exemple : return 123*435;
+Appelle la méthode conversionEurEnUsd deux fois dans la méthode main avec des arguments quelconques.
+Afficher les résultats, chaque fois sur une nouvelle ligne.
+Indice :
+Le résultat est calculé selon la formule suivante : Dollars américains = euros * taux de change
+
+
+Requirements:
+1.	La m&eacute;thode conversionEurEnUsd doit multiplier le montant en euros par le taux de change et renvoyer le r&eacute;sultat.
+2.	La m&eacute;thode main doit appeler la m&eacute;thode conversionEurEnUsd deux fois avec des arguments quelconques.
+3.	La m&eacute;thode main doit afficher les r&eacute;sultats des appels, chaque fois sur une nouvelle ligne.
+4.	La m&eacute;thode conversionEurEnUsd ne doit rien afficher.
+
+

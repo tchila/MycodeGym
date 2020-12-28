@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task07.task0714"\n\nMots inversés
+
+Lis 5 mots au clavier et ajoute-les à une liste de chaînes. Supprime le 3e élément dans la liste, puis affiche les éléments restants dans l'ordre inverse.
+
+
+Requirements:
+1.	D&eacute;clare une variable ArrayList&lt;String&gt; et initialise-la imm&eacute;diatement.
+2.	Lis 5 lignes au clavier et ajoute-les &agrave; la liste.
+3.	Supprime le troisi&egrave;me &eacute;l&eacute;ment de la liste.
+4.	Affiche les &eacute;l&eacute;ments &agrave; l&#39;&eacute;cran, chacun sur une nouvelle ligne.
+5.	L&#39;ordre d&#39;affichage doit &ecirc;tre invers&eacute;.
+
+

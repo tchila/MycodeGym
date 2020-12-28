@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task09.task0905"\n\nDans les profondeurs bleues de la trace de pile...
+
+Écris une méthode qui renvoie la profondeur de la trace de pile, c'est-à-dire le nombre de méthodes dans la trace de pile. La méthode doit afficher ce même nombre à l'écran.
+
+
+Requirements:
+1.	La m&eacute;thode obtenirProfondeurTracePile doit renvoyer la profondeur de sa trace de pile.
+2.	La m&eacute;thode obtenirProfondeurTracePile doit afficher la profondeur de sa trace de pile.
+3.	Utilise Thread.currentThread().getStackTrace().
+4.	La m&eacute;thode main doit appeler la m&eacute;thode obtenirProfondeurTracePile.
+
+

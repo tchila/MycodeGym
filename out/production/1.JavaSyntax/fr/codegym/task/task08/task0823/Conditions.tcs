@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task08.task0823"\n\nExpansion nationale
+
+Écris un programme qui lit une chaîne au clavier.
+Le programme doit changer la première lettre de chaque mot en majuscule.
+Affiche le résultat à l'écran.
+
+Exemple d'entrée :
+sam i am.
+
+Exemple de sortie :
+
+Sam I Am.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Le programme doit lire une cha&icirc;ne au clavier.
+3.	Le programme doit changer la premi&egrave;re lettre de chaque mot en majuscule.
+
+

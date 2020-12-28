@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task03.task0322"\n\nAmour pur et profond
+
+Use the keyboard to enter three names, then display:
+name1 + name2 + name3 = Pure love. Ooo la-la!
+For example: Kevin + Eva + Angelica = Pure love. Ooo la-la!
+
+Utilise le clavier pour saisir trois noms, puis affiche :
+nom1 + nom2 + nom3 = Amour pur. Oh là là !
+Par exemple :
+Kévin + Ève + Angélique = Amour pur. Oh là là !
+
+
+Requirements:
+1.	Le programme doit afficher du texte.
+2.	Le programme doit lire les donn&eacute;es depuis le clavier.
+3.	Le texte affich&eacute; doit contenir le nom1 saisi.
+4.	Le texte affich&eacute; doit contenir le nom2 saisi.
+5.	Le texte affich&eacute; doit contenir le nom3 saisi.
+6.	Le texte affich&eacute; doit pleinement r&eacute;pondre aux conditions de la mission.
+
+

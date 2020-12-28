@@ -1,0 +1,25 @@
+taskKey="fr.codegym.task.task15.task1503"\n\nPOO : Voitures
+
+1. N'utilise que des variables de la classe Constants dans ta sortie.
+2. Dans la classe Ferrari, implémente la méthode printlnDesire pour qu'elle affiche « Je veux conduire une Ferrari ».
+3. Dans la classe GeoMetro, implémente la méthode printlnDesire pour qu'elle affiche « Je veux conduire une Geo Metro ».
+4. Crée une classe public static LuxuryCar.
+5. Crée une classe public static CheapCar.
+6. Fais en sorte que les classes Ferrari et GeoMetro héritent soit de CheapCar soit de LuxuryCar. Pense à quelle classe conviendrait selon le cas.
+7. Dans la classe LuxuryCar, implémente la méthode printlnDesire pour qu'elle affiche « Je veux conduire une voiture de luxe ».
+8. Dans la classe CheapCar, implémente la méthode printlnDesire pour qu'elle affiche « Je veux conduire une voiture bon marché ».
+9. Dans les classes LuxuryCar et CheapCar, définis un modificateur d'accès différent pour la méthode printlnDesire afin que sa visibilité s'étende aux classes Ferrari et GeoMetro.
+
+
+Requirements:
+1.	La classe Solution doit contenir la classe public static LuxuryCar.
+2.	La classe Solution doit contenir la classe public static CheapCar.
+3.	La classe Ferrari doit descendre de la classe LuxuryCar.
+4.	La classe GeoMetro doit descendre de la classe CheapCar.
+5.	La m&eacute;thode printlnDesire de la classe LuxuryCar doit afficher &laquo;&nbsp;Je veux conduire une voiture de luxe&nbsp;&raquo;.
+6.	La m&eacute;thode printlnDesire de la classe CheapCar doit afficher &laquo;&nbsp;Je veux conduire une voiture bon march&eacute;&nbsp;&raquo;.
+7.	La m&eacute;thode printlnDesire de la classe Ferrari doit afficher &laquo;&nbsp;Je veux conduire une Ferrari&nbsp;&raquo;.
+8.	La m&eacute;thode printlnDesire de la classe GeoMetro doit afficher &laquo;&nbsp;Je veux conduire une Geo Metro&nbsp;&raquo;.
+9.	La visibilit&eacute; des m&eacute;thodes printlnDesire dans les classes Ferrari et GeoMetro doit &ecirc;tre plus large que dans leurs classes parentes.
+
+

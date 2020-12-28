@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task17.task1719"\n\nApplicationContext
+
+La classe ApplicationContext sera accessible par de nombreux threads.
+Vérifie qu'aucune donnée n'est perdue : pense à quel mot-clé placer et où.
+
+
+Requirements:
+1.	La classe ApplicationContext doit &ecirc;tre abstraite.
+2.	La classe ApplicationContext doit avoir un champ private Map&lt;String, GenericsBean&gt; container.
+3.	Utilise la synchronisation dans la m&eacute;thode getByName(String name) si n&eacute;cessaire.
+4.	Utilise la synchronisation dans la m&eacute;thode removetByName(String name) si n&eacute;cessaire.
+
+

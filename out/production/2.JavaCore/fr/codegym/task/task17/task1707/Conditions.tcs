@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task17.task1707"\n\nIMF
+
+Modèle de singleton : synchronisation dans une méthode.
+La classe IMF est le Fonds monétaire international.
+Crée un bloc synchronisé dans la méthode getFund.
+À l'intérieur du bloc synchronisé, initialise imf pour que la méthode getFund renvoie toujours le même objet.
+
+
+Requirements:
+1.	La classe IMF doit avoir un champ private static IMF imf.
+2.	La classe IMF doit avoir un constructeur priv&eacute;.
+3.	La classe IMF doit avoir une m&eacute;thode public static IMF getFund().
+4.	La m&eacute;thode getFund() doit avoir un bloc synchronis&eacute;.
+5.	Le bloc synchronis&eacute; doit initialiser imf.
+6.	La m&eacute;thode getFund() doit toujours renvoyer le m&ecirc;me objet.
+
+

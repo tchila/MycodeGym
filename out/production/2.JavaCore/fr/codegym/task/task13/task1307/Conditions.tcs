@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task13.task1307"\n\nInterface paramétrée
+
+La classe StringObject doit implémenter l'interface SimpleObject en utilisant un paramètre String.
+
+
+Requirements:
+1.	La classe StringObject doit impl&eacute;menter l&#39;interface SimpleObject.
+2.	L&#39;interface SimpleObject de la classe StringObject doit &ecirc;tre impl&eacute;ment&eacute;e avec un param&egrave;tre String.
+3.	La classe StringObject doit impl&eacute;menter la m&eacute;thode getInstance de l&#39;interface SimpleObject.
+4.	Ne cr&eacute;e pas de classes ou d&#39;interfaces suppl&eacute;mentaires.
+
+

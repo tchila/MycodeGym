@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task07.task0728"\n\nPar ordre décroissant
+
+Mission : Écris un programme qui lit 20 nombres au clavier et les affiche dans l'ordre décroissant.
+
+
+Requirements:
+1.	Le programme doit lire 20 entiers au clavier.
+2.	Le programme doit afficher 20 nombres.
+3.	La classe Solution doit avoir une m&eacute;thode public static void tri(int[] tableau).
+4.	La m&eacute;thode main doit appeler la m&eacute;thode tri.
+5.	La m&eacute;thode tri doit trier le tableau pass&eacute; dans l&#39;ordre d&eacute;croissant.
+
+

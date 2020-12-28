@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task14.task1416"\n\nCorrection de bogues
+
+1. Pense à la façon dont les interfaces CanSwim et CanWalk sont liées à la classe SeaCreature.
+2. Crée la bonne relation d'héritage entre les interfaces et la classe SeaCreature.
+3. Pense à la façon dont les classes Orca, Whale et RiverOtter peuvent être liées à la classe SeaCreature.
+4. Crée la bonne relation d'héritage entre les classes Orca, Whale et RiverOtter et la classe SeaCreature.
+5. Pense à quelle classe doit implémenter l'interface CanWalk et ajoute l'interface à cette classe.
+6. Pense à quel animal n'est pas encore capable de nager et ajoute-lui l'interface CanSwim.
+
+
+Requirements:
+1.	Une orque est une cr&eacute;ature marine (descendant de SeaCreature) pouvant nager (prenant en charge l&#39;interface CanSwim).
+2.	Une baleine est une cr&eacute;ature marine (descendant de SeaCreature) pouvant nager (prenant en charge l&#39;interface CanSwim).
+3.	Une loutre de rivi&egrave;re peut marcher (prend en charge l&#39;interface CanWalk) et nager (prend en charge l&#39;interface CanSwim).
+4.	Une loutre de rivi&egrave;re n&#39;est PAS une cr&eacute;ature marine (elle ne descend pas de SeaCreature).
+5.	Les baleines et les orques ne savent PAS marcher (ne prennent pas en charge l&#39;interface CanWalk).
+
+

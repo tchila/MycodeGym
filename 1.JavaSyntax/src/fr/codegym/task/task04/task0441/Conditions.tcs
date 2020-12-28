@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task04.task0441"\n\nPlutôt moyen
+
+Utilise le clavier pour saisir trois nombres, puis affiche le nombre médian.
+En d'autres termes, pas le plus grand et pas le plus petit.
+Si tous les nombres sont égaux, affiche n'importe lequel d'entre eux.
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	Le programme doit afficher un nombre &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher le nombre m&eacute;dian de trois nombres.
+4.	Si tous les nombres sont &eacute;gaux, affiche n&#39;importe lequel d&#39;entre eux.
+5.	Si deux des trois nombres sont &eacute;gaux, affiche un de ces deux nombres.
+
+

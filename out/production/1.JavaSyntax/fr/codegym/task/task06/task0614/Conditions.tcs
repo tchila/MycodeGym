@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task06.task0614"\n\nChats static
+
+1. Dans la classe Chat, ajoute la variable public static ArrayList<Chat> chats.
+2. Chaque fois qu'un nouveau chat (nouvel objet Chat) est créé, ajoute-le à la variable chats. Crée 10 objets Chat.
+3. La méthode imprimerChats doit afficher tous les chats à l'écran. Tu dois utiliser la variable chats.
+
+
+Requirements:
+1.	Ajoute la variable public static ArrayList&lt;Chat&gt; chats &agrave; la classe Chat.
+2.	La variable chats doit &ecirc;tre initialis&eacute;e.
+3.	La m&eacute;thode main doit cr&eacute;er 10 objets Chat (utilise le constructeur Chat()).
+4.	La m&eacute;thode main doit ajouter tous les chats cr&eacute;&eacute;s &agrave; la variable chats.
+5.	La m&eacute;thode imprimerChats doit afficher tous les objets Chat pr&eacute;sents dans la variable chats. Chacun sur une nouvelle ligne.
+
+

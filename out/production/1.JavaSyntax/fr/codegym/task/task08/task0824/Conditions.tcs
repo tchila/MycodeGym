@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task08.task0824"\n\nCréons une famille
+
+1. Crée une classe Humain avec les champs String nom, boolean sexe, int age et ArrayList<Humain> enfants.
+2. Crée et remplis des objets pour que nous nous retrouvions avec : deux grands-pères, deux grands-mères, un père, une mère et trois enfants.
+3. Affiche tous les objets Humain (Astuce : utilise la méthode toString() de la classe Humain).
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La classe Humain doit avoir quatre champs.
+3.	La classe Humain doit contenir une m&eacute;thode.
+4.	La classe Solution doit contenir une m&eacute;thode.
+5.	Le programme doit cr&eacute;er des objets et les remplir avec des donn&eacute;es pour deux grands-p&egrave;res, deux grands-m&egrave;res, un p&egrave;re, une m&egrave;re et trois enfants. Ensuite, il doit afficher tous les objets Humain &agrave; l&#39;&eacute;cran.
+
+

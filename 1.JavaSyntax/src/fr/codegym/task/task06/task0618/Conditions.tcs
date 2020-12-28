@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task06.task0618"\n\nEtMonCulCestDuTeflon
+
+Crée une classe appelée EtMonCulCestDuTeflon. Crée un objet de cette classe et affiche-le à l'écran.
+
+
+Requirements:
+1.	Cr&eacute;e une classe appel&eacute;e EtMonCulCestDuTeflon &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	La classe EtMonCulCestDuTeflon doit &ecirc;tre static.
+3.	La classe EtMonCulCestDuTeflon doit &ecirc;tre public.
+4.	Dans la m&eacute;thode main, cr&eacute;e un objet de la classe EtMonCulCestDuTeflon.
+5.	Dans la m&eacute;thode main, affiche l&#39;objet EtMonCulCestDuTeflon &agrave; l&#39;&eacute;cran.
+
+

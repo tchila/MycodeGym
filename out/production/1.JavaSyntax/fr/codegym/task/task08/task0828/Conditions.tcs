@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task08.task0828"\n\nNombre du mois
+
+Le programme lit le nom du mois au clavier, puis affiche son numéro sur l'écran dans une phrase comme celle-ci : « Mai est le mois numéro 5 ».
+Utilise des collections.
+
+
+Requirements:
+1.	Le programme doit lire une valeur au clavier.
+2.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+3.	Le programme doit utiliser des collections.
+4.	Le programme doit lire le nom du mois au clavier et afficher son num&eacute;ro &agrave; l&#39;&eacute;cran selon le mod&egrave;le sp&eacute;cifi&eacute;.
+
+

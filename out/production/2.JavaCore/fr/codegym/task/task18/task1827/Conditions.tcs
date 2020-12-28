@@ -1,0 +1,32 @@
+taskKey="fr.codegym.task.task18.task1827"\n\nTarifs
+
+CrUD pour un tableau dans un fichier.
+Lis un nom de fichier pour les opérations CrUD depuis la console.
+Le programme est lancé avec les arguments suivants :
+-c nomProduit prix quantité
+Valeurs des arguments :
+où id est composé de 8 caractères.
+nomProduit est composé de 30 caractères.
+prix est composé de 8 caractères.
+quantité est composé de 4 caractères.
+-c ajoute le produit avec les paramètres spécifiés à la fin du fichier, et génère un id en incrémentant l'id maximum trouvé dans le fichier.
+Les données du fichier sont stockées dans l'ordre suivant (sans espaces de séparation) :
+id nomProduit prix quantité
+Chaque champ de données est complété par des espaces jusqu'à sa longueur définie.
+Avant d'ajouter une nouvelle ligne, réécris tout son contenu dans le fichier.
+Exemple :
+19847   Short bain, bleu              159.00  12  
+198479  Short bain, noir avec imprimés173.00  17  
+19847983Veste snowboard avec réflexion10173.991234
+
+
+Requirements:
+1.	Le programme doit lire un nom de fichier pour les op&eacute;rations CrUD depuis la console.
+2.	La classe Solution ne doit pas utiliser de variables static.
+3.	Lorsque tu ex&eacute;cutes le programme sans arguments, la liste de produits doit rester inchang&eacute;e.
+4.	Lorsque le programme est ex&eacute;cut&eacute; avec les arguments &laquo;&nbsp;-c nomProduit prix quantit&eacute;&nbsp;&raquo;, une nouvelle ligne avec le produit correspondant doit &ecirc;tre ajout&eacute;e &agrave; la fin du fichier.
+5.	Le produit doit avoir l&#39;id suivant apr&egrave;s l&#39;id maximum trouv&eacute; dans le fichier.
+6.	Le format de la nouvelle ligne de produit doit correspondre pr&eacute;cis&eacute;ment au format sp&eacute;cifi&eacute; dans la mission.
+7.	Les flux de fichier doivent &ecirc;tre ferm&eacute;s.
+
+

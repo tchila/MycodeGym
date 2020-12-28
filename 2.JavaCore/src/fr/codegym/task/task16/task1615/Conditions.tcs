@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task16.task1615"\n\nAéroport
+
+1. Détermine ce que fait le programme.
+2. Corrige la méthode takeOff. Elle prend beauuuucoup trop de temps actuellement. Un décollage doit prendre 100 millisecondes.
+3. Implémente la méthode waitForTakeoff par analogie avec la méthode takeOff. Le temps d'attente ne doit pas être plus long que le temps de décollage.
+
+
+Requirements:
+1.	La m&eacute;thode takeOff doit s&#39;ex&eacute;cuter pendant environ 100 ms.
+2.	La m&eacute;thode waitForTakeOff doit s&#39;ex&eacute;cuter pendant environ 100 ms.
+3.	La m&eacute;thode main doit cr&eacute;er 3 avions.
+4.	La classe Solution doit avoir une classe interne appel&eacute;e &laquo;&nbsp;Plane&nbsp;&raquo;.
+5.	La classe Solution doit avoir une classe interne appel&eacute;e &laquo;&nbsp;Runway&nbsp;&raquo;.
+
+

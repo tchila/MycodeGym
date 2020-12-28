@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task16.task1624"\n\nThreads consécutifs
+
+1. Détermine ce que fait le programme.
+2. Fais en sorte que le premier programme affiche le résultat du thread, puis que quand le thread est terminé, la méthode main reprenne.
+3. Exemple de sortie :
+dans MyThread 0
+dans MyThread 1
+...
+dans MyThread 9
+dans main 0
+dans main 1
+...
+dans main 9
+
+
+Requirements:
+1.	La m&eacute;thode main doit appeler la m&eacute;thode start sur le thread t.
+2.	La m&eacute;thode main doit appeler la m&eacute;thode join sur le thread t.
+3.	Au d&eacute;but, le programme doit afficher 10 lignes, en commen&ccedil;ant par &laquo;&nbsp;dans MyThread&nbsp;&raquo;.
+4.	&Agrave; la fin, le programme doit afficher 10 lignes, en commen&ccedil;ant par &laquo;&nbsp;dans main&nbsp;&raquo;.
+5.	Au total, le programme doit afficher 20 lignes.
+
+

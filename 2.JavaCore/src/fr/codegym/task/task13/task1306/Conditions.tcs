@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task13.task1306"\n\ninitializeIdAndName bogué
+
+1. Demande-toi ce qui ne va pas avec le programme.
+2. Implémente la méthode initializeIdAndName dans la classe User.
+3. La méthode initializeIdAndName de la classe User doit renvoyer un User.
+4. Corrige le programme afin qu'il compile et fonctionne.
+
+
+Requirements:
+1.	L&#39;interface DBObject doit d&eacute;clarer, mais pas impl&eacute;menter, la m&eacute;thode initializeIdAndName.
+2.	Impl&eacute;mente la m&eacute;thode initializeIdAndName dans la classe User.
+3.	La m&eacute;thode initializeIdAndName de la classe User doit renvoyer un User.
+4.	La m&eacute;thode initializeIdAndName doit d&eacute;finir les champs id et name de l&#39;objet User sur les arguments pass&eacute;s, puis renvoyer l&#39;objet.
+
+

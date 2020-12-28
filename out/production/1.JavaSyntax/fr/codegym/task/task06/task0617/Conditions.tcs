@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task06.task0617"\n\nUn carnet pour de nouvelles idées
+
+1. Dans la classe Solution, crée la classe public static Idee
+2. Dans la classe Idee, déclare une méthode public String obtenirDescription() qui renvoie une chaîne quelconque non vide
+3. Dans la classe Solution, crée une méthode public void imprimerIdee(Idee idee) qui affiche une description de l'idée (ce que la méthode obtenirDescription renvoie)
+
+
+Requirements:
+1.	Dans la classe Solution, cr&eacute;e la classe public static Idee.
+2.	Dans la classe Idee, cr&eacute;e la m&eacute;thode public String obtenirDescription().
+3.	La m&eacute;thode obtenirDescription doit renvoyer une cha&icirc;ne quelconque non vide.
+4.	Dans la classe Solution, cr&eacute;e une m&eacute;thode public static void imprimerIdee(Idee idee).
+5.	La m&eacute;thode imprimerIdee doit afficher la description de l&#39;id&eacute;e &agrave; l&#39;&eacute;cran.
+
+

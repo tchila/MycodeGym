@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task16.task1611"\n\nHorloges
+
+1. Détermine ce que fait le programme.
+2. Implémente la méthode printTickTock :
+2.1. Dans la première moitié de chaque seconde, la phrase suivante doit être affichée : Tic
+2.2. Dans la seconde moitié de chaque seconde, la phrase suivante doit être affichée : Toc
+
+
+Requirements:
+1.	La m&eacute;thode printTickTock doit afficher deux lignes&nbsp;: &laquo;&nbsp;Tic&nbsp;&raquo; et &laquo;&nbsp;Toc&nbsp;&raquo;.
+2.	La m&eacute;thode printTickTock doit s&#39;ex&eacute;cuter pendant environ une seconde.
+3.	La m&eacute;thode printTickTock doit attendre deux fois pendant une demi-seconde. Utilise Thread.sleep(500).
+4.	Il ne doit y avoir aucun message dans la console apr&egrave;s &laquo;&nbsp;Double v&eacute;rification&nbsp;&raquo;.
+5.	La m&eacute;thode main doit cr&eacute;er un objet Clock.
+
+

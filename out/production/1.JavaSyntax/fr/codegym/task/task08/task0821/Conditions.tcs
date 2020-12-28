@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task08.task0821"\n\nNoms de famille et prénoms partagés
+
+1. Crée une Map<String, String> et ajoute 10 personnes représentées par des paires (nom, prénom).
+2. Parmi ces 10 personnes, fais en sorte que certaines aient le même prénom.
+3. Parmi ces 10 personnes, fais en sorte que certaines aient le même nom de famille.
+4. Affiche le contenu de la Map à l'écran.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La classe Solution ne doit contenir que trois m&eacute;thodes.
+3.	La m&eacute;thode creerMapPersonnes() doit cr&eacute;er et renvoyer une Map avec des &eacute;l&eacute;ments (String, String). Et n&#39;oublie pas de lui ajouter 10 personnes.
+4.	Dans la m&eacute;thode creerMapPersonnes(), tu dois ajouter des personnes avec le m&ecirc;me nom de famille.
+5.	Dans la m&eacute;thode creerMapPersonnes(), tu dois ajouter des personnes avec le m&ecirc;me pr&eacute;nom.
+6.	La m&eacute;thode imprimerMapPersonnes() doit afficher toutes les personnes dans la Map. Affiche chaque valeur sur une nouvelle ligne. Le nom et le pr&eacute;nom doivent &ecirc;tre s&eacute;par&eacute;s par un espace.
+7.	La m&eacute;thode main() doit appeler la m&eacute;thode creerMapPersonnes().
+8.	La m&eacute;thode main() doit appeler la m&eacute;thode imprimerMapPersonnes().
+
+

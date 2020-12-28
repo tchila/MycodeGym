@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task05.task0525"\n\nLe canard entier ne suffit pas
+
+En te servant de la classe Canard comme modèle, crée les classes Chat et Chien.
+À ton avis, qu'est-ce que la méthode toString dans les classes Chat et Chien doit renvoyer ?
+Dans la méthode main, crée deux objets de chaque classe et affiche-les à l'écran.
+Les objets Canard ont déjà été créés et sont affichés à l'écran.
+
+
+Requirements:
+1.	Cr&eacute;e une classe Chat.
+2.	Cr&eacute;e une classe Chien.
+3.	La classe Chat doit correctement impl&eacute;menter la m&eacute;thode toString.
+4.	La classe Chien doit correctement impl&eacute;menter la m&eacute;thode toString.
+5.	Dans la m&eacute;thode main, cr&eacute;e deux objets Chat.
+6.	Dans la m&eacute;thode main, cr&eacute;e deux objets Chien.
+7.	Affiche tous les objets cr&eacute;&eacute;s &agrave; l&#39;&eacute;cran.
+
+

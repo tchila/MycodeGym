@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task05.task0512"\n\nCréer une classe Cercle
+
+Crée la classe Cercle avec trois méthodes initialiser :
+- centreX, centreY, rayon
+- centreX, centreY, rayon, largeur
+- centreX, centreY, rayon, largeur, couleur
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La classe Cercle doit avoir des variables centreX, centreY, rayon, largeur et couleur.
+3.	La classe doit avoir une m&eacute;thode initialiser qui prend centreX, centreY et rayon comme arguments et initialise la variable d&#39;instance correspondante.
+4.	La classe doit avoir une m&eacute;thode initialiser qui prend centreX, centreY, rayon et largeur comme arguments et initialise la variable d&#39;instance correspondante.
+5.	La classe doit avoir une m&eacute;thode initialiser qui prend centreX, centreY, rayon, largeur et couleur comme arguments et initialise la variable d&#39;instance correspondante.
+
+

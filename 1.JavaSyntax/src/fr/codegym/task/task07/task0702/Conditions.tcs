@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task07.task0702"\n\nTableau de chaînes en ordre inverse
+
+1. Crée un tableau de 10 chaînes.
+2. Lis 8 chaînes dans la console et mets-les dans le tableau.
+3. Affiche le contenu du tableau entier (10 éléments) à l'écran dans l'ordre inverse. Utilise une nouvelle ligne pour chaque élément.
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er un tableau de 10 cha&icirc;nes.
+2.	Le programme doit lire 8 cha&icirc;nes pour le tableau au clavier.
+3.	Le programme doit afficher 10 cha&icirc;nes, chacune sur une nouvelle ligne.
+4.	Le tableau de cha&icirc;nes (10 &eacute;l&eacute;ments) doit &ecirc;tre affich&eacute; dans l&#39;ordre inverse.
+
+

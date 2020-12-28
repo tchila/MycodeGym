@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task07.task0717"\n\nDuplication de mots
+
+1. Lis 10 mots au clavier et ajoute-les à une liste de chaînes.
+2. La méthode dupliquerValeurs doit dupliquer les mots comme ceci : alpha, beta, gamma, -> alpha, alpha, beta, beta, gamma, gamma.
+3. Affiche les résultats, chaque valeur sur une nouvelle ligne.
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Lis 10 lignes au clavier et ajoute-les &agrave; la liste.
+3.	La m&eacute;thode dupliquerValeurs doit dupliquer les &eacute;l&eacute;ments de la liste comme ceci : alpha, beta, gamma, -&gt; alpha, alpha, beta, beta, gamma, gamma.
+4.	Affiche la liste r&eacute;sultante, chaque &eacute;l&eacute;ment sur une nouvelle ligne.
+
+

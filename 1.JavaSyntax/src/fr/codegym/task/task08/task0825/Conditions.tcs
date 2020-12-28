@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task08.task0825"\n\nModificateur mal placé
+
+Déplace un modificateur static pour que l'exemple compile.
+
+
+Requirements:
+1.	La classe Solution doit avoir une variable appel&eacute;e &laquo; A &raquo;.
+2.	La classe Solution doit avoir une variable appel&eacute;e &laquo; B &raquo;.
+3.	La classe Solution doit avoir une variable appel&eacute;e &laquo; C &raquo;.
+4.	La classe Solution doit avoir une variable appel&eacute;e &laquo; D &raquo;.
+5.	La classe Solution ne doit contenir que trois m&eacute;thodes.
+6.	La classe doit avoir 4 modificateurs static (variables et m&eacute;thodes).
+
+

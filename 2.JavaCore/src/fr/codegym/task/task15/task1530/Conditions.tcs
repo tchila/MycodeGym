@@ -1,0 +1,33 @@
+taskKey="fr.codegym.task.task15.task1530"\n\nModèle de modèle
+
+1. Dans un fichier séparé, crée une classe DrinkMaker avec trois méthodes abstraites :
+- void getRightCup() : choisis une tasse adaptée
+- void addIngredients() : ajoute les ingrédients
+- void pour() : verse le liquide
+2. Dans la classe DrinkMaker, déclare et implémente la méthode void makeDrink(), qui prépare une boisson dans l'ordre suivant : choisis une tasse, ajoute les ingrédients, verse le liquide.
+3. Dans des fichiers distincts, crée des classes LatteMaker et TeaMaker qui héritent de DrinkMaker.
+4. Affecte les phrases suivantes aux méthodes des classes LatteMaker et TeaMaker, avec des phrases différentes pour les différentes méthodes.
+5. Chaque méthode doit afficher sa propre phrase, sans afficher la même phrase qu'une autre méthode.
+6. Phrases :
+« Remplir d'eau bouillante »
+« Prendre une tasse pour latte »
+« Ajouter des feuilles de thé »
+« Prendre une tasse pour thé »
+« Remplir de lait mousseux »
+« Faire du café »
+
+
+Requirements:
+1.	La classe DrinkMaker doit se trouver dans un fichier s&eacute;par&eacute; et &ecirc;tre abstraite.
+2.	La classe DrinkMaker doit avoir trois m&eacute;thodes abstraites&nbsp;: getRightCup, addIngredients et pour.
+3.	La classe DrinkMaker doit impl&eacute;menter la m&eacute;thode makeDrink, qui appelle les m&eacute;thodes abstraites de cette classe dans l&#39;ordre sp&eacute;cifi&eacute; par les conditions de la mission.
+4.	La classe LatteMaker doit se trouver dans un fichier s&eacute;par&eacute; et descendre de la classe DrinkMaker.
+5.	La classe TeaMaker doit se trouver dans un fichier s&eacute;par&eacute; et descendre de la classe DrinkMaker.
+6.	La m&eacute;thode getRightCup de la classe LatteMaker doit afficher &laquo;&nbsp;Prendre une tasse pour latte&nbsp;&raquo;.
+7.	La m&eacute;thode addIngredients du LatteMaker doit afficher &laquo;&nbsp;Faire du caf&eacute;&nbsp;&raquo;.
+8.	La m&eacute;thode pour de la classe LatteMaker doit afficher &laquo;&nbsp;Remplir de lait mousseux&nbsp;&raquo;.
+9.	La m&eacute;thode getRightCup de la classe TeaMaker doit afficher &laquo;&nbsp;Prendre une tasse pour th&eacute;&nbsp;&raquo;.
+10.	La m&eacute;thode addIngredients de la classe TeaMaker doit afficher &laquo;&nbsp;Ajouter des feuilles de th&eacute;&nbsp;&raquo;.
+11.	La m&eacute;thode pour de la classe TeaMaker doit afficher &laquo;&nbsp;Remplir d&#39;eau bouillante&nbsp;&raquo;.
+
+

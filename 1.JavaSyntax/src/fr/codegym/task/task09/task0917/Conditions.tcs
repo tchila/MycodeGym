@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task09.task0917"\n\nCapturer des exceptions non vérifiées
+
+Dans la méthode gererExceptions, gère toutes les exceptions non vérifiées.
+Tu dois utiliser la méthode imprimerPile pour afficher la trace de pile l'exception qui se produit.
+Tu ne peux utiliser qu'un seul bloc try-catch.
+
+
+Requirements:
+1.	La m&eacute;thode gererExceptions doit appeler methode1.
+2.	La m&eacute;thode gererExceptions doit appeler methode2.
+3.	La m&eacute;thode gererExceptions doit appeler methode3.
+4.	La m&eacute;thode gererExceptions doit utiliser un seul bloc try-catch.
+5.	La m&eacute;thode gererExceptions doit capturer toutes les exceptions non v&eacute;rifi&eacute;es et utiliser la m&eacute;thode imprimerPile pour afficher la trace de pile de chaque exception qui est lev&eacute;e.
+6.	Le programme doit afficher du texte.
+
+

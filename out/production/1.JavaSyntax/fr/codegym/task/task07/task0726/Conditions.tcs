@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task07.task0726"\n\nLe code de Chat refuse de compiler
+
+Mission : Le programme lit des données au sujet de chats au clavier et les affiche à l'écran. Par exemple :
+Nom du chat : Tiger, âge : 6, poids : 5, queue : 22
+Nom du chat : Missy, âge : 8, poids : 7, queue : 20
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Si l&#39;utilisateur saisit une cha&icirc;ne vide au lieu d&#39;un nom, le programme doit afficher les donn&eacute;es &agrave; l&#39;&eacute;cran et se conclure.
+3.	Si l&#39;utilisateur saisit : Tiger, 6, 5 et 22 (chaque valeur sur une nouvelle ligne), le programme doit afficher &laquo; Nom du chat : Tiger, &acirc;ge : 6, poids : 5, queue : 22 &raquo;.
+4.	Si l&#39;utilisateur saisit : Missy, 8, 7 et 20 (chaque valeur sur une nouvelle ligne), le programme doit afficher &laquo; Nom du chat : Missy, &acirc;ge : 8, poids : 7, queue : 20 &raquo;.
+5.	Si l&#39;utilisateur saisit : Tiger, 6, 5, 22, Missy, 8, 7 et 20 (chaque valeur sur une nouvelle ligne), le programme doit afficher deux lignes : &laquo; Nom du chat : Tiger, &acirc;ge : 6, poids : 5, queue : 22 &raquo; et &laquo; Nom du chat : Missy, &acirc;ge : 8, poids : 7, queue : 20 &raquo;.
+
+

@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task06.task0622"\n\nChiffres croissants
+
+Mission : Écris un programme qui lit 5 nombres au clavier et les affiche dans l'ordre croissant.
+Exemple d'entrée :
+3
+2
+15
+6
+17
+Exemple de sortie :
+2
+3
+6
+15
+17
+
+
+Requirements:
+1.	Le programme doit lire 5 nombres au clavier.
+2.	Le programme doit afficher 5 nombres, chacun sur une nouvelle ligne.
+3.	La sortie doit contenir les m&ecirc;mes nombres que ceux qui ont &eacute;t&eacute; saisis (pas n&eacute;cessairement dans le m&ecirc;me ordre).
+4.	Les nombres affich&eacute;s doivent &ecirc;tre class&eacute;s dans l&#39;ordre croissant.
+
+

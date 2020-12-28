@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1204"\n\nQu'il s'agisse d'un oiseau ou d'une lampe
+
+Écris une méthode qui détermine le type de classe de l'objet que tu lui passes, puis affiche à l'écran le message correspondant : Chat, Chien, Oiseau ou Lampe.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Ne change pas la classe Chat.
+3.	Ne change pas la classe Dog.
+4.	Ne change pas la classe Bird.
+5.	Ne change pas la classe Lamp.
+6.	La m&eacute;thode printObjectType() doit afficher un des messages suivants, en fonction de l&#39;objet qui lui est pass&eacute;. Par exemple, elle doit afficher &laquo; Lampe &raquo; pour un objet Solution.Lamp.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task05.task0524"\n\nLa base d'une roue
+
+Dans la classe Cercle, crée un constructeur qui initialise toutes les variables d'instance.
+Le constructeur doit avoir trois paramètres.
+
+
+Requirements:
+1.	La classe Cercle doit avoir des variables double x, y et r.
+2.	La classe doit avoir un constructeur.
+3.	Le constructeur doit &ecirc;tre public.
+4.	Le constructeur doit avoir trois param&egrave;tres double.
+5.	Le constructeur doit initialiser toutes les variables d&#39;instance de la classe.
+
+

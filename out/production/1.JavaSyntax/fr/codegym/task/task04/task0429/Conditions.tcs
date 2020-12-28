@@ -1,0 +1,33 @@
+taskKey="fr.codegym.task.task04.task0429"\n\nNombres positifs et négatifs
+
+Utilise le clavier pour saisir trois entiers. Affiche le nombre de nombres positifs et le nombre de nombres négatifs dans l'ensemble d'origine,
+au format suivant :
+« Nombre de nombres négatifs : a » et « Nombre de nombres positifs : b », où a et b sont les inconnues.
+Voici quelques exemples :
+a) Si tu saisis les nombres
+2
+5
+6
+nous affichons
+Nombre de nombres négatifs : 0
+Nombre de nombres positifs : 3
+
+b) Si tu saisis les nombres
+-2
+-5
+6
+nous affichons
+Nombre de nombres négatifs : 2
+Nombre de nombres positifs : 1
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher le nombre de nombres n&eacute;gatifs dans l&#39;ensemble d&#39;origine.
+4.	Le programme doit afficher le nombre de nombres positifs dans l&#39;ensemble d&#39;origine.
+5.	S&#39;il n&#39;y a pas de nombres n&eacute;gatifs, le programme doit afficher &laquo; Nombre de nombres n&eacute;gatifs : 0 &raquo;.
+6.	S&#39;il n&#39;y a pas de nombres positifs, le programme doit afficher &laquo; Nombre de nombres positifs : 0 &raquo;.
+7.	Note que le nombre 0 n&#39;est ni positif ni n&eacute;gatif.
+
+

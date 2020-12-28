@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task16.task1607"\n\nCourse hippique
+
+Détermine ce que fait le programme.
+Implémente la méthode calculateHorsesFinished.
+Elle doit :
+1. Calculer et renvoyer le nombre de chevaux qui ont terminé. Utilise la méthode isFinished().
+2. Si un cheval n'a pas encore franchi la ligne d'arrivée (!isFinished()) , alors :
+2.1. Affiche "Attente de " + horse.getName().
+2.2. Attends qu'il termine la course. Réfléchis à la méthode que tu dois utiliser pour cela.
+2.3. Ne traite pas ce cheval comme ayant fini.
+
+
+Requirements:
+1.	La m&eacute;thode calculateHorsesFinished doit renvoyer le nombre de chevaux qui ont termin&eacute;.
+2.	La m&eacute;thode calculateHorsesFinished doit appeler la m&eacute;thode isFinished sur chaque cheval dans la liste pass&eacute;e.
+3.	Si un des chevaux dans la liste pass&eacute;e n&#39;a pas encore termin&eacute;, la m&eacute;thode calculateHorsesFinished doit afficher &quot;Attente de &quot; + horse.getName(). Exemple de sortie&nbsp;pour le premier cheval&nbsp;: &laquo;&nbsp;Attente de Horse_01&nbsp;&raquo;.
+4.	Si un des chevaux dans la liste pass&eacute;e n&#39;a pas encore termin&eacute;, la m&eacute;thode calculateHorsesFinished doit attendre qu&#39;il termine. Utilise la bonne m&eacute;thode pour l&#39;attente.
+5.	Une fois le programme termin&eacute;, la console doit indiquer que tous les chevaux ont termin&eacute;. Exemple de sortie&nbsp;pour le premier cheval&nbsp;: &laquo;&nbsp;Horse_01 a termin&eacute; la course&nbsp;!&nbsp;&raquo;.
+
+

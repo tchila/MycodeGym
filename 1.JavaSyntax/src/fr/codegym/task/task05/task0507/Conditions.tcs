@@ -1,0 +1,44 @@
+taskKey="fr.codegym.task.task05.task0507"\n\nMoyenne arithmétique
+
+Utilise le clavier pour saisir des nombres, puis calcule la moyenne arithmétique.
+Si l'utilisateur saisit -1, affiche la moyenne arithmétique de tous les nombres saisis et termine le programme.
+-1 ne doit pas être inclus dans le calcul.
+
+Voici quelques exemples :
+a) Si tu saisis les nombres
+1
+2
+2
+4
+5
+-1
+nous affichons
+2.8
+
+b) Si tu saisis les nombres
+4
+3
+2
+1
+-1
+nous affichons
+2.5
+
+Indice : une des solutions à ce problème utilise la construction suivante :
+while (true) {
+int nombre = lire le nombre;
+if (vérifie si le nombre est -1)
+break;
+}
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+3.	Apr&egrave;s avoir saisi -1, le programme doit se terminer correctement.
+4.	Si tu saisis les nombres 1, 2, 2, 4, 5 et -1, le programme doit afficher 2.8.
+5.	Si tu saisis les nombres -100, 0, 100 et -1, le programme doit afficher 0.0.
+6.	Si tu saisis les nombres 1 et -1, le programme doit afficher 1.0.
+7.	Le r&eacute;sultat affich&eacute; doit correspondre aux conditions de t&acirc;che pour toute donn&eacute;e d&#39;entr&eacute;e.
+
+

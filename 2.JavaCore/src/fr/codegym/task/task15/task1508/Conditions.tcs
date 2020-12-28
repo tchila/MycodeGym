@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task15.task1508"\n\nPOO : Surcharge de méthodes - Élimination du superflu
+
+1. Réfléchis à l'implémentation de la méthode print qui sera appelée.
+2. Supprime toutes les implémentations superflues de la méthode print.
+
+
+Requirements:
+1.	En dehors de la m&eacute;thode main, la classe Solution ne doit avoir qu&#39;une seule m&eacute;thode print (avec le bon param&egrave;tre&nbsp;!).
+2.	La m&eacute;thode print doit &ecirc;tre public.
+3.	La m&eacute;thode print doit &ecirc;tre static.
+4.	Le programme devrait afficher &laquo;&nbsp;Je deviendrai programmeur Java&nbsp;&raquo;.
+
+

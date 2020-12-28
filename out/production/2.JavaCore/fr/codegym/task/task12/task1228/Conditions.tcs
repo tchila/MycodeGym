@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task12.task1228"\n\nInterfaces pour la classe Human
+
+Ajoute autant d'interfaces à la classe Human que possible, mais attention à ce qu'elle ne devienne pas une classe abstraite.
+Tu ne peux pas ajouter de méthodes à la classe Human.
+
+
+Requirements:
+1.	La classe Solution doit avoir une interface Employee avec une m&eacute;thode void workLazily().
+2.	La classe Solution doit avoir une interface Businessman avec une m&eacute;thode workHard().
+3.	La classe Solution doit avoir une interface Secretary avec une m&eacute;thode void workLazily().
+4.	La classe Solution doit avoir une interface Miner avec une m&eacute;thode void workVeryHard().
+5.	La classe Solution doit avoir une classe Human avec les m&eacute;thodes void workHard() et void workLazily().
+6.	La classe Human doit impl&eacute;menter trois interfaces.
+
+

@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task07.task0708"\n\nLa chaîne la plus longue
+
+1. Initialise la liste de chaînes.
+2. Lis 5 chaînes au clavier et ajoute-les à cette liste.
+3. À l'aide d'une boucle, trouve la plus longue chaîne dans la liste.
+4. Affiche la chaîne. S'il y en a plus d'une, affiche chacune sur une nouvelle ligne.
+
+
+Requirements:
+1.	Dans la m&eacute;thode main, initialise le champ chaines existant dans la classe Solution avec une nouvelle ArrayList&lt;&gt;.
+2.	Le programme doit lire 5 cha&icirc;nes au clavier et les &eacute;crire dans la liste de cha&icirc;nes.
+3.	Le programme doit afficher la cha&icirc;ne la plus longue.
+4.	Si plusieurs cha&icirc;nes ont la plus grande longueur, tu dois afficher chacune d&#39;elle sur une nouvelle ligne.
+
+

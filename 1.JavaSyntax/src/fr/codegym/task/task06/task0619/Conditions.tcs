@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task06.task0619"\n\nTrois variables de nom static
+
+Ajoute 3 variables public static : String Solution.nom, String Chat.nom, String Chien.nom.
+
+
+Requirements:
+1.	Dans la classe Solution, ajoute une variable public static String nom.
+2.	Dans la classe Chat, ajoute une variable public static String nom.
+3.	Dans la classe Chien, ajoute une variable public static String nom.
+4.	Chaque classe doit avoir sa propre variable nom.
+
+

@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task15.task1501"\n\nPOO : Organise les interfaces
+
+1. Ajoute les interfaces Movable, Sellable et Discountable à la classe Clothes, si possible.
+2. Implémente leurs méthodes.
+
+
+Requirements:
+1.	La classe Clothes doit prendre en charge l&#39;interface Movable.
+2.	La classe Clothes doit prendre en charge l&#39;interface Sellable.
+3.	La classe Clothes doit prendre en charge l&#39;interface Discountable.
+4.	La classe Clothes doit impl&eacute;menter la m&eacute;thode isMovable.
+5.	La classe Clothes doit impl&eacute;menter une m&eacute;thode getAllowedAction sans param&egrave;tres.
+6.	La classe Clothes doit impl&eacute;menter une m&eacute;thode getAllowedAction avec un param&egrave;tre de type String.
+
+

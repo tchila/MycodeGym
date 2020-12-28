@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task13.task1314"\n\nUn gros renard reste un renard
+
+1. Corrige la classe BigFox afin que le programme compile.
+
+
+Requirements:
+1.	La classe Fox doit impl&eacute;menter l&#39;interface Animal.
+2.	La classe Fox doit impl&eacute;menter une seule m&eacute;thode (getName).
+3.	L&#39;interface Animal doit d&eacute;clarer une m&eacute;thode getColor.
+4.	La classe BigFox doit h&eacute;riter de la classe Fox.
+
+

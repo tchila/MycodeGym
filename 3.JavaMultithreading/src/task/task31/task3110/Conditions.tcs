@@ -1,0 +1,197 @@
+taskKey="com.codegym.task.task31.task3110.big12"\n\nArchiver (part 12)
+
+
+Today we'll prepare to implement ZipContentCommand. It will be responsible for getting
+an archive's contents. The archive's contents are compressed files and folders, but we're interested
+in knowing not only the names of the archive's objects, but also their size before and after compression,  their compression ratio, and
+the compression method used.
+We'll create a FileProperties class that will be responsible for the properties of each file in the archive. Out set of properties
+consists of the following: file name, file size before and after compression, and compression method.
+1.	Create the FileProperties class
+2.	Add the following private instance variables to it:
+2.1. String name - The file name
+2.2. long size - The size in bytes
+2.3. long compressedSize - The size after compression in bytes
+2.4. int compressionMethod - The compression method
+3.	Add getters for them
+4.	Add a FileProperties(String name, long size, long compressedSize, int
+compressionMethod) constructor
+5.	Add a long getCompressionRatio() method that will calculate the compression ratio as:
+100 - ((compressedSize * 100) / size)
+6.	Override the String toString() method so that it returns a String formatted as follows:
+"name size KB (compressedSize KB) compression: compressionRatio%" if the file size is greater than 0. Otherwise, it should
+only return the file name. For example, a directory might have a size of 0. Don't forget
+to convert bytes to kilobytes. Note that the number of bytes in a kilobyte isn't the same as the number of grams in a kilogram. Nor is it the same as the number of
+chips in that bag... Hmm, maybe it's time for me to grab a snack…
+
+
+Requirements:
+1.	You need to create a FileProperties class in the root of the task.
+2.	The FileProperties class must have String name, long size, long compressedSize, and int compressionMethod fields.
+3.	The FileProperties class must have the a FileProperties(String name, long size, long compressedSize, int compressionMethod) constructor.
+4.	Getters must be created for all of the fields in FileProperties.
+5.	The FileProperties class must contain a public long getCompressionRatio() method that calculates the file&#39;s compression ratio.
+6.	The FileProperties class&#39;s toString method must be implemented according to the task conditions.
+
+
+Archiver (part 11)
+
+
+Finally, we'll try to provide a decent implementation for the ZipCreateCommand class's execute() method that
+we added previously. To do this, we need to:
+1.	Display "Creating an archive." at the beginning of the method. Don't forget that we are using
+the ConsoleHelper class to work with the console.
+2.	Create a new ZipFileManager object. Since we will also need to create this object
+in other commands, move the creation logic to a separate ZipFileManager getZipFileManager() throws
+Exception method in the ZipCommand class. This method should:
+2.1. Ask the user to enter the full path to the archive
+2.2. Read the path into a String variable
+2.3. Use the entered String to create a Path variable
+2.4. Create a ZipFileManager object, passing the obtained path to the constructor
+2.5. Return the created object
+3.	Ask the user to enter the full path to the file or directory to be zipped
+4.	Create a Path using the entered String
+5.	Call the ZipFileManager object's createZip() method, passing the path from step 4 to it
+6.	Display "Archive created."
+7.	Wrap the contents of the ZipCreateCommand's execute() method in a try-catch block and catch
+PathNotFoundException exceptions. If one occurs, display the message: "You
+didn't correctly enter a file name or directory."
+8.	Run the program and verify that the "Zip files into an archive" command works
+
+
+
+Archiver (part 10)
+
+
+It's time to refactor the ZipFileManager class. The createZip method has code that we're also
+going to need in the methods that will add files to or remove them from an archive, extract files, etc. We'll
+implement those methods later, but we can move the common code to separate
+methods now.
+Additionally, the createZip method can only create an archive from a single file, but we would like to be able to
+zip an entire folder. We won't create a separate method for this, since you can pass
+both a directory and a regular file to the createZip(Path source) method.
+Today's tasks:
+1.	Implement a private void addNewZipEntry(ZipOutputStream zipOutputStream, Path filePath,
+Path fileName) throws Exception method in the ZipFileManager class. It must:
+1.1. Create an InputStream for the file named fileName located in
+the filePath directory
+1.2. Create a new ZipEntry, using fileName as the name
+after converting it to a String
+1.3. Copy the data from the InputStream (from step 1.1) to the zipOutputStream parameter
+1.4. Close the zip entry
+1.5. Close the InputStream using try-with-resources
+2.	Replace part of the createZip method's code with a call to the addNewZipEntry method. Pass source.getParent()
+as the filePath parameter, and source.getFileName() as the filename.
+3.	Implement a private void copyData(InputStream in, OutputStream out) throws Exception method. It
+must read data from "in" and write to "out", until it reads through everything.
+4.	Replace part of the addNewZipEntry method's code with a call to the copyData method.
+5.	Let's return to createZip:
+5.1. At the beginning of the method, check to see if the directory (zipFile.getParent()) where we
+will create zipFile exists; if not, then create it.
+5.2. If source is a regular file (use Files.isRegularFile to check), then simply call
+addNewZipEntry.
+5.3. If source is a directory (use Files.isDirectory to check), then:
+5.3.1.	Create a FileManager object, passing
+source to the constructor
+5.3.2.	Get a list of files from the file manager, and save them to the
+fileNames variable
+5.3.3.	Call addNewZipEntry(zipOutputStream,
+source, fileName) for each element of fileNames.
+5.4. If source isn't a folder or a file, throw a
+PathNotFoundException.
+
+
+
+Archiver (part 9)
+
+
+Now let's take care of another part of our archiver that is no less important. Frequently, users want to
+create an archive from not just one file, but from an entire folder. In this case, zipping amounts to
+successively adding a ZipEntry for each file to the archive.
+We need to write a FileManager class to get a list of all of the files in some folder. It must
+have a constructor that has a Path rootPath parameter that indicates the root (the folder containing the files
+we are interested in), and a List<Path> getFileList() method that should return a list
+of relative paths for all of the files in rootPath (including files in subfolders).
+The directory we will search can only be set once in the constructor. So, we can generate
+the list of files (relative paths) right in the constructor and save it in
+the class's List<Path> fileList variable.
+We just have to decide how to gather up all of the files, even those that might be inside a folder, inside a folder,
+inside a folder, inside the folder we're looking at. Whoa, we almost entered a recursive loop. But maybe recursion can
+help us! Let's make a collectFileList(Path path) method that adds all the files inside the path parameter to the class's fileList variable,
+and calls itself recursively on
+subfolders.
+1.	Create a FileManager class with a FileManager(Path rootPath) throws IOException constructor
+2.	Declare and initialize the following private instance variables:
+2.1. Path rootPath - The root path of the directory whose files we are interested in
+2.2. List<Path> fileList - The  list of relative paths of files inside rootPath
+3.	Create a getter for fileList
+4.	Implement a void collectFileList(Path path) throws IOException method that must:
+4.1. Check to see if the path parameter is a regular file (use the
+Files.isRegularFile method), then get its path relative to rootPath
+and add it to fileList.
+4.2. If the path parameter is a directory (determine this using the
+Files.isDirectory method), then go through all of the directory's contents and call
+collectFileList(Path path), passing in the discovered elements.
+You can go through the all of the directory's contents by first getting a DirectoryStream using the
+Files class's newDirectoryStream method. Don't forget to close the DirectoryStream.
+5.	Call the collectFileList(rootPath) method inside the FileManager constructor.
+6.	Apply everything you've learned about encapsulation to this class.
+In completing this task, you wrote an algorithm that traverses a file tree. But Java has a special
+FileVisitor interface for this. I highly recommend you learn how to use it.
+
+
+
+Archiver (part 8)
+
+
+To find out which command the user currently wants to execute, let's add an Operation
+askOperation() method to the Archiver class. This method should display a list of available commands and
+ask the user to choose one of them. For convenience, we will ask the user to enter the command's number, which is its
+ordinal number in the Operation enum. You can get an enum field's ordinal number
+using the ordinal() method.
+Now everything is ready to rewrite the main method using our latest scientific advancements, specifically
+the CommandExecutor class and the askOperation() method.
+1.	Add a public static Operation askOperation() throws IOException method to the Archiver class.
+It must:
+1.1. Use the ConsoleHelper class's methods
+1.2. Ask the user for the number of the desired operation. Hint:
+To display the number of the "Create archive" operation, use: Operation.CREATE.ordinal()
+1.3. Return the selected operation.
+Example output of the askOperation() method:
+Select an operation:
+0 - Zip files into an archive
+1 - Add a file to an archive
+2 - Remove a file from an archive
+3 - Extract an archive
+4 - View the contents of an archive
+5 - Exit
+2.	Rewrite the main() method:
+2.1. Declare a local Operation variable
+2.2. In a loop, use the askOperation() method to ask for a new value for the variable in step 2.1, and
+use CommandExecutor.execute() to perform the operation.
+2.3. Allow the user to exit the loop by selecting the Operation.EXIT operation
+2.4. Wrap the askOperation() and execute(operation) calls in a try-catch block. If a
+NoSuchZipFileException occurs, use ConsoleHelper to display "You didn't select an archive or
+you selected an invalid file." If any other exceptions occur,
+display "An error occurred. Please check the entered data."
+2.5. Be sure that the program continues running (continues to a new iteration of the loop)
+after handling exceptions.
+3.	Run the program and verify that the "exit" command works.
+
+
+
+Archiver (part 7)
+
+
+We've done a lot and can take a quick break.
+Let's create an exception package and add two classes to it: PathNotFoundException and NoSuchZipFileException.
+We'll throw a PathNotFoundException exception if we can't find the path needed
+to extract the archive, or the path to the file you want to zip, or any other path. A NoSuchZipFileException
+will be thrown if there is an attempt to do something with an archive that doesn't
+exist.
+1.	Create the exception package
+2.	Add to it a PathNotFoundException class that inherits Exception
+3.	Add a NoSuchZipFileException class that also inherits Exception
+
+
+

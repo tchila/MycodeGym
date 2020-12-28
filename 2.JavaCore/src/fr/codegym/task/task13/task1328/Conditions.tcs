@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task13.task1328"\n\nGuerres de robots
+
+1. Familiarise-toi avec le code.
+2. Accepte ton destin et continue à essayer de comprendre le code.
+3. ...
+4. Réjouis-toi de l'avoir compris.
+5. Adapte le code à la nouvelle architecture et ajoute une nouvelle logique :
+5.1. Rends la classe AbstractRobot abstraite. Puis déplace la logique d'attaque et de défense de la classe Robot vers la classe AbstractRobot.
+5.2. Modifie la classe Robot pour utiliser la classe AbstractRobot.
+5.3. Développe la classe BodyPart avec une nouvelle partie du corps : BodyPart.CHEST.
+5.4. Ajoute la nouvelle partie du corps à l'implémentation des interfaces CanAttack et CanDefend (dans la classe AbstractRobot).
+
+
+Requirements:
+1.	La classe AbstractRobot doit &ecirc;tre abstraite.
+2.	La classe AbstractRobot doit impl&eacute;menter les interfaces CanAttack et CanDefend.
+3.	La classe Robot doit h&eacute;riter de la classe AbstractRobot.
+4.	La logique d&eacute;finissant le fonctionnement d&#39;un robot doit se trouver dans la classe AbstractRobot.
+5.	La classe BodyPart doit avoir et initialiser une variable final static BodyPart appel&eacute;e CHEST.
+6.	La nouvelle partie du corps doit &ecirc;tre ajout&eacute;e &agrave; la logique des m&eacute;thodes attack et defend dans la classe AbstractRobot.
+
+

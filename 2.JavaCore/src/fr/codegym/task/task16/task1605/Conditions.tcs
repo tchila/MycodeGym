@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task16.task1605"\n\nParlons musique
+
+1. Modifie la classe Violin pour en faire une tâche pour le thread. Utilise l'interface MusicalInstrument
+2. Implémente la méthode requise dans le thread Violin. L'implémentation doit être comme suit :
+2.1. Détermine le moment où tu commences à jouer : la méthode startPlaying().
+2.2. Attends 1 seconde avec la méthode sleepNSeconds(int n), où n est le nombre de secondes.
+2.3. Détermine le moment où tu arrêtes de jouer : la méthode stopPlaying().
+2.4. Affiche pendant combien de temps tu as joué de l'instrument. Utilise les méthodes des étapes 2.1 et 2.3.
+Exemple : A joué pendant 1002 ms
+
+
+Requirements:
+1.	La classe Violin ne doit pas h&eacute;riter de classes suppl&eacute;mentaires.
+2.	La classe Violin doit impl&eacute;menter l&#39;interface MusicalInstrument.
+3.	La m&eacute;thode run de la classe Violin doit appeler la m&eacute;thode startPlaying.
+4.	La m&eacute;thode run de la classe Violin doit appeler la m&eacute;thode sleepNSeconds avec un argument de 1 seconde.
+5.	La m&eacute;thode run de la classe Violin doit appeler la m&eacute;thode stopPlaying.
+6.	La m&eacute;thode run de la classe Violin doit afficher la dur&eacute;e pendant laquelle nous avons jou&eacute; de l&#39;instrument (en millisecondes). Utilise le format donn&eacute; dans l&#39;exemple.
+
+

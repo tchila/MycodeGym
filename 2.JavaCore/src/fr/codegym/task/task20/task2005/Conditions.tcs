@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task20.task2005"\n\nChoses étranges
+
+Des erreurs étranges se produisent lors de la lecture/écriture d'objets Human.
+Détermine ce qui ne va pas et corrige l'erreur.
+
+
+Requirements:
+1.	La logique de lecture/&eacute;criture dans les m&eacute;thodes save/load doit fonctionner correctement lorsque la liste assets est null.
+2.	La logique de lecture/&eacute;criture dans les m&eacute;thodes save/load doit fonctionner correctement lorsque le champ name et la liste assets ne sont pas null.
+3.	La classe Solution.Human ne doit pas prendre en charge l&#39;interface Serializable.
+4.	La classe Solution.Human doit &ecirc;tre public.
+5.	La classe Solution.Human ne doit pas prendre en charge l&#39;interface Externalizable.
+6.	La m&eacute;thode equals doit renvoyer true pour deux objets Human &eacute;gaux et false pour des objets diff&eacute;rents.
+7.	La m&eacute;thode hashCode doit toujours renvoyer la m&ecirc;me valeur pour le m&ecirc;me objet Human.
+
+

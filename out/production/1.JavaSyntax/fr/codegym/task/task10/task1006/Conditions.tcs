@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task10.task1006"\n\nMission n°6 sur les conversions des types d'entiers
+
+Retire les opérateurs en trop pour obtenir la bonne réponse : resultat : 1000.0
+double d = (short) 2.50256e2d;
+char c = (short) 'd';
+short s = (short) 2.22;
+int i = (short) 150000;
+float f = (short) 0.50f;
+double resultat = f + (i / c) - (d * s) - 500e-3;
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Ne modifie pas la commande de sortie &eacute;cran.
+3.	La m&eacute;thode main() doit contenir une variable char appel&eacute;e &laquo; c &raquo;.
+4.	La m&eacute;thode main() doit contenir une variable short appel&eacute;e &laquo; s &raquo;.
+5.	La m&eacute;thode main() doit contenir une variable int appel&eacute;e &laquo; i &raquo;.
+6.	La m&eacute;thode main() doit contenir une variable float appel&eacute;e &laquo; f &raquo;.
+7.	La m&eacute;thode main() doit contenir une variable double appel&eacute;e &laquo; d &raquo;.
+8.	La m&eacute;thode main() doit contenir une variable double appel&eacute;e &laquo; resultat &raquo;.
+9.	Ne change pas la valeur initiale des variables lors de l&#39;initialisation. Tu peux seulement modifier les op&eacute;rateurs de conversion.
+10.	Le programme doit afficher &laquo; r&eacute;sultat : 1000.0 &raquo;.
+
+

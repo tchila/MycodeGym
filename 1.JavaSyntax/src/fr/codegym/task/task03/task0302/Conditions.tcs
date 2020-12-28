@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task03.task0302"\n\nAfficher immédiatement
+
+Ajoute la méthode public static void imprimerChaine(String s), et écris du code pour qu'elle affiche la chaîne passée.
+
+
+Requirements:
+1.	Ajoute une m&eacute;thode imprimerChaine qui prend un argument String.
+2.	La m&eacute;thode imprimerChaine doit &ecirc;tre void.
+3.	La m&eacute;thode imprimerChaine doit &ecirc;tre static.
+4.	La m&eacute;thode imprimerChaine doit &ecirc;tre public.
+5.	La m&eacute;thode imprimerChaine doit afficher le texte pass&eacute;.
+6.	Le programme doit afficher &laquo; Bonjour, Amigo ! &raquo;.
+
+

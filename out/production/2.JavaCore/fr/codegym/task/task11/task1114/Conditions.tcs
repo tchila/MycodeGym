@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task11.task1114"\n\nClasses évolutives
+
+Modifie les trois classes suivantes : Fish, Lizard et Dinosaur.
+Lizard doit hériter de Fish et Dinosaur de Lizard.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Fish.
+2.	La classe Solution doit contenir une classe public Lizard.
+3.	La classe Solution doit contenir une classe public Dinosaur.
+4.	La classe Lizard doit h&eacute;riter de la classe Fish.
+5.	La classe Dinosaur doit h&eacute;riter de la classe Lizard.
+
+

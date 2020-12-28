@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task15.task1519"\n\nDifférentes méthodes pour différents types
+
+1. Lis des données dans la console jusqu'à ce que le mot « quitter » soit saisi.
+2. Pour chaque valeur (sauf « quitter »), appelle la méthode print. Si la valeur :
+2.1. contient un point ('.'), appelle la méthode print pour Double ;
+2.2. est supérieure à zéro et inférieure à 128, appelle la méthode print pour short ;
+2.3. inférieure ou égale à zéro ou supérieure ou égale à 128, appelle la méthode print pour Integer ;
+2.4. sinon, appelle la méthode print pour String.
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit arr&ecirc;ter de lire des donn&eacute;es au clavier apr&egrave;s la saisie de la cha&icirc;ne &laquo;&nbsp;quitter&nbsp;&raquo;.
+3.	Si la cha&icirc;ne saisie contient un point (&#39;.&#39;) et peut &ecirc;tre convertie correctement en Double, la m&eacute;thode print(Double value) doit &ecirc;tre appel&eacute;e.
+4.	Si la cha&icirc;ne saisie peut &ecirc;tre convertie correctement en short et que le nombre obtenu est sup&eacute;rieur &agrave; 0, mais inf&eacute;rieur &agrave; 128, la m&eacute;thode print(short value) doit &ecirc;tre appel&eacute;e.
+5.	Si la cha&icirc;ne saisie peut &ecirc;tre convertie correctement en Integer et que le nombre r&eacute;sultant est inf&eacute;rieur ou &eacute;gal &agrave; 0 ou sup&eacute;rieur ou &eacute;gal &agrave; 128, la m&eacute;thode print(Integer value) doit &ecirc;tre appel&eacute;e.
+6.	Dans tous les autres cas, la m&eacute;thode print(String value) doit &ecirc;tre appel&eacute;e.
+
+

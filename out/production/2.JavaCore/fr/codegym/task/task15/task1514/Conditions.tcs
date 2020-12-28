@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task15.task1514"\n\nModificateurs static : partie 1
+
+Dans un bloc statique, initialise labels avec 5 différentes paires clé-valeur.
+
+
+Requirements:
+1.	- La classe Solution doit contenir une seule m&eacute;thode (main).
+2.	La classe Solution doit d&eacute;clarer un champ static Map labels.
+3.	Le champ labels doit &ecirc;tre rempli avec 5 paires cl&eacute;-valeur diff&eacute;rentes dans un bloc statique.
+4.	La m&eacute;thode main doit afficher le contenu de labels.
+
+

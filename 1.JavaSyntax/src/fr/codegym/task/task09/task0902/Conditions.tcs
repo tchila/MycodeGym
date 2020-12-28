@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task09.task0902"\n\nLa trace de pile, revisitée
+
+Écris cinq méthodes qui font appel l'une à l'autre. Chaque méthode doit renvoyer le nom de la méthode qui l'a appelée. Utilise la trace de pile pour obtenir cette information.
+
+
+Requirements:
+1.	Il doit y avoir 5 m&eacute;thodes dans la classe (en plus de la m&eacute;thode main).
+2.	Chaque m&eacute;thode doit appeler la suivante : main appelle methode1, methode1 appelle methode2, etc.
+3.	Chaque m&eacute;thode doit renvoyer le nom de la m&eacute;thode qui l&#39;a appel&eacute;e.
+4.	Pour obtenir le nom de la m&eacute;thode appelante, utilise la m&eacute;thode getMethodName.
+
+

@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task04.task0443"\n\nUn nom est un nom
+
+Utilise le clavier pour saisir un nom.
+Utilise le clavier pour saisir une date de naissance (trois nombres) : aaaa, mm, jj.
+Affiche ce qui suit :
+« Je m'appelle *nom*.
+Ma date de naissance est le jj/mm/aaaa »
+
+Exemple de sortie :
+Je m'appelle Kévin.
+Ma date de naissance est le 15/2/1988
+
+
+Requirements:
+1.	Le programme doit lire 4 lignes au clavier.
+2.	Le programme doit afficher des lignes &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher du texte conform&eacute;ment au mod&egrave;le sp&eacute;cifi&eacute; dans la mission.
+4.	Affiche chaque d&eacute;claration sur une nouvelle ligne.
+
+

@@ -1,0 +1,33 @@
+taskKey="fr.codegym.task.task15.task1522"\n\nRenforcer le modèle de singleton
+
+1. Trouve un exemple du modèle singleton utilisé pour l'initialisation tardive. Utilise ton moteur de recherche préféré (par exemple Google).
+2. Dans des fichiers distincts, crée trois classes de singleton à sa ressemblance et à son image : Sun, Moon et Earth.
+3. Implémente l'interface Planet dans les classes Sun, Moon et Earth.
+4. Dans le bloc statique de la classe Solution, appelle la méthode readKeyFromConsoleAndInitPlanet.
+5. Implémente la méthode readKeyFromConsoleAndInitPlanet :
+5.1. Lis une valeur String depuis la console.
+5.2. Si la valeur est égale à une des constantes de l'interface Planet, crée un objet correspondant et affecte-le à Planet thePlanet, sinon définis Planet thePlanet sur null.
+
+
+Requirements:
+1.	La classe Sun doit emp&ecirc;cher la cr&eacute;ation d&#39;objets Sun en dehors de la classe.
+2.	La classe Sun doit avoir un champ private static Sun instance.
+3.	La classe Sun doit impl&eacute;menter la m&eacute;thode public static getInstance, qui renvoie la valeur du champ instance.
+4.	La m&eacute;thode getInstance de la classe Sun doit TOUJOURS renvoyer le m&ecirc;me objet.
+5.	Le champ instance doit &ecirc;tre initialis&eacute; apr&egrave;s le premier appel &agrave; la m&eacute;thode getInstance, mais pas avant.
+6.	La classe Moon doit emp&ecirc;cher la cr&eacute;ation d&#39;objets Moon en dehors de la classe.
+7.	La classe Moon doit avoir un champ private static Moon instance.
+8.	La classe Moon doit impl&eacute;menter la m&eacute;thode public static getInstance, qui renvoie la valeur du champ instance.
+9.	La m&eacute;thode getInstance de la classe Moon doit TOUJOURS renvoyer le m&ecirc;me objet.
+10.	Le champ instance doit &ecirc;tre initialis&eacute; apr&egrave;s le premier appel &agrave; la m&eacute;thode getInstance, mais pas avant.
+11.	La classe Earth doit emp&ecirc;cher la cr&eacute;ation d&#39;objets Earth en dehors de la classe.
+12.	La classe Earth doit avoir un champ private static Earth instance.
+13.	La classe Earth doit impl&eacute;menter la m&eacute;thode public static getInstance, qui renvoie la valeur du champ instance.
+14.	La m&eacute;thode getInstance de la classe Earth doit TOUJOURS renvoyer le m&ecirc;me objet.
+15.	Le champ instance doit &ecirc;tre initialis&eacute; apr&egrave;s le premier appel &agrave; la m&eacute;thode getInstance, mais pas avant.
+16.	La m&eacute;thode readKeyFromConsoleAndInitPlanet doit &ecirc;tre appel&eacute;e dans le bloc statique de la classe Solution.
+17.	La m&eacute;thode readKeyFromConsoleAndInitPlanet doit lire une ligne au clavier.
+18.	La m&eacute;thode readKeyFromConsoleAndInitPlanet doit mettre &agrave; jour correctement la valeur de la variable thePlanet conform&eacute;ment aux conditions de la mission.
+19.	Les classes Sun, Moon et Earth doivent se trouver dans des fichiers s&eacute;par&eacute;s.
+
+

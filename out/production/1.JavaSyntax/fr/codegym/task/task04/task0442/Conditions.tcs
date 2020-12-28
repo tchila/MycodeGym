@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task04.task0442"\n\nAjout
+
+Utilise le clavier pour saisir des nombres.
+Si l'utilisateur saisit -1, affiche la somme de tous les nombres saisis et termine le programme.
+-1 doit être inclus dans la somme.
+
+Indice : une des solutions à ce problème utilise la construction suivante :
+while (true) {
+int nombre = lire le nombre;
+if (vérifie si le nombre est -1)
+break;
+}
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	Si l&#39;utilisateur saisit -1, le programme doit afficher la somme de tous les nombres saisis et se terminer.
+3.	Le programme doit calculer et afficher la somme des nombres saisis.
+4.	Le programme doit utiliser une boucle for ou while.
+
+

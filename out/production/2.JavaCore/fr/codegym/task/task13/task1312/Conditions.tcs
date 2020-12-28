@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task13.task1312"\n\nLe code ne se corrige pas tout seul
+
+Corrige le code de sorte que le programme s'exécute et affiche « Je traduis depuis la langue : russe ».
+Ne change pas la méthode main !
+
+
+Requirements:
+1.	Le programme doit afficher &laquo; Je traduis depuis la langue&nbsp;: russe &raquo;.
+2.	La m&eacute;thode translate doit renvoyer &laquo; Je traduis depuis la langue&nbsp;: russe &raquo;.
+3.	Le programme doit s&#39;ex&eacute;cuter sans erreurs.
+4.	La m&eacute;thode main doit afficher le r&eacute;sultat de l&#39;appel &agrave; la m&eacute;thode translate de l&#39;objet Translator.
+
+

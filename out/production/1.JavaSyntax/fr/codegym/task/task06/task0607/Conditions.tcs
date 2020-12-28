@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task06.task0607"\n\nCompteur de classe
+
+Déclare une variable static int nombreChats dans la classe Chat. Déclare un constructeur, c'est-à-dire public Chat(), qui augmente cette variable de 1.
+
+
+Requirements:
+1.	Ajoute un constructeur &agrave; la classe Chat.
+2.	Le constructeur doit &ecirc;tre public.
+3.	Ajoute le champ nombreChats &agrave; la classe Chat.
+4.	Le champ nombreChats doit &ecirc;tre un int.
+5.	Le champ nombreChats doit &ecirc;tre static.
+6.	Le constructeur doit incr&eacute;menter la valeur de la variable nombreChats de 1.
+
+

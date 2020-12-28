@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task18.task1816"\n\nABC
+
+Le premier paramètre de la méthode main est un nom de fichier.
+Compte les lettres de l'alphabet latin dans le fichier.
+Affiche le nombre de lettres.
+Ferme les flux.
+
+
+Requirements:
+1.	Tu n&#39;as rien besoin de lire depuis la console.
+2.	Cr&eacute;e un flux pour lire &agrave; partir du fichier pass&eacute; comme premier argument de la m&eacute;thode main.
+3.	Tu dois compter les lettres de l&#39;alphabet latin dans le fichier et afficher le nombre.
+4.	Tu dois utiliser des lettres majuscules et minuscules.
+5.	Le flux utilis&eacute; pour lire le fichier doit &ecirc;tre ferm&eacute;.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task08.task0802"\n\nHashMap de 10 paires
+
+Crée une HashMap<String, String>, et ajoute-lui 10 paires de chaînes :
+pastèque - melon, banane - fruit, cerise - fruit, poire - fruit, melon - melon, mûre - fruit, ginseng - racine, fraise - fruit, iris - fleur, pomme de terre - tubercule.
+Affiche le contenu de la collection en utilisant une nouvelle ligne pour chaque élément.
+Exemple de sortie : (nous montrons une seule ligne ici) :
+pomme de terre - tubercule
+
+
+Requirements:
+1.	D&eacute;clare une variable HashMap avec des paires (String, String) et initialise-la imm&eacute;diatement.
+2.	Le programme ne doit pas lire de valeurs au clavier.
+3.	Le programme doit ajouter 10 paires de cha&icirc;nes &agrave; la collection conform&eacute;ment aux conditions.
+4.	Le programme doit afficher le contenu de la collection &agrave; l&#39;&eacute;cran, chaque paire sur une nouvelle ligne.
+
+

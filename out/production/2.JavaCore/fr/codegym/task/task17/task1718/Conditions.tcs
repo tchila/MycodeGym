@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task17.task1718"\n\nRepassage
+
+Retour au train-train quotidien...
+Ajoute un mot-clé synchronized pour que diana et steve repassent chacun leur tour, car il n'y a qu'un seul fer à repasser !
+Indice :
+Utilise le verrouillage au niveau de la classe.
+
+
+Requirements:
+1.	La classe Solution doit contenir la classe public static Clothes.
+2.	La classe Solution doit contenir la classe public static Iron.
+3.	La classe Solution doit contenir la classe public static Person.
+4.	La classe Person doit &ecirc;tre un thread.
+5.	La m&eacute;thode run() de la classe Person doit avoir un bloc synchronis&eacute;.
+6.	Le bloc synchronis&eacute; doit utiliser un verrou au niveau de la classe.
+
+

@@ -1,0 +1,27 @@
+taskKey="fr.codegym.task.task19.task1919"\n\nCalcul des salaires
+
+Le premier paramètre de la méthode main est un nom de fichier.
+Chaque ligne du fichier spécifié a le format suivant :
+nom valeur
+où [nom] est un String et [valeur] un double. [nom] et [valeur] sont séparés par un espace.
+Trouve la somme de toutes les valeurs pour chaque nom.
+Affiche toutes les données, triées par nom dans l'ordre croissant.
+Ferme les flux.
+Exemple de fichier d'entrée :
+Peterson 2
+Smith 6
+Baxter 1.35
+Peterson 3.1
+Exemple de sortie :
+Baxter 1.35
+Peterson 5.1
+Smith 6.0
+
+
+Requirements:
+1.	Le programme ne doit PAS lire de donn&eacute;es depuis la console.
+2.	Le programme doit lire le contenu du fichier (utilise FileReader).
+3.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+4.	Le programme doit &eacute;crire dans la console chaque nom, tri&eacute; par ordre croissant, et la somme de toutes ses valeurs.
+
+

@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task16.task1622"\n\nThreads consécutifs
+
+1. Dans la méthode run, ajoute un retard de 10 millisecondes après toutes les actions. Affiche « Thread interrompu » si le thread est interrompu.
+2. Exécute tous les threads de façon séquentielle : d'abord, pour le thread 1, effectue un compte à rebours de COUNT à 1 ; puis pour le thread 2, de COUNT à 1, etc.
+Exemple :
+#1: 4
+#1: 3
+...
+#1: 1
+#2: 4
+...
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er 4 objets SleepingThread.
+2.	La m&eacute;thode main doit appeler join sur chaque objet SleepingThread cr&eacute;&eacute;.
+3.	La m&eacute;thode run doit utiliser Thread.sleep(10).
+4.	La sortie du programme sortie doit correspondre aux conditions de la mission.
+5.	Si un thread SleepingThread est interrompu, il doit afficher &laquo;&nbsp;Thread interrompu&nbsp;&raquo;.
+
+

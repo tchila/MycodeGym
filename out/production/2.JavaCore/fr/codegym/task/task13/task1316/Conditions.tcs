@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task13.task1316"\n\nLignes incorrectes
+
+Supprime toutes les lignes incorrectes de l'interface Button.
+
+
+Requirements:
+1.	L&#39;interface SimpleObject doit &ecirc;tre d&eacute;clar&eacute;e &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	L&#39;interface Button doit &ecirc;tre d&eacute;clar&eacute;e &agrave; l&#39;int&eacute;rieur de la classe Solution.
+3.	Ne change pas la m&eacute;thode main.
+4.	La d&eacute;claration de la constante NAME doit rester dans l&#39;interface Button.
+5.	Une d&eacute;claration correcte de la m&eacute;thode onPress doit rester dans l&#39;interface Button.
+
+

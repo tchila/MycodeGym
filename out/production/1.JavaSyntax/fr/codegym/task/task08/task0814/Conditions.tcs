@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task08.task0814"\n\nPlus de 10 ? Ça ne va pas marcher.
+
+Crée un ensemble de nombres (Set<Integer>) et ajoute-lui 20  nombres différents.
+Supprime de l'ensemble tous les nombres supérieurs à 10.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	Le programme ne doit pas lire de valeurs au clavier.
+3.	La classe Solution ne doit contenir que trois m&eacute;thodes.
+4.	La m&eacute;thode creerSet() doit cr&eacute;er et envoyer un HashSet contenant 20 nombres diff&eacute;rents.
+5.	La m&eacute;thode supprimerNombresSuperieursA10() doit supprimer de l&#39;ensemble tous les nombres sup&eacute;rieurs &agrave; 10.
+
+

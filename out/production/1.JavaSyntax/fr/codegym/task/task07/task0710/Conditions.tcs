@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task07.task0710"\n\nDirection le sommet de la liste
+
+1. Crée une liste de chaînes dans la méthode main.
+2. Ajoute-lui 10 chaînes en les saisissant au clavier, mais ajoute-les seulement au début de la liste, pas à la fin.
+3. Utilise une boucle pour afficher le contenu, avec chaque valeur sur une nouvelle ligne.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Le programme doit lire 10 cha&icirc;nes au clavier et les ajouter &agrave; la liste.
+3.	Le programme doit ajouter des lignes au d&eacute;but de la liste.
+4.	Le programme doit afficher la liste, chaque valeur sur une nouvelle ligne.
+
+

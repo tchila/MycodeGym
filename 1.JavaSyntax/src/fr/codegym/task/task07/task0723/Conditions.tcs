@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task07.task0723"\n\nCompte à rebours
+
+Écris un programme qui compte de 30 à 0, puis affiche « Boum ! ».
+Le programme doit faire avancer le compte à rebours 10 fois par seconde. Pour ajouter un retard au programme, utilise :
+Thread.sleep(100); // Retarde l'exécution d'un dixième de seconde.
+Par exemple :
+30
+29
+…
+1
+0
+Boum !
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	Le programme doit afficher un compte &agrave; rebours de 30 &agrave; 0. Utilise une nouvelle ligne pour chaque nombre.
+3.	Le programme doit afficher &laquo; Boum ! &raquo; &agrave; la fin du compte &agrave; rebours.
+4.	Le programme doit utiliser &laquo; Thread.sleep (100); &raquo; 31 fois.
+
+

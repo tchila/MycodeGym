@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task12.task1216"\n\nTu veux voler ?
+
+Écris ta propre interface public CanFly.
+Ajoute-lui deux méthodes.
+
+
+Requirements:
+1.	- La classe Solution doit contenir une interface CanFly.
+2.	L&#39;interface CanFly doit &ecirc;tre public.
+3.	L&#39;interface CanFly doit contenir deux&nbsp;m&eacute;thodes.
+4.	L&#39;interface CanFly ne doit pas avoir de parent.
+
+

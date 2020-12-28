@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task15.task1528"\n\nPOO : L'Euro, c'est aussi de l'argent
+
+Corrige la classe Euro pour éviter une StackOverflowError.
+
+
+Requirements:
+1.	La classe Euro doit descendre de la classe Money.
+2.	La classe Euro doit impl&eacute;menter la m&eacute;thode getAmount.
+3.	La m&eacute;thode getAmount de la classe Euro doit renvoyer la valeur du champ amount.
+4.	Il ne doit pas y avoir d&#39;exceptions ou d&#39;erreurs lors de l&#39;ex&eacute;cution du programme.
+
+

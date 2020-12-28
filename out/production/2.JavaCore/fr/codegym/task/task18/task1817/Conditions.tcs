@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task18.task1817"\n\nEspaces
+
+Le premier paramètre de la méthode main est un nom de fichier.
+Affiche le rapport entre le nombre d'espaces et l'ensemble des caractères. Par exemple 10.45.
+1. Compte tous les caractères (n1).
+2. Compte les espaces (n2).
+3. Affiche n2/n1*100, en arrondissant à 2 décimales.
+4. Ferme les flux.
+
+
+Requirements:
+1.	Tu n&#39;as rien besoin de lire depuis la console.
+2.	Cr&eacute;e un flux pour lire &agrave; partir du fichier pass&eacute; comme premier argument de la m&eacute;thode main.
+3.	Calcule et affiche le rapport &laquo;&nbsp;espaces/tous les caract&egrave;res&nbsp;&raquo; dans le fichier.
+4.	La valeur affich&eacute;e doit &ecirc;tre arrondie &agrave; 2&nbsp;d&eacute;cimales.
+5.	Le flux utilis&eacute; pour lire le fichier doit &ecirc;tre ferm&eacute;.
+
+

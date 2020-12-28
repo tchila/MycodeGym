@@ -1,0 +1,26 @@
+taskKey="fr.codegym.task.task14.task1411"\n\nUtilisateur, perdant, codeur et programmeur
+
+1. Saisis quelques chaînes (clés) au clavier [dans une boucle].
+Les chaînes (clés) suivantes sont autorisées : « user », « loser », « coder », « programmer ».
+Cesse de lire les chaînes après avoir lu une chaîne ne correspondant à aucune de celles-ci.
+2. Pour chaque chaîne saisie :
+2.1. Crée l'objet approprié [consulte Person.java], par ex. crée un objet User pour la chaîne « user ».
+2.2. Passe cet objet à la méthode doWork.
+3. Écris une implémentation de la méthode doWork, qui :
+3.1. Appelle la méthode live() sur l'objet passé si la personne est un User.
+3.2. Appelle la méthode doNothing() si la personne est un Loser.
+3.3. Appelle la méthode writeCode() si la personne est un Coder.
+3.4. Appelle la méthode enjoy() si la personne est un Programmer.
+
+
+Requirements:
+1.	La m&eacute;thode main doit lire des cha&icirc;nes au clavier.
+2.	La m&eacute;thode main doit arr&ecirc;ter de lire des cha&icirc;nes au clavier d&egrave;s que la cha&icirc;ne saisie ne correspond pas &agrave; l&#39;une des cha&icirc;nes autoris&eacute;es (&laquo;&nbsp;user&nbsp;&raquo;, &laquo;&nbsp;loser&nbsp;&raquo;, &laquo;&nbsp;coder&nbsp;&raquo;, &laquo;&nbsp;programmer&nbsp;&raquo;).
+3.	Pour chaque cha&icirc;ne saisie correctement (&laquo;&nbsp;user&nbsp;&raquo;, &laquo;&nbsp;loser&nbsp;&raquo;, &laquo;&nbsp;coder&nbsp;&raquo;, &laquo;&nbsp;programmer&nbsp;&raquo;), appelle la m&eacute;thode doWork avec l&#39;objet Person appropri&eacute; comme argument.
+4.	La classe Solution doit impl&eacute;menter une m&eacute;thode doWork avec un param&egrave;tre Person.
+5.	La m&eacute;thode doWork doit appeler la m&eacute;thode live() sur l&#39;objet pass&eacute; si c&#39;est un User.
+6.	La m&eacute;thode doWork doit appeler la m&eacute;thode doNothing() sur l&#39;objet pass&eacute; si c&#39;est un Loser.
+7.	La m&eacute;thode doWork doit appeler la m&eacute;thode writeCode() sur l&#39;objet pass&eacute; si c&#39;est un Coder.
+8.	La m&eacute;thode doWork doit appeler la m&eacute;thode enjoy() sur l&#39;objet pass&eacute; si c&#39;est un Programmer.
+
+

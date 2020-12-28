@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task06.task0620"\n\nRéparer les erreurs de la jeunesse
+
+Mission : Le programme prend deux nombres au clavier et affiche le maximum en utilisant une phrase au format « Le plus grand nombre est 25 ».
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit afficher le r&eacute;sultat &agrave; l&#39;&eacute;cran.
+3.	Le texte affich&eacute; doit commencer par &laquo; Le plus grand nombre est &raquo;.
+4.	Le texte affich&eacute; doit se terminer par le plus grand des 2 nombres saisis.
+
+

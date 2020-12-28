@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task05.task0526"\n\nHommes et femmes
+
+1. Dans la classe Solution, crée les classes public static Homme et Femme.
+2. Les classes doivent avoir les champs suivants : String nom, int age et String adresse.
+3. Écris leur constructeur avec tous les paramètres possibles.
+4. Crée deux objets de chaque classe avec des données complètes à l'aide d'un constructeur.
+5. Affiche les objets à l'écran au format suivant : nom + " " + age + " " + adresse
+
+
+Requirements:
+1.	Dans la classe Solution, cr&eacute;e une classe public static Homme.
+2.	Dans la classe Solution, cr&eacute;e une classe public static Femme.
+3.	La classe Homme doit avoir les variables : String nom, int age et String adresse.
+4.	La classe Femme doit avoir les variables : String nom, int age et String adresse.
+5.	Les classes Homme et Femme doivent avoir un constructeur qui prend des arguments String, int et String.
+6.	Le constructeur doit initialiser les variables d&#39;instance.
+7.	Dans la m&eacute;thode main, tu dois cr&eacute;er deux objets de chaque type.
+8.	La m&eacute;thode main doit afficher les objets cr&eacute;&eacute;s &agrave; l&#39;&eacute;cran dans le format sp&eacute;cifi&eacute;.
+
+

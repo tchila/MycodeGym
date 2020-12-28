@@ -1,0 +1,26 @@
+taskKey="fr.codegym.task.task14.task1413"\n\nOrdinateur
+
+1. Crée l'interface CompItem.
+2. Ajoute-lui une méthode String getName().
+3. Crée des classes Keyboard, Mouse et Monitor qui implémentent l'interface CompItem.
+4. La méthode getName() doit renvoyer le nom de la classe. Par exemple, elle renverra « Keyboard » pour la classe Keyboard.
+5. Crée la classe Computer.
+6. Ajoute un champ private Keyboard keyboard à la classe Computer.
+7. Ajoute un champ private Mouse mouse à la classe Computer.
+8. Ajoute un champ private Monitor monitor à la classe Computer.
+9. Utilise la combinaison de touches Alt+Inser (sur Windows)(commande Constructor) pour créer un constructeur de classe Computer avec trois paramètres.
+10. À l'intérieur du constructeur, utilise les paramètres pour initialiser les trois champs (variables) de la classe.
+11. Crée des getters pour les champs de Computer (dans la classe, utilise Alt+Inser (sur Windows) et sélectionne la commande Getter).
+12. Chaque classe et interface doit se trouver dans des fichiers séparés.
+
+
+Requirements:
+1.	L&#39;interface CompItem doit se trouver dans un fichier s&eacute;par&eacute;.
+2.	L&#39;interface CompItem doit d&eacute;finir une m&eacute;thode getName() qui renvoie un String et n&#39;a pas de param&egrave;tres.
+3.	Les classes Keyboard, Monitor et Mouse doivent impl&eacute;menter l&#39;interface CompItem et se trouver dans des fichiers s&eacute;par&eacute;s.
+4.	La m&eacute;thode getName dans les classes impl&eacute;mentant l&#39;interface CompItem doit renvoyer un nom de classe simple, par ex. &laquo;&nbsp;Keyboard&nbsp;&raquo; pour la classe Keyboard.
+5.	La classe Computer doit se trouver dans un fichier s&eacute;par&eacute; et avoir un champ private de chacun des types suivants&nbsp;: Keyboard, Mouse et Monitor.
+6.	Le constructeur de la classe Computer doit avoir 3 param&egrave;tres (keyboard, mouse, monitor) et initialiser correctement les champs correspondants de la classe.
+7.	Pour les champs keyboard, mouse et monitor de la classe Computer, tu dois cr&eacute;er des getters (getKeyboard, getMouse, getMonitor) qui renvoient les champs correspondants de la classe Computer.
+
+

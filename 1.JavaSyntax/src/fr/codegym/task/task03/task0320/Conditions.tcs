@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task03.task0320"\n\nL'humble programmeur
+
+Use the keyboard to enter a name and display the following:
+<name> makes $120,000 a year. Ha-ha-ha!
+For example: Sara makes $120,000 a year. Ha-ha-ha!
+
+Utilise le clavier pour saisir un nom et afficher ce qui suit :
+<nom> gagne 120 000 $ par an. Ha ha ha !
+Par exemple : Sarah gagne 120 000 $ par an. Ha ha ha !
+
+
+Requirements:
+1.	Le programme doit afficher du texte.
+2.	Le programme doit lire les donn&eacute;es depuis le clavier.
+3.	Le texte affich&eacute; doit contenir le nom saisi.
+4.	Le texte affich&eacute; doit pleinement r&eacute;pondre aux conditions de la mission.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task19.task1928"\n\nCorrige l'erreur. Classes et interfaces
+
+Le programme a seulement 1 erreur logique.
+Trouve-la et corrige-la.
+
+
+Requirements:
+1.	La classe Solution doit contenir une interface Example.
+2.	La classe Solution doit contenir une classe A qui impl&eacute;mente l&#39;interface Exemple.
+3.	La classe Solution doit contenir une classe B qui impl&eacute;mente l&#39;interface Exemple.
+4.	La classe Solution doit contenir une classe C qui h&eacute;rite de la classe A.
+5.	Corrige une seule erreur dans la logique&nbsp;:
+
+

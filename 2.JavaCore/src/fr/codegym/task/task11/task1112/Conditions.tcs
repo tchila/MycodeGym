@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task11.task1112"\n\nFrennemis
+
+Modifie les classes AppleIPhone et SamsungGalaxyS2.
+La classe SamsungGalaxyS2 doit hériter de la classe AppleIPhone.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe AppleIPhone.
+2.	La classe AppleIPhone doit &ecirc;tre public.
+3.	La classe Solution doit contenir une classe SamsungGalaxyS2.
+4.	La classe SamsungGalaxyS2 doit &ecirc;tre public.
+5.	La classe SamsungGalaxyS2 doit h&eacute;riter de la classe AppleIPhone.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task07.task0719"\n\nAfficher des nombres en ordre inverse
+
+Saisis 10 nombres au clavier et mets-les dans une liste.
+Affiche-les en ordre inverse. Utilise une nouvelle ligne pour chaque élément.
+Utilise seulement une boucle for.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste d&#39;entiers et initialise-la imm&eacute;diatement.
+2.	Lis 10 entiers au clavier et ajoute-les &agrave; la liste.
+3.	Affiche les nombres en ordre inverse.
+4.	Utilise une boucle for.
+
+

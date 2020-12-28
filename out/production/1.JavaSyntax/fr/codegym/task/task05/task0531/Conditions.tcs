@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task05.task0531"\n\nAmélioration de fonctionnalité
+
+Implémentation actuelle : Le programme lit deux nombres au clavier et affiche le plus petit d'entre eux.
+Nouvelle mission : Le programme lit cinq nombres au clavier et affiche le plus petit d'entre eux.
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	La classe doit avoir une m&eacute;thode public static void main.
+3.	La classe doit avoir une m&eacute;thode public static min qui prend 5 arguments int.
+4.	La m&eacute;thode min doit renvoyer le plus petit des 5 nombres pass&eacute;s. Si le minimum appara&icirc;t plusieurs fois, renvoie n&#39;importe quelle occurrence.
+5.	Le programme doit afficher une cha&icirc;ne qui commence par &laquo; Minimum = &raquo;.
+6.	Le programme doit afficher une cha&icirc;ne qui se termine par le plus petit des 5 nombres saisis.
+
+

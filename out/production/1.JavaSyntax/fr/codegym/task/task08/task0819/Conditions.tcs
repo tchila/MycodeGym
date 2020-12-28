@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task08.task0819"\n\nEnsemble de chats
+
+1. Dans la classe Solution, crée une classe public static Chat.
+2. Implémente la méthode creerChats. Elle doit créer un ensemble (Set) de chats et lui ajouter 3 chats.
+3. Dans la méthode main, supprime un chat du Set chats.
+4. Implémente la méthode imprimerChats. Elle doit afficher tous les chats qui restent dans l'ensemble. Utilise une nouvelle ligne pour chaque chat.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	&Agrave; l&#39;int&eacute;rieur de la classe Solution, il doit y avoir une classe public static Chat avec un constructeur par d&eacute;faut.
+3.	La m&eacute;thode creerChats() de la classe Solution doit renvoyer un Set contenant 3 chats.
+4.	La m&eacute;thode imprimerChats() de la classe Solution doit afficher tous les chats dans l&#39;ensemble. Utilise une nouvelle ligne pour chaque chat.
+5.	La m&eacute;thode main() doit appeler la m&eacute;thode creerChats() une fois.
+6.	La m&eacute;thode main() doit appeler la m&eacute;thode imprimerChats().
+7.	La m&eacute;thode main() doit supprimer un chat de l&#39;ensemble (Set) de chats.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task07.task0703"\n\nInteractions entre tableaux isolés
+
+1. Crée un tableau de 10 chaînes.
+2. Crée un tableau de 10 nombres.
+3. Saisis 10 chaînes au clavier et mets-les dans un tableau de chaînes.
+4. Dans chaque élément du tableau de nombres, enregistre la longueur de la chaîne dont l'indice (dans le tableau de chaînes) correspond à l'indice actuel du tableau de nombres.
+Affiche le contenu du tableau de nombres, chaque valeur sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er un tableau de 10 cha&icirc;nes.
+2.	Le programme doit cr&eacute;er un tableau de 10 entiers.
+3.	Le programme doit lire des cha&icirc;nes pour le tableau au clavier.
+4.	Le programme doit enregistrer les longueurs des cha&icirc;nes dans le tableau de nombres, puis les afficher &agrave; l&#39;&eacute;cran.
+
+

@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task06.task0610"\n\nClasse LecteurConsole
+
+Crée la classe LecteurConsole, qui aura 4 méthodes static :
+String lireString() : lit une chaîne au clavier
+int lireInt() : lit un nombre au clavier
+double lireDouble() : lit un nombre fractionnaire au clavier
+boolean lireBoolean() : lit la chaîne « true » ou « false » au clavier et renvoie la valeur booléenne correspondante (true ou false, respectivement)
+Important : Dans chaque méthode, crée une variable pour lire les données de la console (BufferedReader ou Scanner).
+
+
+Requirements:
+1.	The readString method must read and return a String.
+2.	The readInt method must read and return an int.
+3.	The readDouble method must read and return a double.
+4.	The readBoolean method must read and return a boolean value.
+
+

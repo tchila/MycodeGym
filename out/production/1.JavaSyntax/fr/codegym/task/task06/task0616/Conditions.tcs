@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task06.task0616"\n\nNombre minimal de static
+
+Place le nombre minimal de modificateurs static nécessaires pour que le code commence à fonctionner et que le programme se termine avec succès.
+
+
+Requirements:
+1.	Ne modifie pas les impl&eacute;mentations de m&eacute;thode ou les modificateurs d&#39;acc&egrave;s.
+2.	Ajoute les modificateurs static aux emplacements requis.
+3.	Le programme doit avoir seulement 4 modificateurs static.
+4.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+
+

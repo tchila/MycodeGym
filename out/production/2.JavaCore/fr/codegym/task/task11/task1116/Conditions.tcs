@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task11.task1116"\n\nChaîne d'héritage
+
+Crée une « chaîne d'héritage » appropriée pour les classes suivantes : Pet, Cat et Dog.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Pet.
+2.	La classe Solution doit contenir une classe public Cat.
+3.	La classe Solution doit contenir une classe public Dog.
+4.	La classe Cat doit h&eacute;riter de la classe Pet.
+5.	La classe Dog doit h&eacute;riter de la classe Pet.
+
+

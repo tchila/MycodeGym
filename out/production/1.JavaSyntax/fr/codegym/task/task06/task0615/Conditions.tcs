@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task06.task0615"\n\nFeng Shui et static
+
+Déplace un modificateur static pour que l'exemple compile.
+
+
+Requirements:
+1.	Ne change pas la m&eacute;thode main.
+2.	Ajoute le modificateur static &agrave; l&#39;emplacement requis.
+3.	Retire le modificateur static en trop.
+4.	Le programme doit avoir seulement 2 modificateurs static.
+
+

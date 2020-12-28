@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task11.task1118"\n\nMénage urbain
+
+Crée une « chaîne d'héritage » appropriée pour les classes suivantes : Pet, Cat, Dog et Car.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Pet.
+2.	La classe Solution doit contenir une classe public Cat.
+3.	La classe Solution doit contenir une classe public Dog.
+4.	La classe Solution doit contenir une classe public Car.
+5.	La classe Cat doit h&eacute;riter de la classe Pet.
+6.	La classe Dog doit h&eacute;riter de la classe Pet.
+7.	La classe Pet ne doit pas h&eacute;riter de nos autres classes.
+8.	La classe Car ne doit pas h&eacute;riter de nos autres classes.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task16.task1602"\n\nMon deuxième thread
+
+1. Crée une classe public static TestThread qui hérite de la classe Thread.
+2. Crée un bloc statique à l'intérieur de TestThread qui affichera « Ceci est le bloc statique à l'intérieur de TestThread ».
+3. La méthode run doit afficher « Ceci est la méthode run ».
+
+
+Requirements:
+1.	Ajoute une classe public static TestThread &agrave; la classe Solution.
+2.	La classe TestThread doit h&eacute;riter de la classe Thread.
+3.	La classe TestThread ne doit pas impl&eacute;menter d&#39;interfaces suppl&eacute;mentaires.
+4.	Cr&eacute;e un bloc statique &agrave; l&#39;int&eacute;rieur de TestThread qui affichera &laquo;&nbsp;Ceci est le bloc statique &agrave; l&#39;int&eacute;rieur de TestThread&nbsp;&raquo;.
+5.	La m&eacute;thode run de la classe TestThread doit afficher &laquo;&nbsp;Ceci est la m&eacute;thode run&nbsp;&raquo;.
+6.	Ne change pas la m&eacute;thode main.
+
+

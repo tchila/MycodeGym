@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task17.task1713"\n\nListe partagée
+
+1. Modifie la classe Solution pour qu'elle devienne une liste. (Elle doit implémenter l'interface java.util.List).
+2. La liste Solution doit uniquement fonctionner avec des Long.
+3. Utilise le champ original.
+4. La liste sera utilisée par des threads, tu dois donc t'assurer que toutes les méthodes sont synchronisées.
+
+
+Requirements:
+1.	La classe Solution doit impl&eacute;menter l&#39;interface List&lt;Long&gt;.
+2.	La classe Solution doit contenir un champ private ArrayList&lt;Long&gt; original.
+3.	Toutes les m&eacute;thodes remplac&eacute;es de l&#39;interface List doivent d&eacute;l&eacute;guer les appels aux m&eacute;thodes de l&#39;objet original.
+4.	Toutes les m&eacute;thodes de la classe Solution, &agrave; l&#39;exception de la m&eacute;thode main, doivent &ecirc;tre synchronis&eacute;es
+
+

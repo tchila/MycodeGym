@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task17.task1706"\n\nPrésident synchronisé
+
+Nous rencontrons à nouveau le modèle de singleton en synchronisation dans un bloc statique.
+Crée un bloc synchronisé à l'intérieur d'un bloc statique dans la classe OurPresident.
+À l'intérieur du bloc synchronisé, initialise president.
+
+
+Requirements:
+1.	La classe OurPresident doit avoir un private static OurPresident president.
+2.	La classe OurPresident doit contenir la m&eacute;thode public static OurPresident getOurPresident().
+3.	La classe OurPresident doit avoir un constructeur priv&eacute;.
+4.	La classe OurPresident doit avoir un bloc statique.
+5.	Le bloc statique de la classe OurPresident doit avoir un bloc synchronis&eacute;.
+6.	Le bloc synchronis&eacute; doit initialiser president.
+
+

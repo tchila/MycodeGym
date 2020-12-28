@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task06.task0602"\n\nChats zombies, chiens zombies
+
+Dans chaque classe (Chat et Chien), écris une méthode finalize qui affiche le texte d'un objet particulier détruit.
+
+
+Requirements:
+1.	La classe Chat doit avoir une m&eacute;thode void finalize.
+2.	La classe Chien doit avoir une m&eacute;thode void finalize.
+3.	Les classes Chat et Chien ne doivent pas avoir de constructeurs, ou doivent avoir des constructeurs sans param&egrave;tres.
+4.	La m&eacute;thode finalize de la classe Chat doit afficher &laquo; Un Chat a &eacute;t&eacute; d&eacute;truit &raquo;.
+5.	La m&eacute;thode finalize de la classe Chien doit afficher &laquo; Un Chien a &eacute;t&eacute; d&eacute;truit &raquo;.
+
+

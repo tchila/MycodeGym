@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task08.task0818"\n\nRéservé aux riches
+
+Crée une Map<String, Integer> et ajoute dix entrées qui représentent des paires (nom, salaire).
+Supprime de la Map toutes les personnes dont le salaire est inférieur à 500.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	Le programme ne doit pas lire de valeurs au clavier.
+3.	La m&eacute;thode creerMap() doit cr&eacute;er et renvoyer une HashMap qui contient des &eacute;l&eacute;ments (String, Integer) et 10 entr&eacute;es qui repr&eacute;sentent des paires (nom, salaire).
+4.	La m&eacute;thode supprimerElementMap() doit supprimer de la Map toutes les personnes dont le salaire est inf&eacute;rieur &agrave; 500.
+
+

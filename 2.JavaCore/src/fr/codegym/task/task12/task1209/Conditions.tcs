@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task12.task1209"\n\nTrois méthodes et un minimum
+
+Écris les méthodes public static suivantes : int min(int, int), long min(long, long), double min(double, double).
+Chaque méthode doit renvoyer le plus petit des deux nombres qui lui sont passés.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	La classe Solution doit contenir quatre m&eacute;thodes.
+3.	La classe Solution doit avoir une m&eacute;thode static int min(int, int).
+4.	La m&eacute;thode int min(int, int) doit renvoyer le plus petit de deux int.
+5.	La classe Solution doit avoir une m&eacute;thode static long min(long, long).
+6.	La m&eacute;thode long min(long, long) doit renvoyer le plus petit de deux long.
+7.	La classe Solution doit avoir une m&eacute;thode static double min(double, double).
+8.	La m&eacute;thode double min(double, double) doit renvoyer le plus petit de deux double.
+
+

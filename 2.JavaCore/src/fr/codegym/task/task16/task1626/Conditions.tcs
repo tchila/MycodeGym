@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task16.task1626"\n\nSuivre un modèle
+
+Détermine comment le programme fonctionne.
+En t'inspirant de CountdownRunnable, crée un thread CountUpRunnable qui affiche les valeurs dans l'ordre de comptage : de 1 à number.
+
+
+Requirements:
+1.	La classe CountUpRunnable doit impl&eacute;menter l&#39;interface Runnable.
+2.	La classe CountUpRunnable doit avoir une m&eacute;thode public run sans param&egrave;tres.
+3.	La m&eacute;thode run de la classe CountUpRunnable doit s&#39;ex&eacute;cuter pendant environ 2,5 secondes.
+4.	Chaque demi-seconde, la m&eacute;thode run de la classe CountUpRunnable doit afficher le nom du thread, deux points, puis la valeur du compteur de 1 &agrave; 5 (par exemple&nbsp;: &laquo;&nbsp;Augmentation&nbsp;: 1&nbsp;&raquo;).
+5.	La m&eacute;thode run de la classe CountUpRunnable doit appeler Thread.sleep(500).
+
+

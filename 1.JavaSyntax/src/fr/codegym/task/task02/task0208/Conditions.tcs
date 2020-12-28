@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task02.task0208"\n\nUn chat ne suffit pas
+
+Crée un objet Chat deux fois. Stocke chaque instance dans sa propre variable. Les noms de variable doivent être différents.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	La m&eacute;thode main ne doit avoir que deux variables Chat.
+3.	Les variables doivent imm&eacute;diatement recevoir une valeur.
+4.	Il ne doit pas y avoir de variables dans la classe Chat.
+5.	Il ne doit pas y avoir de m&eacute;thodes dans la classe Chat.
+
+

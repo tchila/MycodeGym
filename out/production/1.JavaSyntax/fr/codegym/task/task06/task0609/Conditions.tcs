@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task06.task0609"\n\nDistance entre deux points
+
+Implémente la méthode static double obtenirDistance(x1, y1, x2, y2) Elle doit calculer la distance entre deux points.
+Utilise la méthode double Math.sqrt(double a) qui calcule la racine carrée de l'argument passé.
+
+
+Requirements:
+1.	La m&eacute;thode obtenirDistance doit renvoyer un double.
+2.	La m&eacute;thode obtenirDistance doit &ecirc;tre static.
+3.	La m&eacute;thode obtenirDistance doit &ecirc;tre public.
+4.	La m&eacute;thode obtenirDistance doit renvoyer la distance entre les points.
+5.	La m&eacute;thode obtenirDistance doit utiliser la m&eacute;thode double Math.sqrt(double a).
+
+

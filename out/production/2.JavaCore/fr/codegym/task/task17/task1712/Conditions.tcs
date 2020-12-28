@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task17.task1712"\n\nRestaurant
+
+1. Détermine ce que fait le programme. Pour une raison qu'on ignore, le serveur n'apporte pas les plats préparés aux tables :(
+2. Corrige l'erreur.
+Indice : il y a une seule ligne à corriger
+
+
+Requirements:
+1.	La classe Restaurant doit contenir une liste des chefs et des serveurs (public static List&lt;Thread&gt; threads).
+2.	La classe Manager doit contenir une file d&#39;attente de commandes (private final Queue&lt;Order&gt; orderQueue).
+3.	La classe Manager doit avoir une file d&#39;attente avec les plats pr&eacute;par&eacute;s (private final Queue&lt;Dish&gt; dishQueue).
+4.	La classe Manager doit impl&eacute;menter le mod&egrave;le de singleton.
+5.	La classe Waiter doit impl&eacute;menter l&#39;interface Runnable.
+6.	La classe Cook doit impl&eacute;menter l&#39;interface Runnable.
+7.	S&#39;il n&#39;y a pas de plats pr&eacute;par&eacute;s dans la file d&#39;attente, le thread Waiter doit prendre une commande &agrave; une table et l&#39;ajouter &agrave; la file d&#39;attente de commandes.
+8.	S&#39;il y a des plats pr&eacute;par&eacute;s dans la file d&#39;attente, le thread Waiter doit prendre un plat dans la file d&#39;attente et placer la commande sur la table.
+9.	S&#39;il n&#39;y a pas de commandes dans la file d&#39;attente de commandes, le thread Cook doit faire une pause (le chef doit se reposer).
+10.	S&#39;il y a des commandes dans la file d&#39;attente de commandes, le thread Cook doit pr&eacute;parer le plat et l&#39;ajouter &agrave; la file d&#39;attente de plats pr&eacute;par&eacute;s.
+
+

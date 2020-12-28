@@ -1,0 +1,32 @@
+taskKey="fr.codegym.task.task14.task1408"\n\nUsine de poules
+
+Écris une usine (HenFactory) qui fabrique des poules (Hen) :
+1. Écris une classe Hen.
+1.1. Rends-la abstraite.
+1.2. Ajoute une méthode int getMonthlyEggCount() à la classe abstraite.
+1.3. Ajoute une méthode String getDescription() à la classe. Elle doit renvoyer « Je suis une poule. »
+2. Crée une classe NorthAmericanHen qui hérite de Hen.
+3. Crée une classe EuropeanHen qui hérite de Hen.
+4. Crée une classe AsianHen qui hérite de Hen.
+5. Crée une classe AfricanHen qui hérite de Hen.
+6. Dans chacune de ces quatre classes, écris ta propre implémentation de la méthode getMonthlyEggCount.
+La méthode doit renvoyer le nombre d'œufs par mois pondus par ce type de poule.
+7. Dans chacune de ces quatre classes, écris ta propre implémentation de la méthode getDescription.
+La méthode doit renvoyer une chaîne comme suit :
+<classe parente>.getDescription() + " Je viens d'<continent>. Je ponds <n> œufs par mois."
+où <continent> est le nom du continent
+et <n> le nombre d'œufs pondus par mois.
+8. Dans la classe HenFactory, implémente la méthode getHen. Elle doit renvoyer une race de poule correspondant au continent d'où la poule vient.
+9. Toutes les classes que tu crées doivent se trouver dans des fichiers séparés.
+
+
+Requirements:
+1.	La classe Hen doit &ecirc;tre abstraite.
+2.	La classe Hen doit avoir une m&eacute;thode abstraite int getMonthlyEggCount().
+3.	La classe Hen doit impl&eacute;menter une m&eacute;thode String getDescription() qui renvoie &laquo;&nbsp;Je suis une poule.&nbsp;&raquo;
+4.	Les classes NorthAmericanHen, EuropeanHen, AsianHen et AfricanHen doivent h&eacute;riter de la classe Hen et se situer dans des fichiers s&eacute;par&eacute;s.
+5.	Les classes NorthAmericanHen, EuropeanHen, AsianHen et AfricanHen doivent impl&eacute;menter la m&eacute;thode getMonthlyEggCount, qui doit retourner le nombre d&#39;&oelig;ufs par mois pondus par le type de poule correspondant.
+6.	Les classes NorthAmericanHen, EuropeanHen, AsianHen et AfricanHen doivent remplacer la m&eacute;thode getDescription de la classe parente de sorte que la cha&icirc;ne renvoy&eacute;e ressemble &agrave; ceci&nbsp;: &lt;classe parente&gt;.getDescription() + &quot; Je viens d&#39;&lt;continent&gt;. Je ponds &lt;n&gt; &oelig;ufs par mois.&quot; o&ugrave; &lt;continent&gt; est le nom du continent et &lt;n&gt; le nombre d&#39;&oelig;ufs par mois.
+7.	La m&eacute;thode getHen doit &ecirc;tre impl&eacute;ment&eacute;e dans la classe HenFactory et renvoyer le type de poule qui correspond au continent pass&eacute;.
+
+

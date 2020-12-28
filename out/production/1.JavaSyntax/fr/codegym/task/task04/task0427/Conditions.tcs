@@ -1,0 +1,29 @@
+taskKey="fr.codegym.task.task04.task0427"\n\nDescription de nombres
+
+Saisis un entier au clavier dans la plage 1 - 999. Affiche une chaîne de description comme suit :
+« Nombre pair à un chiffre » si le nombre est pair et compte un chiffre,
+« Nombre impair à un chiffre » si le nombre est impair et compte un chiffre,
+« Nombre pair à deux chiffres » si le nombre est pair et compte deux chiffres,
+« Nombre impair à deux chiffres » si le nombre est impair et compte deux chiffres,
+« Nombre pair à trois chiffres » si le nombre est pair et compte trois chiffres,
+« Nombre impair à trois chiffres » si le nombre est impair et compte trois chiffres,
+Si le nombre ne se trouve pas dans la plage 1 - 999, n'affiche rien.
+Exemple pour 100 :
+Nombre pair à trois chiffres
+Exemple pour 51 :
+Nombre impair à deux chiffres
+
+
+Requirements:
+1.	Le programme doit lire un nombre au clavier.
+2.	Le programme doit utiliser System.out.println() ou System.out.print().
+3.	Si le nombre est pair et compte un chiffre, affiche &laquo; Nombre pair &agrave; un chiffre &raquo;.
+4.	Si le nombre est impair et compte un chiffre, affiche &laquo; Nombre impair &agrave; un chiffre &raquo;.
+5.	Si le nombre est pair et compte deux chiffres, affiche &laquo; Nombre pair &agrave; deux chiffres &raquo;.
+6.	Si le nombre est impair et compte deux chiffres, affiche &laquo; Nombre impair &agrave; deux chiffres &raquo;.
+7.	Si le nombre est pair et compte trois chiffres, affiche &laquo; Nombre pair &agrave; trois chiffres &raquo;.
+8.	Si le nombre est impair et compte trois chiffres, affiche &laquo; Nombre impair &agrave; trois chiffres &raquo;.
+9.	Si le nombre ne se trouve pas dans la plage 1 - 999, n&#39;affiche rien.
+10.	Le programme doit afficher une cha&icirc;ne de description du nombre et rien d&#39;autre.
+
+

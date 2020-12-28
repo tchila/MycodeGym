@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task10.task1015"\n\nTableau de listes de chaînes
+
+Crée un tableau dont les éléments sont des listes de chaînes. Remplis le tableau avec des données quelconques et affiche-les à l'écran.
+
+
+Requirements:
+1.	La m&eacute;thode creerListe doit d&eacute;clarer et initialiser un tableau avec des &eacute;l&eacute;ments ArrayList&lt;String&gt;.
+2.	La m&eacute;thode creerListe doit renvoyer le tableau cr&eacute;&eacute;.
+3.	La m&eacute;thode creerListe doit ajouter des &eacute;l&eacute;ments (listes de cha&icirc;nes) au tableau. Les listes ne doivent pas &ecirc;tre vides.
+4.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+5.	La m&eacute;thode main doit appeler la m&eacute;thode creerListe.
+6.	La m&eacute;thode main doit appeler la m&eacute;thode imprimerListe.
+
+

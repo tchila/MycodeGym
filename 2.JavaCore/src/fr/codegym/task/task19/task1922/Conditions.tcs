@@ -1,0 +1,25 @@
+taskKey="fr.codegym.task.task19.task1922"\n\nRechercher les bonnes lignes
+
+Lis un nom de fichier depuis la console.
+Affiche toutes les lignes du fichier qui ne contiennent que 2 mots dans la liste words.
+Ferme les flux.
+Exemple :
+words contient les mots A, B et C
+Lignes :
+C B A D // 3 mots qui figurent dans words, rejeté
+A B A D // 3 mots qui figurent dans words, rejeté
+D A D // 1 mot qui figure dans words, rejeté
+D A B D // 2 mots qui figurent dans words, accepté, il faut l'afficher
+D A A D // 2 mots qui figurent dans words, accepté, il faut l'afficher
+
+
+Requirements:
+1.	La classe Solution doit avoir un champ public static List&lt;String&gt; words qui est initialis&eacute; imm&eacute;diatement.
+2.	La classe Solution doit avoir un bloc statique qui ajoute trois mots ou plus &agrave; la liste words.
+3.	Le programme doit lire le nom du fichier &agrave; partir de la console (utilise BufferedReader).
+4.	Le BufferedReader utilis&eacute; pour la lecture de l&#39;entr&eacute;e depuis la console doit &ecirc;tre ferm&eacute; apr&egrave;s utilisation.
+5.	Le programme doit lire le contenu du fichier (utilise FileReader).
+6.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+7.	Le programme doit afficher toutes les lignes du fichier qui ne contiennent que 2 mots dans la liste words.
+
+

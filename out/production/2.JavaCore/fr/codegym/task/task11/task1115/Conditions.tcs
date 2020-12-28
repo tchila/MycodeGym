@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task11.task1115"\n\nD'étudiant à esclave qualifié
+
+Modifie les quatre classes suivantes : Schoolboy, Student, Employee et Slave.
+Fais en sorte que Student hérite de Schoolboy, Employee de Student et Slave de Employee.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Schoolboy.
+2.	La classe Solution doit contenir une classe public Student.
+3.	La classe Solution doit contenir une classe public Employee.
+4.	La classe Solution doit contenir une classe public Slave.
+5.	La classe Student doit h&eacute;riter de la classe Schoolboy.
+6.	La classe Employee doit h&eacute;riter de la classe Student.
+7.	La classe Slave doit h&eacute;riter de la classe Employee.
+
+

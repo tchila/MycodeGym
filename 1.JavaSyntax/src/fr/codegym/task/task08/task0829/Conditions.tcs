@@ -1,0 +1,25 @@
+taskKey="fr.codegym.task.task08.task0829"\n\nMise à jour logicielle
+
+Mission : Le programme détermine quelle famille (nom de famille) vit dans la maison avec le numéro spécifié.
+Nouvelle mission : Le programme doit fonctionner avec des villes plutôt que des numéros de maison :
+Exemple d'entrée :
+Chicago
+Capone
+New York City
+Rockefeller
+Seattle
+Gates
+
+Seattle
+
+Exemple de sortie :
+Gates
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Le programme doit lire des valeurs au clavier.
+3.	La classe Solution doit contenir une m&eacute;thode.
+4.	Le programme doit afficher le nom de la famille en fonction de la ville saisie.
+
+

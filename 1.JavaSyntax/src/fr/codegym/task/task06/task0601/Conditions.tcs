@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task06.task0601"\n\nMéthode finalize de Chat
+
+Dans la classe Chat, crée une méthode protected void finalize() throws Throwable.
+
+
+Requirements:
+1.	La classe Chat doit avoir une m&eacute;thode appel&eacute;e finalize.
+2.	La m&eacute;thode finalize ne doit rien renvoyer (void).
+3.	La m&eacute;thode finalize doit &ecirc;tre protected.
+4.	La m&eacute;thode finalize peut lever une exception Throwable. Indique cela dans la d&eacute;claration de la m&eacute;thode.
+
+

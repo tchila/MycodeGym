@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task09.task0906"\n\nEnregistrement des traces de pile
+
+Implémente la méthode journaliser.
+La méthode journaliser doit afficher le nom de la classe et la méthode dans laquelle elle est appelée, ainsi que le message passé.
+Utilise un caractère deux points et un espace pour séparer le nom de la classe, le nom de la méthode et le message.
+Exemple de sortie :
+fr.codegym.task.task09.task0906.Solution: main: Dans la méthode main
+
+
+Requirements:
+1.	La m&eacute;thode journaliser doit afficher un message &agrave; l&#39;&eacute;cran.
+2.	Le message affich&eacute; doit contenir le nom de la classe dont la m&eacute;thode a appel&eacute; la m&eacute;thode journaliser.
+3.	Le message affich&eacute; doit contenir le nom de la m&eacute;thode qui a appel&eacute; la m&eacute;thode journaliser.
+4.	Le message affich&eacute; doit contenir le message pass&eacute;.
+5.	La sortie doit correspondre &agrave; l&#39;exemple de la mission.
+
+

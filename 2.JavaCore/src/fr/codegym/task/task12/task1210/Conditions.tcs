@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task12.task1210"\n\nTrois méthodes et un maximum
+
+Écris les méthodes public static suivantes : int max(int, int), long max(long, long), double max(double, double).
+Chaque méthode doit renvoyer le plus grand des deux nombres qui lui sont passés.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	La classe Solution doit contenir quatre m&eacute;thodes.
+3.	La classe Solution doit avoir une m&eacute;thode static int max(int, int).
+4.	La m&eacute;thode int max(int, int) doit renvoyer le plus grand de deux int.
+5.	La classe Solution doit avoir une m&eacute;thode static long max(long, long).
+6.	La m&eacute;thode long max(long, long) doit renvoyer le plus grand de deux long.
+7.	La classe Solution doit avoir une m&eacute;thode static double max(double, double).
+8.	La m&eacute;thode double max(double, double) doit renvoyer le plus grand de deux double.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task10.task1008"\n\nRéponse correcte : d = 2.941
+
+Ajoute une conversion de type pour obtenir la réponse suivante : d = 2.941
+Exemple de sortie : 2.9411764705882355
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Ne modifie pas la commande de sortie &eacute;cran.
+3.	La m&eacute;thode main() doit contenir une variable int appel&eacute;e &laquo; a &raquo;.
+4.	La m&eacute;thode main() doit contenir une variable int appel&eacute;e &laquo; b &raquo;.
+5.	La m&eacute;thode main() doit contenir une variable double appel&eacute;e &laquo; d &raquo;.
+6.	Ne change pas la valeur initiale des variables lors de l&#39;initialisation. Tu peux seulement ajouter des op&eacute;rateurs de conversion.
+7.	Le programme doit afficher le nombre 2.9411764705882355.
+
+

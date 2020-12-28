@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task13.task1305"\n\nQuatre erreurs
+
+Corrige les 4 bogues du programme pour qu'il compile.
+
+
+Requirements:
+1.	Les variables d&eacute;clar&eacute;es dans l&#39;interface doivent avoir le niveau d&#39;acc&egrave;s le plus large (public).
+2.	Tu peux seulement &eacute;tendre une classe. Tu impl&eacute;mentes des interfaces en utilisant le mot-cl&eacute; implements.
+3.	La classe Hobby doit &ecirc;tre d&eacute;clar&eacute;e en utilisant le modificateur static.
+4.	Tu n&#39;as pas besoin de cr&eacute;er un objet Dream pour acc&eacute;der &agrave; la variable HOBBY.
+5.	Ne modifie pas les d&eacute;clarations d&#39;interface.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task20.task2015"\n\nRemplacement de la sérialisation
+
+Fais en sorte que le thread runner continue à s'exécuter après désérialisation.
+Ne change pas les mots-clés de l'objet runner.
+Indice :
+Le constructeur n'est pas appelé lors de la désérialisation. Seuls les champs sont initialisés.
+
+
+Requirements:
+1.	La classe Solution doit prendre en charge l&#39;interface Serializable.
+2.	La classe Solution doit prendre en charge l&#39;interface Runnable.
+3.	Le champ runner de la classe Solution doit &ecirc;tre d&eacute;clar&eacute; avec le modificateur transient.
+4.	La m&eacute;thode readObject doit cr&eacute;er un nouvel objet Thread avec l&#39;objet actuel comme argument.
+5.	La m&eacute;thode readObject doit appeler la m&eacute;thode start sur le nouvel objet Thread.
+
+

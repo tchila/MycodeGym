@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task06.task0604"\n\nCompteur de chats
+
+Dans le constructeur de la classe Chat, à savoir public Chat(), incrémente le nombre de chats (la variable static  nombreChats de la classe Chat) de 1. Décrémente cette variable de 1 dans la méthode finalize.
+
+
+Requirements:
+1.	Ajoute un constructeur sans param&egrave;tres &agrave; la classe Chat, c&#39;est-&agrave;-dire public Chat().
+2.	Le constructeur doit incr&eacute;menter la valeur de la variable nombreChats de 1.
+3.	Ajoute la m&eacute;thode finalize &agrave; la classe Chat.
+4.	La m&eacute;thode finalize ne doit rien renvoyer (le type de retour est void).
+5.	La m&eacute;thode finalize doit r&eacute;duire la variable nombreChats de 1.
+
+

@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task19.task1914"\n\nRésolution de problèmes
+
+Remplace l'objet System.out de la méthode main avec ton propre wrapper lecteur similaire à celui présenté dans la leçon.
+Ton wrapper lecteur doit afficher la solution dans la console.
+Appelle la méthode printSomething() existante de testString.
+Restaure la variable System.out au flux d'origine.
+Opérations possibles : + - *
+Format d'entrée et de sortie : a [opérateur] b = c
+Les nombres négatifs, les fractions et les opérateurs unaires (comme les factorielles et les racines carrées) ne sont pas autorisés.
+Exemple de sortie :
+3 + 6 = 9
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe TestString.
+2.	La classe Solution doit avoir un champ public static TestString testString qui est initialis&eacute; imm&eacute;diatement.
+3.	La classe TestString doit avoir une m&eacute;thode public void printSomething().
+4.	La m&eacute;thode printSomething() de la classe TestString doit afficher la cha&icirc;ne &laquo;&nbsp;3 + 6 =&nbsp;&raquo;.
+5.	La m&eacute;thode main(String[] args) de la classe Solution doit cr&eacute;er un objet PrintStream (utilise le constructeur PrintStream avec un param&egrave;tre ByteArrayOutputStream).
+6.	La m&eacute;thode main(String[] args) de la classe Solution doit remplacer puis restaurer le flux de sortie de la console (System.out).
+7.	La m&eacute;thode main(String[] args) de la classe Solution doit appeler la m&eacute;thode printSomething() de testString.
+8.	La m&eacute;thode main(String[] args) de la classe Solution doit modifier la ligne imprim&eacute;e par la m&eacute;thode printSomething() conform&eacute;ment aux conditions de la mission, et l&#39;imprimer dans la console.
+
+

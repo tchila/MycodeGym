@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task15.task1529"\n\nMaîtrise du bloc statique
+
+1. Dans des fichiers séparés, crée des classes Plane et Helicopter qui implémentent l'interface CanFly.
+2. La classe Plane doit avoir un constructeur avec un paramètre int (le nombre de passagers à bord).
+3. Dans la méthode static reset de la classe Solution :
+3.1. Lis une valeur String depuis la console.
+3.2. Si la valeur est « helicopter », affecte un objet Helicopter au champ static result de CanFly.
+3.3. Si la valeur est « plane », lis une seconde valeur (un int, le nombre de passagers), puis affecte un objet Plane au champ static result de CanFly.
+4. Dans le bloc statique, initialise le champ result de CanFly en appelant la méthode reset.
+5. Ferme le flux d'entrée avec la méthode close().
+
+
+Requirements:
+1.	La classe Plane doit se trouver dans un fichier s&eacute;par&eacute; et impl&eacute;menter l&#39;interface CanFly.
+2.	La classe Helicopter doit se trouver dans un fichier s&eacute;par&eacute; et impl&eacute;menter l&#39;interface CanFly.
+3.	La classe Plane doit avoir un constructeur sans param&egrave;tre int.
+4.	La classe Solution doit impl&eacute;menter la m&eacute;thode public static void reset().
+5.	La m&eacute;thode reset doit lire des lignes au clavier.
+6.	Si la cha&icirc;ne d&#39;entr&eacute;e est &laquo;&nbsp;helicopter&nbsp;&raquo;, un objet Helicopter doit &ecirc;tre stock&eacute; dans la variable result.
+7.	Si la cha&icirc;ne d&#39;entr&eacute;e est &laquo;&nbsp;plane&nbsp;&raquo;, un objet Plane doit &ecirc;tre stock&eacute; dans la variable result.
+8.	Le champ result de la classe Solution doit &ecirc;tre initialis&eacute; dans le bloc statique en appelant la m&eacute;thode reset.
+
+

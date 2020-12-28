@@ -1,0 +1,23 @@
+taskKey="fr.codegym.task.task19.task1926"\n\nReflet
+
+1. Lis un nom de fichier depuis la console. Lis le contenu du fichier.
+2. Pour chaque ligne dans le fichier :
+2.1. inverse l'ordre de tous les caractères.
+2.2. affiche le résultat.
+3. Ferme les flux.
+Exemple de fichier d'entrée :
+Je suis programmeur.
+Amigo
+Résultat pour l'exemple :
+.ruemmargorp sius eJ
+ogimA
+
+
+Requirements:
+1.	Le programme doit lire le nom du fichier &agrave; partir de la console (utilise BufferedReader).
+2.	Le BufferedReader utilis&eacute; pour la lecture de l&#39;entr&eacute;e depuis la console doit &ecirc;tre ferm&eacute; apr&egrave;s utilisation.
+3.	Le programme doit lire le contenu du fichier (utilise FileReader).
+4.	Le flux d&#39;entr&eacute;e de fichier (FileReader) doit &ecirc;tre ferm&eacute;.
+5.	Le programme doit afficher tous les caract&egrave;res lus dans le fichier en ordre inverse.
+
+

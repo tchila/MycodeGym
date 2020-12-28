@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task13.task1323"\n\nInterface Updatable dans la classe Screen
+
+Fais en sorte que la classe Screen implémente l'interface Updatable.
+
+
+Requirements:
+1.	L&#39;interface Updatable doit h&eacute;riter de l&#39;interface Selectable (utilise extends).
+2.	La classe Screen doit impl&eacute;menter l&#39;interface Updatable.
+3.	La m&eacute;thode onSelect de l&#39;interface Selectable doit &ecirc;tre impl&eacute;ment&eacute;e dans la classe Screen.
+4.	La m&eacute;thode refresh de l&#39;interface Updatable doit &ecirc;tre impl&eacute;ment&eacute;e dans la classe Screen.
+
+

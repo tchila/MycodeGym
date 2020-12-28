@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task07.task0707"\n\nQu'est-ce que c'est que cette liste ?
+
+1. Crée une liste de chaînes.
+2. Ajoute 5 différentes chaînes à la liste.
+3. Affiche sa taille à l'écran.
+4. Utilise une boucle pour afficher son contenu, avec chaque valeur sur une nouvelle ligne.
+Remarque :
+Ajoute des chaînes à la liste seulement une fois que la liste est initialisée.
+
+
+Requirements:
+1.	Le programme ne doit rien lire au clavier.
+2.	D&eacute;clare une variable ArrayList&lt;String&gt; et initialise-la imm&eacute;diatement.
+3.	Le programme doit ajouter 5 cha&icirc;nes &agrave; la liste.
+4.	Le programme doit afficher la taille de la liste &agrave; l&#39;&eacute;cran.
+5.	Le programme doit afficher le contenu de la liste, chaque valeur sur une nouvelle ligne.
+
+

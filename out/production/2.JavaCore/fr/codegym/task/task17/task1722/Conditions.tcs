@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task17.task1722"\n\nComptons
+
+1. Fais en sorte que le résultat soit calculé pour tous les éléments du tableau, SANS utiliser Thread.sleep dans la méthode main(String[] args).
+2. Corrige le bloc synchronized afin que le tableau values soit rempli de 1
+
+
+Requirements:
+1.	La classe Solution doit contenir la classe Counter.
+2.	La classe Counter doit &ecirc;tre un thread.
+3.	La m&eacute;thode run() de la classe Counter doit avoir un bloc synchronis&eacute;.
+4.	Le bloc synchronis&eacute; de la m&eacute;thode run() ne doit pas verrouiller this.
+5.	La m&eacute;thode main(String[] args) de la classe Solution ne doit pas utiliser Thread.sleep().
+6.	Pour chaque thread, dans la m&eacute;thode main(String[] args) de la classe Solution, utilise une m&eacute;thode qui attend que le thread se termine.
+
+

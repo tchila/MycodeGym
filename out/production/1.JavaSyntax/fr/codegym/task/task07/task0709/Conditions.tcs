@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task07.task0709"\n\nExprimons-nous de façon plus concise
+
+1. Crée une liste de chaînes.
+2. Lis 5 chaînes au clavier et ajoute-les à la liste.
+3. À l'aide d'une boucle, trouve la chaîne la plus courte dans la liste.
+4. Affiche la chaîne.
+5. S'il y en a plus d'une, affiche chacune sur une nouvelle ligne.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Le programme doit lire 5 cha&icirc;nes au clavier et les &eacute;crire dans la liste.
+3.	Le programme doit afficher la cha&icirc;ne la plus courte.
+4.	Si plusieurs cha&icirc;nes ont la plus petite longueur, tu dois afficher chacune d&#39;elle sur une nouvelle ligne.
+
+

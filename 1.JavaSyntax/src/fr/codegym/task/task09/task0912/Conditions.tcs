@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task09.task0912"\n\nException lorsque tu travailles avec des nombres
+
+Capture (et affiche le type de) l'exception qui se produit lorsque le code suivant est exécuté :
+int num = Integer.parseInt("XYZ");
+System.out.println(num);
+
+
+Requirements:
+1.	Le programme doit afficher un message &agrave; l&#39;&eacute;cran.
+2.	Le programme doit avoir un bloc try-catch.
+3.	Le programme doit capturer un type sp&eacute;cifique d&#39;exception, et non toutes les exceptions possibles (c&#39;est-&agrave;-dire pas Exception).
+4.	Le message affich&eacute; doit contenir le type de l&#39;exception qui a &eacute;t&eacute; lev&eacute;e.
+5.	Ne supprime pas le code existant dans la m&eacute;thode main.
+
+

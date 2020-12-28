@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task12.task1231"\n\nAbstractions inutiles
+
+Tu dois placer le mot-clé abstract aux bons endroits afin que le programme compile.
+Ajoute abstract là où cela est nécessaire et supprime-le là où il ne l'est pas.
+
+
+Requirements:
+1.	La classe Pegasus doit impl&eacute;menter l&#39;interface CanFly.
+2.	La classe Pegasus doit h&eacute;riter de la classe Horse.
+3.	La classe SwimmingPegasus doit h&eacute;riter de la classe Pegasus.
+4.	Tu dois &ecirc;tre en mesure de cr&eacute;er un objet Horse.
+5.	Tu dois &ecirc;tre en mesure de cr&eacute;er un objet Pegasus.
+6.	La m&eacute;thode swim() de la classe SwimmingPegasus ne doit pas &ecirc;tre impl&eacute;ment&eacute;e.
+
+

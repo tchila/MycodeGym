@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task13.task1318"\n\nLecture d'un fichier
+
+1. Lis un nom de fichier depuis la console.
+2. Affiche le contenu du fichier dans la console (à l'écran).
+3. N'oublie pas de libérer les ressources. Ferme les flux pour l'entrée du fichier et l'entrée du clavier.
+
+
+Requirements:
+1.	Le programme doit lire le nom de fichier &agrave; partir de la console.
+2.	Le programme doit afficher le contenu du fichier.
+3.	Tu dois fermer le flux d&#39;entr&eacute;e du fichier (FileInputStream).
+4.	BufferedReader doit &eacute;galement &ecirc;tre ferm&eacute;.
+
+

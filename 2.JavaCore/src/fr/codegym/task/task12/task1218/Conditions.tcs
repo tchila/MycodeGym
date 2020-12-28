@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task12.task1218"\n\nMange, vole et bouge
+
+Les interfaces public CanFly, CanMove et CanEat ont déjà été écrites.
+Ajoute ces interfaces aux classes Dog, Car, Duck et Airplane.
+
+
+Requirements:
+1.	La classe Solution doit contenir une interface CanFly avec une seule m&eacute;thode appel&eacute;e fly().
+2.	La classe Solution doit contenir une interface CanMove avec une seule m&eacute;thode appel&eacute;e move().
+3.	La classe Solution doit contenir une interface CanEat avec une seule m&eacute;thode appel&eacute;e eat().
+4.	Un chien doit &ecirc;tre en mesure de se d&eacute;placer et de manger.
+5.	Une voiture doit &ecirc;tre capable de se d&eacute;placer.
+6.	Un avion doit &ecirc;tre en mesure de se d&eacute;placer et de voler.
+7.	Un canard &ecirc;tre en mesure de se d&eacute;placer, de voler et de manger.
+
+

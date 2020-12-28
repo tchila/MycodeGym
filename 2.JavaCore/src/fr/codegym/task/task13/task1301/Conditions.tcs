@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task13.task1301"\n\nBière
+
+1. Pense à laquelle des deux interfaces tu dois implémenter dans la classe BeerLover.
+2. Ajoute cette interface à la classe BeerLover et implémente toutes ses méthodes.
+3. Pense à la relation entre la variable READY_TO_GO_HOME et la méthode isReadyToGoHome.
+4. Fais en sorte que la méthode isReadyToGoHome renvoie la valeur de la variable READY_TO_GO_HOME.
+
+
+Requirements:
+1.	La classe BeerLover doit impl&eacute;menter l&#39;interface Alcoholic.
+2.	La classe BeerLover ne doit pas impl&eacute;menter directement l&#39;interface Drinker (juste indirectement via Alcoholic).
+3.	La classe BeerLover doit impl&eacute;menter toutes les m&eacute;thodes de l&#39;interface Alcoholic.
+4.	La classe BeerLover doit impl&eacute;menter toutes les m&eacute;thodes de l&#39;interface Drinker.
+5.	La m&eacute;thode isReadyToGoHome doit renvoyer la valeur de la variable READY_TO_GO_HOME.
+
+

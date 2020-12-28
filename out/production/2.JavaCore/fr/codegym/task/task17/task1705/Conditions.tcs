@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task17.task1705"\n\nTemps dans le jardin
+
+1. Crée une méthode public void addFruit(int index, String fruit) qui ajoute le paramètre fruit à la liste fruits à la position index.
+2. Crée une méthode public void removeFruit(int index) qui supprime l'élément à la position index de fruits.
+3. Crée une méthode public void addVegetable(int index, String vegetable) qui ajoute le paramètre vegetable à la liste vegetables à la position index.
+4. Crée une méthode public void removeVegetable(int index) qui supprime l'élément à la position index de vegetables.
+5. La classe Garden sera utilisée par des threads. Vérifie que toutes les méthodes verrouillent this.
+6. Implémente tout cela avec le moins de code possible.
+
+
+Requirements:
+1.	La classe Garden doit contenir une m&eacute;thode public void addFruit(int index, String fruit).
+2.	La classe Garden doit contenir une m&eacute;thode public void removeFruit(int index).
+3.	La classe Garden doit contenir une m&eacute;thode public void addVegetable(int index, String vegetable).
+4.	La classe Garden doit contenir une m&eacute;thode public void removeVegetable(int index).
+5.	La m&eacute;thode addFruit(int index, String fruit) doit ajouter le param&egrave;tre fruit &agrave; la liste fruits &agrave; la position index.
+6.	La m&eacute;thode removeFruit(int index) doit supprimer l&#39;&eacute;l&eacute;ment &agrave; la position index de fruits.
+7.	La m&eacute;thode addVegetable(int index, String vegetable) doit ajouter le param&egrave;tre vegetable &agrave; la liste vegetables &agrave; la position index.
+8.	La m&eacute;thode removeVegetable(int index) doit supprimer l&#39;&eacute;l&eacute;ment &agrave; la position index de vegetables.
+9.	Toutes les m&eacute;thodes de la classe Garden doivent verrouiller this (c.-&agrave;-d. qu&#39;elles doivent &ecirc;tre synchronis&eacute;es).
+
+

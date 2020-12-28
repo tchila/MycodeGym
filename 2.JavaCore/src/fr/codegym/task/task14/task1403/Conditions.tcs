@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task14.task1403"\n\nBâtiment et école
+
+1. Crée la bonne relation d'héritage entre Building et School.
+2. Pense à quel type d'objet les méthodes getSchool et getBuilding doivent renvoyer.
+3. Change null en objet Building ou School.
+P.S. Ne change pas les signatures des méthodes getSchool et getBuilding.
+
+
+Requirements:
+1.	La classe School doit h&eacute;riter de la classe Building.
+2.	La m&eacute;thode getSchool doit renvoyer un nouvel objet School.
+3.	La m&eacute;thode getBuilding doit renvoyer un nouvel objet Building.
+4.	La classe School doit &ecirc;tre static.
+5.	La classe Building doit &ecirc;tre static.
+
+

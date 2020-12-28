@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task13.task1309"\n\nTout ce qui se déplace
+
+1. Crée une interface CanMove avec une méthode speed.
+2. La méthode speed doit renvoyer un Double et ne prendre aucun argument.
+3. Fais en sorte que l'interface CanFly hérite de l'interface CanMove.
+4. Ajoute la méthode speed à l'interface CanFly.
+5. La méthode speed doit renvoyer un Double et accepter un argument CanFly.
+
+
+Requirements:
+1.	La classe Solution doit d&eacute;clarer une interface CanMove.
+2.	La classe Solution doit d&eacute;clarer une interface CanFly.
+3.	L&#39;interface CanFly doit h&eacute;riter de l&#39;interface CanMove.
+4.	L&#39;interface CanMove doit d&eacute;clarer une m&eacute;thode speed sans param&egrave;tre et doit renvoyer un Double.
+5.	L&#39;interface CanFly doit d&eacute;clarer une m&eacute;thode speed avec un param&egrave;tre CanFly et doit renvoyer un Double.
+
+

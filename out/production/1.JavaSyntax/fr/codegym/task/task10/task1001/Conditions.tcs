@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task10.task1001"\n\nMission n°1 sur les conversions des types d'entiers
+
+Organise les opérateurs de conversion correctement pour obtenir le résultat requis : d > 0
+int a = 0;
+int b = (byte) a + 46;
+byte c = (byte) (a*b);
+double f = (char) 1234.15;
+long d = (short) (a + f / c + b);
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Ne modifie pas la commande de sortie &eacute;cran.
+3.	La m&eacute;thode main() doit contenir une variable int appel&eacute;e &laquo; a &raquo;.
+4.	La m&eacute;thode main() doit contenir une variable int appel&eacute;e &laquo; b &raquo;.
+5.	La m&eacute;thode main() doit contenir une variable byte appel&eacute;e &laquo; c &raquo;.
+6.	La m&eacute;thode main() doit contenir une variable double appel&eacute;e &laquo; f &raquo;.
+7.	La m&eacute;thode main() doit contenir une variable long appel&eacute;e &laquo; d &raquo;.
+8.	Ne change pas la valeur initiale des variables lors de l&#39;initialisation. Tu peux seulement modifier (ajouter/supprimer/modifier) les op&eacute;rateurs de conversion.
+9.	Le programme doit afficher un nombre sup&eacute;rieur &agrave; 0.
+
+

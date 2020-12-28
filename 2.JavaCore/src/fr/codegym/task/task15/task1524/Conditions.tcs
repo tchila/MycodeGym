@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task15.task1524"\n\nOrdre de chargement des variables
+
+Détermine ce qui sera initialisé et dans quel ordre. Définis des points d'arrêt et utilise le débogueur.
+Corrige l'ordre dans lequel les données sont initialisées pour obtenir le résultat suivant :
+static void init()
+Bloc statique
+public static void main
+Bloc non statique
+static void printAllFields
+0
+null
+Constructeur de Solution
+static void printAllFields
+6
+Prénom
+
+
+Requirements:
+1.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+2.	La sortie &eacute;cran doit correspondre aux conditions de la mission.
+3.	Le bloc d&#39;initialisation statique de la classe Solution doit afficher &laquo;&nbsp;static void init()&nbsp;&raquo; et &laquo;&nbsp;Bloc statique&nbsp;&raquo; &agrave; l&#39;&eacute;cran.
+4.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+
+

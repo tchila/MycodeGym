@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task12.task1217"\n\nVol, course et natation
+
+Écris des interfaces publiques CanFly, CanRun et CanSwim.
+Ajoute une méthode à chaque interface.
+
+
+Requirements:
+1.	- La classe Solution doit contenir une interface CanFly.
+2.	- La classe Solution doit contenir une interface CanRun.
+3.	- La classe Solution doit contenir une interface CanSwim.
+4.	L&#39;interface CanFly doit contenir une&nbsp;m&eacute;thode.
+5.	L&#39;interface CanRun doit contenir une&nbsp;m&eacute;thode.
+6.	L&#39;interface CanSwim doit contenir une&nbsp;m&eacute;thode.
+
+

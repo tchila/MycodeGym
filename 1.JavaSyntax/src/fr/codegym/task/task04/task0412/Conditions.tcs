@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task04.task0412"\n\nNombres positifs et négatifs
+
+Utilise le clavier pour saisir un nombre.
+Si le nombre est positif, double-le.
+Si le nombre est négatif, ajoute-lui un.
+Si le nombre entré est zéro, affiche 0.
+Affiche le résultat à l'écran.
+
+
+Requirements:
+1.	Le programme doit lire un nombre au clavier.
+2.	Le programme doit afficher un nombre &agrave; l&#39;&eacute;cran.
+3.	Si le nombre entr&eacute; est positif, double-le et affiche le r&eacute;sultat.
+4.	Si le nombre entr&eacute; est n&eacute;gatif, augmente-le de 1 et affiche le r&eacute;sultat.
+5.	Si le nombre entr&eacute; est z&eacute;ro, affiche 0.
+
+

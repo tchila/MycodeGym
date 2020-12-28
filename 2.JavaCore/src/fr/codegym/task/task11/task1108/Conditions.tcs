@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task11.task1108"\n\nLe chat inaccessible
+
+Cache toutes les variables internes de la classe Cat ainsi que toutes les méthodes capables de changer l'état interne des objets Cat.
+
+
+Requirements:
+1.	La variable name de la classe Cat doit &ecirc;tre private.
+2.	La variable age de la classe Cat doit &ecirc;tre private.
+3.	La variable weight de la classe Cat doit &ecirc;tre private.
+4.	Le getter getName doit &ecirc;tre public.
+5.	Le setter setName doit &ecirc;tre private.
+6.	Le getter getAge doit &ecirc;tre public.
+7.	Le setter setAge doit &ecirc;tre private.
+
+

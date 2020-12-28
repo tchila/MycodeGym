@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task20.task2013"\n\nPersonne Externalizable
+
+La classe Person doit être sérialisée avec l'interface Externalizable.
+Corrige le bogue de sérialisation.
+Ne change pas les signatures de méthode.
+
+
+Requirements:
+1.	La classe Solution.Person doit prendre en charge l&#39;interface Externalizable.
+2.	Les m&eacute;thodes readExternal et writeExternal doivent permettre de s&eacute;rialiser et d&eacute;s&eacute;rialiser correctement des objets Person.
+3.	La classe Solution.Person doit avoir un constructeur sans param&egrave;tres.
+4.	La classe Solution.Person doit avoir un constructeur avec trois param&egrave;tres (String firstName, String lastName, int age).
+
+

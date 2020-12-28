@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task09.task0927"\n\nDix chats
+
+Il y a une classe Chat avec une variable String nom.
+Crée une Map<String, Chat> et ajoute 10 chats représentés par des paires (nom, Chat).
+Obtiens un Set de tous les chats de la Map et affiche le tout à l'écran.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La m&eacute;thode creerMap doit cr&eacute;er un nouvel objet HashMap&lt;String, Chat&gt;.
+3.	La m&eacute;thode creerMap doit ajouter 10 chats &agrave; la Map, repr&eacute;sent&eacute;s par des paires (nom, Chat).
+4.	La m&eacute;thode creerMap doit renvoyer la Map cr&eacute;&eacute;e.
+5.	La m&eacute;thode convertirMapEnSet doit cr&eacute;er et renvoyer l&#39;objet Set cr&eacute;&eacute; avec les chats extraits de la Map pass&eacute;e.
+6.	Le programme doit afficher tous les chats de l&#39;ensemble.
+
+

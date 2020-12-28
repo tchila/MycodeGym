@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task11.task1104"\n\nTravailleurs acharnés
+
+Écris les quatre classes suivantes : Employee, Manager, CEO et Secretary.
+Fais en sorte que les classes Manager, CEO et Secretary héritent de la classe Employee.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Employee.
+2.	La classe Solution doit contenir une classe public Manager.
+3.	La classe Solution doit contenir une classe public CEO.
+4.	La classe Solution doit contenir une classe public Secretary.
+5.	La classe Manager doit h&eacute;riter de la classe Employee.
+6.	La classe CEO doit h&eacute;riter de la classe Employee.
+7.	La classe Secretary doit h&eacute;riter de la classe Employee.
+
+

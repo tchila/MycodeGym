@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task04.task0414"\n\nNombre de jours dans l’année
+
+Utilise le clavier pour saisir une année, puis détermine le nombre de jours dans l'année. Affiche le résultat comme ceci :
+Nombre de jours dans l'année : x où x est 366 pour une année bissextile, et x est 365 pour une année ordinaire.
+Indice : Une année bissextile comporte 366 jours, contre 365 pour une année ordinaire.
+1) Si l'année est divisible par 400, c'est une année bissextile ;
+2) Pour les autres années, si l'année est divisible par 100, c'est une année ordinaire ;
+3) Pour les autres années, si l'année est divisible par 4, c'est une année bissextile ;
+4) Toutes les années restantes ne sont pas bissextiles.
+Ainsi, les années 1700, 1800 et 1900 ne sont pas bissextiles, car ce sont des multiples de 100, mais pas de 400.
+Les années 1600 et 2000 sont des années bissextiles, car ce sont des multiples à la fois de 100 et de 400.
+Les années 2100, 2200 et 2300 ne sont pas bissextiles.
+
+
+Requirements:
+1.	Le programme doit lire un nombre au clavier.
+2.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran en respectant les conditions de la mission.
+3.	Si l&#39;ann&eacute;e saisie est bissextile, tu dois afficher : &laquo; Nombre de jours dans l&#39;ann&eacute;e : 366 &raquo;.
+4.	Si l&#39;ann&eacute;e saisie n&#39;est pas bissextile, tu dois afficher : &laquo; Nombre de jours dans l&#39;ann&eacute;e : 365 &raquo;.
+
+

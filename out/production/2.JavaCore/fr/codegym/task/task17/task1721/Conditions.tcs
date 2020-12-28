@@ -1,0 +1,26 @@
+taskKey="fr.codegym.task.task17.task1721"\n\nTransactionnalité
+
+Rends la méthode joinData transactionnelle : si elle échoue, les données ne doivent pas être modifiées.
+1. Lis 2 noms de fichier depuis la console.
+2. Lis les fichiers ligne par ligne. Lis le premier fichier dans allLines, et le second dans linesForRemoval.
+Dans la méthode joinData :
+3. Si la liste allLines contient toutes les lignes de linesForRemoval, supprime de allLines toutes les lignes qui se trouvent dans linesForRemoval.
+4. Si la condition de l'étape 3 n'est pas satisfaite, alors :
+4.1. efface les données de allLines
+4.2. lève une CorruptedDataException
+La méthode joinData doit être appelée dans main. Gère toutes les exceptions dans la méthode main.
+N'oublie pas de fermer les flux.
+
+
+Requirements:
+1.	La classe Solution doit contenir un champ public static List&lt;String&gt; allLines.
+2.	La classe Solution doit contenir un champ public static List&lt;String&gt; linesForRemoval.
+3.	La classe Solution doit avoir une m&eacute;thode public void joinData() qui peut lever une CorruptedDataException.
+4.	Le programme doit lire les noms de deux fichiers depuis la console.
+5.	Le programme doit lire ligne par ligne le premier fichier dans la liste allLines.
+6.	Le programme doit lire ligne par ligne le second fichier dans la liste linesForRemoval.
+7.	La m&eacute;thode joinData doit supprimer de la liste allLines toutes les lignes de la liste linesForRemoval si allLines contient toutes les lignes de la liste linesForRemoval.
+8.	La m&eacute;thode joinData doit effacer la liste allLines et lever une CorruptedDataException si allLines ne contient pas toutes les lignes de la liste linesForRemoval.
+9.	La m&eacute;thode joinData doit &ecirc;tre appel&eacute;e dans main.
+
+

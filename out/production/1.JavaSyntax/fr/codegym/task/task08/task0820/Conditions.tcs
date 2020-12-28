@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task08.task0820"\n\nEnsemble d'animaux
+
+1. Dans la classe Solution, crée les classes public static  Chat et Chien.
+2. Implémente la méthode creerChats, qui doit renvoyer un ensemble avec 4 chats.
+3. Implémente la méthode creerChiens, qui doit renvoyer un ensemble avec 3 chiens.
+4. Implémente la méthode jointure, qui doit renvoyer un ensemble combiné de tous les animaux (tous les chats et chiens).
+5. Implémente la méthode supprimerChats, qui doit retirer de l'ensemble animaux tous les chats de l'ensemble chats.
+6. Implémente la méthode imprimerAnimaux, qui doit afficher tous les animaux dans l'ensemble animaux. Chaque animal doit être affiché sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Il doit y avoir des classes public static Chat et Chien dans la classe Solution.
+3.	La m&eacute;thode creerChats() de la classe Solution doit renvoyer un Set contenant 4 chats.
+4.	La m&eacute;thode creerChiens() de la classe Solution doit renvoyer un Set contenant 3 chiens.
+5.	La m&eacute;thode jointure() de la classe Solution doit renvoyer un ensemble combin&eacute; de tous les animaux (tous les chats et chiens).
+6.	La m&eacute;thode supprimerChats() doit retirer de l&#39;ensemble animaux tous les chats de l&#39;ensemble chats.
+7.	La m&eacute;thode imprimerAnimaux() doit afficher tous les animaux dans l&#39;ensemble animaux. Chaque animal doit &ecirc;tre affich&eacute; sur une nouvelle ligne.
+
+

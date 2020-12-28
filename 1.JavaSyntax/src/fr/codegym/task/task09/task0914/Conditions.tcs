@@ -1,0 +1,19 @@
+taskKey="fr.codegym.task.task09.task0914"\n\nCapturer un groupe d'exceptions
+
+1. Il y a trois exceptions qui héritent successivement d'Exception.
+2. La classe Exception1, qui hérite d'Exception
+3. La classe Exception2, qui hérite d'Exception1
+4. La classe Exception3, qui hérite d'Exception2
+5. Nous avons une méthode avec la signature suivante :
+public static void methode1() throws Exception1, Exception2, Exception3
+6. Écris un bloc catch qui va capturer les trois exceptions : Exception1, Exception2 et Exception3
+
+
+Requirements:
+1.	La m&eacute;thode main doit appeler methode1.
+2.	La m&eacute;thode main doit capturer l&#39;exception Exception1.
+3.	La m&eacute;thode main doit capturer l&#39;exception Exception2.
+4.	La m&eacute;thode main doit capturer l&#39;exception Exception3.
+5.	Ne change pas la m&eacute;thode methode1.
+
+

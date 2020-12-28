@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task12.task1211"\n\nClasse abstraite Pet
+
+Rends la classe Pet abstraite.
+
+
+Requirements:
+1.	Le programme ne doit pas afficher de texte &agrave; l&#39;&eacute;cran.
+2.	La classe Pet doit &ecirc;tre static.
+3.	La classe Pet doit &ecirc;tre abstraite.
+4.	La classe Pet doit n&#39;avoir qu&#39;une m&eacute;thode&nbsp;appel&eacute;e getName().
+
+

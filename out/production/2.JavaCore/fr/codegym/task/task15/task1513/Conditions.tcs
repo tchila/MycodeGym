@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task15.task1513"\n\nLe code le plus simple : partie 3
+
+Simplifie le code :
+- supprime tout ce qui sera généré automatiquement par le compilateur
+- supprime tous les héritages de classe qui seront ajoutés automatiquement par le compilateur
+- supprime tous les constructeurs qui seront automatiquement créés et ajoutés.
+
+
+Requirements:
+1.	La classe Car ne doit pas avoir de constructeurs sans argument explicites.
+2.	La classe Machine ne doit pas avoir de constructeurs sans argument explicites.
+3.	La classe Car doit descendre de la classe Machine.
+4.	Le code ne doit pas avoir d&#39;h&eacute;ritage explicite impliquant la classe Object (extends Object).
+5.	La classe Car ne doit pas h&eacute;riter explicitement de l&#39;interface Runnable.
+
+

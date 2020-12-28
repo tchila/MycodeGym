@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task05.task0529"\n\nCochon tirelire dans la console
+
+Utilise le clavier pour saisir des nombres et calculer leur somme jusqu'à ce que l'utilisateur saisisse le mot « somme ». Affiche le résultat à l'écran.
+Indice : pour lire au clavier jusqu'à ce que la chaîne 'fin' soit saisie, fais ceci :
+BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+while (true) {
+String s = buffer.readLine();
+if (s.equals("fin"))
+break;
+}
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit cesser de lire les donn&eacute;es du clavier une fois que l&#39;utilisateur saisit le mot &laquo; somme &raquo; en lettres minuscules et appuie sur Entr&eacute;e.
+3.	Le programme doit fonctionner correctement si l&#39;utilisateur saisit un nombre et le mot &laquo; somme &raquo;.
+4.	Le programme doit fonctionner correctement si l&#39;utilisateur saisit deux nombres et le mot &laquo; somme &raquo;.
+5.	Le programme doit fonctionner correctement si l&#39;utilisateur saisit plus de deux nombres et le mot &laquo; somme &raquo;.
+6.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+
+

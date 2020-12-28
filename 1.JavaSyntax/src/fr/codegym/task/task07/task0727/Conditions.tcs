@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task07.task0727"\n\nChangement de fonctionnalité
+
+Mission : Le programme prend des chaînes jusqu'à ce que l'utilisateur saisisse une chaîne vide (en appuyant sur Entrée). Ensuite, il convertit les chaînes en majuscules (« mère » devient « MÈRE ») et les affiche.
+Nouvelle mission : Le programme prend des chaînes jusqu'à ce que l'utilisateur saisisse une chaîne vide (en appuyant sur Entrée).
+Ensuite, le programme construit une nouvelle liste. Si une chaîne a un nombre pair de lettres, la chaîne est dupliquée. Si le nombre de lettres est impair, la chaîne est répétée trois fois.
+Le programme affiche le contenu de la nouvelle liste.
+Exemple d'entrée :
+Chat
+Chats
+I
+Exemple de sortie :
+Chat Chat
+Chats Chats Chats
+I I I
+
+
+Requirements:
+1.	Le programme doit lire les donn&eacute;es depuis le clavier.
+2.	Le programme doit afficher autant de cha&icirc;nes que tu saisis.
+3.	Si une cha&icirc;ne a un nombre pair de lettres, tu dois dupliquer la cha&icirc;ne (comme dans l&#39;exemple).
+4.	Si une cha&icirc;ne a un nombre impair de lettres, tu dois r&eacute;p&eacute;ter la cha&icirc;ne trois fois (comme dans l&#39;exemple).
+5.	Le programme doit arr&ecirc;ter de lire les donn&eacute;es du clavier d&egrave;s que l&#39;utilisateur saisit une cha&icirc;ne vide (en appuyant sur Entr&eacute;e).
+
+

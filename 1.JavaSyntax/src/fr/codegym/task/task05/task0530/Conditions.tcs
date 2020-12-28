@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task05.task0530"\n\nPatron, il se passe quelque chose de bizarre
+
+Mission : Le programme lit deux nombres au clavier et affiche leur somme à l'écran.
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	Il doit y avoir une seule m&eacute;thode main dans la classe.
+3.	Le programme doit afficher une cha&icirc;ne qui commence par &laquo; Somme = &raquo;.
+4.	Le programme doit afficher une cha&icirc;ne qui se termine par la somme des nombres saisis.
+
+

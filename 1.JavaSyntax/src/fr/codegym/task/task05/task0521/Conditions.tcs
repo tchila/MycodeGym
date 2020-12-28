@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task05.task0521"\n\nAppel d'un constructeur à partir d'un constructeur
+
+Détermine ce que fait le programme.
+Corrige le constructeur avec deux paramètres de sorte qu'il appelle un autre constructeur avec un rayon de 10.
+Réfléchis au constructeur que tu dois appeler.
+Indice : Étudie attentivement l'implémentation du constructeur par défaut.
+
+
+Requirements:
+1.	La classe doit avoir 3 constructeurs.
+2.	Le constructeur avec deux param&egrave;tres doit initialiser les variables x et y aux valeurs pass&eacute;es.
+3.	Le constructeur avec deux param&egrave;tres doit initialiser la variable rayon &agrave; une valeur de 10.
+4.	Le constructeur avec deux param&egrave;tres doit appeler un autre constructeur, en passant les bons arguments.
+5.	Ne change pas la m&eacute;thode main.
+6.	Ne change pas le constructeur par d&eacute;faut.
+
+

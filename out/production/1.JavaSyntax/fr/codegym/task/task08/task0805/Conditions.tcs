@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task08.task0805"\n\nValeurs à l'écran !
+
+Il y a une HashMap<String, String>. 10 chaînes différentes lui ont été ajoutées.
+Affiche une liste de valeurs à l'écran, chaque élément sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit cr&eacute;er une variable HashMap avec des &eacute;l&eacute;ments (String, String). La variable doit &ecirc;tre initialis&eacute;e imm&eacute;diatement.
+2.	Le programme ne doit pas lire de valeurs au clavier.
+3.	Le programme doit ajouter 10 cha&icirc;nes diff&eacute;rentes &agrave; la collection conform&eacute;ment aux conditions.
+4.	La m&eacute;thode imprimerValeurs() doit afficher les valeurs de la collection, chaque &eacute;l&eacute;ment sur une nouvelle ligne.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task03.task0324"\n\nIntentions mercantiles
+
+Affiche dix fois la phrase " Je veux un gros salaire, et c'est pour ça que j'étudie le Java "
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	Le programme doit afficher du texte.
+3.	Le texte doit commencer par &laquo; Je veux &raquo;.
+4.	Le texte doit se terminer par &laquo; j&#39;&eacute;tudie le Java &raquo;.
+5.	Le texte doit &ecirc;tre compos&eacute; de 10 lignes.
+6.	Le texte affich&eacute; doit correspondre aux conditions de la mission.
+
+

@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task01.task0132"\n\nSomme des chiffres d'un nombre à trois chiffres
+
+Écris le code de la méthode sommeChiffresDeNombre(int nombre). Cette méthode prend un nombre entier à trois chiffres en entrée. Tu dois calculer la somme des chiffres de ce nombre et renvoyer le résultat.
+Prenons l'exemple suivant :
+La méthode sommeChiffresDeNombre est appelée avec l'argument 546
+Exemple de sortie :
+15
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La m&eacute;thode sommeChiffresDeNombre(int) doit &ecirc;tre public et static.
+3.	La m&eacute;thode sommeChiffresDeNombre doit renvoyer un int.
+4.	La m&eacute;thode sommeChiffresDeNombre ne doit rien afficher.
+5.	La m&eacute;thode sommeChiffresDeNombre doit renvoyer la somme de tous les chiffres du nombre en param&egrave;tre.
+
+

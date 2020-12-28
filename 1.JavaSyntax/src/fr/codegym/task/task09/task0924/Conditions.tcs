@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task09.task0924"\n\nUn conte de fées effrayant
+
+1. Il était une fois cinq classes : PetitChaperonRouge, Meregrand, Galette, Bucheron et Loup.
+2. Chaque classe a 2 champs : ArrayList tues et ArrayList manges.
+3. Les objets nécessaires ont été créés (chaperon, meregrand, ...).
+4. Organise les relations correctement en fonction de qui a mangé et/ou tué qui/quoi dans le vieux conte de fées « Le petit chaperon rouge ».
+PS : Personne n'a mangé la galette. Elle est restée bien sagement dans le panier. Le loup a mangé un peu. Et après ça, il s'est fait tuer.
+
+
+Requirements:
+1.	La m&eacute;thode main doit changer l&#39;&eacute;tat (variables internes) de l&#39;objet loup.
+2.	La m&eacute;thode main doit changer l&#39;&eacute;tat (variables internes) de l&#39;objet bucheron.
+3.	Personne n&#39;a mang&eacute; la galette.
+4.	Le loup a mang&eacute; un peu.
+5.	Puis le loup a &eacute;t&eacute; tu&eacute;.
+
+

@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task20.task2004"\n\nLecture et écriture de champs statiques dans un fichier
+
+Implémente la logique pour les E/S de fichier dans la classe ClassWithStatic.
+La méthode load doit initialiser l'objet, y compris les champs statiques, avec les données du fichier.
+La méthode main n'est pas testée.
+
+
+Requirements:
+1.	Il doit &ecirc;tre possible d&#39;enregistrer/charger des objets Solution.ClassWithStatic en utilisant les m&eacute;thodes save/load.
+2.	La classe Solution ne doit pas prendre en charge l&#39;interface Serializable.
+3.	La classe Solution.ClassWithStatic ne doit pas prendre en charge l&#39;interface Serializable.
+4.	La classe Solution.ClassWithStatic doit &ecirc;tre public.
+5.	La classe Solution.ClassWithStatic ne doit pas prendre en charge l&#39;interface Externalizable.
+
+

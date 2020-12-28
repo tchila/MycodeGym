@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task15.task1510"\n\nDu vent, tout ce qui n'est pas nécessaire !
+
+Dans la méthode main, supprime les lignes superflues pour lesquelles la méthode add n'est pas implémentée.
+
+
+Requirements:
+1.	Il doit y avoir trois m&eacute;thodes add() impl&eacute;ment&eacute;es dans la classe Solution.
+2.	Tu dois supprimer les lignes en trop dans la m&eacute;thode main().
+3.	Toutes les m&eacute;thodes de la classe Solution doivent &ecirc;tre static.
+4.	Toutes les m&eacute;thodes de la classe Solution doivent &ecirc;tre public.
+
+

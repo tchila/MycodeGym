@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task19.task1910"\n\nPonctuation
+
+Lis 2 noms de fichier depuis la console.
+Le premier fichier contient du texte.
+Lis le contenu du premier fichier et supprime tous les signes de ponctuation, y compris les caractères de nouvelle ligne.
+Ensuite, écris le résultat dans le second fichier.
+Ferme les flux.
+
+
+Requirements:
+1.	Le programme doit lire les noms de fichier &agrave; partir de la console (utilise BufferedReader).
+2.	Le BufferedReader utilis&eacute; pour la lecture de l&#39;entr&eacute;e depuis la console doit &ecirc;tre ferm&eacute; apr&egrave;s utilisation.
+3.	Le programme doit lire le contenu du premier fichier (utilise le constructeur BufferedReader qui prend un argument FileReader).
+4.	Le flux d&#39;entr&eacute;e de fichier (BufferedReader) doit &ecirc;tre ferm&eacute;.
+5.	Le programme doit lire le contenu du premier fichier dans le second, en supprimant toutes les marques de ponctuation, dont les caract&egrave;res de nouvelle ligne (utilise le constructeur de BufferedWriter qui prend un argument FileWriter pour &eacute;crire dans le fichier).
+6.	Le flux de sortie de fichier (BufferedWriter) doit &ecirc;tre ferm&eacute;.
+
+

@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task13.task1303"\n\nOn ne mélange pas la bière et le cola
+
+Implémente l'interface Drink dans les classes Beer et Cola.
+
+
+Requirements:
+1.	- La classe Beer doit impl&eacute;menter l&#39;interface Drink.
+2.	- La classe Cola doit impl&eacute;menter l&#39;interface Drink.
+3.	La classe Beer doit impl&eacute;menter toutes les m&eacute;thodes de l&#39;interface Drink.
+4.	La classe Cola doit impl&eacute;menter toutes les m&eacute;thodes de l&#39;interface Drink.
+
+

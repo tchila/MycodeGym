@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task04.task0420"\n\nTri de trois nombres
+
+Utilise le clavier pour saisir trois nombres et affiche-les par ordre décroissant.
+Les nombres affichés doivent être séparés par des espaces.
+
+
+Requirements:
+1.	Le programme doit lire les nombres au clavier.
+2.	Le programme doit afficher des nombres &agrave; l&#39;&eacute;cran.
+3.	Le programme doit afficher trois nombres s&eacute;par&eacute;s par des espaces.
+4.	Le programme doit afficher les nombres par ordre d&eacute;croissant.
+
+

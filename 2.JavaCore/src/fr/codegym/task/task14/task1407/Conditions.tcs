@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task14.task1407"\n\nJoueur et danseur
+
+1. Songe à ce que le programme fait.
+2. Modifie la méthode haveFun pour qu'elle appelle :
+- la méthode play si la person est un Player.
+- la méthode dance si la person est un Dancer.
+
+
+Requirements:
+1.	La classe Player doit impl&eacute;menter l&#39;interface Person.
+2.	La classe Dancer doit impl&eacute;menter l&#39;interface Person.
+3.	La m&eacute;thode haveFun doit appeler la m&eacute;thode play si l&#39;objet pass&eacute; est un Player.
+4.	La m&eacute;thode haveFun doit appeler la m&eacute;thode dance si l&#39;objet pass&eacute; est un Dancer.
+5.	La m&eacute;thode main doit lire des donn&eacute;es au clavier.
+6.	La m&eacute;thode main doit cesser de lire les donn&eacute;es du clavier si la cha&icirc;ne saisie est &laquo;&nbsp;quitter&nbsp;&raquo;.
+
+

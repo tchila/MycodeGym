@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task20.task2010"\n\nComment sérialiser quelque chose que tu as créé toi-même ?
+
+Fais en sorte que la classe Object puisse être sérialisée.
+
+
+Requirements:
+1.	La classe Object doit se trouver &agrave; l&#39;int&eacute;rieur de la classe Solution.
+2.	La classe Solution.Object doit &ecirc;tre static.
+3.	La classe Solution.Object doit &ecirc;tre public.
+4.	La classe Solution.Object doit prendre en charge l&#39;interface Serializable.
+5.	La classe Solution.String doit prendre en charge l&#39;interface Serializable.
+
+

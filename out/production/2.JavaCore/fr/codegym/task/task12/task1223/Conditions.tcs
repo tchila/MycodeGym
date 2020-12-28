@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1223"\n\nFluffy est de retour...
+
+Ajoute une méthode à la classe Cat pour que le programme n'affiche rien.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe Pet.
+2.	La classe Solution doit contenir une classe Cat.
+3.	La classe Cat doit h&eacute;riter de la classe Pet.
+4.	La classe Pet doit n&#39;avoir que deux m&eacute;thodes&nbsp;appel&eacute;es getName() et setName().
+5.	Ajoute une m&eacute;thode &agrave; la classe Cat pour que le programme n&#39;affiche rien.
+6.	Le programme doit afficher le r&eacute;sultat de l&#39;appel &agrave; la m&eacute;thode getName() sur pet.
+
+

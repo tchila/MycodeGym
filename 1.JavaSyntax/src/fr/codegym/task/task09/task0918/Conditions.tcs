@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task09.task0918"\n\nNous sommes tous amis ici, même les exceptions
+
+Nous avons quatre classes : MonException, MonException2, MonException3 et MonException4.
+Fais hériter les classes pour obtenir deux exceptions vérifiées et deux exceptions non vérifiées.
+Indice :
+Étudie attentivement les classes Exception1, Exception2 et Exception3 de la deuxième mission de cette leçon.
+
+
+Requirements:
+1.	La classe Solution doit contenir 4 classes imbriqu&eacute;es : MonException, MonException2, MonException3 et MonException4.
+2.	Toutes les classes imbriqu&eacute;es doivent h&eacute;riter de classes d&#39;exception.
+3.	Deux des quatre classes doivent &ecirc;tre des exceptions v&eacute;rifi&eacute;es.
+4.	Deux des quatre classes doivent &ecirc;tre des exceptions non v&eacute;rifi&eacute;es.
+
+

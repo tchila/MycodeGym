@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task15.task1506"\n\nQuelque chose de superflu
+
+1. Le programme doit afficher ce qui suit :
+C'est un double
+C'est un Object
+C'est un double
+C'est un Integer
+C'est un double
+2. Supprime toutes les méthodes inutiles
+
+
+Requirements:
+1.	La classe Solution doit conserver une m&eacute;thode print avec un param&egrave;tre Integer.
+2.	La classe Solution doit conserver une m&eacute;thode print avec un param&egrave;tre Object.
+3.	La classe Solution doit conserver une m&eacute;thode print avec un param&egrave;tre double.
+4.	La sortie &eacute;cran doit correspondre aux conditions de la mission.
+
+

@@ -1,0 +1,25 @@
+taskKey="fr.codegym.task.task16.task1630"\n\nSortie séquentielle de fichiers
+
+1. Détermine ce que fait le programme.
+2. Dans un bloc statique, lis 2 noms de fichier : firstFileName et secondFileName.
+3. Dans la classe Solution, crée une classe public static ReadFileThread qui implémente l'interface ReadFileInterface (demande-toi ce qui est le plus approprié : Thread ou Runnable).
+3.1. La méthode setFileName doit définir le nom du fichier dont le contenu sera lu.
+3.2. La méthode getFileContents doit renvoyer le contenu du fichier.
+3.3. Dans la méthode run, lis le contenu du fichier et ferme le flux. Sépare les lignes du fichier avec des espaces.
+4. Demande-toi où attendre que le thread se termine pour faire en sorte que les fichiers s'affichent de façon séquentielle.
+4.1. Pour ce faire, ajoute un appel à la méthode appropriée.
+Sortie attendue :
+[contenu entier du premier fichier]
+[contenu entier du second fichier]
+
+
+Requirements:
+1.	Le bloc statique de classe Solution doit lire les noms de deux fichiers depuis la console et les stocker dans les variables firstFileName et secondFileName.
+2.	Dans la classe Solution, d&eacute;clare la classe public static ReadFileThread.
+3.	- La classe ReadFileThread doit impl&eacute;menter l&#39;interface ReadFileInterface.
+4.	La classe ReadFileThread doit h&eacute;riter de la classe appropri&eacute;e.
+5.	La m&eacute;thode run de la classe ReadFileThread doit lire les lignes du fichier d&eacute;fini par la m&eacute;thode setFilename. Et la m&eacute;thode getFileContents de cette m&ecirc;me classe doit renvoyer le contenu du fichier. La valeur de retour est une cha&icirc;ne constitu&eacute;e des lignes du fichier, s&eacute;par&eacute;es par des espaces.
+6.	La m&eacute;thode systemOutPrintln doit appeler la m&eacute;thode join sur l&#39;objet f cr&eacute;&eacute;.
+7.	Le sortie du programme doit &ecirc;tre compos&eacute;e de 2 lignes. Chaque ligne contient le contenu d&#39;un fichier.
+
+

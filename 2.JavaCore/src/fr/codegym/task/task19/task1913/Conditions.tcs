@@ -1,0 +1,22 @@
+taskKey="fr.codegym.task.task19.task1913"\n\nImprimer uniquement les chiffres
+
+Remplace l'objet System.out de la méthode main avec ton propre wrapper lecteur similaire à celui présenté dans la leçon.
+Ton wrapper lecteur doit uniquement imprimer des chiffres.
+Appelle la méthode printSomething() existante de testString.
+Restaure la variable System.out au flux d'origine.
+Affiche la chaîne modifiée.
+Exemple de sortie :
+12345678
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe TestString.
+2.	La classe Solution doit avoir un champ public static TestString testString qui est initialis&eacute; imm&eacute;diatement.
+3.	La classe TestString doit avoir une m&eacute;thode public void printSomething().
+4.	La m&eacute;thode printSomething() de la classe TestString doit afficher &laquo;&nbsp;Ce 1 texte 23 est 4 &agrave; des f5-6ins7 de tes8t&nbsp;&raquo;.
+5.	La m&eacute;thode main(String[] args) de la classe Solution doit cr&eacute;er un objet PrintStream (utilise le constructeur PrintStream avec un param&egrave;tre ByteArrayOutputStream).
+6.	La m&eacute;thode main(String[] args) de la classe Solution doit remplacer puis restaurer le flux de sortie de la console (System.out).
+7.	La m&eacute;thode main(String[] args) de la classe Solution doit appeler la m&eacute;thode printSomething() de testString.
+8.	La m&eacute;thode main(String[] args) de la classe Solution doit modifier la ligne imprim&eacute;e par la m&eacute;thode printSomething() conform&eacute;ment aux conditions de la mission, et l&#39;imprimer dans la console.
+
+

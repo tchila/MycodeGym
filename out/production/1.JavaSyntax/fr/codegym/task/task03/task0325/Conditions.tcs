@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task03.task0325"\n\nAttentes financières
+
+Utilise le clavier pour saisir le nombre n.
+Affiche la phrase " Je vais gagner n $ par heure " à l'écran.
+Par exemple :
+Je vais gagner 100 $ par heure
+
+
+Requirements:
+1.	Le programme doit afficher du texte.
+2.	Le programme doit lire les donn&eacute;es depuis le clavier.
+3.	Le texte affich&eacute; doit contenir le nombre n saisi.
+4.	Le texte affich&eacute; doit pleinement r&eacute;pondre aux conditions de la mission.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task15.task1523"\n\nSurcharge de constructeurs
+
+1. Dans la classe Solution, crée 4 constructeurs avec différents modificateurs d'accès.
+2. Dans un fichier séparé, crée une classe SubSolution, qui doit être un enfant de la classe Solution.
+3. Dans la classe SubSolution, utilise la commande Alt+Inser -> Constructors pour créer des constructeurs.
+4. Corrige les modificateurs d'accès des constructeurs de SubSolution pour qu'il y ait 3 constructeurs avec des modificateurs d'accès différents (tous sauf private).
+
+
+Requirements:
+1.	La classe SubSolution doit avoir 3&nbsp;constructeurs diff&eacute;rents.
+2.	La classe Solution doit avoir 4&nbsp;constructeurs diff&eacute;rents.
+3.	La classe Solution doit d&eacute;finir des constructeurs avec tous les modificateurs d&#39;acc&egrave;s possibles.
+4.	La classe SubSolution doit d&eacute;finir des constructeurs avec tous les modificateurs d&#39;acc&egrave;s possibles &agrave; l&#39;exception de private.
+5.	La classe Solution doit &ecirc;tre le parent de la classe SubSolution.
+
+

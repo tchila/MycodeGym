@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task07.task0722"\n\nFin
+
+Crée une liste de chaînes.
+Saisis des chaînes au clavier et ajoute-les à la liste.
+Saisis les chaînes au clavier jusqu'à ce que l'utilisateur saisisse « fin ». La chaîne « fin » est ignorée.
+Affiche les chaînes à l'écran, chacune sur une nouvelle ligne.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Lis des cha&icirc;nes au clavier et ajoute-les &agrave; une liste jusqu&#39;&agrave; ce que l&#39;utilisateur saisisse &laquo; fin &raquo;.
+3.	N&#39;ajoute pas &laquo; fin &raquo; &agrave; la liste.
+4.	Affiche la liste, chaque valeur sur une nouvelle ligne.
+5.	Utilise une boucle for.
+
+

@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task05.task0515"\n\nInitialisation d'objets
+
+Étudie attentivement la classe Personne.
+Corrige la classe de sorte qu'une seule méthode initialiser initialise toutes les variables d'instance de la classe Personne.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La classe Personne doit avoir 5 variables.
+3.	La classe doit avoir une m&eacute;thode initialiser.
+4.	La m&eacute;thode initialiser doit avoir cinq param&egrave;tres.
+
+

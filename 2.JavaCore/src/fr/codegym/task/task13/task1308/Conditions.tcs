@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task13.task1308"\n\nHé, tu es toujours en vie ?
+
+1. Crée l'interface Person.
+2. Ajoute la méthode isAlive(). Cette méthode vérifie si la personne est en vie.
+3. Pense au type que cette méthode doit renvoyer.
+4. Crée une interface Presentable.
+5. Fais en sorte que l'interface Presentable hérite de l'interface Person.
+
+
+Requirements:
+1.	La classe Solution doit d&eacute;clarer une interface Person.
+2.	La classe Solution doit d&eacute;clarer une interface Presentable.
+3.	L&#39;interface Presentable doit h&eacute;riter de l&#39;interface Person.
+4.	L&#39;interface Person doit d&eacute;clarer une m&eacute;thode isAlive.
+5.	Le type de retour de la m&eacute;thode isAlive ne doit avoir que deux valeurs possibles.
+
+

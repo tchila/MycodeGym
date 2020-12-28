@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task05.task0528"\n\nAfficher la date d'aujourd'hui
+
+Affiche la date actuelle au format suivant : « 06 15 2018 ».
+
+
+Requirements:
+1.	La date doit contenir, dans l&#39;ordre, le mois, le jour et l&#39;ann&eacute;e, s&eacute;par&eacute;s par des espaces.
+2.	Le mois doit correspondre au mois actuel.
+3.	Le jour doit correspondre au jour du mois actuel.
+4.	L&#39;ann&eacute;e doit correspondre &agrave; l&#39;ann&eacute;e actuelle.
+5.	La date enti&egrave;re doit &ecirc;tre affich&eacute;e sur une seule ligne.
+
+

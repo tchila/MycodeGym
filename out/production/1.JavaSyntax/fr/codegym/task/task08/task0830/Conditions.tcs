@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task08.task0830"\n\nMission sur les algorithmes
+
+Mission : Saisis 20 mots au clavier et affiche-les dans l'ordre alphabétique. Chaque mot doit être affiché sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	Le programme doit lire des valeurs au clavier.
+3.	La classe Solution doit contenir trois m&eacute;thodes.
+4.	La m&eacute;thode main() doit appeler la m&eacute;thode tri().
+5.	La m&eacute;thode tri() doit appeler la m&eacute;thode estSuperieurA().
+6.	Les mots affich&eacute;s doivent &ecirc;tre class&eacute;s dans l&#39;ordre alphab&eacute;tique.
+
+

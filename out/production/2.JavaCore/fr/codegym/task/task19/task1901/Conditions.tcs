@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task19.task1901"\n\nTableAdapter
+
+Modifie la classe TableAdapter pour qu'elle adapte l'interface ATable à l'interface BTable.
+La méthode getHeaderText doit renvoyer « [<nom d'utilisateur>] : <nom du tableau>".
+Par exemple « [Amigo] : DashboardTable ».
+
+
+Requirements:
+1.	La classe Solution doit avoir une interface public static ATable.
+2.	La classe Solution doit avoir une interface public static BTable.
+3.	La classe Solution doit avoir une classe public static TableAdapter.
+4.	La classe TableAdapter doit impl&eacute;menter l&#39;interface BTable.
+5.	La classe TableAdapter doit avoir un champ private ATable aTable.
+6.	La classe TableAdapter doit avoir un constructeur avec un param&egrave;tre ATable.
+7.	La classe TableAdapter doit remplacer la m&eacute;thode getHeaderText conform&eacute;ment aux conditions de la mission.
+
+

@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task11.task1113"\n\nPrenons-nous pour Darwin
+
+Modifie les quatre classes suivantes : Fish, Animal, Ape et Human.
+Fais en sorte qu'Animal hérite de Fish, Ape d'Animal et Human d'Ape.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public Fish.
+2.	La classe Solution doit contenir une classe public Animal.
+3.	La classe Solution doit contenir une classe public Ape.
+4.	La classe Solution doit contenir une classe public Human.
+5.	La classe Animal doit h&eacute;riter de la classe Fish.
+6.	La classe Ape doit h&eacute;riter de la classe Animal.
+7.	La classe Human doit h&eacute;riter de la classe Ape.
+
+

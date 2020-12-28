@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task17.task1702"\n\nPlus rapides ensemble ? C'est ce qu'on va voir :)
+
+1. Comprends ce à quoi nous avons affaire et comment le tout fonctionne.
+2. Crée une classe public static SortThread, dont la méthode run utilise la méthode sort pour trier le tableau statique testArray.
+
+
+Requirements:
+1.	La classe Solution doit contenir la classe public static SoftThread.
+2.	La classe SortThread doit &ecirc;tre un thread.
+3.	La m&eacute;thode run de la classe SortThread doit appeler la m&eacute;thode sort(), en passant testArray comme argument.
+4.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+
+

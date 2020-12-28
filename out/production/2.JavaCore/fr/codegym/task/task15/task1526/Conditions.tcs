@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task15.task1526"\n\nDéboguer, déboguer et encore déboguer
+
+Le programme affiche 0 9, mais il devrait afficher 6 9. Trouve (une !) erreur et corrige-la.
+Utilise le débogueur. Définis des points d'arrêt (Ctrl+F8), puis va dans Run -> Debug.
+F9 exécutera le code jusqu'au prochain point d'arrêt
+F8 passera à la ligne de code suivante.
+
+
+Requirements:
+1.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+2.	La sortie &eacute;cran doit correspondre aux conditions de la mission.
+3.	La m&eacute;thode d&#39;initialisation de la classe A doit avoir le modificateur d&#39;acc&egrave;s le plus strict.
+4.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+
+

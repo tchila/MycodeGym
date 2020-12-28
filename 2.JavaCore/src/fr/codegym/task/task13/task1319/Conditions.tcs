@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task13.task1319"\n\nÉcriture dans un fichier à partir de la console
+
+1. Lis un nom de fichier depuis la console.
+2. Lis des lignes depuis la console jusqu'à ce que l'utilisateur saisisse « quitter ».
+3. Écris toutes les lignes saisies dans le fichier, chacune sur une nouvelle ligne.
+
+
+Requirements:
+1.	Le programme doit lire le nom de fichier &agrave; partir de la console.
+2.	Cr&eacute;e et utilise un objet BufferedWriter.
+3.	Le programme ne doit rien lire depuis le syst&egrave;me de fichiers.
+4.	Le programme doit lire des lignes depuis la console jusqu&#39;&agrave; ce que l&#39;utilisateur saisisse &laquo; quitter &raquo;.
+5.	Le programme doit &eacute;crire absolument toutes les lignes saisies dans le fichier (y compris &laquo; quitter &raquo;), chacune sur une nouvelle ligne.
+6.	La m&eacute;thode main doit fermer l&#39;objet BufferedWriter apr&egrave;s l&#39;avoir utilis&eacute;.
+
+

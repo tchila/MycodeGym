@@ -1,0 +1,24 @@
+taskKey="fr.codegym.task.task15.task1516"\n\nValeurs par défaut
+
+1. Crée 7 champs public pour la classe. Vérifie qu'ils sont initialisés avec les valeurs par défaut.
+int intVar
+double doubleVar
+Double DoubleVar
+boolean booleanVar
+Object ObjectVar
+Exception ExceptionVar
+String StringVar
+2. Dans la méthode main, affiche les valeurs dans l'ordre spécifié.
+
+
+Requirements:
+1.	La classe Solution doit d&eacute;finir un champ int intVar.
+2.	La classe Solution doit d&eacute;finir un champ double doubleVar.
+3.	La classe Solution doit d&eacute;finir un champ Double DoubleVar.
+4.	La classe Solution doit d&eacute;finir un champ boolean booleanVar.
+5.	La classe Solution doit d&eacute;finir un champ Object ObjectVar.
+6.	La classe Solution doit d&eacute;finir un champ Exception ExceptionVar.
+7.	La classe Solution doit d&eacute;finir un champ String StringVar.
+8.	La m&eacute;thode main doit afficher les valeurs des champs &agrave; l&#39;&eacute;cran (chacune sur une nouvelle ligne ou s&eacute;par&eacute;es par des espaces) dans l&#39;ordre sp&eacute;cifi&eacute;. Tu n&#39;as pas besoin d&#39;initialiser les variables.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task14.task1420"\n\nPGCD
+
+Le plus grand commun diviseur (PGCD).
+Saisis 2 entiers positifs au clavier.
+Affiche le plus grand commun diviseur.
+
+
+Requirements:
+1.	Le programme doit lire 2&nbsp;lignes au clavier.
+2.	Si les lignes saisies ne peuvent &ecirc;tre converties en entiers positifs, l&egrave;ve une exception.
+3.	Le programme doit afficher des donn&eacute;es &agrave; l&#39;&eacute;cran.
+4.	Le programme doit afficher le plus grand commun diviseur (PGCD) des nombres lus &agrave; partir du clavier, puis se terminer avec succ&egrave;s.
+
+

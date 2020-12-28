@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task16.task1628"\n\nLe monde appartient à ceux qui se lèvent tôt
+
+1. Détermine ce que fait le programme.
+1.1. Chaque thread doit lire des lignes depuis la console. Utilise la variable existante static BufferedReader reader.
+1.2. Utilise AtomicInteger readStringCount pour calculer le nombre de lignes lues dans la console par tous les threads.
+2. Implémente la méthode run :
+2.1. Tant qu'un thread n'est pas interrompu (!IsInterrupted), lis des lignes depuis la console et ajoute-les à List<String> result.
+2.2. Utilise readStringCount pour compter les chaînes lues à partir de la console.
+
+
+Requirements:
+1.	La m&eacute;thode run doit s&#39;ex&eacute;cuter jusqu&#39;&agrave; ce que le thread soit termin&eacute; (!IsInterrupted).
+2.	La m&eacute;thode run ne doit PAS cr&eacute;er ses propres InputStreamReaders ou BufferedReaders.
+3.	La m&eacute;thode run doit lire les mots du lecteur et les ajouter &agrave; la liste result.
+4.	Apr&egrave;s avoir lu chaque cha&icirc;ne, la m&eacute;thode run doit incr&eacute;menter readStringCount de 1.
+5.	Le programme doit afficher les donn&eacute;es lues par chaque thread.
+
+

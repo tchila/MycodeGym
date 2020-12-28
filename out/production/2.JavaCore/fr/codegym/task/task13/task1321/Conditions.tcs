@@ -1,0 +1,13 @@
+taskKey="fr.codegym.task.task13.task1321"\n\nCorrection de bogues
+
+1. Retravaille l'héritage dans les classes et interfaces pour que le programme compile comme il se doit et présente le même comportement.
+2. La classe Hobby doit hériter des interfaces Desire et Dream.
+
+
+Requirements:
+1.	La classe Hobby doit impl&eacute;menter l&#39;interface Desire.
+2.	La classe Hobby doit impl&eacute;menter l&#39;interface Dream.
+3.	La classe Hobby doit avoir une variable static appel&eacute;e INDEX.
+4.	La m&eacute;thode toString de la classe Hobby doit incr&eacute;menter la variable INDEX et la renvoyer sous forme de String.
+
+

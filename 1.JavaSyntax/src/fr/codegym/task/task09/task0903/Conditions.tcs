@@ -1,0 +1,12 @@
+taskKey="fr.codegym.task.task09.task0903"\n\nQui m'appelle ?
+
+Écris cinq méthodes qui font appel l'une à l'autre. Chaque méthode doit renvoyer le numéro de la ligne de code à partir de laquelle elle a été appelée. Utilise la méthode element.getLineNumber().
+
+
+Requirements:
+1.	Il doit y avoir 5 m&eacute;thodes dans la classe (en plus de la m&eacute;thode main).
+2.	Chaque m&eacute;thode doit appeler la suivante : main appelle methode1, methode1 appelle methode2, etc.
+3.	Chaque m&eacute;thode doit renvoyer le num&eacute;ro de la ligne de code &agrave; partir de laquelle elle a &eacute;t&eacute; appel&eacute;e.
+4.	Pour obtenir le num&eacute;ro de ligne, utilise la m&eacute;thode getLineNumber de la classe StackTraceElement.
+
+

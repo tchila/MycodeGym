@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task13.task1317"\n\nBeau temps
+
+1. Fais en sorte que la classe Today implémente l'interface Weather.
+2. Pense à la relation entre le type de paramètre et la méthode getWeatherType().
+3. Les interfaces Weather et WeatherType sont déjà implémentées dans des fichiers séparés.
+
+
+Requirements:
+1.	La classe Today doit impl&eacute;menter l&#39;interface Weather.
+2.	La m&eacute;thode getWeatherType de l&#39;interface Weather doit &ecirc;tre impl&eacute;ment&eacute;e dans la classe Today.
+3.	La m&eacute;thode getWeatherType doit renvoyer une valeur de type String.
+4.	La m&eacute;thode getWeatherType doit renvoyer la valeur de la variable type.
+
+

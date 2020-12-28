@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task19.task1904"\n\nEncore un adaptateur
+
+Adapte Scanner à l'interface PersonScanner.
+La classe d'adaptateur est PersonScannerAdapter.
+Crée un champ private final Scanner fileScanner dans la classe d'adaptateur. Initialise le champ dans un constructeur avec un paramètre Scanner.
+Le fichier stocke des données dans le format suivant :
+John Michael Peterson 12 31 1950
+Larry Thomas Gates 12 31 1957
+Le fichier contient des informations sur un grand nombre de personnes. Chaque ligne a des données pour une seule personne. La méthode read() doit lire les informations d'une seule personne.
+
+
+Requirements:
+1.	PersonScanner doit &ecirc;tre une interface.
+2.	La classe PersonScannerAdapter doit impl&eacute;menter l&#39;interface PersonScanner.
+3.	La classe PersonScannerAdapter doit avoir un champ private Scanner fileScanner.
+4.	La classe PersonScannerAdapter doit avoir un constructeur avec un param&egrave;tre Scanner.
+5.	La m&eacute;thode close() de la classe PersonScannerAdapter doit d&eacute;l&eacute;guer l&#39;appel &agrave; fileScanner.
+6.	La m&eacute;thode read() de la classe PersonScannerAdapter doit lire une ligne &agrave; partir du fichier, l&#39;analyser et renvoyer les donn&eacute;es d&#39;une seule personne sous forme d&#39;objet Person.
+
+

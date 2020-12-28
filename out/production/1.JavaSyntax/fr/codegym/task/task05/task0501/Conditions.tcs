@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task05.task0501"\n\nCréation d’un chat
+
+Crée une classe Chat. Un chat doit avoir les propriétés suivantes : String nom, int age, int poids et int force.
+
+
+Requirements:
+1.	Le programme ne doit pas lire de donn&eacute;es du clavier.
+2.	La classe Chat doit avoir une variable String appel&eacute;e nom.
+3.	La classe Chat doit avoir une variable int appel&eacute;e age.
+4.	La classe Chat doit avoir une variable int appel&eacute;e poids.
+5.	La classe Chat doit avoir une variable int appel&eacute;e force.
+6.	Il doit y avoir 4 variables dans la classe.
+
+

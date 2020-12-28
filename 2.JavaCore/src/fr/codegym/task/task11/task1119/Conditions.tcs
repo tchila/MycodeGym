@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task11.task1119"\n\nChaîne d'héritage correcte : partie 4
+
+Crée une « chaîne d'héritage » appropriée pour les classes suivantes : House, Cat, Dog et Car.
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe public House.
+2.	La classe Solution doit contenir une classe public Cat.
+3.	La classe Solution doit contenir une classe public Dog.
+4.	La classe Solution doit contenir une classe public Car.
+5.	Fais h&eacute;riter correctement la classe House.
+6.	Fais h&eacute;riter correctement la classe Cat.
+7.	Fais h&eacute;riter correctement la classe Dog.
+8.	Fais h&eacute;riter correctement la classe Car.
+
+

@@ -1,0 +1,14 @@
+taskKey="fr.codegym.task.task12.task1221"\n\nNous avons tous un peu de chat en nous...
+
+Remplace la méthode getName de la classe Cat pour que le message suivant s'affiche à l'écran : « e suis un cha ».
+
+
+Requirements:
+1.	La classe Solution doit contenir une classe Pet.
+2.	La classe Solution doit contenir une classe Cat.
+3.	La classe Cat doit h&eacute;riter de la classe Pet.
+4.	La classe Pet doit n&#39;avoir qu&#39;une m&eacute;thode&nbsp;appel&eacute;e getName().
+5.	La classe Cat doit remplacer la m&eacute;thode getName().
+6.	Le programme doit afficher le r&eacute;sultat de l&#39;appel &agrave; la m&eacute;thode getName() sur pet.
+
+

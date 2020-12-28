@@ -1,0 +1,20 @@
+taskKey="fr.codegym.task.task07.task0713"\n\nJouons à Javarella
+
+1. Saisis 20 nombres au clavier, enregistre-les dans une liste, puis trie-les dans trois autres listes :
+Les nombres divisibles par 3 (x%3==0), les nombres divisibles par 2 (x%2==0), et tous les autres nombres.
+Les nombres divisibles à la fois par 3 et par 2 (par exemple 6) vont dans les deux listes.
+L'ordre dans lequel les listes sont déclarées est très important.
+2. La méthode imprimerListe doit afficher chaque élément de la liste sur une nouvelle ligne.
+3. Utilise la méthode imprimerListe pour afficher ces trois listes. D'abord la liste des x%3, puis celle des x%2, et enfin la dernière.
+
+
+Requirements:
+1.	D&eacute;clare et initialise imm&eacute;diatement 4 variables ArrayList&lt;Integer&gt;. La premi&egrave;re liste sera la liste principale. Les autres listes seront compl&eacute;mentaires.
+2.	Lis 20 nombres au clavier et ajoute-les &agrave; la liste principale.
+3.	Ajoute &agrave; la premi&egrave;re liste compl&eacute;mentaire tous les nombres dans la liste principale qui sont divisibles par 3.
+4.	Ajoute &agrave; la deuxi&egrave;me liste compl&eacute;mentaire tous les nombres dans la liste principale qui sont divisibles par 2.
+5.	Ajoute &agrave; la troisi&egrave;me liste compl&eacute;mentaire tous les nombres restants de la liste principale.
+6.	La m&eacute;thode imprimerListe doit afficher chaque &eacute;l&eacute;ment de la liste pass&eacute;e sur une nouvelle ligne.
+7.	Le programme doit afficher les trois listes compl&eacute;mentaires en utilisant la m&eacute;thode imprimerListe.
+
+

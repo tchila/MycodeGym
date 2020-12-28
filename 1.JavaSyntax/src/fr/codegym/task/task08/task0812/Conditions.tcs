@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task08.task0812"\n\nLa plus longue séquence
+
+1. Crée une liste de nombres.
+2. Utilise le clavier pour ajouter 10 nombres à la liste.
+3. Affiche la longueur de la plus longue séquence de nombres répétés dans la liste.
+Exemple pour la liste 2, 4, 4, 4, 8, 8, 4, 12, 12, 14:
+3
+La valeur est 3, car la plus longue séquence de nombres répétés est de trois « 4 ».
+
+
+Requirements:
+1.	Le programme doit afficher un nombre &agrave; l&#39;&eacute;cran.
+2.	Le programme doit lire des valeurs au clavier.
+3.	Dans la m&eacute;thode main, d&eacute;clare une variable ArrayList avec des &eacute;l&eacute;ments Integer et initialise-la imm&eacute;diatement.
+4.	Le programme doit ajouter 10 nombres &agrave; la collection conform&eacute;ment aux conditions.
+5.	Le programme doit afficher la longueur de la plus longue s&eacute;quence de nombres r&eacute;p&eacute;t&eacute;s dans la liste.
+
+

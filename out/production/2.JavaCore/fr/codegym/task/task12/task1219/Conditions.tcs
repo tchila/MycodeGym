@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task12.task1219"\n\nCréation d'un humain
+
+Nous avons des interfaces public CanFly, CanRun et CanSwim.
+Ajoute ces interfaces aux classes Human, Duck, Penguin et Airplane.
+
+
+Requirements:
+1.	La classe Solution doit contenir une interface CanFly avec une seule m&eacute;thode appel&eacute;e fly().
+2.	La classe Solution doit contenir une interface CanRun avec une seule m&eacute;thode appel&eacute;e run().
+3.	La classe Solution doit contenir une interface CanSwim avec une seule m&eacute;thode appel&eacute;e swim().
+4.	Un humain doit &ecirc;tre en mesure de courir et nager.
+5.	Un canard doit &ecirc;tre en mesure de voler, nager et courir.
+6.	Un manchot doit &ecirc;tre en mesure de nager et courir.
+7.	Un avion doit &ecirc;tre en mesure de voler et courir (il faut bien qu&#39;il se d&eacute;place sur la piste&nbsp;!)
+
+

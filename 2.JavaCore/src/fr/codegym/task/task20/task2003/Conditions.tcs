@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task20.task2003"\n\nPrésentation de .properties
+
+Dans la méthode fillInPropertiesMap, lis un nom de fichier depuis la console et remplis la map properties avec les données du fichier.
+Tu peux en apprendre davantage sur .properties ici : http://en.wikipedia.org/wiki/.properties
+Implémente la logique pour les E/S de fichier pour la map properties.
+
+
+Requirements:
+1.	La m&eacute;thode fillInPropertiesMap doit lire des donn&eacute;es depuis la console.
+2.	La m&eacute;thode fillInPropertiesMap doit cr&eacute;er un FileInputStream, en passant la cha&icirc;ne lue comme argument.
+3.	La m&eacute;thode fillInPropertiesMap doit appeler la m&eacute;thode load, en passant le nouveau FileInputStream comme argument.
+4.	La m&eacute;thode save doit stocker la map properties sur l&#39;objet OutputStream pass&eacute; comme argument.
+5.	La m&eacute;thode load doit restaurer l&#39;&eacute;tat de la map properties de l&#39;objet OutputStream pass&eacute; comme argument.
+
+

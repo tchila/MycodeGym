@@ -1,0 +1,15 @@
+taskKey="fr.codegym.task.task04.task0421"\n\nJen ou Jen ?
+
+Utilise le clavier pour saisir deux noms. Si les noms sont identiques, affiche « Les noms sont identiques ».
+Si les noms sont différents, mais de la même longueur, affiche « Les noms sont de la même longueur ».
+Si les noms et leur longueur sont différents, n'affiche rien.
+
+
+Requirements:
+1.	Le programme doit lire deux lignes au clavier.
+2.	Le programme doit contenir System.out.println() ou System.out.print().
+3.	Si les noms sont identiques, affiche &laquo; Les noms sont identiques &raquo;.
+4.	Si les noms sont diff&eacute;rents, mais de la m&ecirc;me longueur, affiche &laquo; Les noms sont de la m&ecirc;me longueur &raquo;.
+5.	Si les noms et leur longueur sont diff&eacute;rents, n&#39;affiche rien.
+
+

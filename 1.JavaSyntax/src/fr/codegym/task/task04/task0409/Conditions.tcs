@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task04.task0409"\n\nLe plus proche de 10
+
+Écris la méthode afficherPlusProcheDeDix. La méthode doit afficher l'argument le plus proche de 10.
+Par exemple, prenons les nombres 8 et 11, 11 est le plus proche de 10. Si les deux nombres sont aussi près de 10 l'un
+que l'autre, affiche les deux.
+Indice : Utilise la méthode public static int abs(int a), qui renvoie la valeur absolue d'un nombre.
+
+
+Requirements:
+1.	Le programme doit afficher du texte &agrave; l&#39;&eacute;cran.
+2.	La m&eacute;thode main ne doit pas appeler System.out.println ou System.out.print().
+3.	La m&eacute;thode main doit appeler la m&eacute;thode afficherPlusProcheDeDix.
+4.	La m&eacute;thode afficherPlusProcheDeDix doit appeler la m&eacute;thode abs.
+5.	La m&eacute;thode afficherPlusProcheDeDix doit afficher un nombre &agrave; l&#39;&eacute;cran en respectant les conditions de la mission.
+
+

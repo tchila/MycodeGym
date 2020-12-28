@@ -1,0 +1,37 @@
+taskKey="fr.codegym.task.task06.task0621"\n\nRelations avec les chats
+
+Mission : Chaque chat a un nom et une mère.
+Crée une classe qui décrit cette situation.
+Crée deux objets : une fille chat et une mère. Affiche-les à l'écran.
+Nouvelle mission : Chaque chat a un nom, un père et une mère.
+Modifie Chat afin que la classe reflète ces relations.
+Crée 6 objets : le grand-père (le père du père), la grand-mère (la mère de la mère), le père, la mère, le fils et la fille.
+Affiche-les tous dans l'ordre suivant : grand-père, grand-mère, père, mère, fils, fille.
+Exemple d'entrée :
+Grand-père Tiger
+Grand-mère Puss
+Père Oscar
+Mère Missy
+Fils Simba
+Fille Coco
+Exemple de sortie :
+Le nom du chat est Grand-père Tiger, pas de mère, pas de père
+Le nom du chat est Grand-mère Puss, pas de mère, pas de père
+Le nom du chat est Père Oscar, pas de mère, Grand-père Tiger est son père
+Le nom du chat est Mère Missy, Grand-mère Puss est sa mère, pas de père
+Le nom du chat est Fils Simba, Mère Missy est sa mère, Père Oscar est son père
+Le nom du chat est Fille Coco, Mère Missy est sa mère, Père Oscar est son père
+
+
+Requirements:
+1.	Le programme doit lire les noms de 6 chats dans l&#39;ordre sp&eacute;cifi&eacute;.
+2.	La m&eacute;thode main doit cr&eacute;er 6 objets Chat.
+3.	Le programme doit afficher 6 lignes avec des informations sur les chats.
+4.	La ligne du grand-p&egrave;re (premi&egrave;re ligne) doit r&eacute;pondre aux conditions.
+5.	La ligne de la grand-m&egrave;re (deuxi&egrave;me ligne) doit r&eacute;pondre aux conditions.
+6.	La ligne du p&egrave;re (troisi&egrave;me ligne) doit r&eacute;pondre aux conditions.
+7.	La ligne de la m&egrave;re (quatri&egrave;me ligne) doit r&eacute;pondre aux conditions.
+8.	La ligne du fils (cinqui&egrave;me ligne) doit r&eacute;pondre aux conditions.
+9.	La ligne de la fille (sixi&egrave;me ligne) doit r&eacute;pondre aux conditions.
+
+

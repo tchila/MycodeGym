@@ -1,0 +1,18 @@
+taskKey="fr.codegym.task.task12.task1224"\n\nAnimal inconnu
+
+Écris une méthode qui déterminera le type de l'objet qui lui est passé.
+Le programme doit afficher une des choses suivantes :
+« ha », « igr », « io », « aurea » ou « nima ».
+
+
+Requirements:
+1.	La classe Solution doit avoir les classes Cat, Tiger, Lion, Bull et Pig.
+2.	La classe Solution doit contenir une m&eacute;thode String getObjectType(Object o).
+3.	La m&eacute;thode getObjectType() doit renvoyer &laquo; ha &raquo; si un objet Cat est pass&eacute;.
+4.	La m&eacute;thode getObjectType() doit renvoyer &laquo; igr &raquo; si un objet Tiger est pass&eacute;.
+5.	La m&eacute;thode getObjectType() doit renvoyer &laquo; io &raquo; si un objet Lion est pass&eacute;.
+6.	La m&eacute;thode getObjectType() doit renvoyer &laquo; aurea &raquo; si un objet Bull est pass&eacute;.
+7.	La m&eacute;thode getObjectType() doit renvoyer &laquo; nima &raquo; si un autre objet est pass&eacute;.
+8.	Le programme doit afficher le r&eacute;sultat de l&#39;appel &agrave; la m&eacute;thode getObjectType().
+
+

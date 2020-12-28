@@ -1,0 +1,16 @@
+taskKey="fr.codegym.task.task07.task0712"\n\nLa plus petite ou la plus longue chaîne
+
+1. Crée une liste de chaînes.
+2. Ajoute 10 chaînes saisies au clavier.
+3. Détermine quelle chaîne apparaît en premier dans la liste : la plus courte ou la plus longue.
+Si plusieurs chaînes ont la plus petite ou la plus grande longueur, prends la toute première chaîne répondant à ces conditions que tu rencontres.
+4. Affiche la chaîne décrite dans l'Étape 3. Une chaîne doit être affichée.
+
+
+Requirements:
+1.	D&eacute;clare une variable de liste de cha&icirc;nes et initialise-la imm&eacute;diatement.
+2.	Le programme doit lire 10 cha&icirc;nes au clavier et les ajouter &agrave; la liste.
+3.	Le programme doit afficher la cha&icirc;ne la plus courte si elle se pr&eacute;sente avant la plus longue.
+4.	Le programme doit afficher la cha&icirc;ne la plus longue si elle se pr&eacute;sente avant la plus courte.
+
+

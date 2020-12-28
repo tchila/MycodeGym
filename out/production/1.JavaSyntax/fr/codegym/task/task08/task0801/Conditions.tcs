@@ -1,0 +1,26 @@
+taskKey="fr.codegym.task.task08.task0801"\n\nHashSet de plantes
+
+Crée un HashSet avec des éléments String.
+Ajoute-lui les chaînes suivantes :
+pastèque
+banane
+cerise
+poire
+melon
+mûre
+ginseng
+fraise
+iris
+pomme de terre
+
+Affiche le contenu de la collection en utilisant une nouvelle ligne pour chaque élément.
+Observe la façon dont l'ordre des entrées a changé.
+
+
+Requirements:
+1.	D&eacute;clare une variable HashSet avec des &eacute;l&eacute;ments String et initialise-la imm&eacute;diatement.
+2.	Le programme ne doit pas lire de cha&icirc;nes au clavier.
+3.	Le programme doit ajouter 10 cha&icirc;nes &agrave; la collection conform&eacute;ment aux conditions.
+4.	Le programme doit afficher 10 cha&icirc;nes de la collection, chacune sur une nouvelle ligne.
+
+

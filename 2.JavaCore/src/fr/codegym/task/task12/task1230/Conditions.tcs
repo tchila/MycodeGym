@@ -1,0 +1,17 @@
+taskKey="fr.codegym.task.task12.task1230"\n\nEntrée dans le top dix
+
+Ajoute une méthode de plus pour que le programme affiche le nombre 10.
+Indice :
+utilise la surcharge de méthode.
+
+
+Requirements:
+1.	La classe Solution doit contenir trois m&eacute;thodes.
+2.	La m&eacute;thode transformValue surcharg&eacute;e doit doubler le nombre qui lui est pass&eacute;.
+3.	Ne modifie pas le type et la valeur de la variable i.
+4.	Ne modifie pas le type et la valeur de la variable x.
+5.	Ne modifie pas la commande de sortie &eacute;cran.
+6.	La m&eacute;thode main doit appeler la m&eacute;thode transformValue une seule fois.
+7.	Le programme doit afficher le nombre 10.
+
+

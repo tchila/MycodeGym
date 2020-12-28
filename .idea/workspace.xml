@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="JUnit4 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1fd7RWkBZL9d7OSg3Yeo7hsRJy1" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../../../Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.codegym.task.task33.task3310.strategy" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karabou\Documents\project\CodeGymTasks\CodeGymTasks\4.JavaCollections\src\com\codegym\task" />
+      <recent name="C:\Users\karabou\Documents\project\CodeGymTasks\CodeGymTasks\3.JavaMultithreading\src\com\codegym\task" />
+      <recent name="C:\Users\karabou\Documents\project\CodeGymTasks\CodeGymTasks\3.JavaMultithreading\src" />
+      <recent name="C:\Users\karabou\Documents\project\CodeGymTasks\CodeGymTasks\2.JavaCore\src\com\codegym\task\task20" />
+      <recent name="C:\Users\karabou\Documents\project\CodeGymTasks\CodeGymTasks\2.JavaCore\src\fr\codegym\task\task19" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.codegym.task.task38.task3812" />
+      <recent name="com.codegym.task.task38.task3811" />
+      <recent name="com.codegym.task.task27.task2712.kitchen" />
+      <recent name="com.codegym.task.task30.task3003" />
+      <recent name="com.codegym.task.task30.task3004" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Solution">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration name="Solution (1)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.codegym.task.task17.task1711.Solution" />
+      <module name="2.JavaCore" />
+      <option name="PROGRAM_PARAMETERS" value="-i 0 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.codegym.task.task17.task1711.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task21.task2108.Solution" />
+      <module name="3.JavaMultithreading" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.task.task21.task2108.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task21.task2104.Solution" />
+      <module name="3.JavaMultithreading" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.task.task21.task2104.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task21.task2101.Solution" />
+      <module name="3.JavaMultithreading" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.task.task21.task2101.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task21.task2102.Solution" />
+      <module name="3.JavaMultithreading" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.task.task21.task2102.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task21.task2107.Solution" />
+      <module name="3.JavaMultithreading" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.task.task21.task2107.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="grailsApplicationRoot" value="" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CodeGymTasks" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.Solution (2)" />
+        <item itemvalue="Application.Solution (3)" />
+        <item itemvalue="Application.Solution (5)" />
+        <item itemvalue="Application.Solution (4)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="" />
+      <created>1477641354970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1477641354970</updated>
+      <workItem from="1477641356271" duration="140000" />
+      <workItem from="1477661127283" duration="4000" />
+      <workItem from="1479892128348" duration="345000" />
+      <workItem from="1480667976301" duration="11000" />
+      <workItem from="1480667993737" duration="5000" />
+      <workItem from="1484838281338" duration="128000" />
+      <workItem from="1484897111171" duration="42000" />
+      <workItem from="1485161981498" duration="29000" />
+      <workItem from="1485162014696" duration="83000" />
+      <workItem from="1485177835943" duration="100000" />
+      <workItem from="1596536169565" duration="2150000" />
+      <workItem from="1596650800867" duration="241000" />
+      <workItem from="1596785438953" duration="3346000" />
+      <workItem from="1596790784353" duration="612000" />
+      <workItem from="1596862183621" duration="18547000" />
+      <workItem from="1596925948710" duration="1307000" />
+      <workItem from="1596949447668" duration="38720000" />
+      <workItem from="1597044906013" duration="15480000" />
+      <workItem from="1597157844178" duration="5951000" />
+      <workItem from="1597262856013" duration="11307000" />
+      <workItem from="1597296783568" duration="6063000" />
+      <workItem from="1597375268869" duration="10222000" />
+      <workItem from="1597441996998" duration="24054000" />
+      <workItem from="1597514433068" duration="6923000" />
+      <workItem from="1597560716632" duration="12991000" />
+      <workItem from="1597640958025" duration="4639000" />
+      <workItem from="1597728120052" duration="4672000" />
+      <workItem from="1597784923014" duration="11542000" />
+      <workItem from="1597871797580" duration="1402000" />
+      <workItem from="1597902410734" duration="23332000" />
+      <workItem from="1597990924167" duration="7821000" />
+      <workItem from="1598009191735" duration="26415000" />
+      <workItem from="1598104922953" duration="35783000" />
+      <workItem from="1598198154001" duration="933000" />
+      <workItem from="1598199128212" duration="3945000" />
+      <workItem from="1598220550025" duration="8576000" />
+      <workItem from="1598264461273" duration="18333000" />
+      <workItem from="1598303603785" duration="23231000" />
+      <workItem from="1598416124342" duration="17841000" />
+      <workItem from="1598476060980" duration="199000" />
+      <workItem from="1598476333674" duration="7708000" />
+      <workItem from="1598609475055" duration="792000" />
+      <workItem from="1598673184746" duration="734000" />
+      <workItem from="1598772946704" duration="17204000" />
+      <workItem from="1598854563487" duration="42054000" />
+      <workItem from="1598942075139" duration="6387000" />
+      <workItem from="1599010331841" duration="9868000" />
+      <workItem from="1599035364384" duration="29858000" />
+      <workItem from="1599120378549" duration="273000" />
+      <workItem from="1599212911786" duration="407000" />
+      <workItem from="1599321846651" duration="6447000" />
+      <workItem from="1599375601883" duration="602000" />
+      <workItem from="1599380357625" duration="1645000" />
+      <workItem from="1599382208646" duration="7538000" />
+      <workItem from="1599403674404" duration="2419000" />
+      <workItem from="1599408167177" duration="2931000" />
+      <workItem from="1599461468393" duration="24892000" />
+      <workItem from="1599541180904" duration="11103000" />
+      <workItem from="1599598682238" duration="9857000" />
+      <workItem from="1599644267828" duration="8340000" />
+      <workItem from="1599659431811" duration="8100000" />
+      <workItem from="1599683319410" duration="4797000" />
+      <workItem from="1599710474156" duration="9777000" />
+      <workItem from="1599728495875" duration="554000" />
+      <workItem from="1599729235679" duration="6353000" />
+      <workItem from="1599812304735" duration="19714000" />
+      <workItem from="1599885929026" duration="23093000" />
+      <workItem from="1600059835817" duration="6683000" />
+      <workItem from="1600143768698" duration="15037000" />
+      <workItem from="1600203974909" duration="42290000" />
+      <workItem from="1600371936319" duration="19628000" />
+      <workItem from="1600442985013" duration="8348000" />
+      <workItem from="1600493640469" duration="12192000" />
+      <workItem from="1600531226475" duration="5389000" />
+      <workItem from="1600578998905" duration="16839000" />
+      <workItem from="1600630651338" duration="21534000" />
+      <workItem from="1600707978534" duration="3940000" />
+      <workItem from="1600771973945" duration="17181000" />
+      <workItem from="1600937369638" duration="9698000" />
+      <workItem from="1601006845878" duration="7173000" />
+      <workItem from="1601130040856" duration="6734000" />
+      <workItem from="1601182294181" duration="10414000" />
+      <workItem from="1601317671729" duration="5870000" />
+      <workItem from="1601443178419" duration="4009000" />
+      <workItem from="1601537570508" duration="45990000" />
+      <workItem from="1601703731830" duration="5389000" />
+      <workItem from="1601888047643" duration="9898000" />
+      <workItem from="1601967181506" duration="14483000" />
+      <workItem from="1601995501537" duration="8154000" />
+      <workItem from="1602018117610" duration="612000" />
+      <workItem from="1602018829243" duration="9443000" />
+      <workItem from="1602147647952" duration="448000" />
+      <workItem from="1602148720264" duration="15867000" />
+      <workItem from="1602233479932" duration="16693000" />
+      <workItem from="1602304507666" duration="51261000" />
+      <workItem from="1602409255987" duration="32463000" />
+      <workItem from="1602530689419" duration="15066000" />
+      <workItem from="1602666235352" duration="1200000" />
+      <workItem from="1602688116015" duration="14781000" />
+      <workItem from="1602738328960" duration="7497000" />
+      <workItem from="1602753410937" duration="6932000" />
+      <workItem from="1602823135142" duration="23121000" />
+      <workItem from="1602906890392" duration="10708000" />
+      <workItem from="1602954908506" duration="17784000" />
+      <workItem from="1603002729909" duration="13891000" />
+      <workItem from="1603165375468" duration="142000" />
+      <workItem from="1603183004104" duration="21297000" />
+      <workItem from="1603229647221" duration="4072000" />
+      <workItem from="1603312638568" duration="19044000" />
+      <workItem from="1603376877943" duration="5586000" />
+      <workItem from="1603525820864" duration="2731000" />
+      <workItem from="1603742070244" duration="709000" />
+      <workItem from="1607592766801" duration="29590000" />
+      <workItem from="1607750129163" duration="198000" />
+      <workItem from="1607750365901" duration="3785000" />
+      <workItem from="1607850144833" duration="32000" />
+      <workItem from="1608357166218" duration="303000" />
+      <workItem from="1608532756507" duration="96000" />
+      <workItem from="1608880502964" duration="2084000" />
+      <workItem from="1608967396554" duration="9405000" />
+      <workItem from="1608979662984" duration="5559000" />
+      <workItem from="1609130516615" duration="332000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1806" y="99" key="#Project_Structure" timestamp="1600693311333">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1806" y="99" key="#Project_Structure/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1600693311333" />
+    <state x="2052" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1603529468086">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="488" y="52" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1603016672410" />
+    <state x="2052" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1603529468086" />
+    <state x="2052" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1920.1170@1366.0.1920.1170" timestamp="1600946700723" />
+    <state x="685" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1602426045679" />
+    <state x="413" y="129" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1602977794015">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="129" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602977794015" />
+    <state x="363" y="104" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602147972343">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="363" y="104" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1602147972343" />
+    <state x="153" y="293" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608972570185">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="153" y="293" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608972570185" />
+    <state x="1581" y="417" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1607640094136" />
+    <state x="465" y="237" width="469" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602339554872">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="465" y="237" width="469" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602339554872" />
+    <state x="2017" y="155" key="FileChooserDialogImpl" timestamp="1603743181753">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1603165442055" />
+    <state x="2017" y="155" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1603743181753" />
+    <state width="961" height="194" key="GridCell.Tab.0.bottom" timestamp="1609011695901">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695901" />
+    <state width="938" height="274" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1602374772585" />
+    <state width="1877" height="395" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1170@1366.0.1920.1170" timestamp="1600946751341" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602182751468" />
+    <state width="961" height="194" key="GridCell.Tab.0.center" timestamp="1609011695901">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695901" />
+    <state width="938" height="274" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1602374772584" />
+    <state width="1877" height="395" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1170@1366.0.1920.1170" timestamp="1600946751341" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602182751468" />
+    <state width="961" height="194" key="GridCell.Tab.0.left" timestamp="1609011695900">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695900" />
+    <state width="938" height="274" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1602374772584" />
+    <state width="1877" height="395" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1170@1366.0.1920.1170" timestamp="1600946751340" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602182751468" />
+    <state width="961" height="194" key="GridCell.Tab.0.right" timestamp="1609011695901">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695901" />
+    <state width="938" height="274" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1602374772584" />
+    <state width="1877" height="395" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1170@1366.0.1920.1170" timestamp="1600946751341" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602182751468" />
+    <state width="961" height="194" key="GridCell.Tab.1.bottom" timestamp="1609011695902">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695902" />
+    <state width="1877" height="366" key="GridCell.Tab.1.bottom/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1600602400367" />
+    <state width="1323" height="236" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602169030603" />
+    <state width="961" height="194" key="GridCell.Tab.1.center" timestamp="1609011695902">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695902" />
+    <state width="1877" height="366" key="GridCell.Tab.1.center/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1600602400367" />
+    <state width="1323" height="236" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1602169030602" />
+    <state width="961" height="194" key="GridCell.Tab.1.left" timestamp="1609011695901">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695901" />
+    <state width="1877" height="366" key="GridCell.Tab.1.left/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1600602400367" />
+    <state width="1323" height="236" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1602169030602" />
+    <state width="961" height="194" key="GridCell.Tab.1.right" timestamp="1609011695902">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="961" height="194" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609011695902" />
+    <state width="1877" height="366" key="GridCell.Tab.1.right/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1600602400367" />
+    <state width="1323" height="236" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1602169030602" />
+    <state x="348" y="73" key="NewModule_or_Project.wizard" timestamp="1602437881304">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="348" y="73" key="NewModule_or_Project.wizard/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602437881304" />
+    <state x="498" y="302" key="ReplaceDuplicatesPrompt" timestamp="1602540086577">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="498" y="302" key="ReplaceDuplicatesPrompt/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602540086577" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1603346993604">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1603346993604" />
+    <state width="498" height="417" key="SwitcherDM" timestamp="1608985455947">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="498" height="417" key="SwitcherDM/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608985455947" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1603378742664" />
+    <state width="498" height="398" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1603365021684" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1609130923880">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1609130923880" />
+    <state x="127" y="138" width="1146" height="498" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608981492207">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="127" y="138" width="1146" height="498" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608981492207" />
+    <state x="127" y="138" width="1146" height="498" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1602427022036" />
+    <state x="408" y="260" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603346982751">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="408" y="260" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1603346982751" />
+    <state x="1959" y="53" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603313233061">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="422" y="37" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602977797392" />
+    <state x="1959" y="53" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1603313233061" />
+    <state x="727" y="261" key="extract.method.dialog" timestamp="1602540081974">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="727" y="261" key="extract.method.dialog/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602540081974" />
+    <state x="1880" y="141" width="587" height="801" key="find.popup" timestamp="1607598710215">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="474" y="87" width="555" height="592" key="find.popup/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602351891034" />
+    <state x="1880" y="141" width="587" height="801" key="find.popup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1607598710215" />
+    <state x="474" y="87" width="555" height="563" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1601892176204" />
+    <state x="1866" y="250" key="run.anything.popup" timestamp="1603529096729">
+      <screen x="1366" y="0" width="1920" height="1050" />
+    </state>
+    <state x="356" y="176" width="672" height="677" key="run.anything.popup/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602365870708" />
+    <state x="1866" y="250" key="run.anything.popup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1603529096729" />
+    <state x="356" y="176" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1602423760171" />
+    <state x="363" y="59" width="673" height="679" key="search.everywhere.popup" timestamp="1602961453830">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="363" y="59" width="673" height="679" key="search.everywhere.popup/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1602961453830" />
+    <state x="363" y="57" width="673" height="679" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601595073385" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0621/Solution.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task07/task0713/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task07/task0716/Solution.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0812/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0812/Solution.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0812/Solution.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0812/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0816/Solution.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0828/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0922/Solution.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0922/Solution.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0923/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0923/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0923/Solution.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0923/Solution.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0923/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0930/Solution.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1003/Solution.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1006/Solution.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1006/Solution.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1006/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1006/Solution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1006/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1006/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1006/Solution.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1010/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1010/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task14/task1408/EuropeanHen.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task15/task1526/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task15/task1528/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1621/Solution.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1623/Solution.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1633/Solution.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1633/Solution.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1633/Solution.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1710/Solution.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task17/task1711/Solution.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task19/task1906/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task19/task1914/Solution.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task19/task1914/Solution.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2004/Solution.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2004/Solution.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2004/Solution.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2004/Solution.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2005/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2005/Solution.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2005/Solution.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2013/Solution.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2013/Solution.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2013/Solution.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2013/Solution.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2013/Solution.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2013/Solution.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1633/Solution.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1633/Solution.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1633/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task16/task1633/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task19/task1921/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task19/task1921/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/fr/codegym/task/task20/task2001/Solution.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task20/task2028/CustomTree.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task20/task2028/CustomTree.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task20/task2028/CustomTree.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3213/Solution.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3213/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3213/Solution.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3213/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3205/CustomInvocationHandler.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3205/CustomInvocationHandler.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3205/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3205/SomeInterfaceWithMethodsImpl.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task32/task3205/SomeInterfaceWithMethodsImpl.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task22/task2213/Tetris.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2.JavaCore/src/com/codegym/task/task18/task1824/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task25/task2503/Column.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task31/task3110/command/ZipContentCommand.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task29/task2906/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task29/task2910/Competition.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task29/task2910/Athlete.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task29/task2913/Solution.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task29/task2913/Solution.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task29/task2913/Solution.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task29/task2913/Solution.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3009/Solution.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3009/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3009/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3009/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3011/Solution.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3011/Solution.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3011/Solution.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3011/Solution.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3011/Solution.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3011/Solution.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task30/task3011/Solution.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task37/task3714/Solution.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/4.JavaCollections/src/com/codegym/task/task33/task3310/strategy/Entry.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task06/task0616/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0827/Solution.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0827/Solution.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0827/Solution.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task08/task0827/Solution.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0902/Solution.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0902/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0902/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0902/Solution.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0902/Solution.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0902/Solution.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0911/Solution.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0911/Solution.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="280" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task09/task0911/Solution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="281" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1001/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1001/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1001/Solution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1001/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1001/Solution.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1001/Solution.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1002/Solution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1002/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1003/Solution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1003/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1003/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1003/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1004/Solution.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1004/Solution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1005/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1005/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1005/Solution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1005/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/3.JavaMultithreading/src/com/codegym/task/task21/task2101/Solution.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/1.JavaSyntax/src/fr/codegym/task/task10/task1002/Solution.java</url>
+          <line>7</line>
+          <properties class="fr.codegym.task.task10.task1002.Solution" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="grandMere" language="JAVA" />
+        <watch expression="a" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CodeGymTasks$Solution__3_.ic" NAME="Solution (3) Coverage Results" MODIFIED="1599730712255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.codegym.task.task32.task3207.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CodeGymTasks$Solution__4_.ic" NAME="Solution (4) Coverage Results" MODIFIED="1598122424735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fr.codegym.task.task15.task1526.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+taskKey="fr.codegym.task.task18.task1828"\n\nTarifs 2
+
+CrUD pour un tableau dans un fichier
+Lis un fichier pour les opérations CrUD depuis la console.
+Le programme fonctionne avec un des ensembles d'arguments suivants :
+-u id nomProduit prix quantité
+-d id
+Valeurs des arguments :
+où id est composé de 8 caractères
+nomProduit est composé de 30 caractères
+prix est composé de 8 caractères
+quantité est composé de 4 caractères
+-u met à jour les données du produit avec l'id spécifié
+-d effectue la suppression physique du produit avec l'id spécifié (toutes les données relatives à l'id passé)
+Les données du fichier sont stockées dans l'ordre suivant (sans espaces de séparation) :
+id nomProduit prix quantité
+Chaque champ de données est complété par des espaces jusqu'à sa longueur définie
+Exemple :
+19847   Short bain, bleu              159.00  12  
+198479  Short bain, noir avec imprimés173.00  17  
+19847983Veste snowboard avec réflexion10173.991234
+
+
+Requirements:
+1.	Le programme doit lire un nom de fichier pour les op&eacute;rations CrUD depuis la console.
+2.	Lorsque tu ex&eacute;cutes le programme sans arguments, la liste de produits doit rester inchang&eacute;e.
+3.	Lorsque le programme est lanc&eacute; avec les arguments &laquo;&nbsp;-u id nomProduit prix quantit&eacute;&nbsp;&raquo;, les informations produit dans le fichier doivent &ecirc;tre mises &agrave; jour.
+4.	Quand le programme est lanc&eacute; avec les arguments &laquo;&nbsp;-d id&nbsp;&raquo;, la ligne pour le produit avec l&#39;id sp&eacute;cifi&eacute; doit &ecirc;tre supprim&eacute;e du fichier.
+5.	Les flux de fichier doivent &ecirc;tre ferm&eacute;s.
+
+

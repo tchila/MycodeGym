@@ -1,0 +1,21 @@
+taskKey="fr.codegym.task.task14.task1417"\n\nDevises
+
+Développe la capacité du programme à manipuler les devises.
+1. Crée un champ private double amount dans la classe abstraite Money.
+2. Crée un getter public pour le champ amount (public double getAmount()) pour que tu puisses y accéder en dehors de la classe Money.
+3. Dans des fichiers séparés, crée les classes Euro, Ruble et USD, qui doivent descendre de la classe Money.
+4. Dans les classes Euro, Ruble et USD, implémente la méthode getCurrencyName, qui renverra le nom abrégé de la devise (String) (EUR, RUB, USD).
+5. Dans les classes Euro, Ruble et USD, implémente un constructeur public qui prend un argument et appelle le constructeur de la classe de base (super) avec cet argument.
+6. Remplis la liste allMoney avec tous les objets de devise possibles conformément aux conditions de la mission et aux fonctionnalités du programme.
+
+
+Requirements:
+1.	La classe Money doit avoir un champ private double amount.
+2.	La classe Money doit impl&eacute;menter un constructeur public avec un param&egrave;tre double, qui d&eacute;finit la variable amount sur le param&egrave;tre pass&eacute;.
+3.	La classe Money doit impl&eacute;menter une m&eacute;thode public getAmount qui renvoie la valeur du champ amount.
+4.	Les classes Euro, Ruble et USD doivent descendre de la classe Money et se trouver dans des fichiers s&eacute;par&eacute;s.
+5.	Les classes Euro, Ruble et USD doivent impl&eacute;menter la m&eacute;thode getCurrencyName.
+6.	La m&eacute;thode getCurrencyName doit renvoyer le nom abr&eacute;g&eacute; de la devise correspondante (String).
+7.	Les classes Euro, Ruble et USD doivent impl&eacute;menter un constructeur public avec un param&egrave;tre double. Ce constructeur doit d&eacute;finir la valeur du champ amount de la classe Money en appelant le constructeur de la classe parente avec le m&ecirc;me argument.
+
+
