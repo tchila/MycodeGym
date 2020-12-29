@@ -6,8 +6,6 @@ public class CarModel {
     private int speed;
     private int maxSpeed;
 
-
-
     public String getModel() {
         return model;
     }

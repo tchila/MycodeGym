@@ -1,6 +1,5 @@
 package com.codegym.task.task25.task2503;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -41,9 +40,6 @@ public enum Column implements Columnable {
                 }
             }
         }
-        for (int i = 0; i < realOrder.length; i++) {
-            System.out.println(realOrder[i]);
-        }
     }
 
     /**
@@ -54,35 +50,49 @@ public enum Column implements Columnable {
      */
     public static List<Column> getVisibleColumns() {
         List<Column> result = new LinkedList<>();
-        for (int i = 0; i < realOrder.length; i++) {
-            for (int j = 0; j < realOrder.length; j++) {
-                if (i == realOrder[j] && realOrder[j] != -1) {
-                    result.add(Column.values()[j]);
+        int nextIndex = 0;
+        boolean hasNextElement = true;
+        while (hasNextElement) {
+            hasNextElement = false;
+            for (int i = 0; i < realOrder.length; i++) {
+                if (realOrder[i] == nextIndex) {
+                    result.add(values()[i]);
+                    break;
+                }
+            }
+            for (int aRealOrder : realOrder) {
+                if (aRealOrder == nextIndex + 1) {
+                    hasNextElement = true;
+                    nextIndex++;
+                    break;
                 }
             }
         }
         return result;
     }
 
+
     @Override
     public String getColumnName() {
-        return this.columnName;
+        return columnName;
     }
 
     @Override
     public boolean isShown() {
-        return realOrder[this.ordinal()] != -1 ;
+        return realOrder != null && realOrder[ordinal()] != -1;
     }
 
     @Override
     public void hide() {
-        int num = realOrder[ordinal()];
+        int oldOrder = realOrder[ordinal()];
+        if (oldOrder == -1) return; //already hidden
         realOrder[ordinal()] = -1;
+        //reorder
         for (int i = 0; i < realOrder.length; i++) {
-            if(realOrder[i] > num && realOrder[i] !=0 ){
-                realOrder[i]--;
+            int currentIndex = realOrder[i];
+            if (currentIndex != -1 && currentIndex > oldOrder) {
+                realOrder[i] -= 1;
             }
         }
-
     }
 }

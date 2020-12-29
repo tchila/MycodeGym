@@ -14,7 +14,7 @@ public class ProducerTask implements Runnable {
 
     public void run() {
         while (!stopped) {
-            synchronized (transferObject){
+            synchronized (transferObject) {
                 transferObject.put(i.incrementAndGet());
             }
         }

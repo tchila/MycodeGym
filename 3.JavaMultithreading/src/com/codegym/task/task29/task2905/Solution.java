@@ -17,7 +17,7 @@ public class Solution {
     final int MAX_BATCH_SIZE = 100; // We'll pull out 100 messages each
 
     private Logger logger = Logger.getLogger(Solution.class.getName());
-    private BlockingQueue messageQueue = new LinkedBlockingQueue(); // This is where all the messages will be stored
+    private BlockingQueue messageQueue = new LinkedBlockingQueue();// This is where all the messages will be stored
 
     private BlockingQueue fakeDatabase = new LinkedBlockingQueue();
 
@@ -46,8 +46,8 @@ public class Solution {
         new Thread() {
             @Override
             public void run() {
-                for (int i = 0; i < 100000  ; i++) {
-                    messageQueue.add(String.valueOf(i-1));
+                for (int i = 0; i < 100000; i++) {
+                    messageQueue.add(String.valueOf(i));
                 }
             }
         }.start();
@@ -71,11 +71,10 @@ public class Solution {
                             batch.clear();
                             Thread.sleep(1);
                         } catch (Throwable e) {
-                            logger.log(Level.SEVERE, "Unable to persist batch", e);
+                            logger.log(Level.SEVERE, "Unable to persist a batch", e);
                         }
                     }
                 }
-
             }.start();
         }
     }

@@ -6,8 +6,8 @@ import java.util.List;
 public class Util {
     // Util works well with all Dog and Mouse objects.
     public static void printDialog(List<CanSpeak> pets) {
-        for (int i = 0; i < pets.size(); i++) {
-            System.out.println(pets.get(i).speak());
+        for (CanSpeak pet : pets) {
+            System.out.println(pet.speak());
         }
     }
 

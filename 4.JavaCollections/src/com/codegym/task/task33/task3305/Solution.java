@@ -11,6 +11,7 @@ import java.util.List;
 Using JSON to convert from one class to another
 
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException {
         ParkingLot parkingLot = new ParkingLot("Super ParkingLot", "San Francisco");

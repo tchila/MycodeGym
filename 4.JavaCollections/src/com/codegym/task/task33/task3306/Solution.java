@@ -12,6 +12,7 @@ import java.io.StringWriter;
 My first serialization into XML
 
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException, JAXBException {
         Cat cat = new Cat();
@@ -55,14 +56,15 @@ public class Solution {
         public String name;
     }
 
-    @XmlRootElement
     @XmlType(name = "cat")
+    @XmlRootElement
     public static class Cat extends Pet {
         public int age;
         public int weight;
     }
-    @XmlRootElement
+
     @XmlType(name = "dog")
+    @XmlRootElement
     public static class Dog extends Pet {
         public int age;
         public String owner;

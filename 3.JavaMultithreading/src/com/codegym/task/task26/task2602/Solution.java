@@ -7,6 +7,7 @@ import java.util.TreeSet;
 Think and you will succeed
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         Set<Soldier> soldiers = new TreeSet<>();
@@ -30,7 +31,7 @@ public class Solution {
 
         @Override
         public int compareTo(Soldier o) {
-            return o.height - this.height;
+            return o.height - height;
         }
     }
 }

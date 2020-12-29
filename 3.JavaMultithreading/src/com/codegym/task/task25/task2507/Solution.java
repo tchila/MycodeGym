@@ -8,8 +8,9 @@ import java.net.Socket;
 Work up a sweat!
 
 */
+
 public class Solution extends Thread {
-    private static final int BUFFER_SIZE = 2000;    // 2000 bytes
+    private static final int BUFFER_SIZE = 2000;    //2000 bytes
     private final Socket socket;
     private final InputStream in;
 
@@ -18,14 +19,12 @@ public class Solution extends Thread {
         this.in = socket.getInputStream();
     }
 
+    @Override
     public void interrupt() {
-        // Implement the logic here
         try {
-            in.close();
             socket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally {
+        } catch (IOException ignored) {
+        } finally {
             super.interrupt();
         }
     }
@@ -39,7 +38,7 @@ public class Solution extends Thread {
                     break;
                 } else {
                     if (count > 0) {
-                        // Process the buffer here
+                        //process buffer here
                     }
                 }
             }

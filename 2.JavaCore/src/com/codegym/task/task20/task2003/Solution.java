@@ -9,43 +9,48 @@ import java.util.Properties;
 Introducing properties
 
 */
+
 public class Solution {
     public static Map<String, String> properties = new HashMap<>();
-    public static Properties prop = new Properties();
-    public static String filName;
 
     public void fillInPropertiesMap() throws Exception {
-        BufferedReader conReader = new BufferedReader(new InputStreamReader(System.in));
-        filName = conReader.readLine();
-        conReader.close();
+        // Implement this method
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String filename = reader.readLine();
 
-        FileInputStream fileInputStream = new FileInputStream(Solution.filName);
-        load(fileInputStream);
-        fileInputStream.close();
+        FileInputStream in = new FileInputStream(filename);
+
+        load(in);
+
+        reader.close();
     }
 
     public void save(OutputStream outputStream) throws Exception {
-        prop.clear();
+        // Implement this method
+        Properties prop = new Properties();
+
         for (Map.Entry<String, String> pair : properties.entrySet()) {
-            prop.put(pair.getKey(), pair.getValue());
+            prop.setProperty(pair.getKey(), pair.getValue());
         }
 
-        prop.store(outputStream, "");
+        prop.store(outputStream, null);
+
+        outputStream.close();
+
     }
 
     public void load(InputStream inputStream) throws Exception {
+        // Implement this method
+        Properties prop = new Properties();
         prop.load(inputStream);
         for (Map.Entry<Object, Object> pair : prop.entrySet()) {
-            properties.put((String) pair.getKey(), (String) pair.getValue());
+            properties.put(pair.getKey().toString(), pair.getValue().toString());
         }
+
+        inputStream.close();
     }
 
-    public static void main(String[] args) throws Exception {
-        Solution solution = new Solution();
-        solution.fillInPropertiesMap();
+    public static void main(String[] args) {
 
-        FileOutputStream fileOutputStream = new FileOutputStream(Solution.filName);
-        solution.save(fileOutputStream);
-        fileOutputStream.close();
     }
 }

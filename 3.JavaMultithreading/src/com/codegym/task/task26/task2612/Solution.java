@@ -7,22 +7,21 @@ import java.util.concurrent.locks.ReentrantLock;
 The whole world is a comedy
 
 */
+
 public class Solution {
     private Lock lock = new ReentrantLock();
 
     public void someMethod() {
-       if(lock.tryLock()){
-           try {
-               actionIfLockIsFree();
-           }catch (Exception e){
-               lock.unlock();
-           }
-       }
-       else
-           actionIfLockIsBusy();
-        // Implement the logic here. Use the lock field
+        if (lock.tryLock()) {
+            try {
+                actionIfLockIsFree();
+            } finally {
+                lock.unlock();
+            }
+        } else {
+            actionIfLockIsBusy();
+        }
     }
-
     public void actionIfLockIsFree() {
     }
 

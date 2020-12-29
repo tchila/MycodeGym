@@ -4,24 +4,22 @@ import com.codegym.task.task37.task3708.cache.LRUCache;
 import com.codegym.task.task37.task3708.storage.Storage;
 
 public class CachingProxyRetriever implements Retriever {
-    private LRUCache<Long, Object> lruCache;
-    private OriginalRetriever originalRetriever;
-    private Storage storage;
-
-    public CachingProxyRetriever(Storage storage) {
-        this.storage = storage;
-        originalRetriever =  new OriginalRetriever(storage);
-        lruCache = new LRUCache<>(16);
-    }
+    LRUCache<Long, Object> cache = new LRUCache<>(10);
+    OriginalRetriever originalRetriever;
 
     @Override
     public Object retrieve(long id) {
-        Object object = lruCache.find(id);
-        if(object == null)
-        {
-            object = originalRetriever.retrieve(id);
-            lruCache.set(id, object);
+        Object result = cache.find(id);
+        if (result == null) {
+            Object o = originalRetriever.retrieve(id);
+            cache.set(id, o);
+            return o;
         }
-        return object;
+        System.out.println("Returning cached object!");
+        return result;
+    }
+
+    public CachingProxyRetriever(Storage storage) {
+        originalRetriever = new OriginalRetriever(storage);
     }
 }

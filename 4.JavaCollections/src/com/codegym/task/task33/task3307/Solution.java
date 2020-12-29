@@ -12,6 +12,7 @@ import java.io.StringReader;
 Deserializing an XML object
 
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException, JAXBException {
         String xmlData = "<cat><name>Missy</name><age>5</age><weight>4</weight></cat>";
@@ -21,8 +22,10 @@ public class Solution {
 
     public static <T> T convertFromXmlToNormal(String xmlData, Class<T> clazz) throws IOException, JAXBException {
         StringReader reader = new StringReader(xmlData);
-        JAXBContext context =  JAXBContext.newInstance(clazz);
+
+        JAXBContext context = JAXBContext.newInstance(clazz);
         Unmarshaller unmarshaller = context.createUnmarshaller();
+
         return (T) unmarshaller.unmarshal(reader);
     }
 

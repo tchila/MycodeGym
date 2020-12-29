@@ -9,6 +9,7 @@ import java.util.List;
 Phantom references
 
 */
+
 public class Solution {
     public static Helper helper = new Helper();
 
@@ -76,10 +77,9 @@ public class Solution {
         }
 
         public List<PhantomReference<Monkey>> getPopulatedList() {
-            List<PhantomReference<Monkey>> list = new ArrayList<PhantomReference<Monkey>>();
+            List<PhantomReference<Monkey>> list = new ArrayList<>();
             for (int i = 0; i < 200; i++) {
-                Monkey monkey = new Monkey();
-                list.add(new PhantomReference<>(monkey, getQueue()));
+                list.add(new PhantomReference<>(new Monkey(), helper.getQueue()));
             }
             return list;
         }

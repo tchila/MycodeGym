@@ -4,6 +4,7 @@ package com.codegym.task.task25.task2508;
 No goofing off
 
 */
+
 public class Solution
 {
     /*

@@ -2,17 +2,18 @@ package com.codegym.task.task32.task3205;
 
 import java.lang.reflect.Proxy;
 
-/*
+/* 
 Creating a proxy object
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         SomeInterfaceWithMethods obj = getProxy();
         obj.stringMethodWithoutArgs();
         obj.voidMethodWithIntArg(1);
 
-        /* Expected output:
+        /* expected output
         stringMethodWithoutArgs in
         inside stringMethodWithoutArgs
         stringMethodWithoutArgs out
@@ -24,14 +25,12 @@ public class Solution {
     }
 
     public static SomeInterfaceWithMethods getProxy() {
-        SomeInterfaceWithMethods someInterfaceWithMethods = new SomeInterfaceWithMethodsImpl();
+        SomeInterfaceWithMethods original = new SomeInterfaceWithMethodsImpl();
 
-        ClassLoader classLoader =  someInterfaceWithMethods.getClass().getClassLoader();
+        ClassLoader classLoader = SomeInterfaceWithMethods.class.getClassLoader();
+        Class[] interfaces = {SomeInterfaceWithMethods.class};
+        CustomInvocationHandler handler = new CustomInvocationHandler(original);
 
-        Class[] interfaces = someInterfaceWithMethods.getClass().getInterfaces();
-
-        SomeInterfaceWithMethods someInterfaceWithMethods1 =  (SomeInterfaceWithMethods) Proxy.
-                newProxyInstance(classLoader, interfaces, new CustomInvocationHandler(someInterfaceWithMethods));
-        return someInterfaceWithMethods1;
+        return (SomeInterfaceWithMethods) Proxy.newProxyInstance(classLoader, interfaces, handler);
     }
 }

@@ -1,38 +1,32 @@
 package com.codegym.task.task33.task3310.strategy;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class HashMapStorageStrategy implements StorageStrategy {
-    private HashMap<Long, String> data =new HashMap<>();
-    @Override
+    private  HashMap<Long, String> data = new HashMap<>();
+
     public boolean containsKey(Long key) {
         return data.containsKey(key);
     }
 
-    @Override
     public boolean containsValue(String value) {
-        return data.containsValue(value);
+        return  data.containsValue(value);
     }
 
-    @Override
     public void put(Long key, String value) {
-        data.put(key,value);
+        data.put(key, value);
     }
 
-    @Override
-    public Long getKey(String value) {
-        Long key = null;
-        for (Map.Entry<Long, String> entry : data.entrySet()) {
-            if(entry.getValue().equals(value))
-                  key = entry.getKey();
-        }
-
-        return key;
-    }
-
-    @Override
     public String getValue(Long key) {
         return data.get(key);
+    }
+
+    public Long getKey(String value) {
+        for(Long key : data.keySet()) {
+            if (data.get(key).equals(value)) {
+                return key;
+            }
+        }
+        return null;
     }
 }

@@ -9,26 +9,26 @@ Using RandomAccessFile
 */
 
 public class Solution {
-    public static void main(String... args) throws IOException {
-        String fileName = args[0];
-        int number  = Integer.parseInt(args[1]);
-        String text = args[2];
-        int length = text.length();
+    public static void main(String... args) {
+        try (RandomAccessFile raf = new RandomAccessFile(args[0], "rw")) {
+            long number = Long.parseLong(args[1]);
+            String text = args[2];
+            long fileLength = raf.length();
 
-        byte[] buffer = new byte[length];
+            raf.seek(number);
+            byte readBytes[] = new byte[text.length()];
+            raf.read(readBytes, 0, text.length());
 
-        RandomAccessFile raf = new RandomAccessFile(fileName, "rw");
-        raf.seek(number);
-        raf.read(buffer, 0, length);
-        String line = new String(buffer);
-        raf.seek(raf.length());
+            String readString = new String(readBytes);
 
-        if(text.equals(line)) {
-           raf.write("true".getBytes());
-        }else {
-            raf.write("false".getBytes());
-
+            raf.seek(fileLength);
+            if (readString.equals(text)) {
+                raf.write("true".getBytes());
+            } else {
+                raf.write("false".getBytes());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        raf.close();
     }
 }

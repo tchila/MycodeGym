@@ -3,7 +3,6 @@ package com.codegym.task.task40.task4001;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -23,11 +22,12 @@ public class Solution {
 
         connection.setRequestMethod("POST");
         connection.setRequestProperty("User-Agent", "Mozilla/5.0");
-        connection.setDoOutput(true);
 
-        OutputStream outputStream = connection.getOutputStream();
-        outputStream.write(urlParameters.getBytes());
-        outputStream.flush();
+        connection.setDoOutput(true);
+        DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
+        wr.writeBytes(urlParameters);
+        wr.flush();
+        wr.close();
 
         int responseCode = connection.getResponseCode();
         System.out.println("Response Code: " + responseCode);
@@ -42,7 +42,5 @@ public class Solution {
         bufferedReader.close();
 
         System.out.println("Response: " + response.toString());
-
-
     }
 }

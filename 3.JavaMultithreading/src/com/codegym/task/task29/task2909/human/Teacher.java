@@ -1,17 +1,13 @@
 package com.codegym.task.task29.task2909.human;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Teacher extends UniversityPerson {
+
     private int numberOfStudents;
 
     public Teacher(String name, int age, int numberOfStudents) {
-        super(name,age);
+        super(name, age);
         this.numberOfStudents = numberOfStudents;
     }
-
-
 
     public void live() {
         teach();
@@ -20,8 +16,7 @@ public class Teacher extends UniversityPerson {
     public void teach() {
     }
 
-
-    public String getPosition(){
+    public String getPosition() {
         return "Teacher";
     }
 }

@@ -4,6 +4,7 @@ package com.codegym.task.task20.task2023;
 Making the right conclusion
 
 */
+
 public class Solution {
     public static void main(String[] s) {
         A a = new C();
@@ -39,7 +40,7 @@ public class Solution {
 
         public void method2() {
             System.out.println("C class, method2");
-            super.method1();
+            super.method1();     //+
         }
     }
 }

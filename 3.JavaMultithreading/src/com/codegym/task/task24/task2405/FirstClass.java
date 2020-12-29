@@ -1,6 +1,6 @@
 package com.codegym.task.task24.task2405;
 
-public abstract class FirstClass implements Action {     // First implementation
+public abstract class FirstClass implements Action {     //first implementation
 
     protected FirstClass() {
         Solution.actionObjectCount++;

@@ -1,7 +1,6 @@
 package com.codegym.task.task37.task3706;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /* 
@@ -17,8 +16,7 @@ public class Solution {
     }
 
     public static Number[] getData() {
-        Number[] res = new Integer[0];
-        return res;
+        return new Number[]{};
     }
 
     public static void addDataToList(List<Number> list, Number... data) {

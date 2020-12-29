@@ -1,6 +1,4 @@
-package com.codegym.task.task3913;
-
-import com.codegym.task.task39.task3913.LogParser;
+package com.codegym.task.task39.task3913;
 
 import java.nio.file.Paths;
 import java.util.Date;

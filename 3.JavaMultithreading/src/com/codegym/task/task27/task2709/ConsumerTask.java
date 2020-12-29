@@ -11,7 +11,7 @@ public class ConsumerTask implements Runnable {
 
     public void run() {
         while (!stopped) {
-            synchronized (transferObject){
+            synchronized (transferObject) {
                 transferObject.get();
             }
         }

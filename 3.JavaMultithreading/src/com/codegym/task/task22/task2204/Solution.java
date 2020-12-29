@@ -6,6 +6,7 @@ import java.util.Locale;
 String formatting
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(String.format(Locale.ENGLISH, getFormattedString(), 20.0 / 7.0, 10.0 / 3.0));

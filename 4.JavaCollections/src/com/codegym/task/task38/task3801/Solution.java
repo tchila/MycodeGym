@@ -15,7 +15,8 @@ public class Solution {
             } catch (NameIsEmptyException e) {
                 System.out.println("Error: The name is empty");
             } catch (Exception e) {
-                System.out.println(e.toString());}
+                System.out.println(e.toString());
+            }
         }
     }
 }

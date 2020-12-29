@@ -5,48 +5,47 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.stream.Stream;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 
 /* 
 What's in the folder?
 
 */
-public class Solution extends SimpleFileVisitor<Path> {
-    public static int fileCount = 0;
-    public static int dirCount = 0;
-    public static long totalSize = 0;
 
-    @Override
-    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-        if(Files.isRegularFile(file)){
-            fileCount++;
-            totalSize+=attrs.size();
-        }
-
-        return FileVisitResult.CONTINUE;
-    }
-
-    @Override
-    public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-        dirCount++;
-        return super.postVisitDirectory(dir, exc);
-    }
+public class Solution {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String s = bufferedReader.readLine();
-        bufferedReader.close();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String dirName = reader.readLine();
 
-        Path path = Paths.get(s);
-        if(Files.isDirectory(path)) {
-            Files.walkFileTree(path,new Solution());
-            System.out.println("Total folders: " + (dirCount -1));
-            System.out.println("Total files: " + fileCount);
-            System.out.println("Total size: " + totalSize);
+        Path directory = Paths.get(dirName);
 
-        }else{
-            System.out.println(path.toString() + " is not a folder");
-            return;
+        if (!Files.isDirectory(directory)) {
+            System.out.println(directory.toString() + " is not a folder");
+        } else {
+            AtomicInteger folderCounter = new AtomicInteger();
+            AtomicInteger fileCounter = new AtomicInteger();
+            AtomicLong sizeCounter = new AtomicLong();
+
+            Files.walkFileTree(directory, new SimpleFileVisitor<Path>() {
+                @Override
+                public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+                    if (!dir.equals(directory)) folderCounter.incrementAndGet();
+                    return FileVisitResult.CONTINUE;
+                }
+
+                @Override
+                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                    fileCounter.incrementAndGet();
+                    sizeCounter.addAndGet(attrs.size());
+                    return FileVisitResult.CONTINUE;
+                }
+            });
+
+            System.out.println("Total folders: " + folderCounter.get());
+            System.out.println("Total files: " + fileCounter.get());
+            System.out.println("Total size: " + sizeCounter.get() + " bytes");
         }
     }
 }

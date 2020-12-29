@@ -6,6 +6,6 @@ public class CabinBoy extends AbstractCrewMember {
     }
 
     protected void doJob(String request) {
-        System.out.println("Even the cabin boy can handle this request: " + request);
+        System.out.println("Even the cabin boy can handle this request " + request);
     }
 }

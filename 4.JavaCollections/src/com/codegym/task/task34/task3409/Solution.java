@@ -11,6 +11,7 @@ import java.util.Properties;
 Setting up a logger
 
 */
+
 public class Solution {
     public static void main(String args[]) throws IOException {
         String logProperties = "4.JavaCollections/src/" + Solution.class.getPackage().getName().replaceAll("[.]", "/") + "/log4j.properties";

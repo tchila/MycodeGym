@@ -5,7 +5,8 @@ import java.security.SecureRandom;
 
 public class Helper {
     public static String generateRandomString() {
-        return new BigInteger(130, new SecureRandom()).toString (36);
+        SecureRandom random = new SecureRandom();
+        return new BigInteger(130, random).toString(32);
     }
 
     public static void printMessage(String message) {

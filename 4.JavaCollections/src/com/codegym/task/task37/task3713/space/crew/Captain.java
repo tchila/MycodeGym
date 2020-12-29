@@ -6,6 +6,6 @@ public class Captain extends AbstractCrewMember {
     }
 
     protected void doJob(String request) {
-        System.out.println("Only the captain can handle this request: " + request + ". Let's do this!");
+        System.out.println("Only the captain can handle this request " + request + ". Let's do this!");
     }
 }

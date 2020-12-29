@@ -9,16 +9,16 @@ import java.awt.*;
 
 public class TextEditMenuListener implements MenuListener {
     private View view;
-
     public TextEditMenuListener(View view) {
         this.view = view;
     }
 
     @Override
-    public void menuSelected(MenuEvent e) {
-        JMenu source = (JMenu) e.getSource();
-        for (Component menuComponent : source.getMenuComponents()) {
-            menuComponent.setEnabled(view.isHtmlTabSelected());
+    public void menuSelected(MenuEvent menuEvent) {
+        JMenu source = (JMenu) menuEvent.getSource();
+        Component[] menuComponents = source.getMenuComponents();
+        for (Component component : menuComponents) {
+            component.setEnabled(view.isHtmlTabSelected());
         }
     }
 

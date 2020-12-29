@@ -2,9 +2,13 @@ package com.codegym.task.task39.task3913;
 
 import com.codegym.task.task39.task3913.query.*;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -13,87 +17,14 @@ import java.util.regex.Pattern;
 
 public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
     private Path logDir;
+    private List<LogEntity> logEntities = new ArrayList<>();
+    private DateFormat simpleDateFormat = new SimpleDateFormat("d.M.yyyy H:m:s");
+
     public LogParser(Path logDir) {
         this.logDir = logDir;
-    }
-    private Set<String> getIpSet(Object recordField, Date after, Date before) {
-        Set<String> ipSet = new HashSet<>();
-        for (LogRecord record : getParsedRecords(logDir)) {
-            if (isDateInside(after, before, record.getDate()) && isFieldMatch(recordField, record)) {
-                ipSet.add(record.getIp());
-            }
-        }
-        return ipSet;
+        readLogs();
     }
 
-    private boolean isFieldMatch(Object recordField, LogRecord record) {
-        boolean criteria = false;
-        if (recordField == null)
-            return true;
-        if (recordField instanceof String)
-            criteria = record.getUser().equals(recordField);
-        else if (recordField instanceof Event)
-            criteria = record.getEvent().equals(recordField);
-        else if (recordField instanceof Status)
-            criteria = record.getStatus().equals(recordField);
-        return criteria;
-    }
-
-    private boolean isFieldMatch(String field, String value, LogRecord record) throws ParseException {
-        boolean criteria = false;
-        if (field == null) return true;
-        if (value == null) return false;
-        switch (field) {
-            case "ip": {
-                criteria = record.getIp().equals(value);
-                break;
-            }
-            case "user": {
-                criteria = record.getUser().equals(value);
-                break;
-            }
-            case "date": {
-                criteria = record.getDate().equals(new SimpleDateFormat("d.M.yyyy H:m:s").parse(value));
-                break;
-            }
-            case "event": {
-                criteria = record.getEvent().equals(Event.valueOf(value));
-                break;
-            }
-            case "status": {
-                criteria = record.getStatus().equals(Status.valueOf(value));
-                break;
-            }
-        }
-        return criteria;
-    }
-
-    private boolean isDateInside(Date after, Date before, Date currentDate) {
-        if (after != null) {
-            if (currentDate.getTime() <= after.getTime())
-                return false;
-        }
-        if (before != null) {
-            if (currentDate.getTime() >= before.getTime())
-                return false;
-        }
-        return true;
-    }
-
-    private List<LogRecord> getParsedRecords(Path logDir) {
-        List<LogRecord> recordList = new ArrayList<>();
-        try {
-            for (File file : logDir.toFile().listFiles()) {
-                if (file.isFile() && file.getName().toLowerCase().endsWith(".log"))
-                    for (String record : Files.readAllLines(file.toPath())) {
-                        recordList.add(new LogRecord(record));
-                    }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return recordList;
-    }
     @Override
     public int getNumberOfUniqueIPs(Date after, Date before) {
         return getUniqueIPs(after, before).size();
@@ -101,237 +32,327 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 
     @Override
     public Set<String> getUniqueIPs(Date after, Date before) {
-        return getIpSet(null, after, before);
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                result.add(logEntities.get(i).getIp());
+            }
+        }
+        return result;
     }
 
     @Override
     public Set<String> getIPsForUser(String user, Date after, Date before) {
-        return getIpSet(user, after, before);
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)) {
+                    result.add(logEntities.get(i).getIp());
+                }
+            }
+        }
+        return result;
     }
 
     @Override
     public Set<String> getIPsForEvent(Event event, Date after, Date before) {
-        return getIpSet(event, after, before);
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(event)) {
+                    result.add(logEntities.get(i).getIp());
+                }
+            }
+        }
+        return result;
     }
 
     @Override
     public Set<String> getIPsForStatus(Status status, Date after, Date before) {
-        return getIpSet(status, after, before);
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getStatus().equals(status)) {
+                    result.add(logEntities.get(i).getIp());
+                }
+            }
+        }
+        return result;
     }
 
     @Override
     public Set<String> getAllUsers() {
-        Set<String> users = new HashSet<>();
-        for (LogRecord record: getParsedRecords(logDir)){
-            if (!users.contains(record.getUser())) {
-                users.add(record.getUser());
-            }
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            result.add(logEntities.get(i).getUser());
         }
-        return users;
+        return result;
     }
 
-    private Set<String> getAllUsers(String field, String value, Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord record : getParsedRecords(logDir)) {
-            try {
-                if (isDateInside(after, before, record.getDate()) && isFieldMatch(field, value, record)) {
-                    users.add(record.getUser());
-                }
-            } catch (ParseException e) {
-                //e.printStackTrace();
-            }
-        }
-        return users;
-    }
     @Override
     public int getNumberOfUsers(Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord record : getParsedRecords(logDir)) {
-            if (isDateInside(after, before, record.getDate()) && !users.contains(record.getUser())) {
-                users.add(record.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                result.add(logEntities.get(i).getUser());
             }
         }
-        return users.size();
+        return result.size();
     }
 
     @Override
     public int getNumberOfUserEvents(String user, Date after, Date before) {
-        Set<Event> events = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getUser().equals(user))
-                events.add(logRecord.getEvent());
+        Set<Event> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)) {
+                    result.add(logEntities.get(i).getEvent());
+                }
+            }
         }
-
-        return events.size();
+        return result.size();
     }
 
     @Override
     public Set<String> getUsersForIP(String ip, Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getIp().equals(ip))
-                users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getIp().equals(ip)) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<String> getUsersWhoHaveLoggedIn(Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.LOGIN))
-                users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.LOGIN)) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<String> getUsersWhoHaveDownloadedPlugin(Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.DOWNLOAD_PLUGIN))
-                users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.DOWNLOAD_PLUGIN)) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<String> getUsersWhoHaveSentMessages(Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.SEND_MESSAGE))  users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.SEND_MESSAGE)) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<String> getUsersWhoHaveAttemptedTasks(Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.ATTEMPT_TASK))  users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.ATTEMPT_TASK)) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<String> getUsersWhoHaveAttemptedTasks(Date after, Date before, int task) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.ATTEMPT_TASK) &&
-                    logRecord.getTaskNumber() != null &&
-                    !logRecord.getTaskNumber().isEmpty() &&
-                    Integer.parseInt(logRecord.getTaskNumber()) == task)  users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.ATTEMPT_TASK)
+                        && logEntities.get(i).getEventAdditionalParameter() == task) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<String> getUsersWhoHaveCompletedTasks(Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.COMPLETE_TASK))  users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.COMPLETE_TASK)) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<String> getUsersWhoHaveCompletedTasks(Date after, Date before, int task) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.COMPLETE_TASK) &&
-                    logRecord.getTaskNumber() != null &&
-                    !logRecord.getTaskNumber().isEmpty() &&
-                    Integer.parseInt(logRecord.getTaskNumber()) == task)  users.add(logRecord.getUser());
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.COMPLETE_TASK)
+                        && logEntities.get(i).getEventAdditionalParameter() == task) {
+                    result.add(logEntities.get(i).getUser());
+                }
+            }
         }
-        return users;
+        return result;
     }
 
     @Override
     public Set<Date> getDatesForUserAndEvent(String user, Event event, Date after, Date before) {
-        Set<Date> dates = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getUser().equals(user) && logRecord.getEvent().equals(event)) dates.add(logRecord.getDate());
+        Set<Date> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)
+                        && logEntities.get(i).getEvent().equals(event)) {
+                    result.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return dates;
+        return result;
     }
 
     @Override
     public Set<Date> getDatesWhenSomethingFailed(Date after, Date before) {
-        Set<Date> dates = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getStatus().equals(Status.FAILED)) dates.add(logRecord.getDate());
+        Set<Date> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getStatus().equals(Status.FAILED)) {
+                    result.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return dates;
+        return result;
     }
 
     @Override
     public Set<Date> getDatesWhenErrorOccurred(Date after, Date before) {
-        Set<Date> dates = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getStatus().equals(Status.ERROR)) dates.add(logRecord.getDate());
+        Set<Date> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getStatus().equals(Status.ERROR)) {
+                    result.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return dates;
+        return result;
     }
 
     @Override
     public Date getDateWhenUserLoggedInFirstTime(String user, Date after, Date before) {
-        Date date = null;
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getUser().equals(user) && logRecord.getEvent().equals(Event.LOGIN))
-                if (date == null) date = logRecord.getDate(); else
-                    date = logRecord.getDate().compareTo(date) < 0 ? logRecord.getDate(): date;
+        Set<Date> set = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)
+                        && logEntities.get(i).getEvent().equals(Event.LOGIN)) {
+                    set.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return date;
+        if (set.size() == 0) {
+            return null;
+        }
+        Date minDate = set.iterator().next();
+        for (Date date : set) {
+            if (date.getTime() < minDate.getTime())
+                minDate = date;
+        }
+        return minDate;
     }
 
     @Override
     public Date getDateWhenUserAttemptedTask(String user, int task, Date after, Date before) {
-        Date date = null;
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) &&
-                    logRecord.getUser().equals(user) &&
-                    logRecord.getEvent().equals(Event.ATTEMPT_TASK) &&
-                    logRecord.getTaskNumber() != null &&
-                    !logRecord.getTaskNumber().isEmpty() &&
-                    Integer.parseInt(logRecord.getTaskNumber()) == task)
-                if (date == null) date = logRecord.getDate(); else
-                    date = logRecord.getDate().compareTo(date) < 0 ? logRecord.getDate(): date;
+        Set<Date> set = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)
+                        && logEntities.get(i).getEvent().equals(Event.ATTEMPT_TASK)
+                        && logEntities.get(i).getEventAdditionalParameter() == task) {
+                    set.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return date;
+        if (set.size() == 0) {
+            return null;
+        }
+        Date minDate = set.iterator().next();
+        for (Date date : set) {
+            if (date.getTime() < minDate.getTime())
+                minDate = date;
+        }
+        return minDate;
     }
 
     @Override
     public Date getDateWhenUserCompletedTask(String user, int task, Date after, Date before) {
-        Date date = null;
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) &&
-                    logRecord.getUser().equals(user) &&
-                    logRecord.getEvent().equals(Event.COMPLETE_TASK) &&
-                    logRecord.getTaskNumber() != null &&
-                    !logRecord.getTaskNumber().isEmpty() &&
-                    Integer.parseInt(logRecord.getTaskNumber()) == task)
-                if (date == null) date = logRecord.getDate(); else
-                    date = logRecord.getDate().compareTo(date) < 0 ? logRecord.getDate(): date;
+        Set<Date> set = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)
+                        && logEntities.get(i).getEvent().equals(Event.COMPLETE_TASK)
+                        && logEntities.get(i).getEventAdditionalParameter() == task) {
+                    set.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return date;
+        if (set.size() == 0) {
+            return null;
+        }
+        Date minDate = set.iterator().next();
+        for (Date date : set) {
+            if (date.getTime() < minDate.getTime())
+                minDate = date;
+        }
+        return minDate;
     }
 
     @Override
     public Set<Date> getDatesWhenUserSentMessages(String user, Date after, Date before) {
-        Set<Date> dates = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getEvent().equals(Event.SEND_MESSAGE) && logRecord.getUser().equals(user)) dates.add(logRecord.getDate());
+        Set<Date> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)
+                        && logEntities.get(i).getEvent().equals(Event.SEND_MESSAGE)) {
+                    result.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return dates;
+        return result;
     }
 
     @Override
     public Set<Date> getDatesWhenUserDownloadedPlugin(String user, Date after, Date before) {
-        Set<Date> dates = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getUser().equals(user) && logRecord.getEvent().equals(Event.DOWNLOAD_PLUGIN)) dates.add(logRecord.getDate());
+        Set<Date> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)
+                        && logEntities.get(i).getEvent().equals(Event.DOWNLOAD_PLUGIN)) {
+                    result.add(logEntities.get(i).getDate());
+                }
+            }
         }
-        return dates;
+        return result;
     }
 
     @Override
@@ -341,275 +362,419 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 
     @Override
     public Set<Event> getAllEvents(Date after, Date before) {
-        Set<Event> events = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()))
-                events.add(logRecord.getEvent());
+        Set<Event> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                result.add(logEntities.get(i).getEvent());
+            }
         }
-        return events;
+        return result;
     }
 
     @Override
     public Set<Event> getEventsForIP(String ip, Date after, Date before) {
-        Set<Event> events = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getIp().equals(ip)) events.add(logRecord.getEvent());
+        Set<Event> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getIp().equals(ip)) {
+                    result.add(logEntities.get(i).getEvent());
+                }
+            }
         }
-        return events;
+        return result;
     }
 
     @Override
     public Set<Event> getEventsForUser(String user, Date after, Date before) {
-        Set<Event> events = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getUser().equals(user))
-                events.add(logRecord.getEvent());
+        Set<Event> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getUser().equals(user)) {
+                    result.add(logEntities.get(i).getEvent());
+                }
+            }
         }
-        return events;
+        return result;
     }
 
     @Override
     public Set<Event> getFailedEvents(Date after, Date before) {
-        Set<Event> events = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getStatus().equals(Status.FAILED)) events.add(logRecord.getEvent());
+        Set<Event> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getStatus().equals(Status.FAILED)) {
+                    result.add(logEntities.get(i).getEvent());
+                }
+            }
         }
-        return events;
+        return result;
     }
 
     @Override
     public Set<Event> getErrorEvents(Date after, Date before) {
-        Set<Event> events = new HashSet<>();
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate()) && logRecord.getStatus().equals(Status.ERROR)) events.add(logRecord.getEvent());
+        Set<Event> result = new HashSet<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getStatus().equals(Status.ERROR)) {
+                    result.add(logEntities.get(i).getEvent());
+                }
+            }
         }
-        return events;
+        return result;
     }
 
     @Override
     public int getNumberOfAttemptsToCompleteTask(int task, Date after, Date before) {
-        int count = 0;
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate())
-                    && logRecord.getEvent().equals(Event.ATTEMPT_TASK)
-                    && logRecord.getTaskNumber() != null
-                    && !logRecord.getTaskNumber().isEmpty()
-                    && Integer.parseInt(logRecord.getTaskNumber()) == task) count++;
+        int quantity = 0;
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.ATTEMPT_TASK)
+                        && logEntities.get(i).getEventAdditionalParameter() == task) {
+                    quantity++;
+                }
+            }
         }
-        return count;
+        return quantity;
     }
 
     @Override
     public int getNumberOfSuccessfulAttemptsToCompleteTask(int task, Date after, Date before) {
-        int count = 0;
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-            if (isDateInside(after, before, logRecord.getDate())
-                    && logRecord.getEvent().equals(Event.COMPLETE_TASK)
-                    && logRecord.getTaskNumber() != null
-                    && !logRecord.getTaskNumber().isEmpty()
-                    && Integer.parseInt(logRecord.getTaskNumber()) == task) count++;
+        int quantity = 0;
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.COMPLETE_TASK)
+                        && logEntities.get(i).getEventAdditionalParameter() == task) {
+                    quantity++;
+                }
+            }
         }
-        return count;
+        return quantity;
     }
 
     @Override
     public Map<Integer, Integer> getAllAttemptedTasksAndNumberOfAttempts(Date after, Date before) {
-        Map<Integer, Integer> events = new HashMap<>();
-        Integer number;
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-
-            if (isDateInside(after, before, logRecord.getDate())
-                    && logRecord.getEvent().equals(Event.ATTEMPT_TASK)
-                    && logRecord.getTaskNumber() != null
-                    && !logRecord.getTaskNumber().isEmpty()) {
-                number = new Integer(logRecord.getTaskNumber());
-                if (events.containsKey(number))
-                    events.put(number, events.get(number) + 1);
-                else
-                    events.put(number, 1);
-
+        Map<Integer, Integer> result = new HashMap<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.ATTEMPT_TASK)) {
+                    int task = logEntities.get(i).getEventAdditionalParameter();
+                    Integer count = result.containsKey(task) ? result.get(task) : 0;
+                    result.put(task, count + 1);
+                }
             }
         }
-        return events;
+        return result;
     }
 
     @Override
     public Map<Integer, Integer> getAllCompletedTasksAndNumberOfCompletions(Date after, Date before) {
-        Map<Integer, Integer> events = new HashMap<>();
-        Integer number;
-        for (LogRecord logRecord: getParsedRecords(logDir)) {
-
-            if (isDateInside(after, before, logRecord.getDate())
-                    && logRecord.getEvent().equals(Event.COMPLETE_TASK)
-                    && logRecord.getTaskNumber() != null
-                    && !logRecord.getTaskNumber().isEmpty()) {
-                number = new Integer(logRecord.getTaskNumber());
-                if (events.containsKey(number))
-                    events.put(number, events.get(number) + 1);
-                else
-                    events.put(number, 1);
-
+        Map<Integer, Integer> result = new HashMap<>();
+        for (int i = 0; i < logEntities.size(); i++) {
+            if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                if (logEntities.get(i).getEvent().equals(Event.COMPLETE_TASK)) {
+                    int task = logEntities.get(i).getEventAdditionalParameter();
+                    Integer count = result.containsKey(task) ? result.get(task) : 0;
+                    result.put(task, count + 1);
+                }
             }
         }
-        return events;
+        return result;
     }
 
     @Override
     public Set<Object> execute(String query) {
-        Set<Object> res = new HashSet<>();
-        if (query == null || query.isEmpty()) return res;
-        Pattern p = Pattern.compile("get (ip|user|date|event|status)"
-                + "( for (ip|user|date|event|status) = \"(.*?)\")?"
-                + "( and date between \"(.*?)\" and \"(.*?)\")?");
-        Matcher m = p.matcher(query);
-        String field1 = null;
+        Set<Object> result = new HashSet<>();
+        String field1;
         String field2 = null;
         String value1 = null;
-        Date dateFrom = null;
-        Date dateTo = null;
-        if (m.find()) {
-            field1 = m.group(1);
-            field2 = m.group(3);
-            value1 = m.group(4);
-            String d1 = m.group(6);
-            String d2 = m.group(7);
-            try {
-                dateFrom = new SimpleDateFormat("d.M.yyyy H:m:s").parse(d1);
-            } catch (Exception e) {
-                dateFrom = null;
-            }
-            try {
-                dateTo = new SimpleDateFormat("d.M.yyyy H:m:s").parse(d2);
-            } catch (Exception e) {
-                dateTo = null;
-            }
-            switch (field1) {
-                case "ip": {
-                    res.addAll(getAllIps(field2, value1, dateFrom, dateTo));
-                    break;
-                }
-                case "user": {
-                    res.addAll(getAllUsers(field2, value1, dateFrom, dateTo));
-                    break;
-                }
-                case "date": {
-                    res.addAll(getAllDates(field2, value1, dateFrom, dateTo));
-                    break;
-                }
-                case "event": {
-                    res.addAll(getAllEvents(field2, value1, dateFrom, dateTo));
-                    break;
-                }
-                case "status": {
-                    res.addAll(getAllStatuses(field2, value1, dateFrom, dateTo));
-                    break;
+        Date after = null;
+        Date before = null;
+        Pattern pattern = Pattern.compile("get (ip|user|date|event|status)"
+                + "( for (ip|user|date|event|status) = \"(.*?)\")?"
+                + "( and date between \"(.*?)\" and \"(.*?)\")?");
+        Matcher matcher = pattern.matcher(query);
+        matcher.find();
+        field1 = matcher.group(1);
+        if (matcher.group(2) != null) {
+            field2 = matcher.group(3);
+            value1 = matcher.group(4);
+            if (matcher.group(5) != null) {
+                try {
+                    after = simpleDateFormat.parse(matcher.group(6));
+                    before = simpleDateFormat.parse(matcher.group(7));
+                } catch (ParseException e) {
                 }
             }
         }
-        return res;
+
+        if (field2 != null && value1 != null) {
+            for (int i = 0; i < logEntities.size(); i++) {
+                if (dateBetweenDates(logEntities.get(i).getDate(), after, before)) {
+                    if (field2.equals("date")) {
+                        try {
+                            if (logEntities.get(i).getDate().getTime() == simpleDateFormat.parse(value1).getTime()) {
+                                result.add(getCurrentValue(logEntities.get(i), field1));
+                            }
+                        } catch (ParseException e) {
+                        }
+                    } else {
+                        if (value1.equals(getCurrentValue(logEntities.get(i), field2).toString())) {
+                            result.add(getCurrentValue(logEntities.get(i), field1));
+                        }
+                    }
+                }
+            }
+        } else {
+            for (int i = 0; i < logEntities.size(); i++) {
+                result.add(getCurrentValue(logEntities.get(i), field1));
+            }
+        }
+
+        return result;
     }
 
-    private Set<String> getAllIps(String field, String value, Date after, Date before) {
-        Set<String> users = new HashSet<>();
-        for (LogRecord record : getParsedRecords(logDir)) {
-            try {
-                if (isDateInside(after, before, record.getDate()) && isFieldMatch(field, value, record)) {
-                    users.add(record.getIp());
+    private void readLogs() {
+        try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(logDir)) {
+            for (Path file : directoryStream) {
+                if (file.toString().toLowerCase().endsWith(".log")) {
+                    try (BufferedReader reader = new BufferedReader(new FileReader(file.toFile()))) {
+                        String line = null;
+                        while ((line = reader.readLine()) != null) {
+                            String[] params = line.split("\t");
+
+                            if (params.length != 5) {
+                                continue;
+                            }
+
+                            String ip = params[0];
+                            String user = params[1];
+                            Date date = readDate(params[2]);
+                            Event event = readEvent(params[3]);
+                            int eventAdditionalParameter = -1;
+                            if (event.equals(Event.ATTEMPT_TASK) || event.equals(Event.COMPLETE_TASK)) {
+                                eventAdditionalParameter = readAdditionalParameter(params[3]);
+                            }
+                            Status status = readStatus(params[4]);
+
+                            LogEntity logEntity = new LogEntity(ip, user, date, event, eventAdditionalParameter, status);
+                            logEntities.add(logEntity);
+                        }
+                    }
                 }
-            } catch (ParseException e) {
-                //e.printStackTrace();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return users;
     }
 
-    private Set<Event> getAllEvents(String field, String value, Date after, Date before) {
-        Set<Event> set = new HashSet<>();
-        for (LogRecord record : getParsedRecords(logDir)) {
-            try {
-                if (isDateInside(after, before, record.getDate()) && isFieldMatch(field, value, record)) {
-                    set.add(record.getEvent());
-                }
-            } catch (ParseException e) {
-                //e.printStackTrace();
-            }
+    private Date readDate(String lineToParse) {
+        Date date = null;
+        try {
+            date = simpleDateFormat.parse(lineToParse);
+        } catch (ParseException e) {
         }
-        return set;
-    }
-    private Set<Date> getAllDates(String field, String value, Date after, Date before) {
-        Set<Date> dates = new HashSet<>();
-        for (LogRecord record : getParsedRecords(logDir)) {
-            try {
-                if (isDateInside(after, before, record.getDate()) && isFieldMatch(field, value, record)) {
-                    dates.add(record.date);
-                }
-            } catch (ParseException e) {
-                //e.printStackTrace();
-            }
-        }
-        return dates;
-    }
-    private Set<Status> getAllStatuses(String field, String value, Date after, Date before) {
-        Set<Status> set = new HashSet<>();
-        for (LogRecord record : getParsedRecords(logDir)) {
-            try {
-                if (isDateInside(after, before, record.getDate()) && isFieldMatch(field, value, record)) {
-                    set.add(record.getStatus());
-                }
-            } catch (ParseException e) {
-                //e.printStackTrace();
-            }
-        }
-        return set;
+        return date;
     }
 
+    private Event readEvent(String lineToParse) {
+        Event event = null;
+        if (lineToParse.contains("ATTEMPT_TASK")) {
+            event = Event.ATTEMPT_TASK;
+        } else if (lineToParse.contains("COMPLETE_TASK")) {
+            event = Event.COMPLETE_TASK;
+        } else {
+            switch (lineToParse) {
+                case "LOGIN": {
+                    event = Event.LOGIN;
+                    break;
+                }
+                case "DOWNLOAD_PLUGIN": {
+                    event = Event.DOWNLOAD_PLUGIN;
+                    break;
+                }
+                case "SEND_MESSAGE": {
+                    event = Event.SEND_MESSAGE;
+                    break;
+                }
+            }
+        }
+        return event;
+    }
 
-    private class LogRecord {
+    private int readAdditionalParameter(String lineToParse) {
+        if (lineToParse.contains("ATTEMPT_TASK")) {
+            lineToParse = lineToParse.replace("ATTEMPT_TASK", "").replaceAll(" ", "");
+            return Integer.parseInt(lineToParse);
+        } else {
+            lineToParse = lineToParse.replace("COMPLETE_TASK", "").replaceAll(" ", "");
+            return Integer.parseInt(lineToParse);
+        }
+    }
+
+    private Status readStatus(String lineToParse) {
+        Status status = null;
+        switch (lineToParse) {
+            case "OK": {
+                status = Status.OK;
+                break;
+            }
+            case "FAILED": {
+                status = Status.FAILED;
+                break;
+            }
+            case "ERROR": {
+                status = Status.ERROR;
+                break;
+            }
+        }
+        return status;
+    }
+
+    private boolean dateBetweenDates(Date current, Date after, Date before) {
+        if (after == null) {
+            after = new Date(0);
+        }
+        if (before == null) {
+            before = new Date(Long.MAX_VALUE);
+        }
+        if (current.after(after) && current.before(before)) {
+            return true;
+        }
+        return false;
+    }
+
+    private Object getCurrentValue(LogEntity logEntity, String field) {
+        Object value = null;
+        switch (field) {
+            case "ip": {
+                Command method = new GetIpCommand(logEntity);
+                value = method.execute();
+                break;
+            }
+            case "user": {
+                Command method = new GetUserCommand(logEntity);
+                value = method.execute();
+                break;
+            }
+            case "date": {
+                Command method = new GetDateCommand(logEntity);
+                value = method.execute();
+                break;
+            }
+            case "event": {
+                Command method = new GetEventCommand(logEntity);
+                value = method.execute();
+                break;
+            }
+            case "status": {
+                Command method = new GetStatusCommand(logEntity);
+                value = method.execute();
+                break;
+            }
+        }
+        return value;
+    }
+
+    private class LogEntity {
         private String ip;
         private String user;
         private Date date;
         private Event event;
-        private String taskNumber;
+        private int eventAdditionalParameter;
         private Status status;
-        public LogRecord(String ip, String user, Date date, Event event, Status status) {
+
+        public LogEntity(String ip, String user, Date date, Event event, int eventAdditionalParameter, Status status) {
             this.ip = ip;
             this.user = user;
             this.date = date;
             this.event = event;
+            this.eventAdditionalParameter = eventAdditionalParameter;
             this.status = status;
         }
-        public LogRecord(String record) {
-            String[] strings = record.split("\t");
-            this.ip = strings[0].trim();
-            this.user = strings[1];
-            SimpleDateFormat dateFormat = new SimpleDateFormat("d.M.yyyy H:m:s");
-            try {
-                date = dateFormat.parse(strings[2]);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-            String eventAndParameter[] = strings[3].split(" ");
-            event = Event.valueOf(eventAndParameter[0]);
-            if (eventAndParameter.length > 1) taskNumber = eventAndParameter[1];
-            status = Status.valueOf(strings[4]);
-        }
+
         public String getIp() {
             return ip;
         }
+
         public String getUser() {
             return user;
         }
+
         public Date getDate() {
             return date;
         }
+
         public Event getEvent() {
             return event;
         }
-        public String getTaskNumber() {
-            return taskNumber;
+
+        public int getEventAdditionalParameter() {
+            return eventAdditionalParameter;
         }
+
         public Status getStatus() {
             return status;
+        }
+    }
+
+    private abstract class Command {
+        protected LogEntity logEntity;
+
+        abstract Object execute();
+    }
+
+    private class GetIpCommand extends Command {
+        public GetIpCommand(LogEntity logEntity) {
+            this.logEntity = logEntity;
+        }
+
+        @Override
+        Object execute() {
+            return logEntity.getIp();
+        }
+    }
+
+    private class GetUserCommand extends Command {
+        public GetUserCommand(LogEntity logEntity) {
+            this.logEntity = logEntity;
+        }
+
+        @Override
+        Object execute() {
+            return logEntity.getUser();
+        }
+    }
+
+    private class GetDateCommand extends Command {
+        public GetDateCommand(LogEntity logEntity) {
+            this.logEntity = logEntity;
+        }
+
+        @Override
+        Object execute() {
+            return logEntity.getDate();
+        }
+    }
+
+    private class GetEventCommand extends Command {
+        public GetEventCommand(LogEntity logEntity) {
+            this.logEntity = logEntity;
+        }
+
+        @Override
+        Object execute() {
+            return logEntity.getEvent();
+        }
+    }
+
+    private class GetStatusCommand extends Command {
+        public GetStatusCommand(LogEntity logEntity) {
+            this.logEntity = logEntity;
+        }
+
+        @Override
+        Object execute() {
+            return logEntity.getStatus();
         }
     }
 }

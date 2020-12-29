@@ -13,18 +13,18 @@ public class Solution {
 
     public static String getAllNumbersBetween(int a, int b) {
         StringBuilder sb = new StringBuilder();
-        sb.append(a); // add a
-   /*if (a == b){
-         return Integer.toString(a);
-   }*/
-        if (a > b)
-            for (int i = a - 1; i >= b; i--)// change here
-                sb.append(" " + i);
-        else if (a < b)
-            for (int i = a + 1; i <= b; i++) // change here
-                sb.append(" " + i);
-
-        return sb.toString(); // no need to trim
+        if (a < b) {
+            for (int i = a; i <= b; i++) {
+                sb.append(i);
+                sb.append(" ");
+            }
+        } else {
+            for (int i = a; i >= b; i--) {
+                sb.append(i);
+                sb.append(" ");
+            }
+        }
+        return sb.toString().trim();
     }
 
     public static void main(String[] args) {

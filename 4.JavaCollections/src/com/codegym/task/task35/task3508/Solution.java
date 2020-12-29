@@ -6,6 +6,7 @@ import java.util.List;
 extends vs super
 
 */
+
 public abstract class Solution {
     public abstract <T> void methodOne(List<T> destination, List<T> source);
 

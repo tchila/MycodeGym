@@ -1,11 +1,10 @@
 package com.codegym.task.task21.task2109;
 
-import java.util.Objects;
-
-/*
+/* 
 Prevent cloning
 
 */
+
 public class Solution {
     public static class A implements Cloneable {
         private int i;
@@ -25,17 +24,8 @@ public class Solution {
         }
 
         @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            A a = (A) o;
-            return i == a.i &&
-                    j == a.j;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(i, j);
+        protected Object clone() throws CloneNotSupportedException {
+            return super.clone();
         }
     }
 
@@ -55,20 +45,6 @@ public class Solution {
         protected Object clone() throws CloneNotSupportedException {
             throw new CloneNotSupportedException();
         }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            if (!super.equals(o)) return false;
-            B b = (B) o;
-            return Objects.equals(name, b.name);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(super.hashCode(), name);
-        }
     }
 
     public static class C extends B {
@@ -78,17 +54,7 @@ public class Solution {
 
         @Override
         protected Object clone() throws CloneNotSupportedException {
-            return new C(this.getI(), this.getJ(), this.getName());
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            return super.equals(o);
-        }
-
-        @Override
-        public int hashCode() {
-            return super.hashCode();
+            return new C(getI(), getJ(), getName());
         }
     }
 

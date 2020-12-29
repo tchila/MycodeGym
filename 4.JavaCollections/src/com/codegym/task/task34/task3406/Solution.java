@@ -1,6 +1,5 @@
 package com.codegym.task.task34.task3406;
 
-import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +8,7 @@ import java.util.List;
 Weak references
 
 */
+
 public class Solution {
     public static Helper helper = new Helper();
 
@@ -29,10 +29,7 @@ public class Solution {
         helper.startTime();
 
         Monkey monkey = new Monkey("George");
-
-
-        // Add a reference here
-        WeakReference<Monkey> reference = new WeakReference<Monkey>(monkey);
+        WeakReference<Monkey> reference = new WeakReference<>(monkey);        //Add reference here
 
         helper.callGC();
 

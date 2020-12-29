@@ -3,11 +3,6 @@ package com.codegym.task.task40.task4004;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Points in a polygon
-
-*/
-
 class Point {
     public int x;
     public int y;
@@ -17,6 +12,11 @@ class Point {
         this.y = y;
     }
 }
+
+/* 
+Points in a polygon
+
+*/
 
 public class Solution {
     public static void main(String[] args) {
@@ -31,35 +31,16 @@ public class Solution {
     }
 
     public static boolean isPointInPolygon(Point point, List<Point> polygon) {
-        //write your code here
-        int interesect_count  = 0;
-
-        for (int i = 0; i < polygon.size(); i++) {
-            Point p1 = polygon.get(i > 0 ? i-1 : polygon.size() -1);
-            Point p2 = polygon.get(i);
-            
-            if(isIntersect(point.x, point.y, p1,p2)) interesect_count++;
+        int i;
+        int j;
+        boolean result = false;
+        for (i = 0, j = polygon.size() - 1; i < polygon.size(); j = i++) {
+            if ((polygon.get(i).y > point.y) != (polygon.get(j).y > point.y) &&
+                    (point.x < (polygon.get(j).x - polygon.get(i).x) * (point.y - polygon.get(i).y) / (polygon.get(j).y - polygon.get(i).y) + polygon.get(i).x)) {
+                result = !result;
+            }
         }
-        return interesect_count % 2 == 1;
-
-    }
-
-    private static boolean isIntersect(int x, int y, Point p1, Point p2) {
-        int dy1 = p1.y - y;
-        int dy2 = p2.y - y;
-
-        if (Math.signum(dy1) == Math.signum(dy2)) return false;
-
-        int dx1 = p1.x - x;
-        int dx2 = p2.x - x;
-
-        if (dx1 >= 0 && dx2 >= 0) return true;
-        if (dx1 < 0 && dx2 < 0) return false;
-
-        int dx0 = dy1 * (p1.x - p2.x) / (p1.y - p2.y);
-
-        return dx0 <= dx1;
+        return result;
     }
 
 }
-

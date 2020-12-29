@@ -1,13 +1,13 @@
 package com.codegym.task.task21.task2104;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 /* 
 Equals and HashCode
 
 */
+
 public class Solution {
     private final String first, last;
 
@@ -19,17 +19,21 @@ public class Solution {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Solution))
-            return false;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Solution)) return false;
+
         Solution solution = (Solution) o;
-        return Objects.equals(first, solution.first) &&
-                Objects.equals(last, solution.last);
+
+        if (first != null ? !first.equals(solution.first) : solution.first != null) return false;
+        if (last != null ? !last.equals(solution.last) : solution.last != null) return false;
+
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(first, last);
+        int result = first != null ? first.hashCode() : 0;
+        result = 31 * result + (last != null ? last.hashCode() : 0);
+        return result;
     }
 
     public static void main(String[] args) {

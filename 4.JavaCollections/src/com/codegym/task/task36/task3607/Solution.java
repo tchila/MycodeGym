@@ -1,12 +1,11 @@
 package com.codegym.task.task36.task3607;
 
+import java.util.concurrent.DelayQueue;
 
 /* 
 Find the class by its description
 
 */
-
-import java.util.concurrent.DelayQueue;
 
 public class Solution {
     public static void main(String[] args) {

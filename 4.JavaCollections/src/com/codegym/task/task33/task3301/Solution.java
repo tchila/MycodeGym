@@ -11,19 +11,20 @@ import java.util.ArrayList;
 My first serialization into JSON
 
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException {
-        Cat cat = new Cat();
+        Cat cat = new Cat ();
         cat.name = "Missy";
         cat.age = 5;
         cat.weight = 3;
 
-        Dog dog = new Dog();
+        Dog dog = new Dog ();
         dog.name = "Killer";
         dog.age = 8;
         dog.owner = "Bill Jefferson";
 
-        ArrayList<Pet> pets = new ArrayList<>();
+        ArrayList<Pet> pets = new ArrayList();
         pets.add(cat);
         pets.add(dog);
 
@@ -37,26 +38,24 @@ public class Solution {
         ObjectMapper mapper = new ObjectMapper();
         mapper.writeValue(writer, object);
     }
-    @JsonAutoDetect
-    public static class Pet {
-       public String name;
 
-        public Pet() {
-        }
-    }
     @JsonAutoDetect
-    public static class Cat extends Pet {
+    public static class Pet
+    {
+        public String name;
+    }
+
+    @JsonAutoDetect
+    public static class Cat extends Pet
+    {
         public int age;
         public int weight;
-
-        public Cat() {
-        }
     }
+
     @JsonAutoDetect
-    public static class Dog extends Pet {
+    public static class Dog extends Pet
+    {
         public int age;
         public String owner;
-        public Dog() {
-        }
     }
 }

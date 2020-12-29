@@ -6,6 +6,7 @@ import java.util.Date;
 Date formatting
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         Date date = new Date();

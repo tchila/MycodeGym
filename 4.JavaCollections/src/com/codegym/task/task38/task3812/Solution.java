@@ -15,27 +15,26 @@ public class Solution {
     }
 
     public static boolean printFullyQualifiedNames(Class c) {
-        if(!c.isAnnotationPresent(PrepareMyTest.class))
-            return false;
-        else {
-            PrepareMyTest test = (PrepareMyTest) c.getAnnotation(PrepareMyTest.class);
-            for (String s : test.fullyQualifiedNames()) {
-                System.out.println(s);
+        try {
+            PrepareMyTest prepareMyTest = (PrepareMyTest) c.getAnnotation(PrepareMyTest.class);
+            for (String fullyQualifiedName : prepareMyTest.fullyQualifiedNames()) {
+                System.out.println(fullyQualifiedName);
             }
-            return true;
+        } catch (Exception e) {
+            return false;
         }
+        return true;
     }
 
     public static boolean printValues(Class c) {
-
-        if(!c.isAnnotationPresent(PrepareMyTest.class))
-            return false;
-        else {
-            PrepareMyTest test = (PrepareMyTest) c.getAnnotation(PrepareMyTest.class);
-            for (Class<?> s : test.value()) {
-                System.out.println(s.getSimpleName());
+        try {
+            PrepareMyTest prepareMyTest = (PrepareMyTest) c.getAnnotation(PrepareMyTest.class);
+            for (Class clazz : prepareMyTest.value()) {
+                System.out.println(clazz.getSimpleName());
             }
-            return true;
+        } catch (Exception e) {
+            return false;
         }
+        return true;
     }
 }

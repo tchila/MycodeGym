@@ -9,10 +9,10 @@ public class Human implements Alive {
     private int id;
     protected int age;
     protected String name;
+
     private List<Human> children = new ArrayList<>();
 
     protected int[] size;
-
 
     public static final int FIRST = 1;
     public static final int SECOND = 2;
@@ -28,27 +28,11 @@ public class Human implements Alive {
         return bloodType;
     }
 
-    public Human(String name , int age) {
+    public Human(String name, int age) {
         this.name = name;
         this.age = age;
         this.id = nextId;
         nextId++;
-    }
-
-    public void live() {
-
-    }
-    public List<Human> getChildren() {
-        return Collections.unmodifiableList(children);
-    }
-
-    public void addChild (Human humain ){
-        children.add(humain);
-    }
-
-    public void removeChild  (Human humain ){
-        children.remove(humain);
-
     }
 
     public int getAge() {
@@ -67,14 +51,8 @@ public class Human implements Alive {
         this.name = name;
     }
 
-    public String getPosition(){
-        return "Person";
+    public void live() {
     }
-
-    public void printData() {
-        System.out.println(getPosition()+": " + name);
-    }
-
 
     public int getId() {
         return id;
@@ -84,7 +62,27 @@ public class Human implements Alive {
         this.id = id;
     }
 
+    public List<Human> getChildren() {
+        return Collections.unmodifiableList(children);
+    }
+
+    public void addChild(Human child) {
+        children.add(child);
+    }
+
+    public void removeChild(Human child) {
+        children.remove(child);
+    }
+
     public void printSize() {
         System.out.println("Height: " + size[0] + " Weight: " + size[1]);
+    }
+
+    public String getPosition() {
+        return "Person";
+    }
+
+    public void printData() {
+        System.out.println(getPosition() + ": " + name);
     }
 }

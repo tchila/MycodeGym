@@ -14,7 +14,7 @@ public class Solution {
     public void doSomething(A a, B b, C c) {
         try {
             if (a != null && a.getName() != null) {
-                // Do nothing
+                //do nothing
             }
         } catch (NullPointerException e) {
             a = new A();
@@ -32,7 +32,7 @@ public class Solution {
         }
         try {
             if (b != null && b.getName() != null) {
-                // Do nothing
+                //do nothing
             }
         } catch (NullPointerException e) {
             b = new B();

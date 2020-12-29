@@ -1,6 +1,5 @@
 package com.codegym.task.task37.task3712;
 
-
 public class Basketball extends Game {
     public void prepareForTheGame() {
         System.out.println("Preparing for the basketball game...");

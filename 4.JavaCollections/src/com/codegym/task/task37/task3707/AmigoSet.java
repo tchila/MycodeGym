@@ -3,30 +3,25 @@ package com.codegym.task.task37.task3707;
 import java.io.Serializable;
 import java.util.*;
 
-public class AmigoSet<E> extends AbstractSet implements Serializable, Cloneable, Set {
+public class AmigoSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Serializable {
     private static final Object PRESENT = new Object();
-    private transient HashMap<E, Object> map ;
+    private transient HashMap<E, Object> map;
 
     public AmigoSet() {
         this.map = new HashMap<>();
     }
 
-    public AmigoSet(Collection<? extends E> collection ) {
-        this.map = new HashMap<>((int)Math.max(16,(Math.ceil(collection.size()/.75f))));
-        for (E e : collection) {
-            this.map.put(e, PRESENT);
-        }
+    public AmigoSet(Collection<? extends E> collection) {
+        this.map = new HashMap<>(Math.max((int) (collection.size() / .75f) + 1, 16));
+        addAll(collection);
+    }
+
+    public boolean add(E e) {
+        return map.put(e, PRESENT) == null;
     }
 
     @Override
-    public boolean add(Object o) {
-         return this.map.put((E) o, PRESENT) == null;
-
-
-    }
-
-    @Override
-    public Iterator iterator() {
+    public Iterator<E> iterator() {
         return null;
     }
 

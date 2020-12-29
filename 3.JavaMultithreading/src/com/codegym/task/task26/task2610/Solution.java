@@ -9,10 +9,10 @@ import java.util.concurrent.Executors;
 The world is boring for boring people
 
 */
+
 public class Solution {
 
     public static void main(String[] args) throws Exception {
-
         BlockingQueue queue = new ArrayBlockingQueue(32);
 
         Producer producer = new Producer(queue);
@@ -25,6 +25,5 @@ public class Solution {
         Thread.sleep(2000);
 
         executorService.shutdownNow();
-
     }
 }

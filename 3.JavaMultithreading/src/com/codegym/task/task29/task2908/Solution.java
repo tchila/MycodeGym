@@ -7,7 +7,7 @@ Caching
 
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
-        //////////////First example///////////////////
+        //////////////first example///////////////////
         Square square = new Square();
         CacheComputeManager<Integer, Integer> manager = new CacheComputeManager(square);
 
@@ -17,7 +17,7 @@ public class Solution {
             System.out.format("%d * %d = %d\n", j, j, result);
         }
 
-        /* Output
+        /* output
             0 will be cached  0 * 0 = 0
             1 will be cached  1 * 1 = 1
             2 will be cached  2 * 2 = 4
@@ -28,17 +28,17 @@ public class Solution {
             3 taken from cache  3 * 3 = 9
          */
 
-        //////////////Second example///////////////////
+        //////////////second example///////////////////
         Copyright copyright = new Copyright();
         CacheComputeManager manager2 = new CacheComputeManager(copyright);
         System.out.println(manager2.compute(new Copyright.Period(3012, 3147)));
         System.out.println(manager2.compute(new Copyright.Period(3012, 3146)));
         System.out.println(manager2.compute(new Copyright.Period(3012, 3147)));
 
-        /* Output
-        Period{firstYear=3012, secondYear=3147} will be cached  All rights reserved (C) 3012-3147
-        Period{firstYear=3012, secondYear=3146} will be cached  All rights reserved (C) 3012-3146
-        Period{firstYear=3012, secondYear=3147} taken from cache  All rights reserved (C) 3012-3147
+        /* output
+        Period{firstYear=3012, secondYear=3147} will be cached  All rights reserved (c) 3012-3147
+        Period{firstYear=3012, secondYear=3146} will be cached  All rights reserved (c) 3012-3146
+        Period{firstYear=3012, secondYear=3147} taken from cache  All rights reserved (c) 3012-3147
          */
     }
 }

@@ -12,7 +12,7 @@ Unequal exchange
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        
+
         System.out.println("Please enter a number: ");
 
         long number = Long.parseLong(reader.readLine());
@@ -24,13 +24,12 @@ public class Solution {
         System.out.println("The result of swapping bits is " + swapBits(number, i, j));
     }
 
-    public static long swapBits(long number, int i, int j)
-    {
-        long bit = (number >> i) & 1;
-        long bit1 = (number >> j) & 1;
-        if(bit == bit1)
-            return number;
-        int mask = (1<<i) | (1<<j);
-        return number ^ mask;
+
+    public static long swapBits(long number, int i, int j) {
+        if (((number >>> i) & 1) != ((number >>> j) & 1)) {
+            long bitMask = (1L << i) | (1L << j);
+            number ^= bitMask;
+        }
+        return number;
     }
 }

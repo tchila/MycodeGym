@@ -25,7 +25,6 @@ public class Connection implements Closeable {
 
     public void send(String message) throws Exception {
         out.writeObject(message);
-        out.flush();
     }
 
     public String receive() throws Exception {

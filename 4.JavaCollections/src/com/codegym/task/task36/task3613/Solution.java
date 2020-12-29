@@ -1,12 +1,11 @@
 package com.codegym.task.task36.task3613;
 
+import java.util.concurrent.SynchronousQueue;
 
 /* 
 Find the class by its description
 
 */
-
-import java.util.concurrent.SynchronousQueue;
 
 public class Solution {
     public static void main(String[] args) {

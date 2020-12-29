@@ -11,22 +11,18 @@ public class Solution {
     }
 
     public static int maxSquare(int[][] matrix) {
-
-        int m = matrix.length;
-        int n = matrix[0].length;
-        int h = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if(i*j == 0)
-                    continue;
-                if(matrix[i][j] == 1)
-                    matrix[i][j] = Math.min(matrix[i][j-1],Math.min(matrix[i-1][j],matrix[i-1][j-1]))+1;
-
-                if(matrix[i][j] > h){
-                    h = matrix[i][j];
+        int rows = matrix.length;
+        int cols = rows > 0 ? matrix[0].length : 0;
+        int[][] temp = new int[rows + 1][cols + 1];
+        int maxLen = 0;
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= cols; j++) {
+                if (matrix[i-1][j-1] == 1){
+                    temp[i][j] = Math.min(Math.min(temp[i][j - 1], temp[i - 1][j]), temp[i - 1][j - 1]) + 1;
+                    maxLen = Math.max(maxLen, temp[i][j]);
                 }
             }
         }
-        return h * h;
+        return maxLen * maxLen;
     }
 }

@@ -3,31 +3,30 @@ package com.codegym.task.task28.task2807;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /* 
 Introducing ThreadPoolExecutor
 
 */
+
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
-        // Add your code here
-        AtomicInteger atomicInteger = new AtomicInteger(1);
-
-        LinkedBlockingQueue<Runnable> blockingQueue = new LinkedBlockingQueue<>();
-        ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(3,5,1000,TimeUnit.MILLISECONDS,blockingQueue);
-        for (int i = 0; i < 10; i++) {
-            blockingQueue.add(new Runnable() {
-                @Override
+        LinkedBlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
+        for (int i = 1; i <= 10; i++) {
+            final int localId = i;
+            queue.add(new Runnable() {
                 public void run() {
-                    doExpensiveOperation(atomicInteger.getAndIncrement());
+                    doExpensiveOperation(localId);
                 }
             });
         }
-        poolExecutor.prestartAllCoreThreads();
-        poolExecutor.shutdown();
-        poolExecutor.awaitTermination(5,TimeUnit.SECONDS);
-        /* Example output
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(3, 5, 1000, TimeUnit.MILLISECONDS, queue);
+        executor.prestartAllCoreThreads();
+
+        executor.shutdown();
+        executor.awaitTermination(5, TimeUnit.SECONDS);
+
+        /* output example
 pool-1-thread-2, localId=2
 pool-1-thread-3, localId=3
 pool-1-thread-1, localId=1

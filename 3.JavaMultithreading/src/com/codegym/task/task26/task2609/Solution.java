@@ -4,6 +4,7 @@ package com.codegym.task.task26.task2609;
 Distributing items into baskets with their own lock
 
 */
+
 public class Solution {
     private static final int LOCK_COUNT = 12;
     private final Node[] buckets;

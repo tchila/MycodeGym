@@ -1,8 +1,6 @@
 package com.codegym.task.task30.task3003;
 
-import java.util.Objects;
-
-// This class shows how to call other constructors using 'this'
+//This class shows how to call other constructors using 'this'
 public class SharedItem {
     public String description;
     public int itemId;
@@ -33,8 +31,7 @@ public class SharedItem {
     }
 
     @Override
-    public String
-    toString() {
+    public String toString() {
         return "SharedItem{" +
                 "description='" + description + '\'' +
                 ", itemId=" + itemId +
@@ -44,14 +41,21 @@ public class SharedItem {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        SharedItem that = (SharedItem) o;
-        return itemId == that.itemId &&
-                Objects.equals(description, that.description);
+        if (!(o instanceof SharedItem)) return false;
+
+        SharedItem sharedItem = (SharedItem) o;
+
+        if (itemId != sharedItem.itemId) return false;
+        if (description != null ? !description.equals(sharedItem.description) : sharedItem.description != null)
+            return false;
+
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(description, itemId);
+        int result = description != null ? description.hashCode() : 0;
+        result = 31 * result + itemId;
+        return result;
     }
 }

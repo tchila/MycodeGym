@@ -3,6 +3,8 @@ package com.codegym.task.task37.task3714;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 /* 
 Ancient Rome
@@ -18,55 +20,24 @@ public class Solution {
     }
 
     public static int romanToInteger(String s) {
-        int res = 0;
+        Map<Character, Integer> romanMap = new HashMap<>();
+        romanMap.put('I', 1);
+        romanMap.put('V', 5);
+        romanMap.put('X', 10);
+        romanMap.put('L', 50);
+        romanMap.put('C', 100);
+        romanMap.put('D', 500);
+        romanMap.put('M', 1000);
 
-        for (int i = 0; i < s.length(); i++) {
-            // Getting value of symbol s[i]
-            int s1 = charToInt(s.charAt(i));
+        int sum = romanMap.get(s.charAt(s.length() - 1));
 
-            // Getting value of symbol s[i+1]
-            if (i + 1 < s.length()) {
-                int s2 = charToInt(s.charAt(i + 1));
-
-                // Comparing both values
-                if (s1 >= s2) {
-                    // Value of current symbol
-                    // is greater or equalto
-                    // the next symbol
-                    res = res + s1;
-                }
-                else {
-                    // Value of current symbol is
-                    // less than the next symbol
-                    res = res + s2 - s1;
-                    i++;
-                }
-            }
-            else {
-                res = res + s1;
-                i++;
+        for (int i = s.length() - 2; i >= 0; --i) {
+            if (romanMap.get(s.charAt(i)) < romanMap.get(s.charAt(i + 1))) {
+                sum -= romanMap.get(s.charAt(i));
+            } else {
+                sum += romanMap.get(s.charAt(i));
             }
         }
-
-        return res;
-    }
-
-    public static int charToInt(char r)
-    {
-        if (r == 'I')
-            return 1;
-        if (r == 'V')
-            return 5;
-        if (r == 'X')
-            return 10;
-        if (r == 'L')
-            return 50;
-        if (r == 'C')
-            return 100;
-        if (r == 'D')
-            return 500;
-        if (r == 'M')
-            return 1000;
-        return -1;
+        return sum;
     }
 }

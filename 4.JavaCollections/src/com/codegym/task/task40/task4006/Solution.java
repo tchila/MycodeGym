@@ -1,7 +1,8 @@
 package com.codegym.task.task40.task4006;
 
-import java.io.*;
-import java.net.HttpURLConnection;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.Socket;
 import java.net.URL;
 
@@ -12,29 +13,26 @@ Sending a GET request via a socket
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        getSite(new URL("http://codegym.cc/social.html"));
+        getSite(new URL("http://codegym.ru/social.html"));
     }
 
     public static void getSite(URL url) {
-        try(Socket socket = new Socket(url.getHost(), 80);
-            InputStream inputStream = socket.getInputStream();
-            OutputStream outputStream = socket.getOutputStream()) {
-            PrintWriter pw = new PrintWriter(outputStream);
-            pw.println("GET " + url.getPath());
-            pw.println("Host: " + url.getHost());
-            pw.println("User-Agent: Mozilla/5.0");
-            pw.println("Accept: text/html");
-            pw.println("Connection: close");
-            pw.println("");
-            pw.flush();
-            BufferedReader in = new BufferedReader(new InputStreamReader(inputStream));
-            String responseLine;
-            while ((responseLine = in.readLine()) != null) {
-                System.out.println(responseLine);
-            }
-            in.close();
+        String server = url.getHost();
+        String path = url.getPath();
 
-        } catch (IOException e) {
+        try (Socket socket = new Socket(server, 80);
+             PrintStream out = new PrintStream(socket.getOutputStream());
+             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
+
+            out.println("GET " + path);
+            out.println();
+
+            String line = in.readLine();
+            while (line != null) {
+                System.out.println(line);
+                line = in.readLine();
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

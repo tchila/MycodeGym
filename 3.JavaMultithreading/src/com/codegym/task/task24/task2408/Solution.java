@@ -6,6 +6,7 @@ import java.util.List;
 How to avoid Copy+Paste
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         List<Pet> pet = Util.getPets();

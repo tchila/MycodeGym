@@ -1,10 +1,7 @@
 package com.codegym.task.task35.task3507;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Constructor;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,6 +9,7 @@ import java.util.Set;
 What is ClassLoader?
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         Set<? extends Animal> allAnimals = getAllAnimals(Solution.class.getProtectionDomain().getCodeSource().getLocation().getPath() + Solution.class.getPackage().getName().replaceAll("[.]", "/") + "/data");
@@ -19,57 +17,85 @@ public class Solution {
     }
 
     public static Set<? extends Animal> getAllAnimals(String pathToAnimals) {
-        Set<Animal> set = new HashSet<>();
+        Set<Animal> result = new HashSet<>();
+        if (!pathToAnimals.endsWith("\\") && !pathToAnimals.endsWith("/"))
+            pathToAnimals = pathToAnimals + "/";
+        File dir = new File(pathToAnimals);
+        String[] pathes = dir.list(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir1, String name) {
+                return name.toLowerCase().endsWith(".class");
+            }
+        });
+        for (String p : pathes) {
+            try {
+                final String finalPathToAnimals = pathToAnimals;
+                boolean hasInterface = false;
+                boolean hasConstructor = false;
 
-        File[] list = new File(pathToAnimals).listFiles();
-        for (File file : list) {
-            if (file.isFile() && file.getName().endsWith(".class")) {
+                ClassLoader loader = new ClassLoader() {
+                    @Override
+                    public Class<?> findClass(String className) throws ClassNotFoundException {
+                        try {
+                            byte b[] = fetchClassFromFS(finalPathToAnimals + className + ".class");
+                            return defineClass(null, b, 0, b.length);
+                        } catch (FileNotFoundException ex) {
+                            return super.findClass(className);
+                        } catch (IOException ex) {
+                            return super.findClass(className);
+                        }
+                    }
+                };
+                String className = p.substring(0, p.length() - 6);
+                Class clazz = loader.loadClass(className);
 
-                String packageName = Solution.class.getPackage().getName() + ".data"; //some bed solution (Hardcore data)
-                Class clazz = new ClassFromPath().load(file.toPath(), packageName); //Loading class from path
-
-                int score = 0;
-                //find interface Animal
                 Class[] interfaces = clazz.getInterfaces();
-                for (Class interf : interfaces)
-                    if (interf.getSimpleName().toString().equals("Animal")) {
-                        score++;
+                for (Class i : interfaces) {
+                    if (Animal.class == i) {
+                        hasInterface = true;
                         break;
                     }
+                }
+                if (!hasInterface) continue;
 
-                //Find default constuctor
                 Constructor[] constructors = clazz.getConstructors();
-                for (Constructor constructor : constructors)
-                    if (constructor.getParameterCount() == 0) {
-                        score++;
+                for (Constructor c : constructors) {
+                    if (c.getParameterTypes().length == 0) {
+                        hasConstructor = true;
+                        break;
                     }
-
-                //if all ok, add to set
-                if (score == 2)
-                    try {
-                        Animal animal = (Animal) clazz.newInstance();
-                        set.add(animal);
-                    } catch (InstantiationException e) {
-                        e.printStackTrace();
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    }
+                }
+                if (!hasConstructor) continue;
+                result.add((Animal) clazz.newInstance());
+            } catch (Exception e) {
             }
         }
-
-        return set;
+        return result;
     }
 
-    public static class ClassFromPath extends ClassLoader {
-        public Class<?> load(Path path, String packageName) {
-            try {
-                String className = packageName + "." + path.getFileName().toString().replace(".class", "");
-                byte[] b = Files.readAllBytes(path);
-                return defineClass(className, b, 0, b.length); //here main magic
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return null;
+
+    private static byte[] fetchClassFromFS(String path) throws FileNotFoundException, IOException {
+        InputStream is = new FileInputStream(new File(path));
+        // Get the size of the file
+        long length = new File(path).length();
+        if (length > Integer.MAX_VALUE) {
+            // File is too large
         }
+        // Create the byte array to hold the data
+        byte[] bytes = new byte[(int) length];
+        // Read in the bytes
+        int offset = 0;
+        int numRead = 0;
+        while (offset < bytes.length
+                && (numRead = is.read(bytes, offset, bytes.length - offset)) >= 0) {
+            offset += numRead;
+        }
+        // Ensure all the bytes have been read in
+        if (offset < bytes.length) {
+            throw new IOException("Could not completely read file " + path);
+        }
+        // Close the input stream and return bytes
+        is.close();
+        return bytes;
     }
 }

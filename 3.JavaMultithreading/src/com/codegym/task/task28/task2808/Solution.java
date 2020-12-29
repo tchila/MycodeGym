@@ -1,6 +1,5 @@
 package com.codegym.task.task28.task2808;
 
-
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +9,7 @@ import java.util.concurrent.*;
 Mastering Callable
 
 */
+
 public class Solution {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         List<Future<String>> futures = new ArrayList<>();
@@ -27,7 +27,7 @@ public class Solution {
         executor.shutdown();
         executor.awaitTermination(10, TimeUnit.SECONDS);
 
-/* Output
+/* output
 500500
 501501
 502503
@@ -44,16 +44,15 @@ public class Solution {
     }
 
     public static Callable<String> getTask(final int i) {
-        Callable<String> callable = new Callable<String>() {
+        return new Callable<String>() {
             @Override
             public String call() throws Exception {
-                BigInteger k = new BigInteger("1");
-                for (int j = 2; j <= i; j++) {
-                    k=k.add(BigInteger.valueOf(j));
+                BigInteger sum = BigInteger.ZERO;
+                for (int j = 1; j<= i; j++) {
+                    sum = sum.add(BigInteger.valueOf(j));
                 }
-                return k.toString();
+                return sum.toString();
             }
         };
-        return callable;
     }
 }

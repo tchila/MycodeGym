@@ -6,8 +6,8 @@ import java.util.List;
 public class Util {
     // Util works well with all Cat and Mouse objects. But Mouse does differ from Cat.
     public static void printDialog(List<CanSpeak> pets) {
-        for (int i = 0; i < pets.size(); i++) {
-            System.out.println(pets.get(i).speak());
+        for (CanSpeak pet : pets) {
+            System.out.println(pet.speak());
         }
     }
 

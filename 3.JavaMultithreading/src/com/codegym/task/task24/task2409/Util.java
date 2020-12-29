@@ -15,76 +15,66 @@ public class Util {
     }
 
     public static List<Jeans> getAllJeans() {
-
-        //add your code here
-        abstract class  AbstractJeans implements Jeans{
-            private int id, length, size;
+        abstract class AbstractJeans implements Jeans {
+            private int id;
+            private int length;
+            private int size;
             private double price;
-            private String tm;
 
-            public AbstractJeans(int id, int length, int size, double price) {
+            protected AbstractJeans(int id, int length, int size, double price) {
                 this.id = id;
                 this.length = length;
                 this.size = size;
                 this.price = price;
             }
 
-            @Override
+            public abstract String getTM();
+
             public int getId() {
-                return this.id;
+                return id;
             }
 
-            @Override
             public int getLength() {
-                return this.length;
+                return length;
             }
 
-            @Override
-            public double getPrice() {
-                return this.price;
-            }
-
-            @Override
             public int getSize() {
-                return 0;
+                return size;
             }
 
-            @Override
-            public String getTM() {
-                return this.tm;
+            public double getPrice() {
+                return price;
             }
 
             @Override
             public String toString() {
-                return getTM()+"{" +
-                        "id=" + this.id +
-                        ", length=" + this.length +
-                        ", size=" + this.size +
-                        ", price=" + this.price +
-                        //", tm='" + this.tm + '\'' +
+                return getClass().getSimpleName() + "{" +
+                        "id=" + id +
+                        ", length=" + length +
+                        ", size=" + size +
+                        ", price=" + price +
                         '}';
             }
         }
-        class Levis extends AbstractJeans{
 
-            public Levis(int id, int length, int size, double price) {
+        class Levis extends AbstractJeans {
+            Levis(int id, int length, int size, double price) {
                 super(id, length, size, price);
             }
 
             @Override
             public String getTM() {
-                return Company.Levis.fullName;
+                return "Levis";
             }
         }
-
-        class Armani extends AbstractJeans{
-            public Armani(int id, int length, int size, double price) {
+        class Armani extends AbstractJeans {
+            Armani(int id, int length, int size, double price) {
                 super(id, length, size, price);
             }
 
             @Override
             public String getTM() {
-                return Company.Armani.fullName;
+                return "Armani";
             }
         }
 
@@ -105,6 +95,7 @@ public class Util {
                     jeans = new Armani(id, length, size, price);
                 } else {
                     jeans = new AbstractJeans(id, length, size, price) {
+                        @Override
                         public String getTM() {
                             return company.fullName;
                         }
@@ -119,8 +110,8 @@ public class Util {
         return jeansArray;
     }
 
-    static enum Company {
-        Levis ("Levis"),
+    enum Company {
+        Levis ("Levi's"),
         Armani("Armani"),
         Lucky("Lucky"),
         CalvinKlein("Calvin Klein");

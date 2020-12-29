@@ -15,76 +15,74 @@ public class MyMultiMap<K, V> extends HashMap<K, V> implements Cloneable, Serial
 
     @Override
     public int size() {
-        int somme = 0;
-        for (List<V> value : map.values()) {
-            somme+=value.size();
+        int size = 0;
+        for (List<V> list : map.values()) {
+            size += list.size();
         }
-        return somme;
+        return size;
     }
 
     @Override
     public V put(K key, V value) {
-        //write your code here
-        List<V> values = map.get(key);
-        V oldValue = null;
-
-        if (values == null) {
-            values = new ArrayList<>();
-
+        if (map.containsKey(key)) {
+            if (map.get(key).size() < repeatCount) {
+                map.get(key).add(value);
+                return map.get(key).get(map.get(key).size() - 2);
+            } else {
+                List<V> list = map.get(key);
+                list.add(value);
+                list.remove(0);
+                return list.get(repeatCount - 2);
+            }
         } else {
-            oldValue = values.get(values.size()-1);
-            if (values.size() == repeatCount)
-                values.remove(0);
+            map.put(key, new ArrayList<V>(){{add(value);}});
+            return null;
         }
-
-        values.add(value);
-        map.put(key, values);
-        return oldValue;
     }
 
     @Override
     public V remove(Object key) {
-        //write your code here
-        List<V> values = map.get(key);
-        if (values == null)
+        if (map.get(key) != null) {
+            List<V> list = map.get(key);
+            V temp = list.remove(0);
+            if (list.isEmpty()) {
+                map.remove(key);
+            }
+            return temp;
+        } else {
             return null;
-
-        V storeValue = values.get(0);
-        values.remove(0);
-
-        if (values.size() == 0)
-            map.remove(key);
-
-        return storeValue;
+        }
     }
 
     @Override
     public Set<K> keySet() {
-        //write your code here
         return map.keySet();
-
     }
 
     @Override
     public Collection<V> values() {
-        //write your code here
-        Collection<V> collection =new ArrayList<>();
-        for (List<V> value : map.values()) {
-            collection.addAll(value);
+        List<V> list = new ArrayList<>();
+        for (Map.Entry<K, List<V>> entry : map.entrySet()) {
+            list.addAll(entry.getValue());
         }
-        return collection;
+        return list;
     }
 
     @Override
     public boolean containsKey(Object key) {
-        //write your code here
-        return map.get(key) != null;
+        return map.containsKey(key);
     }
 
     @Override
     public boolean containsValue(Object value) {
-        //write your code here
-        return values().contains(value);
+        for (Map.Entry<K, List<V>> entry : map.entrySet()) {
+            for (V v : entry.getValue()) {
+                if (v.equals(value)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     @Override

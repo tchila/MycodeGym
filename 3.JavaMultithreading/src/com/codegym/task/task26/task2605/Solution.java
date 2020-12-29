@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 Diligence is the foundation of all work and the key to prosperity
 
 */
+
 public class Solution {
     private static ScheduledExecutorService interruptScheduledExecutor;
     private static Thread taskThread;

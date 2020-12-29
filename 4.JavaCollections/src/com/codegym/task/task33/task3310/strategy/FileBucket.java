@@ -7,58 +7,53 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class FileBucket {
-    Path path;
+    private Path path;
 
     public FileBucket() {
         try {
-            path = Files.createTempFile(null, null);
+            path = Files.createTempFile(Integer.toHexString(hashCode()), ".tmp");
+            path.toFile().deleteOnExit();
+
             Files.deleteIfExists(path);
             Files.createFile(path);
         } catch (IOException e) {
-            e.printStackTrace();
+
         }
-        path.toFile().deleteOnExit();
     }
 
-    public long getFileSize(){
+    public long getFileSize() {
         try {
             return Files.size(path);
         } catch (IOException e) {
-            e.printStackTrace();
+
         }
         return 0;
     }
 
-    public void putEntry(Entry entry){
-        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(Files.newOutputStream(path))) {
-            objectOutputStream.writeObject(entry);
-        } catch (IOException e) {
-            e.printStackTrace();
+    public void putEntry(Entry entry) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(path))) {
+            oos.writeObject(entry);
+        } catch (Exception e) {
+
         }
     }
 
-    public Entry getEntry(){
-        Entry entry = null;
+    public Entry getEntry() {
+        if (getFileSize() > 0) {
+            try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(path))) {
+                return (Entry) ois.readObject();
+            } catch (Exception e) {
 
-        if (getFileSize() <= 0)
-            return entry;
-
-        try (ObjectInputStream objectInputStream = new ObjectInputStream(Files.newInputStream(path))) {
-            entry = (Entry) objectInputStream.readObject();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            }
         }
-
-        return entry;
+        return null;
     }
 
     public void remove() {
         try {
             Files.delete(path);
         } catch (IOException e) {
-            e.printStackTrace();
+
         }
     }
 }

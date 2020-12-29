@@ -47,14 +47,14 @@ public abstract class BaseObject {
      * This method draws the object on the canvas.
      */
     public void draw(Canvas canvas) {
-        // Do nothing
+        //do nothing
     }
 
     /**
      * Move by one step.
      */
     public void move() {
-        // Do nothing
+        //do nothing
     }
 
     /**

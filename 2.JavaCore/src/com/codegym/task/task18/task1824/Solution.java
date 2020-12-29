@@ -1,28 +1,25 @@
 package com.codegym.task.task18.task1824;
 
+
+import java.io.*;
+
 /* 
 Files and exceptions
 
 */
 
-import java.io.*;
-
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String s = "";
-        FileInputStream in = null;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         while (true) {
-            try {
-                s = bufferedReader.readLine();
-                in = new FileInputStream(s);
-                in.close();
+            String fileName = reader.readLine();
+            try (FileInputStream fileInputStream = new FileInputStream(fileName)) {
+
             } catch (FileNotFoundException e) {
-                System.out.println(s);
-                bufferedReader.close();
-                return;
+                System.out.println(fileName);
+                break;
             }
         }
-
     }
 }

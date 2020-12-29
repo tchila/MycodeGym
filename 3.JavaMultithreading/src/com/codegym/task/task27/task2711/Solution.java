@@ -6,8 +6,8 @@ import java.util.concurrent.CountDownLatch;
 CountDownLatch
 
 */
-public class Solution {
 
+public class Solution {
     CountDownLatch latch = new CountDownLatch(1);
 
     public void someMethod() throws InterruptedException {
@@ -20,7 +20,6 @@ public class Solution {
         System.out.println("Value retrieved.");
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws InterruptedException {
     }
 }

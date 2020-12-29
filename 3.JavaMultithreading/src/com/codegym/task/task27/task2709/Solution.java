@@ -4,6 +4,7 @@ package com.codegym.task.task27.task2709;
 Producer–consumer
 
 */
+
 public class Solution {
     public static void main(String args[]) throws InterruptedException {
         TransferObject transferObject = new TransferObject();

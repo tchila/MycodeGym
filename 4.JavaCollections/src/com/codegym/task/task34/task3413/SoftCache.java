@@ -10,36 +10,34 @@ public class SoftCache {
     public AnyObject get(Long key) {
         SoftReference<AnyObject> softReference = cacheMap.get(key);
 
-        if(softReference != null){
-            return softReference.get();
+        if (softReference == null) {
+            return null;
         }
-        //write your code here
-        return null;
+        return softReference.get();
     }
 
     public AnyObject put(Long key, AnyObject value) {
         SoftReference<AnyObject> softReference = cacheMap.put(key, new SoftReference<>(value));
-        if (softReference!=null){
-            AnyObject object = softReference.get();
-            softReference.clear();
-            return object;
 
+        if (softReference == null) {
+            return null;
         }
-        //write your code here
-        return null;
+
+        AnyObject oldValue = softReference.get();
+        softReference.clear();
+        return oldValue;
     }
 
     public AnyObject remove(Long key) {
         SoftReference<AnyObject> softReference = cacheMap.remove(key);
 
-        //write your code here
-        if (softReference!=null){
-            AnyObject object = softReference.get();
-            softReference.clear();
-            return object;
-
+        if (softReference == null) {
+            return null;
         }
-        //write your code here
-        return null;
+
+        AnyObject oldValue = softReference.get();
+        softReference.clear();
+
+        return oldValue;
     }
 }

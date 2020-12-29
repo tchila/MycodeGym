@@ -1,7 +1,6 @@
 package com.codegym.task.task28.task2804;
 
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -9,16 +8,17 @@ import java.util.concurrent.ThreadLocalRandom;
 Magic class
 
 */
+
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
         Solution solution = new Solution();
-        List<String> list = new CopyOnWriteArrayList<>(); /* Create an instance of this magic class here */
+        List<String> list = new CopyOnWriteArrayList<>();
 
         solution.startUpdatingThread(list);
         solution.copyOnWriteSolution(list);
         solution.stopUpdatingThread();
 
-        /* Example output
+        /* The output example
 size = 0
 Element: s781859336
 Element: s1453499757

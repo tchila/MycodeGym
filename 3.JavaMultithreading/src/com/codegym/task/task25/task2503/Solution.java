@@ -4,6 +4,7 @@ package com.codegym.task.task25.task2503;
 Your own enum
 
 */
+
 public class Solution {
     /**
      * Output:

@@ -26,6 +26,6 @@ public class Solution {
 
     public Path getAbsolutePathToDefaultTxtFile() throws URISyntaxException {
         URI uri = Solution.class.getResource("file.txt").toURI();
-        return  Paths.get(uri);
+        return Paths.get(uri);
     }
 }

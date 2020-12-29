@@ -7,6 +7,7 @@ import java.lang.reflect.Modifier;
 Compare modifiers
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         int classModifiers = Solution.class.getModifiers();
@@ -18,7 +19,7 @@ public class Solution {
     }
 
     public static boolean isModifierSet(int allModifiers, int specificModifier) {
-        return allModifiers >= specificModifier;
+        return (allModifiers & specificModifier) != 0;
     }
 
     private static Method getMainMethod() {

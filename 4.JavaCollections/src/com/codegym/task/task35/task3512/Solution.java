@@ -4,6 +4,7 @@ package com.codegym.task.task35.task3512;
 Object generator
 
 */
+
 public class Solution {
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {

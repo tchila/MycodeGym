@@ -15,7 +15,7 @@ public class RemoteStorage implements Storage {
     public Object get(long id) {
         System.out.println("Getting a value for id #" + id + " from RemoteStorage...");
         try {
-            Thread.sleep(2000);
+            Thread.sleep(500);
         } catch (InterruptedException ignored) {
 
         }

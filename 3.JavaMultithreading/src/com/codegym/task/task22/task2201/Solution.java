@@ -4,6 +4,7 @@ package com.codegym.task.task22.task2201;
 Threads of a string or stringy threads? That's the question
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         new Solution();
@@ -33,27 +34,15 @@ public class Solution {
     }
 
     public synchronized String getPartOfString(String string, String threadName) {
-        if(string == null || string == " " || string.indexOf("\t")==-1){
-            if(threadName.equals(FIRST_THREAD_NAME))
-                throw new StringForFirstThreadTooShortException();
-            else if (threadName.equals(SECOND_THREAD_NAME))
-                throw new StringForSecondThreadTooShortException();
-            else
-                throw new RuntimeException();
+        try {
+            return string.substring(string.indexOf('\t') + 1, string.lastIndexOf('\t'));
+        } catch (Throwable e) {
+            if (FIRST_THREAD_NAME.equals(threadName)) {
+                throw new StringForFirstThreadTooShortException(e);
+            } else
+                if (SECOND_THREAD_NAME.equals(threadName)) {
+                    throw new StringForSecondThreadTooShortException(e);
+                } else throw new RuntimeException(e);
         }
-        int start = string.indexOf("\t");
-        int last = string.lastIndexOf("\t");
-        if(start == last){
-            if(threadName.equals(FIRST_THREAD_NAME))
-                throw new StringForFirstThreadTooShortException();
-            else if (threadName.equals(SECOND_THREAD_NAME))
-                throw new StringForSecondThreadTooShortException();
-            else
-                throw new RuntimeException();
-        }else{
-            return string.substring(start+1,last);
-        }
-
-
     }
 }

@@ -2,11 +2,6 @@ package com.codegym.task.task24.task2408;
 
 import java.util.Date;
 
-/*
-At times, you'll have to cast a class to some other class (not an interface). :)
-The DogPet class uses 2 classes: SuperDog and Dog. Study the getName method in the DogPet class.
-That'll be a lot easier than Copy+Paste!
- */
 public class Dog implements Pet {
     private String name;
 
@@ -43,32 +38,28 @@ public class Dog implements Pet {
      * @param i the number of u's to use in "ruff"
      * @return an instance of the DogPet class
      */
-    public CanSpeak toCanSpeak(final int i) {
-        final String localName = this.name;
 
-        class DogPet extends SuperDog implements CanSpeak{
+    public CanSpeak toCanSpeak(final int i) {
+        class DogPet extends SuperDog implements CanSpeak {
+            private String getName() {
+                //we use logic from Dog and SuperDog - 2 classes!
+                return getSuperQuotes() + Dog.this.name + getSuperQuotes();
+            }
 
             @Override
             public String speak() {
-                if(i<1)
-                    return getSuperQuotes() + getName() + getSuperQuotes() + " is sleeping.";
-                else{
-                    StringBuilder stringBuilder = new StringBuilder(getSuperQuotes());
-                    stringBuilder.append(localName);
-                    stringBuilder.append(getSuperQuotes());
-                    stringBuilder.append(" says r");
-                    for (int j = 0; j < i; j++) {
-                        stringBuilder.append("u");
-                    }
-                    return stringBuilder.append("ff! ").append(formatter.format(new Date())).toString();
+                if (i < 1)
+                    return getName() + " is sleeping.";
 
-                }
-            }
-            private String getName(){
-                return localName;
+                StringBuilder sb = new StringBuilder(getName()).append(" says r");
+                for (int j = 0; j < i; j++)
+                    sb.append("u");
+                sb.append("ff!");
+                sb.append(" ");
+                sb.append(formatter.format(new Date()));
+                return sb.toString();
             }
         }
         return new DogPet();
-
     }
 }

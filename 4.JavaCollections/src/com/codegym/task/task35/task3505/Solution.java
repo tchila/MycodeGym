@@ -8,6 +8,7 @@ import java.util.Map;
 List to Map
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         List<ConvertibleUser> users = new ArrayList<>();
@@ -17,7 +18,7 @@ public class Solution {
 
         Map<Integer, ConvertibleUser> newMap = ConvertibleUtil.convert(users);
         System.out.println(newMap);
-        // {236=ConvertibleUser{id=236, name='Third User'},
+        //{236=ConvertibleUser{id=236, name='Third User'},
         // 235=ConvertibleUser{id=235, name='Second User'},
         // 234=ConvertibleUser{id=234, name='First User'}}
 
@@ -30,7 +31,7 @@ public class Solution {
 
         Map<String, ConvertibleBook> bookMap = ConvertibleUtil.convert(books);
         System.out.println(bookMap);
-        // {Third Book=ConvertibleBook{name='Third Book'},
+        //{Third Book=ConvertibleBook{name='Third Book'},
         // First Book=ConvertibleBook{name='First Book'},
         // Second Book=ConvertibleBook{name='Second Book'}}
     }

@@ -13,12 +13,11 @@ public class Consumer implements Runnable {
     public void run() {
         try {
             Thread.sleep(450);
-            while (true){
+            while (true) {
                 SharedItem item = queue.take();
-                System.out.println(System.out.format("Processing %s" ,item.toString()));
+                System.out.format("Processing %s\n", item.toString());
             }
-        } catch (InterruptedException e) {
-
+        } catch (InterruptedException ex) {
         }
     }
 }

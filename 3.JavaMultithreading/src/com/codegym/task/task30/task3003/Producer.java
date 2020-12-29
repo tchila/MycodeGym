@@ -11,18 +11,16 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
-
-            for (int i = 1; i <= 9; i++) {
-                System.out.println(System.out.format("'SharedItem-%d' added", i));
-                queue.offer(new SharedItem("SharedItem-N", i));
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    break;
+        try {
+            for (int i = 1; i < 10; i++) {
+                System.out.format("'SharedItem-%d' added\n", i);
+                queue.offer(new SharedItem("ShareItem-" + i, i));
+                Thread.sleep(100);
+                if (queue.hasWaitingConsumer()) {
+                    System.out.format("Consumer is waiting!\n");
                 }
-                if (queue.hasWaitingConsumer())
-                     System.out.format("Consumer is waiting!");
             }
-
+        } catch (InterruptedException ex) {
+        }
     }
 }

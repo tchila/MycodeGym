@@ -12,30 +12,32 @@ import java.rmi.server.UnicastRemoteObject;
 Toward an RMI server
 
 */
+
 public class Solution {
     public static final String UNIC_BINDING_NAME = "double.string";
     public static Registry registry;
 
-    // Pretend we're starting an RMI client as the CLIENT_THREAD thread
+    //pretend we start rmi client as CLIENT_THREAD thread
     public static Thread CLIENT_THREAD = new Thread(new Runnable() {
         @Override
         public void run() {
-            //write your code here
             try {
                 DoubleString service = (DoubleString) registry.lookup(UNIC_BINDING_NAME);
-                String s = service.doubleString("test");
-                System.out.println(s);
+                String result = service.doubleString("test string");
+                System.out.println(result);
             } catch (RemoteException e) {
+                e.printStackTrace();
             } catch (NotBoundException e) {
+                e.printStackTrace();
             }
         }
     });
 
     public static void main(String[] args) {
-        // Pretend we're starting an RMI server as the main thread
+        //pretend we start rmi server as main thread
         Remote stub = null;
         try {
-            registry = LocateRegistry.getRegistry(2099);
+            registry = LocateRegistry.createRegistry(2099);
             final DoubleStringImpl service = new DoubleStringImpl();
 
             stub = UnicastRemoteObject.exportObject(service, 0);
@@ -46,7 +48,7 @@ public class Solution {
             e.printStackTrace();
         }
 
-        // Start the client
+        //start client
         CLIENT_THREAD.start();
     }
 }

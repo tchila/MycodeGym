@@ -4,15 +4,17 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import java.util.Arrays;
 
-@Target(value = ElementType.TYPE)
-@Retention(value = RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 public @interface Ticket {
-    enum  Priority {LOW, MEDIUM,  HIGH};
-    Priority priority() default Priority.MEDIUM;
+	public enum Priority {
+		LOW, MEDIUM, HIGH
+	}
 
-    String createdBy() default "Amigo";
+	Priority priority() default Priority.MEDIUM;
 
-    String[] tags() default {};
+	String[] tags() default {};
+
+	String createdBy() default "Amigo";
 }

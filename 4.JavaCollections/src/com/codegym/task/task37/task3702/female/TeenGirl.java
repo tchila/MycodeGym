@@ -10,4 +10,3 @@ public class TeenGirl implements Human {
         return "TeenGirl{}";
     }
 }
-

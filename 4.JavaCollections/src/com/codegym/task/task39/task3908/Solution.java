@@ -11,27 +11,22 @@ public class Solution {
     }
 
     public static boolean isPalindromePermutation(String s) {
-        if(s ==  null || s.length() == 0)
-            return true;
+        boolean foundOdd = false;
+        int[] tableCount = new int[255];
 
-        s = s.toLowerCase();
-        s = s.replace(" ", "");
-
-        boolean[] odds = new boolean[256];
-
-        for (int i = 0; i < s.length(); i++) {
-            odds[s.charAt(i)] =! odds[s.charAt(i)];
+        for(char c : s.toLowerCase().toCharArray()) {
+            tableCount[c] += 1;
         }
-        int numOdds = 0;
 
-        for (int i = 0; i < odds.length ; i++) {
-            if(odds[i]){
-                numOdds++;
+        for(int count : tableCount) {
+            if (count % 2 != 0) {
+                if (foundOdd) {
+                    return false;
+                }
+                foundOdd = true;
             }
-
-            if(numOdds>1)
-                return false;
         }
+
         return true;
     }
 }

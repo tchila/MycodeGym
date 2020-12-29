@@ -1,17 +1,9 @@
 package com.codegym.task.task21.task2113;
 
-import java.util.Random;
-
 public class Horse {
     private String name;
     private double speed;
     private double distance;
-
-    public Horse(String name, double speed, double distance) {
-        this.name = name;
-        this.speed = speed;
-        this.distance = distance;
-    }
 
     public String getName() {
         return name;
@@ -37,15 +29,21 @@ public class Horse {
         this.distance = distance;
     }
 
-    public void move(){
-        this.distance += (speed * Math.random());
+    public Horse(String name, double speed, double distance) {
+        this.name = name;
+        this.speed = speed;
+        this.distance = distance;
     }
 
-    public void print(){
-        String toPrint = this.name;
-        for (int i = 0; i < (int)getDistance(); i++) {
-            toPrint="."+toPrint;
+    void move() {
+        distance += speed * Math.random();
+    }
+
+    void print() {
+        StringBuilder track = new StringBuilder();
+        for (int i = 0; i < (int) distance; i++) {
+            track.append(".");
         }
-        System.out.println(toPrint);
+        System.out.println(track + name);
     }
 }

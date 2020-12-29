@@ -1,5 +1,9 @@
 package com.codegym.task.task28.task2810.model;
 
+import com.codegym.task.task28.task2810.vo.JobPosting;
+
+import java.util.List;
+
 public class Provider {
 
     private Strategy strategy;
@@ -8,7 +12,8 @@ public class Provider {
         this.strategy = strategy;
     }
 
-    public Provider() {
+    public List<JobPosting> getJavaJobPostings(String searchString) {
+        return null;
     }
 
     public void setStrategy(Strategy strategy) {

@@ -1,19 +1,135 @@
 package com.codegym.task.task33.task3310.strategy;
 
 public class FileStorageStrategy implements StorageStrategy {
-     static final int DEFAULT_INITIAL_CAPACITY = 16;
-     static final long DEFAULT_BUCKET_SIZE_LIMIT = 10000;
-    FileBucket[] table = new FileBucket[DEFAULT_INITIAL_CAPACITY];
-     int size;
+
+    static final int DEFAULT_INITIAL_CAPACITY = 16;
+    static final long DEFAULT_BUCKET_SIZE_LIMIT = 10000;
+
+    FileBucket[] table;
+    int size;
     private long bucketSizeLimit = DEFAULT_BUCKET_SIZE_LIMIT;
-     long maxBucketSize;
-
-
+    long maxBucketSize;
 
     public FileStorageStrategy() {
-        for (int i = 0; i < DEFAULT_INITIAL_CAPACITY; i++) {
+        init();
+    }
+
+    private void init() {
+        table = new FileBucket[DEFAULT_INITIAL_CAPACITY];
+        for (int i = 0; i < table.length; i++) {
             table[i] = new FileBucket();
         }
+    }
+
+    static int indexFor(int hash, int length) {
+        return hash & (length - 1);
+    }
+
+    final Entry getEntry(Long key) {
+        if (size == 0) {
+            return null;
+        }
+
+        int index = indexFor(key.hashCode(), table.length);
+        for (Entry entry = table[index].getEntry(); entry != null; entry = entry.next) {
+            if (key.equals(entry.key)) {
+                return entry;
+            }
+        }
+        return null;
+    }
+
+    public void put(Long key, String value) {
+        int hash = key.hashCode();
+        int index = indexFor(hash, table.length);
+        for (Entry e = table[index].getEntry(); e != null; e = e.next) {
+            if (key.equals(e.key)) {
+                e.value = value;
+                return;
+            }
+        }
+        addEntry(hash, key, value, index);
+    }
+
+    void resize(int newCapacity) {
+        FileBucket[] newTable = new FileBucket[newCapacity];
+
+        for (int i = 0; i < newTable.length; i++)
+            newTable[i] = new FileBucket();
+
+        transfer(newTable);
+
+        for (int i = 0; i < table.length; i++)
+            table[i].remove();
+
+        table = newTable;
+    }
+
+    void transfer(FileBucket[] newTable) {
+        int newCapacity = newTable.length;
+        maxBucketSize = 0;
+
+        for (FileBucket fileBucket : table) {
+            Entry entry = fileBucket.getEntry();
+            while (entry != null) {
+                Entry next = entry.next;
+                int indexInNewTable = indexFor(entry.getKey().hashCode(), newCapacity);
+                entry.next = newTable[indexInNewTable].getEntry();
+                newTable[indexInNewTable].putEntry(entry);
+                entry = next;
+            }
+
+            long currentBucketSize = fileBucket.getFileSize();
+            if (currentBucketSize > maxBucketSize)
+                maxBucketSize = currentBucketSize;
+        }
+    }
+
+    public boolean containsValue(String value) {
+        for (FileBucket tableElement : table)
+            for (Entry e = tableElement.getEntry(); e != null; e = e.next)
+                if (value.equals(e.value))
+                    return true;
+        return false;
+    }
+
+    public String getValue(Long key) {
+        Entry entry = getEntry(key);
+        if (entry != null)
+            return entry.getValue();
+
+        return null;
+    }
+
+    public boolean containsKey(Long key) {
+        return getEntry(key) != null;
+    }
+
+    public Long getKey(String value) {
+        for (FileBucket tableElement : table)
+            for (Entry e = tableElement.getEntry(); e != null; e = e.next)
+                if (value.equals(e.value))
+                    return e.getKey();
+        return null;
+    }
+
+    void addEntry(int hash, Long key, String value, int bucketIndex) {
+        if ((maxBucketSize > bucketSizeLimit)) {
+            resize(2 * table.length);
+            bucketIndex = indexFor(key.hashCode(), table.length);
+        }
+
+        createEntry(hash, key, value, bucketIndex);
+    }
+
+    void createEntry(int hash, Long key, String value, int bucketIndex) {
+        Entry e = table[bucketIndex].getEntry();
+        table[bucketIndex].putEntry(new Entry(hash, key, value, e));
+        size++;
+
+        long currentBucketSize = table[bucketIndex].getFileSize();
+        if (currentBucketSize > maxBucketSize)
+            maxBucketSize = currentBucketSize;
     }
 
     public long getBucketSizeLimit() {
@@ -23,136 +139,5 @@ public class FileStorageStrategy implements StorageStrategy {
     public void setBucketSizeLimit(long bucketSizeLimit) {
         this.bucketSizeLimit = bucketSizeLimit;
     }
-
-    public int hash(Long k) {
-        long h = k;
-        h ^= (h >>> 20) ^ (h >>> 12);
-        return (int) (h ^ (h >>> 7) ^ (h >>> 4));
-    }
-
-    public int indexFor(int hash, int length) {
-        return hash % (length - 1);
-    }
-
-    public Entry getEntry(Long key) {
-        int hash = hash(key);
-        int index = indexFor(hash, table.length);
-        if (table[index] != null) {
-            Entry entry = table[index].getEntry();
-            while (entry != null) {
-                if (entry.getKey().equals(key)) {
-                    return entry;
-                }
-                entry = entry.next;
-            }
-        }
-        return null;
-    }
-
-    public void resize(int newCapacity) {
-        FileBucket[] newTable = new FileBucket[newCapacity];
-        transfer(newTable);
-        table = newTable;
-    }
-
-    public void transfer(FileBucket[] newTable) {
-        for (int i = 0; i < table.length; i++) {
-            if (table[i] == null) continue;
-            Entry entry = table[i].getEntry();
-            while (entry != null) {
-                Entry next = entry.next;
-                int newIndex = indexFor(entry.hash, newTable.length);
-                if (newTable[newIndex] == null) {
-                    entry.next = null;
-                    newTable[newIndex] = new FileBucket();
-                } else {
-                    entry.next = newTable[newIndex].getEntry();
-                }
-                newTable[newIndex].putEntry(entry);
-                entry = next;
-            }
-            table[i].remove();
-        }
-    }
-
-    public void addEntry(int hash, Long key, String value, int bucketIndex) {
-        Entry entry = table[bucketIndex].getEntry();
-        table[bucketIndex].putEntry(new Entry(hash, key, value, entry));
-        size++;
-        if (table[bucketIndex].getFileSize() > bucketSizeLimit)
-            resize(2 * table.length);
-    }
-
-    public void createEntry(int hash, Long key, String value, int bucketIndex) {
-        table[bucketIndex] = new FileBucket();
-        table[bucketIndex].putEntry(new Entry(hash, key, value, null));
-        size++;
-    }
-
-    @Override
-    public boolean containsKey(Long key) {
-        return getEntry(key) != null;
-    }
-
-    @Override
-    public boolean containsValue(String value) {
-        for (int i = 0; i < table.length; i++) {
-            if (table[i] == null)
-                continue;
-
-            Entry entry = table[i].getEntry();
-            while (entry != null) {
-                if (entry.value.equals(value))
-                    return true;
-
-                entry = entry.next;
-            }
-        }
-        return false;
-    }
-
-    @Override
-    public void put(Long key, String value) {
-        int hash = hash(key);
-        int index = indexFor(hash, table.length);
-        if (table[index] != null) {
-            Entry entry = table[index].getEntry();
-            while (entry != null) {
-                if (entry.getKey().equals(key)) {
-                    entry.value = value;
-                    return;
-                }
-                entry = entry.next;
-            }
-            addEntry(hash, key, value, index);
-        } else {
-            createEntry(hash, key, value, index);
-        }
-    }
-
-    @Override
-    public Long getKey(String value) {
-        for (int i = 0; i < table.length; i++) {
-            if (table[i] == null)
-                continue;
-
-            Entry entry = table[i].getEntry();
-
-            while (entry != null) {
-                if (entry.value.equals(value))
-                    return entry.key;
-                entry = entry.next;
-            }
-        }
-        return 0L;
-    }
-
-    @Override
-    public String getValue(Long key) {
-        Entry entry = getEntry(key);
-        if (entry != null)
-            return entry.value;
-
-        return null;
-    }
 }
+

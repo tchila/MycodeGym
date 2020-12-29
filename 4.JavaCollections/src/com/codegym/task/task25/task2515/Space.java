@@ -1,6 +1,7 @@
 package com.codegym.task.task25.task2515;
 
 import java.awt.event.KeyEvent;
+import java.util.List;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,7 +94,7 @@ public class Space {
      * The method returns a single list that contains all objects in the game
      */
     public List<BaseObject> getAllItems() {
-        ArrayList<BaseObject> list = new ArrayList<BaseObject>(ufos);
+        ArrayList<BaseObject> list = new ArrayList<>(ufos);
         list.add(ship);
         list.addAll(bombs);
         list.addAll(rockets);
@@ -177,25 +178,6 @@ public class Space {
      */
     public void draw(Canvas canvas) {
         // Draw the game
-        for (int i = 0; i < width + 2; i++) {
-            for (int j = 0; j < height + 2; j++) {
-                canvas.setPoint(i, j, '.');
-            }
-        }
-
-        for (int i = 0; i < width + 2; i++) {
-            canvas.setPoint(i, 0, '-');
-            canvas.setPoint(i, height + 1, '-');
-        }
-
-        for (int i = 0; i < height + 2; i++) {
-            canvas.setPoint(0, i, '|');
-            canvas.setPoint(width + 1, i, '|');
-        }
-
-        for (BaseObject object : getAllItems()) {
-            object.draw(canvas);
-        }
     }
 
 

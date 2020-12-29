@@ -1,114 +1,103 @@
 package com.codegym.task.task3707;
 
 import com.codegym.task.task37.task3707.HashMapReflectionHelper;
-import com.sun.corba.se.impl.orbutil.ObjectWriter;
 
-import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.*;
 
-public class AmigoSet<E> extends AbstractSet implements Serializable, Cloneable, Set {
+public class AmigoSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Serializable {
     private static final Object PRESENT = new Object();
-    private transient HashMap<E, Object> map ;
-
+    private transient HashMap<E, Object> map;
 
     public AmigoSet() {
         this.map = new HashMap<>();
     }
 
-    public AmigoSet(Collection<? extends E> collection ) {
-        this.map = new HashMap<>((int)Math.max(16,(Math.ceil(collection.size()/.75f))));
-        for (E e : collection) {
-            this.map.put(e, PRESENT);
-        }
+    public AmigoSet(Collection<? extends E> collection) {
+        this.map = new HashMap<>(Math.max((int) (collection.size() / .75f) + 1, 16));
+        addAll(collection);
+    }
+
+    public boolean add(E e) {
+        return map.put(e, PRESENT) == null;
     }
 
     @Override
-    public boolean add(Object o) {
-         return this.map.put((E) o, PRESENT) == null;
-
-
-    }
-
-    @Override
-    public Iterator<E> iterator()
-    {
-       return this.map.keySet().iterator();
+    public Iterator<E> iterator() {
+        return map.keySet().iterator();
     }
 
     @Override
     public int size() {
-
-        return this.map.size();
+        return map.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return this.map.isEmpty();
+        return map.isEmpty();
     }
 
     @Override
     public boolean contains(Object o) {
-
-        return this.map.containsKey(o);
-    }
-
-    @Override
-    public Object clone()  {
-        try {
-        AmigoSet cloneSet = (AmigoSet) super.clone();
-        cloneSet.map = (HashMap) map.clone();
-        return cloneSet;
-        }catch (Exception e){
-            throw new InternalError(e);
-        }
-    }
-
-    private void writeObject(ObjectOutputStream out) throws IOException
-    {
-
-        
-        out.defaultWriteObject();
-
-        out.writeObject(map.size());
-        for(E e:map.keySet()){
-            out.writeObject(e);
-        }
-        out.writeObject(HashMapReflectionHelper.callHiddenMethod(map,"capacity"));
-        out.writeObject(HashMapReflectionHelper.callHiddenMethod(map,"loadFactor"));
-
-
-    }
-
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException
-    {
-
-
-        in.defaultReadObject();
-        int size = (int)in.readObject();
-
-        Set<E> set = new HashSet<>();
-        for(int i =0;i<size;i++){
-            set.add((E)in.readObject());
-        }
-        int capacity = (int)in.readObject();
-        float loadFactor = (float)in.readObject();
-        map = new HashMap<>(capacity,loadFactor);
-        for(E e:set){
-            map.put(e,PRESENT);
-        }
-
-    }
-
-    @Override
-    public boolean remove(Object o) {
-        return this.map.remove(o) == null;
+        return map.keySet().contains(o);
     }
 
     @Override
     public void clear() {
-        this.map.clear();
+        map.clear();
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        return map.remove(o) == PRESENT;
+    }
+
+    @Override
+    public Object clone() {
+        try {
+            AmigoSet<E> newSet = (AmigoSet<E>) super.clone();
+            newSet.map = (HashMap<E, Object>) map.clone();
+            return newSet;
+        } catch (Exception e) {
+            throw new InternalError();
+        }
+    }
+
+    private void writeObject(ObjectOutputStream s) throws java.io.IOException {
+        // Write out any hidden serialization magic
+        s.defaultWriteObject();
+
+        // Write out HashMap capacity and load factor
+        s.writeInt(HashMapReflectionHelper.<Integer>callHiddenMethod(map, "capacity"));
+        s.writeFloat(HashMapReflectionHelper.<Float>callHiddenMethod(map, "loadFactor"));
+
+        // Write out size
+        s.writeInt(map.size());
+
+        // Write out all elements in the proper order.
+        for (E e : map.keySet())
+            s.writeObject(e);
+    }
+
+
+    private void readObject(ObjectInputStream s) throws java.io.IOException, ClassNotFoundException {
+        // Read in any hidden serialization magic
+        s.defaultReadObject();
+
+        // Read in HashMap capacity and load factor and create backing HashMap
+        int capacity = s.readInt();
+        float loadFactor = s.readFloat();
+        map = new HashMap<>(capacity, loadFactor);
+
+        // Read in size
+        int size = s.readInt();
+
+        // Read in all elements in the proper order.
+        for (int i = 0; i < size; i++) {
+            E e = (E) s.readObject();
+            map.put(e, PRESENT);
+        }
     }
 }

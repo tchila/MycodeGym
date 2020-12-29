@@ -45,7 +45,9 @@ public class Beach implements Comparable<Beach> {
     }
 
     @Override
-    public synchronized int compareTo(Beach o) {
-        return name.compareTo(o.getName()) + (int)(distance*quality - o.getDistance()*o.getQuality());
+    public synchronized int compareTo(Beach obj) {
+        int distanceParam = (int) (distance - obj.getDistance());
+        int qualityParam = quality - obj.getQuality();
+        return 10000 * name.compareTo(obj.getName()) + 100 * distanceParam + qualityParam;
     }
 }

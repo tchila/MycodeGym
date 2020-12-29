@@ -16,7 +16,7 @@ public class Solution {
     public static final String DEFAULT_FILE_NAME = "C:/tmp/strange_file_name.tmp";
 
     private final String localFileName;
-    private List<String> contentAslines;
+    private List<String> contentAsLines;
     private boolean fileLoaded;
 
     public Solution(String firstFileName) {
@@ -29,8 +29,8 @@ public class Solution {
         Solution solution = new Solution(fileName);
         solution.downloadFileContent();
         if (solution.isFileLoaded()) {
-            System.out.println(solution.hasExpectedLine("public class Solution {"));   // Expected true
-            System.out.println(solution.hasExpectedLine(" public class Solution {"));  // Expected false
+            System.out.println(solution.hasExpectedLine("public class Solution {"));   //expected true
+            System.out.println(solution.hasExpectedLine(" public class Solution {"));  //expected false
         }
     }
 
@@ -40,7 +40,7 @@ public class Solution {
 
     public void downloadFileContent() {
         try {
-            contentAslines = Files.readAllLines((new File(localFileName)).toPath(), Charset.defaultCharset());
+            contentAsLines = Files.readAllLines((new File(localFileName)).toPath(), Charset.defaultCharset());
             fileLoaded = true;
         } catch (IOException e) {
             System.out.println("Unsuccessful. What a surprise!");
@@ -48,6 +48,6 @@ public class Solution {
     }
 
     public boolean hasExpectedLine(String expectedLine) {
-        return contentAslines.contains(expectedLine);
+        return contentAsLines.contains(expectedLine);
     }
 }

@@ -4,6 +4,7 @@ package com.codegym.task.task25.task2505;
 No idiots
 
 */
+
 public class Solution {
 
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class Solution {
         public MyThread(String secretKey) {
             this.secretKey = secretKey;
             setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
-            setDaemon(false);
+//            setDaemon(true);
         }
 
         @Override
@@ -25,25 +26,17 @@ public class Solution {
             throw new NullPointerException("This is an example");
         }
 
-        private class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
-            public MyUncaughtExceptionHandler() {
-
-            }
+        private class MyUncaughtExceptionHandler implements UncaughtExceptionHandler {
 
             @Override
             public void uncaughtException(Thread t, Throwable e) {
                 try {
                     Thread.sleep(500);
-                } catch (InterruptedException interruptedException) {
-                    interruptedException.printStackTrace();
+                } catch (InterruptedException e1) {
                 }
-                final String string =  "%s, %s, %s";
-                System.out.println(String.format(string,((MyThread)t).secretKey, t.getName(), e.getMessage()));
-
+                System.out.println(String.format("%s, %s, %s", MyThread.this.secretKey, t.getName(), e.getMessage()));
             }
         }
     }
-
-
 }
 

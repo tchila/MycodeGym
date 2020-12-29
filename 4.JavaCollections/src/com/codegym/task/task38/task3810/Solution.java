@@ -1,10 +1,5 @@
 package com.codegym.task.task38.task3810;
 
-/* 
-Implement annotations
-
-*/
-
 @Changelog({
         @Revision(
                 revision = 4089,
@@ -22,6 +17,12 @@ Implement annotations
                         @Author("Ben"),
                         @Author(value = "Victor", position = Position.SENIOR)})
 })
+
+/* 
+Implement annotations
+
+*/
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(Solution.class.getAnnotation(Changelog.class).toString());

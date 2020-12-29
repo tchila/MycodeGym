@@ -9,6 +9,7 @@ import java.io.StringReader;
 Creating a class from an XML string
 
 */
+
 public class Solution {
     public static void main(String[] args) throws JAXBException {
         String xmlData =

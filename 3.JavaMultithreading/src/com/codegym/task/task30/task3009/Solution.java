@@ -1,6 +1,5 @@
 package com.codegym.task.task30.task3009;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,26 +10,28 @@ Palindrome?
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println(getRadix("112"));        // Expected output: [3, 27, 13, 15]
-        System.out.println(getRadix("123"));        // Expected output: [6]
-        System.out.println(getRadix("5321"));       // Expected output: []
-        System.out.println(getRadix("1A"));         // Expected output: []
+        System.out.println(getRadix("112"));        //expected output: [3, 27, 13, 15]
+        System.out.println(getRadix("123"));        //expected output: [6]
+        System.out.println(getRadix("5321"));       //expected output: []
+        System.out.println(getRadix("1A"));         //expected output: []
     }
 
-    private static Set<Integer> getRadix(String s) {
-        Set<Integer> set = new HashSet<>();
-        for (int i = 2; i <= 36; i++) {
-            try {
-            Integer k = Integer.parseInt(s, 10);
-            String convertedNumber = k.toString(k,i);
-            StringBuilder builder = new StringBuilder(convertedNumber);
-
-            if(builder.toString().equals(builder.reverse().toString()))
-                set.add(i);
-            } catch (NumberFormatException ignored) {
-                return Collections.emptySet();
+    private static Set<Integer> getRadix(String number) {
+        Set<Integer> result = new HashSet<>();
+        try {
+            int numberToProcess = Integer.parseInt(number);
+            for (int i = 2; i <= 36; i++) {
+                String temp = Integer.toString(numberToProcess, i);
+                if (isPalindrom(temp)) {
+                    result.add(i);
+                }
             }
+        } catch (NumberFormatException e) {
         }
-        return set;
+        return result;
+    }
+
+    private static boolean isPalindrom(String number) {
+        return number.equals((new StringBuilder(number)).reverse().toString());
     }
 }

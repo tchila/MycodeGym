@@ -37,8 +37,9 @@ public class Solution {
                 String text = name + " added a entry for " + randomInt;
 
                 // previousEntry is null for new entries
+                /* Instead of setting it to null, call concurrentMap.someMethod(randomInt, text) */
+                String previousEntry = concurrentMap.putIfAbsent(randomInt, text);
 
-                String previousEntry = concurrentMap.putIfAbsent(randomInt, text) ;
 
                 if (previousEntry != null) {
                     System.out.println(name + " wants to update " + randomInt + ", but there's already " + previousEntry);

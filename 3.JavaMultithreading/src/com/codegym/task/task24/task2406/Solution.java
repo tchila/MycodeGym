@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 Inheriting an inner class
 
 */
+
 public class Solution {
     public class Building {
         public class Hall {
@@ -20,19 +21,19 @@ public class Solution {
         }
     }
 
-    public static void main(String[] args) {
-
-    }
-
-    public class BigHall extends Building.Hall {
-        public BigHall(Building building,BigDecimal area ) {
-           building.super(area);
-        }
-    }
-
     public class ThreeBedroomApt extends Building.Apartment {
         public ThreeBedroomApt(Building building) {
             building.super();
         }
+    }
+
+    public class BigHall extends Building.Hall {
+        public BigHall(Building building, BigDecimal square) {
+            building.super(square);
+        }
+    }
+
+    public static void main(String[] args) {
+
     }
 }

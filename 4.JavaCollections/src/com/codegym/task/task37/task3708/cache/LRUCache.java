@@ -7,17 +7,18 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 
     @Override
     protected boolean removeEldestEntry(java.util.Map.Entry<K, V> eldest) {
-        // Remove the eldest element whenever the size of the cache exceeds its capacity
+        // Remove the eldest element whenever size of cache exceeds the capacity
         return (size() > this.capacity);
     }
 
     public LRUCache(int capacity) {
-        // Call LinkedHashMap constructor with accessOrder set to true in order to
-        // achieve LRU caching behavior
+        // Call constructor of LinkedHashMap with accessOrder set to true to
+        // achieve LRU Cache behavior
         super(capacity + 1, 1.0f, true);
         this.capacity = capacity;
     }
 
+    //returns null if the object wasn't found in the cache
     public V find(K key) {
         return super.get(key);
     }

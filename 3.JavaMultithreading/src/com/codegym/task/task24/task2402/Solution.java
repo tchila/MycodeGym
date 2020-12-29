@@ -4,8 +4,8 @@ package com.codegym.task.task24.task2402;
 Cloneable
 
 */
-public class Solution {
 
+public class Solution {
     public static void main(String[] args) throws CloneNotSupportedException {
         Test1 test1 = new Test1();
         test1.clone();
@@ -20,8 +20,7 @@ public class Solution {
         test4.clone();
     }
 
-
-    public static class Test1 implements Cloneable{
+    public static class Test1 implements Cloneable {
         protected Test1 clone() throws CloneNotSupportedException {
             return (Test1)super.clone();
         }

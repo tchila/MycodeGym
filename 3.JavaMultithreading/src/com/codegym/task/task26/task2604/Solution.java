@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 Improving the mind requires more contemplation than memorization
 
 */
+
 public class Solution extends Thread {
     public static final String DEFAULT_CODEGYM_THREAD_NAME = "CodeGymThread";
 
@@ -18,9 +19,9 @@ public class Solution extends Thread {
         System.setProperty("java.util.logging.SimpleFormatter.format", "%1$tF %1$tT %4$s %2$s %5$s%6$s%n");
     }
 
-    private  static final Logger log = Logger.getLogger(Solution.class.getName());
+    private static final Logger log = Logger.getLogger(Solution.class.getName());
 
-    private volatile static boolean debugSession = true;
+    private static volatile boolean debugSession = true;
 
     public Solution() {
         this(DEFAULT_CODEGYM_THREAD_NAME);

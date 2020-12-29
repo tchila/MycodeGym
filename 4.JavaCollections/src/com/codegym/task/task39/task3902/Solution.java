@@ -22,12 +22,13 @@ public class Solution {
     }
 
     public static boolean isWeightEven(long number) {
-        int count  = 0;
-        while (number >0){
-            if((number & 1) == 1)
-                count++;
-            number >>= 1;
-        }
-        return count%2 == 0;
+        number ^= number >>> 32;
+        number ^= number >>> 16;
+        number ^= number >>> 8;
+        number ^= number >>> 4;
+        number ^= number >>> 2;
+        number ^= number >>> 1;
+
+        return (number & 1) == 0 ? true : false;
     }
 }

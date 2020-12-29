@@ -1,11 +1,17 @@
 package com.codegym.task.task37.task3711;
 
 public class Computer {
-    private CPU cpu = new CPU();
-    private Memory memory = new Memory();
-    private HardDrive hardDrive = new HardDrive();
+    private CPU cpu;
+    private Memory memory;
+    private HardDrive hardDrive;
 
-    public void run(){
+    public Computer() {
+        this.cpu = new CPU();
+        this.memory = new Memory();
+        this.hardDrive = new HardDrive();
+    }
+
+    public void run() {
         cpu.calculate();
         memory.allocate();
         hardDrive.storeData();

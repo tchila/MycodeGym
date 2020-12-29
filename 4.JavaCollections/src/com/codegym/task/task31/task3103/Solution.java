@@ -10,21 +10,21 @@ import java.util.List;
 Your own implementation
 
 */
+
 public class Solution {
-    public static byte[] readBytes(String filename) throws IOException {
-        return Files.readAllBytes(Paths.get(filename));
+    public static byte[] readBytes(String fileName) throws IOException {
+        return Files.readAllBytes(Paths.get(fileName));
     }
 
-    public static List<String> readLines(String filename) throws IOException {
-        return Files.readAllLines(Paths.get(filename));
+    public static List<String> readLines(String fileName) throws IOException {
+        return Files.readAllLines(Paths.get(fileName), Charset.defaultCharset());
     }
 
-    public static void writeBytes(String filename, byte[] bytes) throws IOException {
-        Files.write(Paths.get(filename),  bytes );
+    public static void writeBytes(String fileName, byte[] bytes) throws IOException {
+        Files.write(Paths.get(fileName), bytes);
     }
 
-    public static void copy(String resourceFilename, String destinationFilename) throws IOException {
-        Files.copy(Paths.get(resourceFilename),Paths.get(destinationFilename));
-
+    public static void copy(String resourceFileName, String destinationFileName) throws IOException {
+        Files.copy(Paths.get(resourceFileName), Paths.get(destinationFileName));
     }
 }

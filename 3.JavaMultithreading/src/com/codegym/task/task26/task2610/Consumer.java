@@ -9,10 +9,14 @@ public class Consumer implements Runnable {
         this.queue = queue;
     }
 
-    @Override
     public void run() {
-        while (queue.size() > 0) {
-            System.out.println(queue.poll());
+        try {
+            while (true) {
+                System.out.println(queue.take());
+                Thread.sleep(300);
+            }
+        } catch (InterruptedException e) {
+            System.out.println(String.format("[%s] thread was terminated", Thread.currentThread().getName()));
         }
     }
 }

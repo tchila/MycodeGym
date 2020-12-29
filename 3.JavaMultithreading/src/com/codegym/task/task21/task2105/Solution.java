@@ -1,13 +1,13 @@
 package com.codegym.task.task21.task2105;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 /* 
 Fix the bug. Comparing objects
 
 */
+
 public class Solution {
     private final String first, last;
 
@@ -17,22 +17,21 @@ public class Solution {
     }
 
     public boolean equals(Object o) {
-        if(o == null)
-            return false;
-        if(this == o)
-            return true;
-        if (!(o instanceof Solution))
-            return false;
-        Solution n = (Solution) o;
-       return Objects.equals(first, n.first) && Objects.equals(last, n.last) ;
+        if (this == o) return true;
+        if (!(o instanceof Solution)) return false;
+
+        Solution solution = (Solution) o;
+
+        if (first != null ? !first.equals(solution.first) : solution.first != null) return false;
+        if (last != null ? !last.equals(solution.last) : solution.last != null) return false;
+
+        return true;
     }
 
-    @Override
     public int hashCode() {
-        int h1 = 0, h2 = 0;
-        if (first != null) h1 = first.hashCode();
-        if (last != null) h1 = last.hashCode();
-        return 31 * (h1 + h2);
+        int result = first != null ? first.hashCode() : 0;
+        result = 31 * result + (last != null ? last.hashCode() : 0);
+        return result;
     }
 
     public static void main(String[] args) {
@@ -41,3 +40,4 @@ public class Solution {
         System.out.println(s.contains(new Solution("Mickey", "Mouse")));
     }
 }
+

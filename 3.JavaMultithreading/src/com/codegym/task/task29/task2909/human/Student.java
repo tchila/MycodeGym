@@ -1,28 +1,18 @@
 package com.codegym.task.task29.task2909.human;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class Student extends UniversityPerson {
-
     private double averageGrade;
     private Date beginningOfSession;
     private Date endOfSession;
     private int course;
 
-
     public Student(String name, int age, double averageGrade) {
         super(name, age);
-        this.name = name;
-        this.age = age;
         this.averageGrade = averageGrade;
     }
 
-
-    public int getCourse() {
-        return course;
-    }
     public void live() {
         learn();
     }
@@ -30,7 +20,9 @@ public class Student extends UniversityPerson {
     public void learn() {
     }
 
-
+    public String getPosition() {
+        return "Student";
+    }
 
     public void incAverageGradeBy01() {
         averageGrade += 0.1;
@@ -40,13 +32,12 @@ public class Student extends UniversityPerson {
         averageGrade += 0.2;
     }
 
-    public void setCourse(int value) {
-        course =  value;
-
+    public void setCourse(int course) {
+        this.course = course;
     }
-    public void setAverageGrade(double value){
-        averageGrade = value;
 
+    public void setAverageGrade(double averageGrade) {
+        this.averageGrade = averageGrade;
     }
 
     public void setBeginningOfSession(int day, int month, int year) {
@@ -61,7 +52,7 @@ public class Student extends UniversityPerson {
         return averageGrade;
     }
 
-    public String getPosition(){
-        return "Student";
+    public int getCourse() {
+        return course;
     }
 }

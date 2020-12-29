@@ -12,6 +12,7 @@ import java.nio.file.StandardCopyOption;
 File downloader
 
 */
+
 public class Solution {
 
     public static void main(String[] args) throws IOException {
@@ -23,13 +24,16 @@ public class Solution {
     }
 
     public static Path downloadFile(String urlString, Path downloadDirectory) throws IOException {
-        // Implement this method
-        int index =  urlString.lastIndexOf("/");
-        URL url =  new URL(urlString);
+        String fileName = urlString.split("/")[urlString.split("/").length - 1];
+        Path downloadPath = downloadDirectory.resolve(fileName);
+
+        URL url = new URL(urlString);
         InputStream inputStream = url.openStream();
 
-        Path tempFile = Files.createTempFile("temp-",urlString.substring(index+1));
-        Files.copy(inputStream,tempFile, StandardCopyOption.REPLACE_EXISTING);
-        return Files.move(tempFile,downloadDirectory.resolve(urlString.substring(index+1)));
+        Path tempFile = Files.createTempFile(null, null);
+        Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
+
+        Files.move(tempFile, downloadPath);
+        return downloadPath;
     }
 }

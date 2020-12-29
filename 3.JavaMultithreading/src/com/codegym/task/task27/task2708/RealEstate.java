@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class RealEstate {
-
     private final Set<Apartment> allApartments;
     private final Set<Apartment> activeApartments;
 
@@ -25,15 +24,15 @@ public class RealEstate {
         return allApartments;
     }
 
-    public  void up(Apartment apartment) {
+    public void up(Apartment apartment) {
         activeApartments.add(apartment);
     }
 
-    public  void revalidate() {
+    public void revalidate() {
         activeApartments.clear();
         for (Apartment apartment : allApartments) {
             boolean randomValue = Math.random() * 2 % 2 == 0;
-            synchronized (apartment){
+            synchronized (apartment) {
                 apartment.revalidate(randomValue);
             }
         }

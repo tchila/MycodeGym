@@ -1,16 +1,14 @@
 package com.codegym.task.task21.task2107;
 
-import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Objects;
 
 /* 
 Deep cloning of a map
 
 */
-public class Solution implements Cloneable{
 
+public class Solution implements Cloneable {
     public static void main(String[] args) {
         Solution solution = new Solution();
         solution.users.put("Hubert", new User(172, "Hubert"));
@@ -29,7 +27,7 @@ public class Solution implements Cloneable{
         }
     }
 
-    protected Map<String, User> users = new LinkedHashMap();
+    protected Map<String, User> users = new LinkedHashMap<>();
 
     public static class User implements Cloneable {
         int age;
@@ -41,31 +39,40 @@ public class Solution implements Cloneable{
         }
 
         @Override
+        protected Object clone() throws CloneNotSupportedException {
+            return super.clone();
+        }
+
+        @Override
         public boolean equals(Object o) {
             if (this == o) return true;
-            if (!(o instanceof User))
-                return false;
             if (o == null || getClass() != o.getClass()) return false;
+
             User user = (User) o;
-            return age == user.age &&
-                    Objects.equals(name, user.name);
+
+            if (age != user.age) return false;
+            return name != null ? name.equals(user.name) : user.name == null;
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(age, name);
-        }
-
-        @Override
-        protected Object clone() throws CloneNotSupportedException {
-            return super.clone();
+            int result = age;
+            result = 31 * result + (name != null ? name.hashCode() : 0);
+            return result;
         }
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        Solution solution = (Solution) super.clone();
-        solution.users = new LinkedHashMap<>(this.users);
-        return solution;
+    public Object clone() throws CloneNotSupportedException {
+        Solution o = (Solution) super.clone();
+
+        //clone users
+        Map<String, User> newUsers = new LinkedHashMap<>();
+        for (String key : o.users.keySet()) {
+            User user = o.users.get(key);
+            newUsers.put(key, (User) user.clone());
+        }
+        o.users = newUsers;
+
+        return o;
     }
 }

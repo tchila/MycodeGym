@@ -11,16 +11,9 @@ import java.util.List;
 Release resources
 
 */
+
 public class Solution {
     private Connection connection;
-
-    @Override
-    protected void finalize() throws Throwable {
-        if(connection !=null)
-            connection.close();
-        if(connection == null)
-            super.finalize();
-    }
 
     public Solution(Connection connection) {
         this.connection = connection;
@@ -30,8 +23,10 @@ public class Solution {
         String query = "select ID, DISPLAYED_NAME, LEVEL, LESSON from USER";
 
         List<User> result = new LinkedList();
+        try (Statement stmt = connection.createStatement();
+             ResultSet rs = stmt.executeQuery(query);
+             ) {
 
-        try ( Statement stmt = connection.createStatement();ResultSet rs = stmt.executeQuery(query)){
             while (rs.next()) {
                 int id = rs.getInt("ID");
                 String name = rs.getString("DISPLAYED_NAME");
@@ -40,13 +35,19 @@ public class Solution {
 
                 result.add(new User(id, name, level, lesson));
             }
-
-        }catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
             result = null;
         }
-
         return result;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        if (connection != null) {
+            connection.close();
+        }
     }
 
     public static class User {

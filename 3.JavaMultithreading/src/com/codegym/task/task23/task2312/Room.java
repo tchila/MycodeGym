@@ -17,7 +17,6 @@ public class Room {
         this.width = width;
         this.height = height;
         this.snake = snake;
-        game = this;
     }
 
     public Snake getSnake() {
@@ -54,7 +53,7 @@ public class Room {
 
     /**
      * The program's main loop.
-     * This is where all the important actions happen
+     * This is where all the important actions happen.
      */
     public void run() {
         // Create a KeyboardObserver object and start it.

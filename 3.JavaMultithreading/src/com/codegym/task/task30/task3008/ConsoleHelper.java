@@ -5,38 +5,31 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ConsoleHelper {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    private static BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
 
     public static void writeMessage(String message) {
         System.out.println(message);
     }
 
     public static String readString() {
-        String s = null;
-        boolean read = false;
-        while (!read) {
+        while (true) {
             try {
-                s = reader.readLine();
-                read = true;
+                String buf = bis.readLine();
+                if (buf != null)
+                    return buf;
             } catch (IOException e) {
-                System.out.println("An error occurred while trying to enter text. Try again.");
+                writeMessage("An error occurred while trying to enter text. Try again.");
             }
         }
-
-        return s;
     }
 
-    public static int readInt(){
-        boolean read = false;
-        int i = Integer.MIN_VALUE;
-        while (!read) {
+    public static int readInt() {
+        while (true) {
             try {
-                i = Integer.parseInt(readString());
-                read = true;
+                return Integer.parseInt(readString().trim());
             } catch (NumberFormatException e) {
-                System.out.println("An error while trying to enter a number. Try again.");
+                writeMessage("An error while trying to enter a number. Try again.");
             }
         }
-        return  i;
     }
 }

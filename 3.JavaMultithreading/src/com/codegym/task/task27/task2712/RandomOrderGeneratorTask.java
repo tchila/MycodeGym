@@ -1,27 +1,26 @@
 package com.codegym.task.task27.task2712;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class RandomOrderGeneratorTask implements Runnable {
-    List<Tablet> tablets = new ArrayList<>();
-    private int sleepTime;
+    private List<Tablet> tablets;
+    private int interval;
 
-    public RandomOrderGeneratorTask(List<Tablet> tablets, int sleepTime) {
+    public RandomOrderGeneratorTask(List<Tablet> tablets, int interval) {
         this.tablets = tablets;
-        this.sleepTime = sleepTime;
+        this.interval = interval;
     }
 
     @Override
     public void run() {
-        Tablet tablet = tablets.get((int) Math.random()* tablets.size());
-        while (true){
-            try {
-                Thread.sleep(sleepTime);
-                tablet.createOrder();
-            } catch (InterruptedException e) {
-
+        try {
+            while (true) {
+                int k = (int) (Math.random() * tablets.size());
+                Tablet expected = tablets.get(k);
+                expected.createTestOrder();
+                Thread.sleep(interval);
             }
+        } catch (InterruptedException e) {
         }
     }
 }

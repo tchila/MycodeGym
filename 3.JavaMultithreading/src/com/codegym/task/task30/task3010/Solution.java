@@ -1,34 +1,40 @@
 package com.codegym.task.task30.task3010;
 
+import java.util.regex.Pattern;
+
 /* 
 Smallest possible radix
 
 */
 
-import java.math.BigInteger;
-
 public class Solution {
     public static void main(String[] args) {
-        //write your code here
+        String line = null;
         try {
-
-            String str = args[0].toUpperCase();
-            int max = -1;
-            for (int i = 2; i < 37; i++) {
-                try {
-                    BigInteger integ = new BigInteger(str, i);
-                    max = i;
-                    System.out.println(max);
-                    break;
-                } catch (Exception e) {
-                }
-            }
-
-            if (max == -1) {
+            line = args[0];
+            Pattern pattern = Pattern.compile("[^0-9A-Za-z]");
+            if (pattern.matcher(line).find()) {
                 System.out.println("Invalid");
+            } else {
+                char max = 0;
+                char[] chars = line.toUpperCase().toCharArray();
+                for (char current : chars) {
+                    if (current > max) {
+                        max = current;
+                    }
+                }
+                int radix;
+                if (max <= '9') {
+                    radix = max - 47;
+                } else {
+                    radix = max - 54;
+                }
+                if (radix < 2) {
+                    radix = 2;
+                }
+                System.out.println(radix);
             }
         } catch (Exception e) {
-
         }
     }
 }

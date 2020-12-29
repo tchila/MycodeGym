@@ -5,7 +5,6 @@ Autoboxing features
 
 */
 
-
 public class Solution {
     private Integer[] intArray = new Integer[]{1, 2, 3, 4};
 
@@ -18,9 +17,9 @@ public class Solution {
     }
 
     Number getValueByIndex(int i) {
-        if (i >= 0 && i < intArray.length)
-            return intArray[i].intValue();
-        else
-            return new Double(-1);
+        if (i >= 0 && i < intArray.length) {
+            return intArray[i];
+        }
+        return new Double(-1);
     }
 }

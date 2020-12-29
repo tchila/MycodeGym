@@ -1,6 +1,7 @@
 package com.codegym.task.task23.task2312;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Snake class
@@ -11,10 +12,10 @@ public class Snake {
     // Whether the snake is alive.
     private boolean isAlive;
     // List of snake parts.
-    private ArrayList<SnakeSection> sections;
+    private List<SnakeSection> sections;
 
     public Snake(int x, int y) {
-        sections = new ArrayList<SnakeSection>();
+        sections = new ArrayList<>();
         sections.add(new SnakeSection(x, y));
         isAlive = true;
     }
@@ -39,7 +40,7 @@ public class Snake {
         this.direction = direction;
     }
 
-    public ArrayList<SnakeSection> getSections() {
+    public List<SnakeSection> getSections() {
         return sections;
     }
 
@@ -64,7 +65,7 @@ public class Snake {
      * This method moves the snake to the adjacent cell.
      * The cell coordinates (dx, dy) are given relative to the snake's current head position.
      */
-    private void move(int dx, int dy) {
+    void move(int dx, int dy) {
         // Create a new head (a new "snake section").
         SnakeSection head = sections.get(0);
         head = new SnakeSection(head.getX() + dx, head.getY() + dy);

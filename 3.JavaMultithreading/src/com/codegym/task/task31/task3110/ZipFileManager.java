@@ -193,7 +193,7 @@ public class ZipFileManager {
             ZipEntry zipEntry = zipInputStream.getNextEntry();
 
             while (zipEntry != null) {
-                // The "size" and "compressed size" fields are unknown until the entry is read
+                // The "size" and "compressed size" fields " are unknown until the entry is read
                 // Let's read it into an output stream
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
                 copyData(zipInputStream, baos);

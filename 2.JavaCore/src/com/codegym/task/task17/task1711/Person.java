@@ -13,11 +13,11 @@ public class Person {
         this.birthDate = birthDate;
     }
 
-    public static Person createMale(String name, Date birthDate) {
+    public static Person createMale(String name, Date birthDate){
         return new Person(name, Sex.MALE, birthDate);
     }
 
-    public static Person createFemale(String name, Date birthDate) {
+    public static Person createFemale(String name, Date birthDate){
         return new Person(name, Sex.FEMALE, birthDate);
     }
 

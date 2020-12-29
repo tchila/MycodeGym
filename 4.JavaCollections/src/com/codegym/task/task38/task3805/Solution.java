@@ -13,18 +13,17 @@ public class Solution {
             connection = new ConnectionMock();
             connection.connect();
         }
-        catch (WrongDataException  | ConnectionException e) {
-            throw new SolutionException(  e.getMessage());
+        catch (WrongDataException | ConnectionException e) {
+            throw new SolutionException(e.getClass().getSimpleName() + ": " + e.getMessage());
         }
-
     }
 
     public void write(Object data) throws SolutionException {
         try {
             connection.write(data);
         }
-        catch (WrongDataException  | ConnectionException e) {
-            throw new SolutionException(  e.getMessage());
+        catch (WrongDataException | ConnectionException e) {
+            throw new SolutionException(e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
 
@@ -32,8 +31,8 @@ public class Solution {
         try {
             return connection.read();
         }
-        catch (WrongDataException  | ConnectionException e) {
-            throw new SolutionException(  e.getMessage());
+        catch (WrongDataException | ConnectionException e) {
+            throw new SolutionException(e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
 
@@ -41,8 +40,8 @@ public class Solution {
         try {
             connection.disconnect();
         }
-        catch (WrongDataException  | ConnectionException e) {
-            throw new SolutionException(  e.getMessage());
+        catch (WrongDataException | ConnectionException e) {
+            throw new SolutionException(e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
 

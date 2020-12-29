@@ -10,8 +10,9 @@ import java.util.List;
 Externalizable Person
 
 */
+
 public class Solution {
-    public static class Person implements Externalizable{
+    public static class Person implements Externalizable {
         private String firstName;
         private String lastName;
         private int age;
@@ -23,13 +24,6 @@ public class Solution {
             this.firstName = firstName;
             this.lastName = lastName;
             this.age = age;
-            this.mother = null;
-            this.father = null;
-            this.children = null;
-        }
-
-        public Person() {
-            this("Unknown", "Unknown", 0);
         }
 
         public void setMother(Person mother) {
@@ -47,21 +41,24 @@ public class Solution {
         @Override
         public void writeExternal(ObjectOutput out) throws IOException {
             out.writeObject(firstName);
-            out.writeObject(lastName);
             out.writeObject(mother);
+            out.writeObject(lastName);
             out.writeObject(father);
-            out.writeInt(age);
+            out.writeObject(age);
             out.writeObject(children);
         }
 
         @Override
         public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-            firstName = (String) in.readObject();
-            lastName = (String) in.readObject();
+            firstName = (String)in.readObject();
             mother = (Person)in.readObject();
+            lastName = (String)in.readObject();
             father = (Person)in.readObject();
-            age = in.readInt();
-            children = (List)in.readObject();
+            age = (int)in.readObject();
+            children = (List<Person>)in.readObject();
+        }
+
+        public Person() {
         }
     }
 

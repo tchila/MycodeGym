@@ -3,7 +3,7 @@ package com.codegym.task.task39.task3911;
 import java.util.*;
 
 public class Software {
-    int currentVersion;
+    private int currentVersion;
 
     private Map<Integer, String> versionHistoryMap = new LinkedHashMap<>();
 
@@ -23,18 +23,27 @@ public class Software {
     }
 
     public boolean rollback(int rollbackVersion) {
-         if(versionHistoryMap.get(rollbackVersion)== null)
-             return false;
+        boolean isRollbackPositionFound = false;
+        List<Integer> versionsToDelete = new LinkedList<>();
+        for (int version : versionHistoryMap.keySet()) {
+            if (version == rollbackVersion) {
+                isRollbackPositionFound = true;
+                continue;
+            }
+            if (isRollbackPositionFound) {
+                versionsToDelete.add(version);
+            }
+        }
+
+        if (!isRollbackPositionFound) {
+            return false;
+        }
+
+        for (int version : versionsToDelete) {
+            versionHistoryMap.remove(version);
+        }
+
         currentVersion = rollbackVersion;
-        Iterator<Integer> iterator = versionHistoryMap.keySet().iterator();
-        List<Integer> removalVersions = new ArrayList<>();
-        while (iterator.next()!= rollbackVersion);
-        while (iterator.hasNext()){
-            removalVersions.add(iterator.next());
-        }
-        for (Integer i : removalVersions) {
-            versionHistoryMap.remove(i);
-        }
         return true;
     }
 }

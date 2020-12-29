@@ -1,16 +1,17 @@
 package com.codegym.task.task33.task3311;
 
-import com.fasterxml.jackson.annotation.*;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@JsonAutoDetect
 public class RealBean {
     protected final int id;
     protected final String name;
-    @JsonDeserialize(keyAs = String.class )
+
     protected Map<String, Object> additionalMap = new HashMap<>();
 
     @JsonCreator

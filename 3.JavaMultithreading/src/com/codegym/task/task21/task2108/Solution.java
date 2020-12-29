@@ -1,11 +1,10 @@
 package com.codegym.task.task21.task2108;
 
-import java.util.Arrays;
-
-/*
+/* 
 Cloning plants
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         Tree tree = new Tree("willow", new String[]{"s1", "s2", "s3", "s4"});
@@ -23,7 +22,7 @@ public class Solution {
         System.out.println(clone.branches);
     }
 
-    public static class Plant{
+    public static class Plant {
         private String name;
 
         public Plant(String name) {
@@ -48,25 +47,8 @@ public class Solution {
         }
 
         @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if(!(o instanceof Tree))
-                return false;
-            if (o == null || getClass() != o.getClass()) return false;
-            Tree tree = (Tree) o;
-            return Arrays.equals(branches, tree.branches);
-        }
-
-        @Override
-        public int hashCode() {
-            return Arrays.hashCode(branches);
-        }
-
-        @Override
         protected Object clone() throws CloneNotSupportedException {
-            Tree tree = (Tree) super.clone();
-            tree.branches = Arrays.copyOf(getBranches(), getBranches().length);
-            return tree;
+            return new Tree(getName(), branches == null ? null : branches.clone());
         }
     }
 }

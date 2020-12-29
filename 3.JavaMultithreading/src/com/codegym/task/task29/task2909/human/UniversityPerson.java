@@ -1,6 +1,6 @@
 package com.codegym.task.task29.task2909.human;
 
-public class UniversityPerson extends Human{
+public class UniversityPerson extends Human {
     private University university;
 
     public UniversityPerson(String name, int age) {

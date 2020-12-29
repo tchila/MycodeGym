@@ -1,6 +1,5 @@
 package com.codegym.task.task31.task3104;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -12,6 +11,7 @@ import java.util.List;
 Search for hidden files
 
 */
+
 public class Solution extends SimpleFileVisitor<Path> {
     public static void main(String[] args) throws IOException {
         EnumSet<FileVisitOption> options = EnumSet.of(FileVisitOption.FOLLOW_LINKS);
@@ -31,19 +31,6 @@ public class Solution extends SimpleFileVisitor<Path> {
         }
     }
 
-    @Override
-    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-        if((file.toString().endsWith(".zip") ||file.toString().endsWith(".rar")) )
-            archived.add(file.toString());
-        return super.visitFile(file, attrs);
-    }
-
-    @Override
-    public FileVisitResult visitFileFailed(Path file, IOException exc) throws IOException {
-        failed.add(file.toString());
-        return FileVisitResult.SKIP_SUBTREE;
-    }
-
     private List<String> archived = new ArrayList<>();
     private List<String> failed = new ArrayList<>();
 
@@ -53,5 +40,19 @@ public class Solution extends SimpleFileVisitor<Path> {
 
     public List<String> getFailed() {
         return failed;
+    }
+
+    @Override
+    public FileVisitResult visitFile(Path path, BasicFileAttributes basicFileAttributes) throws IOException {
+        if (path.toString().endsWith(".rar") || path.toString().endsWith(".zip")) {
+            archived.add(path.toString());
+        }
+        return super.visitFile(path, basicFileAttributes);
+    }
+
+    @Override
+    public FileVisitResult visitFileFailed(Path path, IOException e) throws IOException {
+        failed.add(path.toString());
+        return FileVisitResult.SKIP_SUBTREE;
     }
 }

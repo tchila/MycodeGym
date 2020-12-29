@@ -29,11 +29,10 @@ public class Solution {
             if (tryNumber > secret)
                 if (i < 10)
                     System.out.println("The secret number is smaller");
-            if (tryNumber == secret){
+            if (tryNumber == secret) {
                 i = stopGame();
                 playerWon = true;
             }
-
         }
         if (playerWon)
             printCongratulations(tryNumber);

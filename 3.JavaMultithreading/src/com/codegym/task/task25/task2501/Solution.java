@@ -4,6 +4,7 @@ package com.codegym.task.task25.task2501;
 New functionality!
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(Alphabet.G.getLetterPosition());
@@ -17,7 +18,7 @@ public class Solution {
         U, V, W, X, Y, Z;
 
         int getLetterPosition() {
-            return this.ordinal()+1;
+            return ordinal() + 1;
         }
     }
 }

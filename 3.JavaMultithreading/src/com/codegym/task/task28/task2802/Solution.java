@@ -1,6 +1,5 @@
 package com.codegym.task.task28.task2802;
 
-
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -8,8 +7,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 Writing our own ThreadFactory
 
 */
+
 public class Solution {
-    static AtomicInteger factoryNum = new AtomicInteger();
 
     public static void main(String[] args) {
         class EmulatorThreadFactoryTask implements Runnable {
@@ -43,16 +42,27 @@ public class Solution {
     }
 
     public static class AmigoThreadFactory implements ThreadFactory {
-        AtomicInteger threadNum = new AtomicInteger();
-        int i = factoryNum.incrementAndGet();
-        @Override
-        public Thread newThread(Runnable r) {
+        private static final AtomicInteger poolNumber = new AtomicInteger(1);
+        private final ThreadGroup group;
+        private final AtomicInteger threadNumber = new AtomicInteger(1);
+        private final String namePrefix;
 
-            Thread thread = new Thread(r);
-            thread.setDaemon(false);
-            thread.setPriority(5);
-            thread.setName(thread.getThreadGroup().getName()+"-pool-"+i+"-thread-"+threadNum.incrementAndGet());
-            return thread;
+        public AmigoThreadFactory() {
+            group = Thread.currentThread().getThreadGroup();
+            namePrefix = group.getName() + "-pool-" +
+                    poolNumber.getAndIncrement() +
+                    "-thread-";
+        }
+
+        public Thread newThread(Runnable r) {
+            Thread t = new Thread(group, r,
+                    namePrefix + threadNumber.getAndIncrement(),
+                    0);
+            if (t.isDaemon())
+                t.setDaemon(false);
+            if (t.getPriority() != Thread.NORM_PRIORITY)
+                t.setPriority(Thread.NORM_PRIORITY);
+            return t;
         }
     }
 }

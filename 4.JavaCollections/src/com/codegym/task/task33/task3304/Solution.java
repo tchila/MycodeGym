@@ -2,7 +2,6 @@ package com.codegym.task.task33.task3304;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -13,6 +12,7 @@ import java.io.StringWriter;
 Using JSON to convert from one class to another
 
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException {
         Second s = (Second) convertOneToAnother(new First(), Second.class);
@@ -20,25 +20,28 @@ public class Solution {
     }
 
     public static Object convertOneToAnother(Object one, Class resultClassObject) throws IOException {
-        StringWriter writer =  new StringWriter();
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.disable(MapperFeature.USE_ANNOTATIONS).writeValue(writer, one);
+        StringWriter writer = new StringWriter();
+        ObjectMapper mapper1 = new ObjectMapper();
+        mapper1.writeValue(writer, one);
+        String ss = writer.toString();
+        String key1 = "\"" + one.getClass().getSimpleName().toLowerCase() + "\"";
+        String key2 = "\"" + resultClassObject.getSimpleName().toLowerCase() + "\"";
+        ss = ss.replaceFirst(key1, key2);
 
-        StringReader reader = new StringReader(writer.toString());
-
-        return objectMapper.readValue(reader, resultClassObject);
-        //return  object;
+        StringReader reader = new StringReader(ss);
+        ObjectMapper mapper2 = new ObjectMapper();
+        return mapper2.readValue(reader, resultClassObject);
     }
 
-    @JsonTypeInfo(use = JsonTypeInfo.Id.NAME,  property="className")
-    @JsonSubTypes(@JsonSubTypes.Type(value=First.class,  name="first"))
+    @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "className")
+    @JsonSubTypes(@JsonSubTypes.Type(value = First.class, name = "first"))
     public static class First {
         public int i;
         public String name;
     }
 
-    @JsonTypeInfo(use = JsonTypeInfo.Id.NAME,  property="className")
-    @JsonSubTypes(@JsonSubTypes.Type(value=Second.class, name="second"))
+    @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "className")
+    @JsonSubTypes(@JsonSubTypes.Type(value = Second.class, name = "second"))
     public static class Second {
         public int i;
         public String name;

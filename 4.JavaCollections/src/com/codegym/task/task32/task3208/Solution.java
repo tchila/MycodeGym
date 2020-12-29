@@ -1,9 +1,6 @@
 package com.codegym.task.task32.task3208;
 
-import java.rmi.AlreadyBoundException;
-import java.rmi.NotBoundException;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import java.rmi.*;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
@@ -12,10 +9,11 @@ import java.rmi.server.UnicastRemoteObject;
 RMI (part 2)
 
 */
+
 public class Solution {
     public static Registry registry;
 
-    // Pretend we're starting an RMI client as the CLIENT_THREAD thread
+    //pretend we start rmi client as CLIENT_THREAD thread
     public static Thread CLIENT_THREAD = new Thread(new Runnable() {
         @Override
         public void run() {
@@ -33,32 +31,34 @@ public class Solution {
         }
     });
 
-    // Pretend we're starting an RMI server as the SERVER_THREAD thread
+    //pretend we start rmi server as SERVER_THREAD thread
     public static Thread SERVER_THREAD = new Thread(new Runnable() {
         @Override
         public void run() {
-            //write your code here
+            Remote stub = null;
             try {
                 registry = LocateRegistry.createRegistry(2099);
-                Cat cat = new Cat("Tom");
-                Dog dog = new Dog("jerry");
-                Remote remote = UnicastRemoteObject.exportObject(cat,2099);
-                Remote remote1 = UnicastRemoteObject.exportObject(dog,2099);
+                final Cat service1 = new Cat("Murzik");
+                final Dog service2 = new Dog("Bobik");
 
-                registry.bind("cat",remote);
-                registry.bind("dog",remote1);
-            } catch (RemoteException | AlreadyBoundException e) {
-                e.printStackTrace(System.err);
-                System.err.println();
+                stub = UnicastRemoteObject.exportObject(service1, 0);
+                registry.bind("class.cat", stub);
+
+                stub = UnicastRemoteObject.exportObject(service2, 0);
+                registry.bind("class.dog", stub);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            } catch (AlreadyBoundException e) {
+                e.printStackTrace();
             }
         }
     });
 
     public static void main(String[] args) throws InterruptedException {
-        // Starting an RMI server thread
+        //start rmi server thread
         SERVER_THREAD.start();
         Thread.sleep(1000);
-        // Start the client
+        //start client
         CLIENT_THREAD.start();
     }
 }

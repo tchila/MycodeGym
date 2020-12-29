@@ -8,6 +8,7 @@ import java.util.Map;
 Correct the mistake. Serialization
 
 */
+
 public class Solution implements Serializable {
 
     public static void main(String args[]) throws Exception {
@@ -39,7 +40,7 @@ public class Solution implements Serializable {
         return m;
     }
 
-    public  Solution() {
+    public Solution() {
         m.put("Mickey", "Mouse");
         m.put("Mickey", "Mantle");
     }

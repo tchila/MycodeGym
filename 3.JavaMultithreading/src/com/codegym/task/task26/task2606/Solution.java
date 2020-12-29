@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 Those who love work need no entertainment
 
 */
+
 public class Solution {
     private final URL codegymUrl;
     private final URL codegymUrl1Child;

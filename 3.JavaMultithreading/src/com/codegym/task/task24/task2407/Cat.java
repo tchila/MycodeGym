@@ -29,22 +29,17 @@ public class Cat implements Pet {
      * @return an instance of the CatPet class
      */
     public CanSpeak toCanSpeak(final int i) {
-        final String localName = this.name;
-        class CatPet implements CanSpeak{
-
+        class CatPet implements CanSpeak {
             @Override
             public String speak() {
-                if(i<1)
-                    return localName + " is sleeping.";
-                else{
-                    StringBuilder stringBuilder = new StringBuilder(localName + " says me");
-                    for (int j = 0; j < i; j++) {
-                        stringBuilder.append("o");
-                    }
-                    return stringBuilder.append("w!").toString();
+                if (i < 1)
+                    return Cat.this.name + " is sleeping.";
 
-                }
-
+                StringBuilder sb = new StringBuilder(Cat.this.name).append(" says me");
+                for (int j = 0; j < i; j++)
+                    sb.append("o");
+                sb.append("w!");
+                return sb.toString();
             }
         }
         return new CatPet();

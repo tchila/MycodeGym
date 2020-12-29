@@ -17,12 +17,13 @@ public abstract class AbstractCrewMember {
     }
 
     public void handleRequest(CompetencyLevel competencyLevel, String request) {
-        if (this.competencyLevel == competencyLevel) {
+        if (this.competencyLevel.compareTo(competencyLevel) >= 0) {
             doJob(request);
-            return;
-        }
-        if (this.competencyLevel.ordinal() < competencyLevel.ordinal()) {
+        } else if (nextCrewMember != null) {
+            System.out.println("The request " + request + " can't be handled by the " + getClass().getSimpleName() + ". Passing it higher!");
             nextCrewMember.handleRequest(competencyLevel, request);
+        } else {
+            System.out.println("The request can't be handled due to the lack of competence.");
         }
     }
 

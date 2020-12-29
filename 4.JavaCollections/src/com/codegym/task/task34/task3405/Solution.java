@@ -8,6 +8,7 @@ import java.util.List;
 Soft references
 
 */
+
 public class Solution {
     public static Helper helper = new Helper();
 
@@ -28,9 +29,7 @@ public class Solution {
         helper.startTime();
 
         Monkey monkey = new Monkey("George");
-
-        // Add a reference here
-        SoftReference<Monkey> reference = new SoftReference<Monkey>(monkey);
+        SoftReference<Monkey> reference = new SoftReference<>(monkey);        //Add reference here
 
         helper.callGC();
 

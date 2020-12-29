@@ -11,44 +11,48 @@ public class Solution {
     }
 
     public static boolean isOneEditAway(String first, String second) {
-        int diff = Math.abs(first.length() - second.length());
+        int lengthDifference = first.length() - second.length();
 
-        if(diff>1)
+        if (lengthDifference == 0) {
+            return checkReplacement(first, second);
+        } else if (lengthDifference == 1) {
+            return checkInsertion(first, second);
+        } else if (lengthDifference == -1){
+            return checkInsertion(second, first);
+        } else {
             return false;
-        if(first.equals("") && second.equals(""))
-            return true;
-        if(first.equals(second))
-            return true;
-        if(first.length() == second.length()){
-            for (int i = 0; i < first.length(); i++) {
-                StringBuilder stringBuilder = new StringBuilder(first);
-                StringBuilder stringBuilder1 = new StringBuilder(second);
-                if(stringBuilder.deleteCharAt(i).toString()
-                .equals(stringBuilder1.deleteCharAt(i).toString()))
-                    return true;
+        }
+    }
 
+    private static boolean checkReplacement(String first, String second) {
+        boolean foundDifference = false;
+        for (int i = 0; i < first.length(); i++) {
+            if (first.charAt(i) != second.charAt(i)) {
+                if (foundDifference) {
+                    return false;
+                } else {
+                    foundDifference = true;
+                }
             }
         }
+        return true;
+    }
 
-        if(first.length() > second.length()){
-            for (int i = 0; i < first.length(); i++) {
-                StringBuilder stringBuilder = new StringBuilder(first);
-                if(stringBuilder.deleteCharAt(i).toString()
-                        .equals(second))
-                    return true;
+    private static boolean checkInsertion(String first, String second) {
+        int i = 0;
+        int j = 0;
 
+        while (j < second.length() && i < first.length()) {
+            if (first.charAt(i) != second.charAt(j)) {
+                if (i != j) {
+                    return false;
+                }
+                i++;
+            } else {
+                i++;
+                j++;
             }
         }
-
-        if(first.length() < second.length()){
-            for (int i = 0; i < second.length(); i++) {
-                StringBuilder stringBuilder = new StringBuilder(second);
-                if(stringBuilder.deleteCharAt(i).toString()
-                        .equals(first))
-                return true;
-
-            }
-        }
-        return false;
+        return true;
     }
 }

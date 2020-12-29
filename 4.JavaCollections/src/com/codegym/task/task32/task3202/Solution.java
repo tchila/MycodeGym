@@ -6,6 +6,7 @@ import java.io.*;
 Reading from a stream
 
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException {
         StringWriter writer = getAllDataFromInputStream(new FileInputStream("testFile.log"));
@@ -13,20 +14,16 @@ public class Solution {
     }
 
     public static StringWriter getAllDataFromInputStream(InputStream is) throws IOException {
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
-            StringWriter writer = new StringWriter();
-            StringBuilder stringBuilder = new StringBuilder();
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                stringBuilder.append(line);
+        StringWriter writer = new StringWriter();
+        if (is != null) {
+            char[] buffer = new char[1024];
+            try (Reader reader = new BufferedReader(new InputStreamReader(is))) {
+                int n;
+                while ((n = reader.read(buffer)) != -1) {
+                    writer.write(buffer, 0, n);
+                }
             }
-            writer.write(stringBuilder.toString());
-            return writer;
-        } catch (Exception E) {
-            return new StringWriter();
         }
-
-
+        return writer;
     }
 }

@@ -1,27 +1,24 @@
 package com.codegym.task.task24.task2404;
 
-/*
+/* 
 Refactoring Rectangle
 
 */
+
 public class Solution {
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle(1, 2, 3, 4);
-        System.out.println(getHeight(rectangle));
-        System.out.println(getWidth(rectangle));
-        /////////////////////expected//////////////////
-        //System.out.println(getHeight(rectangle.castToHasHeight()));
-        //System.out.println(getWidth(rectangle.castToHasWidth()));
+        System.out.println(getHeight(rectangle.castToHasHeight()));
+        System.out.println(getWidth(rectangle.castToHasWidth()));
     }
 
-    public static HasHeight getHeight(Rectangle rectangle) {
-        return rectangle.castToHasHeight();
+    public static double getHeight(HasHeight rectangle) {
+        return rectangle.getHeight();
     }
 
-    public static HasWidth getWidth(Rectangle rectangle) {
-        return rectangle.castToHasWidth();
+    public static double getWidth(HasWidth rectangle) {
+        return rectangle.getWidth();
     }
-
 
     public static class Rectangle {
         private Point point1;
@@ -33,33 +30,21 @@ public class Solution {
         }
 
         public HasHeight castToHasHeight() {
-
-            class MyClass1 implements HasHeight{
-                @Override
+            class HasHeightImpl implements HasHeight {
                 public double getHeight() {
                     return Math.abs(point1.getY() - point2.getY());
-
                 }
             }
-            return new MyClass1();
-
+            return new HasHeightImpl();
         }
 
         public HasWidth castToHasWidth() {
-
-            class MyClass2 implements HasWidth{
-
-                @Override
+            class HasWidthImpl implements HasWidth {
                 public double getWidth() {
                     return Math.abs(point1.getX() - point2.getX());
                 }
             }
-
-            return new MyClass2();
+            return new HasWidthImpl();
         }
-
-
-
-
     }
 }

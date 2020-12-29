@@ -1,19 +1,17 @@
 package com.codegym.task.task38.task3806;
 
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 /* 
 Improvements in Java 7 (try-with-resources)
 
 */
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-
 public class Solution {
     public void printFile1() throws IOException {
-        try (FileInputStream fileInputStream = new FileInputStream("file.txt")){
-
-
+        try (FileInputStream fileInputStream = new FileInputStream("file.txt")) {
             int data = fileInputStream.read();
             while (data != -1) {
                 System.out.println(data);
@@ -23,9 +21,7 @@ public class Solution {
     }
 
     public void printFile2() throws IOException {
-        try(FileInputStream fileInputStream = new FileInputStream("file.txt");
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);) {
-
+        try (BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream("file.txt"))) {
             int data = bufferedInputStream.read();
             while (data != -1) {
                 System.out.println(data);

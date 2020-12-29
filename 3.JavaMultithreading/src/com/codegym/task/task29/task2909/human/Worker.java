@@ -5,11 +5,7 @@ public class Worker extends Human {
     public String company;
 
     public Worker(String name, int age) {
-        super(name,age);
-    }
-
-    public void live() {
-        super.live();
+        super(name, age);
     }
 
     public double getSalary() {

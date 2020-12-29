@@ -3,31 +3,28 @@ package com.codegym.task.task28.task2806;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /* 
 Introducing Executors
 
 */
+
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
-        // Add your code here
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
-         AtomicInteger atomicInteger = new AtomicInteger(1);
-
-        for (int i = 0; i < 10; i++) {
-            executorService.submit(new Runnable() {
-                @Override
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        for (int i = 1; i <= 10; i++) {
+            final int localId = i;
+            executor.submit(new Runnable() {
                 public void run() {
-                    doExpensiveOperation(atomicInteger.getAndIncrement());
+                    doExpensiveOperation(localId);
                 }
             });
         }
-        executorService.shutdown();
-        executorService.awaitTermination(5,TimeUnit.SECONDS);
 
+        executor.shutdown();
+        executor.awaitTermination(5, TimeUnit.SECONDS);
 
-        /* Example output
+        /* output example
 pool-1-thread-2, localId=2
 pool-1-thread-1, localId=1
 pool-1-thread-3, localId=3

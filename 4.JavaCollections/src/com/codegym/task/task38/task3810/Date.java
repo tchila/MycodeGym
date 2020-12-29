@@ -12,5 +12,4 @@ public @interface Date {
     int minute();
 
     int second();
-    // Write your own code
 }

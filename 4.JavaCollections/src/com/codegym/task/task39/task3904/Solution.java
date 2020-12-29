@@ -1,7 +1,6 @@
 package com.codegym.task.task39.task3904;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 /* 
 Stairs
@@ -10,31 +9,32 @@ Stairs
 
 public class Solution {
     private static int n = 70;
-
-    static HashMap<Integer, Long> map = new HashMap<>();
-    static {
-        map.put(0, 1L);
-        map.put(1, 1L);
-        map.put(2, 2L);
-        map.put(3, 4L);
-    }
-
     public static void main(String[] args) {
         System.out.println("The number of possible ascents for " + n + " steps is: " + numberOfPossibleAscents(n));
     }
 
     public static long numberOfPossibleAscents(int n) {
-        if(n<0)
+        if (n < 0) {
             return 0;
-        if(map.containsKey(n))
-            return map.get(n);
-        else {
-            long result = (numberOfPossibleAscents(n-3) +
-                    numberOfPossibleAscents(n-2) +
-                    numberOfPossibleAscents(n-1));
-            map.put(n, result);
-            return result;
+        }
+        long[] memo = new long[n + 1];
+        Arrays.fill(memo, -1);
+        return numberOfPossibleAscents(n, memo);
+    }
 
+    private static long numberOfPossibleAscents(int n, long[] memo) {
+        if (n < 0) {
+            return 0;
+        } else if (n == 0) {
+            return 1;
+        } else if (memo[n] > -1) {
+            return memo[n];
+        } else {
+            memo[n] = numberOfPossibleAscents(n - 1, memo)
+                    + numberOfPossibleAscents(n - 2, memo)
+                    + numberOfPossibleAscents(n - 3, memo);
+            return memo[n];
         }
     }
 }
+

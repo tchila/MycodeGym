@@ -1,7 +1,8 @@
 package com.codegym.task.task36.task3601;
 
 public class View {
+    private Controller controller = new Controller();
     public void fireShowDataEvent() {
-        System.out.println(new Controller().onShowDataList());
+        System.out.println(controller.onShowDataList());
     }
 }

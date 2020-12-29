@@ -4,6 +4,7 @@ package com.codegym.task.task28.task2801;
 Mastering switch
 
 */
+
 public class Solution {
     public static enum E1 {A, B, C, Y}
 
@@ -23,18 +24,15 @@ public class Solution {
     }
 
     public static void switchTest(Enum obj) {
-        // Add your code here
-        switch (obj.getDeclaringClass().getSimpleName()){
+        String className = obj.getClass().getSimpleName();
+        switch (className) {
             case "E1":
-                System.out.println("it's E1."+obj.name());
-                break;
             case "E2":
-                System.out.println("it's E2."+obj.name());
+                System.out.println("it's " + className + "." + obj.name());
                 break;
             default:
                 System.out.println("undefined");
                 break;
-
         }
     }
 }

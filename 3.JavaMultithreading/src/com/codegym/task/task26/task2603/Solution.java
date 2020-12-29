@@ -1,19 +1,19 @@
 package com.codegym.task.task26.task2603;
 
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 
-/*
+/* 
 A convert can easily convert others
 
 */
+
 public class Solution {
-    public Solution() {
+
+    public static void main(String[] args) {
+
     }
 
-    public static  class CustomizedComparator<T> implements Comparator<T> {
-
+    public static class CustomizedComparator<T> implements Comparator<T> {
         private Comparator<T>[] comparators;
 
         public CustomizedComparator(Comparator<T>... comparators) {
@@ -22,18 +22,14 @@ public class Solution {
 
         @Override
         public int compare(T o1, T o2) {
-            int compare = 0;
-
+            int res = 0;
             for (Comparator<T> comparator : comparators) {
-                compare = comparator.compare(o1, o2);
-                if(compare!=0)
-                    return compare;
+                res = comparator.compare(o1, o2);
+                if (res != 0) {
+                    return res;
+                }
             }
-            return compare;
+            return 0;
         }
-    }
-
-    public static void main(String[] args) {
-
     }
 }

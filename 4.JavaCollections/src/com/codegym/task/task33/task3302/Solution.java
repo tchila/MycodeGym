@@ -12,6 +12,7 @@ import java.io.StringWriter;
 My second serialization into JSON
 
 */
+
 public class Solution {
     public static void main(String[] args) throws IOException {
         Cat cat = new Cat();
@@ -31,12 +32,13 @@ public class Solution {
 
     @JsonAutoDetect
     public static class Cat {
-        @JsonProperty("wildAnimal")
+        @JsonProperty(value = "wildAnimal")
         public String name;
 
         @JsonIgnore
         public int age;
-        @JsonProperty("over")
+
+        @JsonProperty(value = "over")
         public int weight;
 
         Cat() {

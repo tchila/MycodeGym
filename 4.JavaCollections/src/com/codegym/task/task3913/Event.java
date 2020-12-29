@@ -1,4 +1,4 @@
-package com.codegym.task.task3913;
+package com.codegym.task.task39.task3913;
 
 public enum Event {
     LOGIN,

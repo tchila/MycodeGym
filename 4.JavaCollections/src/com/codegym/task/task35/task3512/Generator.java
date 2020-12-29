@@ -1,14 +1,14 @@
 package com.codegym.task.task35.task3512;
 
 public class Generator<T> {
-    Class<T> t;
 
-    public Generator(Class<T> t) {
-        this.t = t;
+    private Class<T> aClass;
+
+    public Generator(Class<T> aClass) {
+        this.aClass = aClass;
     }
 
     T newInstance() throws IllegalAccessException, InstantiationException {
-
-         return  t.newInstance();
+        return aClass.newInstance();
     }
 }

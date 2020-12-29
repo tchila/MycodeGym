@@ -2,13 +2,12 @@ package com.codegym.task.task25.task2515;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
-
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 
 public class KeyboardObserver extends Thread {
     private Queue<KeyEvent> keyEvents = new ArrayBlockingQueue<KeyEvent>(100);
@@ -32,7 +31,7 @@ public class KeyboardObserver extends Thread {
         frame.addFocusListener(new FocusListener() {
             @Override
             public void focusGained(FocusEvent e) {
-                // Do nothing
+                //do nothing
             }
 
             @Override
@@ -45,11 +44,11 @@ public class KeyboardObserver extends Thread {
         frame.addKeyListener(new KeyListener() {
 
             public void keyTyped(KeyEvent e) {
-                // Do nothing
+                //do nothing
             }
 
             public void keyReleased(KeyEvent e) {
-                // Do nothing
+                //do nothing
             }
 
             public void keyPressed(KeyEvent e) {
@@ -67,3 +66,4 @@ public class KeyboardObserver extends Thread {
         return keyEvents.poll();
     }
 }
+

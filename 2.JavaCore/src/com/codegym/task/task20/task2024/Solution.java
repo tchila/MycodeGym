@@ -8,6 +8,7 @@ import java.util.List;
 Introducing graphs
 
 */
+
 public class Solution implements Serializable {
     int node;
     List<Solution> edges = new LinkedList<>();

@@ -2,7 +2,6 @@ package com.codegym.task.task37.task3704;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 /* 
 Bug fix
@@ -13,12 +12,12 @@ public class Solution {
     public static void main(String[] args) {
         Map expectedMap = getExpectedMap();
 
-        System.out.println("********* Add obj with key NULL *********");
+        System.out.println("********* Add obj with NULL key *********");
         expectedMap.put(null, "text 1");
         System.out.println(expectedMap.size());
         System.out.println(expectedMap.get(null));
 
-        System.out.println("*********  Add obj with key 0 *********");
+        System.out.println("*********  Add obj with 0 key *********");
         expectedMap.put(0, "text 2");
         System.out.println(expectedMap.size());
         System.out.println(expectedMap.get(null));
@@ -34,10 +33,10 @@ public class Solution {
         }
 
         /* Expected output
-********* Add obj with key NULL *********
+********* Add obj with NULL key *********
 1
 text 1
-*********  Add obj with key 0 *********
+*********  Add obj with 0 key *********
 2
 text 1
 text 2

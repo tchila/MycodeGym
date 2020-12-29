@@ -1,28 +1,36 @@
 package com.codegym.task.task38.task3807;
 
+@Deprecated      //+
+
 /* 
 Predefined annotation types
 
 */
-@Deprecated
+
 public class Solution {
-    @Deprecated
+
+    @Deprecated       //+
     private String[] arguments;
-    @Deprecated
-    @SafeVarargs
+
+    @SafeVarargs      //+
+    @Deprecated       //+
     public Solution(String... arguments) {
         this.arguments = arguments;
     }
-    @Deprecated
+
+    @Deprecated           //+
     public void voidMethod() throws Exception {
     }
-    @Deprecated
+
+    @Deprecated        //+
     public static void main(String[] args) throws Exception {
         new Solution().new SubSolution().voidMethod();
     }
-    @Deprecated
+
+    @Deprecated         //+
     class SubSolution extends Solution {
-        @Deprecated
+
+        @Deprecated    //+
         @Override
         public void voidMethod() throws Exception {
             super.voidMethod();

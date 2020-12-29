@@ -2,7 +2,7 @@ package com.codegym.task.task29.task2908;
 
 import java.util.concurrent.*;
 
-/* Argument and Value are generic types */
+/* Argument and Value are generic types*/
 public class CacheComputeManager<Argument, Value> implements Computable<Argument, Value> {
     private final ConcurrentHashMap<Argument, Future<Value>> cache = new ConcurrentHashMap<>();
     private final Computable<Argument, Value> computable;
@@ -34,19 +34,12 @@ public class CacheComputeManager<Argument, Value> implements Computable<Argument
     }
 
     public FutureTask<Value> createFutureTaskForNewArgumentThatHasToComputeValue(final Argument arg) {
-        FutureTask<Value> futureTask = new FutureTask<Value>(
-         new Callable<Value>() {
+        Callable<Value> eval = new Callable<Value>() {
             @Override
-             public Value call()  {
-                try {
-                    return  computable.compute(arg);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                return null;
+            public Value call() throws Exception {
+                return computable.compute(arg);
             }
-        });
-
-        return futureTask;
+        };
+        return new FutureTask(eval);
     }
 }

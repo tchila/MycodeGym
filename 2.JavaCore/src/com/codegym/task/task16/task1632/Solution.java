@@ -5,112 +5,77 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Solution {
     public static List<Thread> threads = new ArrayList<>(5);
+
     static {
-        threads.add(new InfinitThread("Infinit Threads"));
-        threads.add(new InterruptedThread("Interrupted Threads"));
-        threads.add(new HouraThread("Houra Threads"));
-        threads.add(new MessageThread("Message Threads"));
-        threads.add(new NumberSumThread("Infinit Threads"));
+        threads.add(new Thread1());
+        threads.add(new Thread2());
+        threads.add(new Thread3());
+        threads.add(new Thread4());
+        threads.add(new Thread5());
     }
 
     public static void main(String[] args) {
-        for (Thread thread : threads) {
-            thread.start();
-        }
     }
 
-    private static class InfinitThread extends Thread {
-        public InfinitThread(String infinit_threads) {
-            super(infinit_threads);
-        }
-
-        @Override
+    public static class Thread1 extends Thread {
         public void run() {
-            while (true){
-
+            while (true) {
             }
         }
     }
 
-    private static class InterruptedThread extends Thread {
-        public InterruptedThread(String interrupted_threads) {
-            super(interrupted_threads);
-        }
-
-        @Override
+    public static class Thread2 extends Thread {
         public void run() {
             try {
-                Thread.sleep(1000000000);
-            }catch (InterruptedException e){
-                System.out.println("InterruptedException");
-
+                throw new InterruptedException();
+            } catch (InterruptedException e) {
+                System.out.println(e);
             }
         }
     }
 
-    private static class HouraThread extends Thread {
-        public HouraThread(String houra_threads) {
-            super(houra_threads);
-        }
-
-        @Override
+    public static class Thread3 extends Thread {
         public void run() {
-           while (true){
-               System.out.println("Hurray");
-               try {
-                   Thread.sleep(500);
-               } catch (InterruptedException e) {
-               }
-           }
+            while (true) {
+                System.out.println("Hurray");
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
-    private static class MessageThread extends Thread implements Message{
-        private boolean start;
-        public MessageThread(String message_threads) {
-            super(message_threads);
-            this.start = false;
-        }
-
-        @Override
+    public static class Thread4 extends Thread implements Message {
         public void run() {
-            while (!this.start){
-
+            while (!isInterrupted()) {
             }
         }
 
-
-        @Override
         public void showWarning() {
-            this.start = true;
+            this.interrupt();
         }
     }
 
-    private static class NumberSumThread extends Thread {
-        public NumberSumThread(String infinit_threads) {
-            super(infinit_threads);
-        }
-
-        @Override
+    public static class Thread5 extends Thread {
         public void run() {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            int somme =0;
-            while (true){
-                String s = "";
+            int sum = 0;
+            while (true) {
                 try {
-                     s = reader.readLine();
+                    String str = reader.readLine();
+                    if (str.equals("N"))
+                        break;
+                    sum += Integer.parseInt(str);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                if(s.equals("N"))
-                    break;
-                somme +=Integer.parseInt(s);
             }
-            System.out.println(somme);
+            System.out.print(sum);
         }
     }
 }

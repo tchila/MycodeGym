@@ -1,9 +1,13 @@
 package com.codegym.task.task29.task2912;
 
-public abstract class AbstractLogger implements Logger {
+public abstract class AbstractLogger implements Logger{
     int level;
-
     Logger next;
+
+    @Override
+    public void setNext(Logger next) {
+        this.next = next;
+    }
 
     @Override
     public void inform(String message, int level) {
@@ -13,10 +17,5 @@ public abstract class AbstractLogger implements Logger {
         if (next != null) {
             next.inform(message, level);
         }
-    }
-
-    @Override
-    public void setNext(Logger next) {
-        this.next = next;
     }
 }

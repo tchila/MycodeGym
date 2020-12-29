@@ -4,7 +4,6 @@ import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -30,8 +29,9 @@ public class Solution {
         HttpPost request = new HttpPost(url);
 
         request.addHeader("User-Agent", "Mozilla/5.0");
-        List<NameValuePair> values = URLEncodedUtils.parse(urlParameters, Charset.defaultCharset());
-        request.setEntity(new UrlEncodedFormEntity(values));
+
+        List<NameValuePair> listUrlParameters = URLEncodedUtils.parse(urlParameters, Charset.forName("UTF-8"));
+        request.setEntity(new UrlEncodedFormEntity(listUrlParameters));
 
         HttpResponse response = client.execute(request);
 

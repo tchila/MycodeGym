@@ -21,7 +21,7 @@ public class Solution {
         }
         System.out.println("The current version is " + software.getCurrentVersion());
 
-        System.out.println("ROLLING BACK to version " + n);
+        System.out.println("\nROLLING BACK to version " + n);
         software.rollback(n);
 
         System.out.println("\nPrinting all versions ");

@@ -1,4 +1,4 @@
-package com.codegym.task.task3913.query;
+package com.codegym.task.task39.task3913.query;
 
 import com.codegym.task.task39.task3913.Event;
 import com.codegym.task.task39.task3913.Status;

@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Period;
-import java.time.chrono.ChronoLocalDateTime;
 import java.time.temporal.ChronoUnit;
 
 /* 
@@ -30,8 +29,10 @@ public class Solution {
     }
 
     public static Period getPeriodBetween(LocalDate firstDate, LocalDate secondDate) {
-        if(firstDate.compareTo(secondDate)<0)
+        if (firstDate.isBefore(secondDate)) {
             return Period.between(firstDate, secondDate);
-        return Period.between(secondDate,firstDate);
+        } else {
+            return Period.between(secondDate, firstDate);
+        }
     }
 }
